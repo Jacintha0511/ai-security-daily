@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "date": "2026-11-18",
-  "generated_at": "2026-11-18T07:15:52.722956+00:00",
+  "generated_at": "2026-11-18T07:25:50.528448+00:00",
   "status": "partial",
   "selection_basis": "规则预筛",
   "sources": [
@@ -32,8 +32,8 @@
     {
       "name": "GitHub 快照",
       "status": "ok",
-      "count": 43,
-      "detail": "本轮记录 43 个项目；跟踪池有限，失败或限流=0"
+      "count": 46,
+      "detail": "本轮记录 46 个项目；跟踪池有限，失败或限流=0"
     },
     {
       "name": "量子位",
@@ -73,7 +73,7 @@
         "updated_at": "2026-11-16T18:38:44Z",
         "version": "v2",
         "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-18T07:15:52.722956+00:00",
+        "last_seen": "2026-11-18T07:25:50.528448+00:00",
         "change": "observed_again",
         "score": 7,
         "reason": "研究主题匹配：prompt injection、provenance",
@@ -91,7 +91,7 @@
         "updated_at": "2026-11-14T13:42:52Z",
         "version": "v2",
         "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-18T07:15:52.722956+00:00",
+        "last_seen": "2026-11-18T07:25:50.528448+00:00",
         "change": "observed_again",
         "score": 6,
         "reason": "研究主题匹配：llm security、jailbreak",
@@ -109,7 +109,7 @@
         "updated_at": "2026-11-12T17:07:22Z",
         "version": "v1",
         "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-18T07:15:52.722956+00:00",
+        "last_seen": "2026-11-18T07:25:50.528448+00:00",
         "change": "observed_again",
         "score": 6,
         "reason": "研究主题匹配：prompt injection、prompt-injection",
@@ -130,7 +130,7 @@
         "stars": 0,
         "topics": [],
         "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-18T07:15:52.722956+00:00",
+        "last_seen": "2026-11-18T07:25:50.528448+00:00",
         "change": "observed_again",
         "score": 14,
         "reason": "研究主题匹配：memory poisoning、memory-poisoning、provenance",
@@ -170,7 +170,7 @@
           "security"
         ],
         "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-18T07:15:52.722956+00:00",
+        "last_seen": "2026-11-18T07:25:50.528448+00:00",
         "change": "observed_again",
         "score": 13,
         "reason": "研究主题匹配：prompt-injection、memory poisoning、memory-poisoning",
@@ -206,7 +206,7 @@
           "security-testing"
         ],
         "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-18T07:15:52.722956+00:00",
+        "last_seen": "2026-11-18T07:25:50.528448+00:00",
         "change": "observed_again",
         "score": 13,
         "reason": "研究主题匹配：prompt injection、prompt-injection、memory poisoning",
@@ -236,7 +236,7 @@
           "threat-modeling"
         ],
         "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-18T07:15:52.722956+00:00",
+        "last_seen": "2026-11-18T07:25:50.528448+00:00",
         "change": "observed_again",
         "score": 13,
         "reason": "研究主题匹配：prompt injection、prompt-injection、memory poisoning",
@@ -244,21 +244,34 @@
         "selection_basis": "规则预筛；不是模型精排或学术质量评分"
       },
       {
-        "id": "item_e588b9bb1af43b91",
+        "id": "item_24752662bfe1f0b1",
         "kind": "repo",
-        "url": "https://github.com/google-research/camel-prompt-injection",
-        "title": "google-research/camel-prompt-injection",
+        "url": "https://github.com/wuyoscar/aisafetyhot",
+        "title": "wuyoscar/AISafetyHot",
         "source": "GitHub",
-        "summary": "Code for the paper \"Defeating Prompt Injections by Design\"",
-        "published_at": "2025-05-13T13:29:24Z",
-        "updated_at": "2025-06-20T13:59:30Z",
-        "stars": 421,
-        "topics": [],
-        "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-18T07:15:52.722956+00:00",
-        "change": "observed_again",
-        "score": 11,
-        "reason": "研究主题匹配：prompt injection、prompt-injection",
+        "summary": "AI Safety HOT: daily AI safety news, papers and incidents in one place — jailbreaks, prompt injection, alignment, evals, governance. Website, daily digest, RSS and MCP.",
+        "published_at": "2026-10-01T11:33:59Z",
+        "updated_at": "2026-11-18T07:05:37Z",
+        "stars": 2133,
+        "topics": [
+          "ai-alignment",
+          "ai-governance",
+          "ai-safety",
+          "arxiv-papers",
+          "daily-papers",
+          "jailbreak",
+          "llm-security",
+          "mcp-server",
+          "news-aggregator",
+          "prompt-injection",
+          "red-teaming",
+          "rss"
+        ],
+        "first_seen": "2026-11-18T07:25:50.528448+00:00",
+        "last_seen": "2026-11-18T07:25:50.528448+00:00",
+        "change": "newly_discovered",
+        "score": 12,
+        "reason": "研究主题匹配：prompt injection、prompt-injection、jailbreak、ai safety",
         "priority": "快速浏览",
         "selection_basis": "规则预筛；不是模型精排或学术质量评分"
       }
@@ -274,8 +287,8 @@
       "source": "GitHub",
       "summary": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.",
       "published_at": "2026-03-21T00:28:43Z",
-      "updated_at": "2026-11-18T06:39:07Z",
-      "stars": 26683,
+      "updated_at": "2026-11-18T07:23:00Z",
+      "stars": 26684,
       "topics": [
         "agent-security",
         "agent-skills",
@@ -290,8 +303,44 @@
         "supply-chain-security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "last_seen": "2026-11-18T07:25:50.528448+00:00",
       "change": "observed_again",
+      "day_growth": {
+        "delta": null,
+        "status": "insufficient_history"
+      },
+      "week_growth": {
+        "delta": null,
+        "status": "insufficient_history"
+      }
+    },
+    {
+      "id": "item_24752662bfe1f0b1",
+      "kind": "repo",
+      "url": "https://github.com/wuyoscar/aisafetyhot",
+      "title": "wuyoscar/AISafetyHot",
+      "source": "GitHub",
+      "summary": "AI Safety HOT: daily AI safety news, papers and incidents in one place — jailbreaks, prompt injection, alignment, evals, governance. Website, daily digest, RSS and MCP.",
+      "published_at": "2026-10-01T11:33:59Z",
+      "updated_at": "2026-11-18T07:05:37Z",
+      "stars": 2133,
+      "topics": [
+        "ai-alignment",
+        "ai-governance",
+        "ai-safety",
+        "arxiv-papers",
+        "daily-papers",
+        "jailbreak",
+        "llm-security",
+        "mcp-server",
+        "news-aggregator",
+        "prompt-injection",
+        "red-teaming",
+        "rss"
+      ],
+      "first_seen": "2026-11-18T07:25:50.528448+00:00",
+      "last_seen": "2026-11-18T07:25:50.528448+00:00",
+      "change": "newly_discovered",
       "day_growth": {
         "delta": null,
         "status": "insufficient_history"
@@ -309,7 +358,7 @@
       "source": "GitHub",
       "summary": "Open-source antivirus and firewall for AI agents: block risky tools, secret access, prompt injection, malicious packages, MCP servers, plugins, and skills at runtime.",
       "published_at": "2026-03-28T19:02:15Z",
-      "updated_at": "2026-11-18T07:15:40Z",
+      "updated_at": "2026-11-18T07:23:05Z",
       "stars": 1110,
       "topics": [
         "agent-security",
@@ -334,7 +383,7 @@
         "vulnify"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "last_seen": "2026-11-18T07:25:50.528448+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": null,
@@ -362,8 +411,52 @@
         "security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "last_seen": "2026-11-18T07:25:50.528448+00:00",
       "change": "observed_again",
+      "day_growth": {
+        "delta": null,
+        "status": "insufficient_history"
+      },
+      "week_growth": {
+        "delta": null,
+        "status": "insufficient_history"
+      }
+    },
+    {
+      "id": "item_073df79fa057ac55",
+      "kind": "repo",
+      "url": "https://github.com/prismorsec/prismor",
+      "title": "PrismorSec/prismor",
+      "source": "GitHub",
+      "summary": "Self-hosted runtime control plane for AI agents. Observe or HITL approve or Block rogue tool calls before it executes: secret leaks, prompt injection, supply chain etc in a local dashboard. Agent agnostic (Claude, codex, langchain etc.)",
+      "published_at": "2026-02-20T16:43:19Z",
+      "updated_at": "2026-11-18T06:57:05Z",
+      "stars": 497,
+      "topics": [
+        "agent-control-plane",
+        "agent-security",
+        "agents",
+        "ai-agents",
+        "ai-governance",
+        "ai-safety",
+        "ai-security",
+        "claude-code",
+        "control-plane",
+        "cybersecurity",
+        "devsecops",
+        "llm-security",
+        "mcp",
+        "owasp",
+        "prompt-injection",
+        "secrets-management",
+        "security",
+        "skill-scanner",
+        "supply-chain-security",
+        "tool-calls"
+      ],
+      "first_seen": "2026-11-18T07:25:50.528448+00:00",
+      "last_seen": "2026-11-18T07:25:50.528448+00:00",
+      "change": "newly_discovered",
       "day_growth": {
         "delta": null,
         "status": "insufficient_history"
@@ -385,7 +478,7 @@
       "stars": 421,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "last_seen": "2026-11-18T07:25:50.528448+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": null,
@@ -408,7 +501,7 @@
       "stars": 333,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "last_seen": "2026-11-18T07:25:50.528448+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": null,
@@ -435,7 +528,7 @@
         "retrieval-augmented-generation"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "last_seen": "2026-11-18T07:25:50.528448+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": null,
@@ -465,7 +558,7 @@
         "prompt-engineering"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "last_seen": "2026-11-18T07:25:50.528448+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": null,
@@ -509,7 +602,7 @@
         "security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "last_seen": "2026-11-18T07:25:50.528448+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": null,
@@ -532,7 +625,7 @@
       "stars": 186,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "last_seen": "2026-11-18T07:25:50.528448+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": null,
@@ -555,7 +648,7 @@
       "stars": 104,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "last_seen": "2026-11-18T07:25:50.528448+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": null,
@@ -578,7 +671,7 @@
       "stars": 80,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "last_seen": "2026-11-18T07:25:50.528448+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": null,
@@ -618,7 +711,7 @@
         "security-testing"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "last_seen": "2026-11-18T07:25:50.528448+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": null,
@@ -657,8 +750,8 @@
         "supply-chain-security"
       ],
       "first_seen": "2026-11-18T07:15:52.722956+00:00",
-      "last_seen": "2026-11-18T07:15:52.722956+00:00",
-      "change": "newly_discovered",
+      "last_seen": "2026-11-18T07:25:50.528448+00:00",
+      "change": "observed_again",
       "day_growth": {
         "delta": null,
         "status": "insufficient_history"
@@ -687,7 +780,7 @@
         "security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "last_seen": "2026-11-18T07:25:50.528448+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": null,
@@ -722,8 +815,8 @@
         "security"
       ],
       "first_seen": "2026-11-18T07:15:52.722956+00:00",
-      "last_seen": "2026-11-18T07:15:52.722956+00:00",
-      "change": "newly_discovered",
+      "last_seen": "2026-11-18T07:25:50.528448+00:00",
+      "change": "observed_again",
       "day_growth": {
         "delta": null,
         "status": "insufficient_history"
@@ -745,7 +838,7 @@
       "stars": 1,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "last_seen": "2026-11-18T07:25:50.528448+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": null,
@@ -768,7 +861,7 @@
       "stars": 1,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "last_seen": "2026-11-18T07:25:50.528448+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": null,
@@ -791,53 +884,7 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:15:52.722956+00:00",
-      "change": "observed_again",
-      "day_growth": {
-        "delta": null,
-        "status": "insufficient_history"
-      },
-      "week_growth": {
-        "delta": null,
-        "status": "insufficient_history"
-      }
-    },
-    {
-      "id": "item_0a88aa6cd30954dd",
-      "kind": "repo",
-      "url": "https://github.com/kishore10kumar/pe4",
-      "title": "Kishore10kumar/PE4",
-      "source": "GitHub",
-      "summary": "A prompt engineering program that detects malicious prompt injection attempts and protects AI chatbots from unauthorized instruction overrides using predefined guardrails.",
-      "published_at": "2026-11-18T06:42:00Z",
-      "updated_at": "2026-11-18T06:53:46Z",
-      "stars": 0,
-      "topics": [],
-      "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:15:52.722956+00:00",
-      "change": "observed_again",
-      "day_growth": {
-        "delta": null,
-        "status": "insufficient_history"
-      },
-      "week_growth": {
-        "delta": null,
-        "status": "insufficient_history"
-      }
-    },
-    {
-      "id": "item_3f82af3f4624596a",
-      "kind": "repo",
-      "url": "https://github.com/gazalguler/llm-prompt-injection-playground",
-      "title": "gazalguler/llm-prompt-injection-playground",
-      "source": "GitHub",
-      "summary": "Testing prompt injection and jailbreak attempts against LLMs using Python and the OpenAI API.",
-      "published_at": "2026-10-10T00:27:06Z",
-      "updated_at": "2026-11-18T06:50:09Z",
-      "stars": 0,
-      "topics": [],
-      "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "last_seen": "2026-11-18T07:25:50.528448+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": null,
@@ -849,9 +896,9 @@
       }
     }
   ],
-  "candidate_count": 73,
+  "candidate_count": 76,
   "published_count": 8,
-  "run_url": "https://github.com/Jacintha0511/ai-security-daily/actions/runs/44257487591",
+  "run_url": "https://github.com/Jacintha0511/ai-security-daily/actions/runs/44258785489",
   "notes": [
     "仅公开论文、项目、报道；不包含私人 idea 或实验。",
     "首次发现时间不等于发表时间；摘要与规则匹配不代表精读。",

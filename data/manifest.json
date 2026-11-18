@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-18T07:15:57.995415+00:00",
+  "updated_at": "2026-11-18T07:25:56.227388+00:00",
   "timezone": "Asia/Shanghai",
   "latest": {
     "date": "2026-11-18",
     "status": "partial",
-    "generated_at": "2026-11-18T07:15:52.722956+00:00",
+    "generated_at": "2026-11-18T07:25:50.528448+00:00",
     "count": 8,
     "path": "data/reports/2026-11-18.json"
   },
@@ -13,7 +13,7 @@
     {
       "date": "2026-11-18",
       "status": "partial",
-      "generated_at": "2026-11-18T07:15:52.722956+00:00",
+      "generated_at": "2026-11-18T07:25:50.528448+00:00",
       "count": 8,
       "path": "data/reports/2026-11-18.json"
     }
@@ -26,7 +26,7 @@
   ],
   "latest_attempt": {
     "date": "2026-11-18",
-    "generated_at": "2026-11-18T07:15:52.722956+00:00",
+    "generated_at": "2026-11-18T07:25:50.528448+00:00",
     "status": "partial",
     "sources": [
       {
@@ -56,8 +56,8 @@
       {
         "name": "GitHub 快照",
         "status": "ok",
-        "count": 43,
-        "detail": "本轮记录 43 个项目；跟踪池有限，失败或限流=0"
+        "count": 46,
+        "detail": "本轮记录 46 个项目；跟踪池有限，失败或限流=0"
       },
       {
         "name": "量子位",
@@ -84,8 +84,8 @@
         "detail": "待接入可用 RSS，不代表今天没有报道"
       }
     ],
-    "candidate_count": 73,
-    "run_url": "https://github.com/Jacintha0511/ai-security-daily/actions/runs/44257487591"
+    "candidate_count": 76,
+    "run_url": "https://github.com/Jacintha0511/ai-security-daily/actions/runs/44258785489"
   },
   "schedule": "每日 08:15 生成，10:15 检查补跑；周日 09:15 周报（北京时间，可能排队延迟）",
   "privacy": "公开动态站；私人 idea、阅读笔记和实验数据仅保留本地",
