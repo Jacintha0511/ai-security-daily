@@ -1,7 +1,7 @@
 {
   "date": "2026-11-18",
   "start": "2026-11-12",
-  "generated_at": "2026-11-18T07:09:25.636653+00:00",
+  "generated_at": "2026-11-18T07:15:57.995415+00:00",
   "days_with_reports": 1,
   "items": {
     "paper": [
@@ -16,8 +16,8 @@
         "updated_at": "2026-11-16T18:38:44Z",
         "version": "v2",
         "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-18T07:09:14.936020+00:00",
-        "change": "newly_discovered",
+        "last_seen": "2026-11-18T07:15:52.722956+00:00",
+        "change": "observed_again",
         "score": 7,
         "reason": "研究主题匹配：prompt injection、provenance",
         "priority": "建议精读",
@@ -34,8 +34,8 @@
         "updated_at": "2026-11-14T13:42:52Z",
         "version": "v2",
         "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-18T07:09:14.936020+00:00",
-        "change": "newly_discovered",
+        "last_seen": "2026-11-18T07:15:52.722956+00:00",
+        "change": "observed_again",
         "score": 6,
         "reason": "研究主题匹配：llm security、jailbreak",
         "priority": "快速浏览",
@@ -52,8 +52,8 @@
         "updated_at": "2026-11-12T17:07:22Z",
         "version": "v1",
         "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-18T07:09:14.936020+00:00",
-        "change": "newly_discovered",
+        "last_seen": "2026-11-18T07:15:52.722956+00:00",
+        "change": "observed_again",
         "score": 6,
         "reason": "研究主题匹配：prompt injection、prompt-injection",
         "priority": "快速浏览",
@@ -73,8 +73,8 @@
         "stars": 0,
         "topics": [],
         "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-18T07:09:14.936020+00:00",
-        "change": "newly_discovered",
+        "last_seen": "2026-11-18T07:15:52.722956+00:00",
+        "change": "observed_again",
         "score": 14,
         "reason": "研究主题匹配：memory poisoning、memory-poisoning、provenance",
         "priority": "快速浏览",
@@ -113,8 +113,8 @@
           "security"
         ],
         "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-18T07:09:14.936020+00:00",
-        "change": "newly_discovered",
+        "last_seen": "2026-11-18T07:15:52.722956+00:00",
+        "change": "observed_again",
         "score": 13,
         "reason": "研究主题匹配：prompt-injection、memory poisoning、memory-poisoning",
         "priority": "快速浏览",
@@ -149,8 +149,8 @@
           "security-testing"
         ],
         "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-18T07:09:14.936020+00:00",
-        "change": "newly_discovered",
+        "last_seen": "2026-11-18T07:15:52.722956+00:00",
+        "change": "observed_again",
         "score": 13,
         "reason": "研究主题匹配：prompt injection、prompt-injection、memory poisoning",
         "priority": "快速浏览",
@@ -179,8 +179,8 @@
           "threat-modeling"
         ],
         "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-18T07:09:14.936020+00:00",
-        "change": "newly_discovered",
+        "last_seen": "2026-11-18T07:15:52.722956+00:00",
+        "change": "observed_again",
         "score": 13,
         "reason": "研究主题匹配：prompt injection、prompt-injection、memory poisoning",
         "priority": "快速浏览",
@@ -198,8 +198,8 @@
         "stars": 421,
         "topics": [],
         "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-18T07:09:14.936020+00:00",
-        "change": "newly_discovered",
+        "last_seen": "2026-11-18T07:15:52.722956+00:00",
+        "change": "observed_again",
         "score": 11,
         "reason": "研究主题匹配：prompt injection、prompt-injection",
         "priority": "快速浏览",
@@ -236,8 +236,8 @@
     {
       "name": "GitHub 快照",
       "status": "ok",
-      "count": 38,
-      "detail": "本轮记录 38 个项目；跟踪池有限，失败或限流=0"
+      "count": 43,
+      "detail": "本轮记录 43 个项目；跟踪池有限，失败或限流=0"
     },
     {
       "name": "量子位",
@@ -274,7 +274,7 @@
       "summary": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.",
       "published_at": "2026-03-21T00:28:43Z",
       "updated_at": "2026-11-18T06:39:07Z",
-      "stars": 26682,
+      "stars": 26683,
       "topics": [
         "agent-security",
         "agent-skills",
@@ -289,8 +289,8 @@
         "supply-chain-security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered",
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again",
       "day_growth": {
         "delta": null,
         "status": "insufficient_history"
@@ -308,7 +308,7 @@
       "source": "GitHub",
       "summary": "Open-source antivirus and firewall for AI agents: block risky tools, secret access, prompt injection, malicious packages, MCP servers, plugins, and skills at runtime.",
       "published_at": "2026-03-28T19:02:15Z",
-      "updated_at": "2026-11-18T07:08:54Z",
+      "updated_at": "2026-11-18T07:15:40Z",
       "stars": 1110,
       "topics": [
         "agent-security",
@@ -333,8 +333,8 @@
         "vulnify"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered",
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again",
       "day_growth": {
         "delta": null,
         "status": "insufficient_history"
@@ -361,8 +361,8 @@
         "security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered",
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again",
       "day_growth": {
         "delta": null,
         "status": "insufficient_history"
@@ -384,8 +384,8 @@
       "stars": 421,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered",
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again",
       "day_growth": {
         "delta": null,
         "status": "insufficient_history"
@@ -407,8 +407,8 @@
       "stars": 333,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered",
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again",
       "day_growth": {
         "delta": null,
         "status": "insufficient_history"
@@ -434,8 +434,8 @@
         "retrieval-augmented-generation"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered",
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again",
       "day_growth": {
         "delta": null,
         "status": "insufficient_history"
@@ -464,8 +464,8 @@
         "prompt-engineering"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered",
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again",
       "day_growth": {
         "delta": null,
         "status": "insufficient_history"
@@ -508,8 +508,8 @@
         "security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered",
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again",
       "day_growth": {
         "delta": null,
         "status": "insufficient_history"
@@ -531,8 +531,8 @@
       "stars": 186,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered",
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again",
       "day_growth": {
         "delta": null,
         "status": "insufficient_history"
@@ -554,8 +554,8 @@
       "stars": 104,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered",
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again",
       "day_growth": {
         "delta": null,
         "status": "insufficient_history"
@@ -577,8 +577,8 @@
       "stars": 80,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered",
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again",
       "day_growth": {
         "delta": null,
         "status": "insufficient_history"
@@ -617,7 +617,46 @@
         "security-testing"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again",
+      "day_growth": {
+        "delta": null,
+        "status": "insufficient_history"
+      },
+      "week_growth": {
+        "delta": null,
+        "status": "insufficient_history"
+      }
+    },
+    {
+      "id": "item_788c43df1ede2063",
+      "kind": "repo",
+      "url": "https://github.com/nox-hq/nox",
+      "title": "Nox-HQ/nox",
+      "source": "GitHub",
+      "summary": "Open-source security scanner with first-class AI app security (prompt injection, embedding leakage, agent over-privilege, MCP hardening). Polyglot AIBOM, SARIF, SBOM. Cosign-signed plugin marketplace. Offline-first, agent-native via MCP.",
+      "published_at": "2026-02-08T21:10:43Z",
+      "updated_at": "2026-11-18T07:12:44Z",
+      "stars": 11,
+      "topics": [
+        "ai-security",
+        "cli",
+        "cosign",
+        "devsecops",
+        "golang",
+        "llm-security",
+        "mcp",
+        "plugin-marketplace",
+        "sarif",
+        "sbom",
+        "scanner",
+        "security",
+        "sigstore",
+        "static-analysis",
+        "supply-chain-security"
+      ],
+      "first_seen": "2026-11-18T07:15:52.722956+00:00",
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
       "change": "newly_discovered",
       "day_growth": {
         "delta": null,
@@ -647,7 +686,42 @@
         "security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again",
+      "day_growth": {
+        "delta": null,
+        "status": "insufficient_history"
+      },
+      "week_growth": {
+        "delta": null,
+        "status": "insufficient_history"
+      }
+    },
+    {
+      "id": "item_9a836ff5517fc882",
+      "kind": "repo",
+      "url": "https://github.com/saagpatel/mcpaudit",
+      "title": "saagpatel/MCPAudit",
+      "source": "GitHub",
+      "summary": "Audit all locally configured MCP servers for permission risks, prompt injection threats, and schema drift",
+      "published_at": "2026-03-29T14:18:58Z",
+      "updated_at": "2026-11-18T07:15:32Z",
+      "stars": 4,
+      "topics": [
+        "ai-safety",
+        "audit",
+        "cli",
+        "developer-tools",
+        "mcp",
+        "mcp-client",
+        "mcp-server",
+        "model-context-protocol",
+        "pypi",
+        "python",
+        "security"
+      ],
+      "first_seen": "2026-11-18T07:15:52.722956+00:00",
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
       "change": "newly_discovered",
       "day_growth": {
         "delta": null,
@@ -670,8 +744,8 @@
       "stars": 1,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered",
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again",
       "day_growth": {
         "delta": null,
         "status": "insufficient_history"
@@ -693,8 +767,8 @@
       "stars": 1,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered",
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again",
       "day_growth": {
         "delta": null,
         "status": "insufficient_history"
@@ -716,8 +790,8 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered",
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again",
       "day_growth": {
         "delta": null,
         "status": "insufficient_history"
@@ -739,8 +813,8 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered",
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again",
       "day_growth": {
         "delta": null,
         "status": "insufficient_history"
@@ -762,54 +836,8 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered",
-      "day_growth": {
-        "delta": null,
-        "status": "insufficient_history"
-      },
-      "week_growth": {
-        "delta": null,
-        "status": "insufficient_history"
-      }
-    },
-    {
-      "id": "item_313b5b007d3f3c04",
-      "kind": "repo",
-      "url": "https://github.com/bhavanasmca26-bot/prompt-injection-detection",
-      "title": "bhavanasmca26-bot/prompt-injection-detection",
-      "source": "GitHub",
-      "summary": "",
-      "published_at": "2026-11-18T06:40:51Z",
-      "updated_at": "2026-11-18T06:48:31Z",
-      "stars": 0,
-      "topics": [],
-      "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered",
-      "day_growth": {
-        "delta": null,
-        "status": "insufficient_history"
-      },
-      "week_growth": {
-        "delta": null,
-        "status": "insufficient_history"
-      }
-    },
-    {
-      "id": "item_80e5a7ea7ca32106",
-      "kind": "repo",
-      "url": "https://github.com/galil3o/nucleon",
-      "title": "Galil3o/NUCLEON",
-      "source": "GitHub",
-      "summary": "Self-hosted, privacy-first email automation for Proton Mail (Bridge/IMAP). Every message is treated as untrusted: a quarantined LLM reads it with no tool access, and a deterministic gate auto-runs reversible actions but holds irreversible ones (send, delete) for approval. Prompt-injection resistant by design.",
-      "published_at": "2026-11-17T10:54:14Z",
-      "updated_at": "2026-11-18T06:46:27Z",
-      "stars": 0,
-      "topics": [],
-      "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered",
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again",
       "day_growth": {
         "delta": null,
         "status": "insufficient_history"

@@ -12,8 +12,8 @@
       "updated_at": "2026-11-17T14:45:51Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_b557870db75e581b": {
       "id": "item_b557870db75e581b",
@@ -26,8 +26,8 @@
       "updated_at": "2026-11-17T13:51:44Z",
       "version": "v3",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_9d4d25d5015db240": {
       "id": "item_9d4d25d5015db240",
@@ -40,8 +40,8 @@
       "updated_at": "2026-11-17T13:27:57Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_df940688cff611f0": {
       "id": "item_df940688cff611f0",
@@ -54,8 +54,8 @@
       "updated_at": "2026-11-17T11:54:56Z",
       "version": "v4",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_f53b0f77264c13cb": {
       "id": "item_f53b0f77264c13cb",
@@ -68,8 +68,8 @@
       "updated_at": "2026-11-17T05:06:25Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_c60bbdbf2963b32b": {
       "id": "item_c60bbdbf2963b32b",
@@ -82,8 +82,8 @@
       "updated_at": "2026-11-16T19:52:38Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_efa7882c7adc67e6": {
       "id": "item_efa7882c7adc67e6",
@@ -96,8 +96,8 @@
       "updated_at": "2026-11-16T19:38:02Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_163311fe87f0a7ae": {
       "id": "item_163311fe87f0a7ae",
@@ -110,8 +110,8 @@
       "updated_at": "2026-11-16T18:38:44Z",
       "version": "v2",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_0e42c4197b22c674": {
       "id": "item_0e42c4197b22c674",
@@ -124,8 +124,8 @@
       "updated_at": "2026-11-16T09:53:35Z",
       "version": "v2",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_691b6f4d2ead3894": {
       "id": "item_691b6f4d2ead3894",
@@ -138,8 +138,8 @@
       "updated_at": "2026-11-16T08:28:31Z",
       "version": "v2",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_0e955920f7cb5597": {
       "id": "item_0e955920f7cb5597",
@@ -152,8 +152,8 @@
       "updated_at": "2026-11-15T17:45:49Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_dcb3be0bca9924fa": {
       "id": "item_dcb3be0bca9924fa",
@@ -166,8 +166,8 @@
       "updated_at": "2026-11-15T14:44:28Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_ad0e4e5eed0e4897": {
       "id": "item_ad0e4e5eed0e4897",
@@ -180,8 +180,8 @@
       "updated_at": "2026-11-15T13:19:50Z",
       "version": "v2",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_6d465af8f7fbf58f": {
       "id": "item_6d465af8f7fbf58f",
@@ -194,8 +194,8 @@
       "updated_at": "2026-11-15T06:26:28Z",
       "version": "v2",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_aca00b7085695c53": {
       "id": "item_aca00b7085695c53",
@@ -208,8 +208,8 @@
       "updated_at": "2026-11-14T18:00:31Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_ed16f4865901e10b": {
       "id": "item_ed16f4865901e10b",
@@ -222,8 +222,8 @@
       "updated_at": "2026-11-14T16:58:43Z",
       "version": "v2",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_6694701ea853498c": {
       "id": "item_6694701ea853498c",
@@ -236,8 +236,8 @@
       "updated_at": "2026-11-14T15:40:08Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_be54431a1d044292": {
       "id": "item_be54431a1d044292",
@@ -250,8 +250,8 @@
       "updated_at": "2026-11-14T14:50:16Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_4bdc1f7184c5400c": {
       "id": "item_4bdc1f7184c5400c",
@@ -264,8 +264,8 @@
       "updated_at": "2026-11-14T13:42:52Z",
       "version": "v2",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_39a0abf15a0b4416": {
       "id": "item_39a0abf15a0b4416",
@@ -278,8 +278,8 @@
       "updated_at": "2026-11-14T02:01:39Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_cabea08ba2bd77ea": {
       "id": "item_cabea08ba2bd77ea",
@@ -292,8 +292,8 @@
       "updated_at": "2026-11-13T20:31:23Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_cb0531f2910fb790": {
       "id": "item_cb0531f2910fb790",
@@ -306,8 +306,8 @@
       "updated_at": "2026-11-12T21:14:49Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_9a52a7565a239b1e": {
       "id": "item_9a52a7565a239b1e",
@@ -320,8 +320,8 @@
       "updated_at": "2026-11-12T17:07:22Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_370548d51c2068ec": {
       "id": "item_370548d51c2068ec",
@@ -334,8 +334,8 @@
       "updated_at": "2026-11-12T12:57:11Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_84d451d9e0b5ae49": {
       "id": "item_84d451d9e0b5ae49",
@@ -348,8 +348,8 @@
       "updated_at": "2026-11-12T09:59:32Z",
       "version": "v2",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_7c03df55e34b658f": {
       "id": "item_7c03df55e34b658f",
@@ -362,8 +362,8 @@
       "updated_at": "2026-11-12T00:17:31Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_4937caa6f684329e": {
       "id": "item_4937caa6f684329e",
@@ -376,8 +376,8 @@
       "updated_at": "2026-11-11T21:35:06Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_76ec55d8e371a470": {
       "id": "item_76ec55d8e371a470",
@@ -390,8 +390,8 @@
       "updated_at": "2026-11-11T19:19:08Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_dc8481840945944f": {
       "id": "item_dc8481840945944f",
@@ -404,8 +404,8 @@
       "updated_at": "2026-11-11T19:13:21Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_56d5102d4f14dc40": {
       "id": "item_56d5102d4f14dc40",
@@ -418,8 +418,8 @@
       "updated_at": "2026-11-11T14:48:53Z",
       "version": "v4",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_40c3d33d7970b4f5": {
       "id": "item_40c3d33d7970b4f5",
@@ -438,8 +438,8 @@
         "security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_9374c9e62286b22f": {
       "id": "item_9374c9e62286b22f",
@@ -453,8 +453,8 @@
       "stars": 186,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_02f9d4061de2f443": {
       "id": "item_02f9d4061de2f443",
@@ -472,8 +472,8 @@
         "retrieval-augmented-generation"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_e588b9bb1af43b91": {
       "id": "item_e588b9bb1af43b91",
@@ -487,8 +487,8 @@
       "stars": 421,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_7a9bce0886175358": {
       "id": "item_7a9bce0886175358",
@@ -502,8 +502,8 @@
       "stars": 333,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_42ab56732dbeea40": {
       "id": "item_42ab56732dbeea40",
@@ -524,8 +524,8 @@
         "prompt-engineering"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_0b6954e8696ab98b": {
       "id": "item_0b6954e8696ab98b",
@@ -539,8 +539,8 @@
       "stars": 104,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_1a595fff3abc2d70": {
       "id": "item_1a595fff3abc2d70",
@@ -554,8 +554,8 @@
       "stars": 80,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_530f47628f194052": {
       "id": "item_530f47628f194052",
@@ -569,8 +569,8 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_73f8a758997de712": {
       "id": "item_73f8a758997de712",
@@ -584,8 +584,8 @@
       "stars": 1,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_0a88aa6cd30954dd": {
       "id": "item_0a88aa6cd30954dd",
@@ -599,8 +599,8 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_3f82af3f4624596a": {
       "id": "item_3f82af3f4624596a",
@@ -614,8 +614,8 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_313b5b007d3f3c04": {
       "id": "item_313b5b007d3f3c04",
@@ -629,8 +629,8 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_80e5a7ea7ca32106": {
       "id": "item_80e5a7ea7ca32106",
@@ -644,8 +644,8 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_3c5a84c629b82348": {
       "id": "item_3c5a84c629b82348",
@@ -656,7 +656,7 @@
       "summary": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.",
       "published_at": "2026-03-21T00:28:43Z",
       "updated_at": "2026-11-18T06:39:07Z",
-      "stars": 26682,
+      "stars": 26683,
       "topics": [
         "agent-security",
         "agent-skills",
@@ -671,8 +671,8 @@
         "supply-chain-security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_49e364e463bd4a1d": {
       "id": "item_49e364e463bd4a1d",
@@ -682,7 +682,7 @@
       "source": "GitHub",
       "summary": "Open-source antivirus and firewall for AI agents: block risky tools, secret access, prompt injection, malicious packages, MCP servers, plugins, and skills at runtime.",
       "published_at": "2026-03-28T19:02:15Z",
-      "updated_at": "2026-11-18T07:08:54Z",
+      "updated_at": "2026-11-18T07:15:40Z",
       "stars": 1110,
       "topics": [
         "agent-security",
@@ -707,8 +707,8 @@
         "vulnify"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_2a267ee5d6aa8424": {
       "id": "item_2a267ee5d6aa8424",
@@ -722,8 +722,8 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_784453a7959b4f54": {
       "id": "item_784453a7959b4f54",
@@ -737,8 +737,8 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_c6dc9492df516294": {
       "id": "item_c6dc9492df516294",
@@ -752,8 +752,8 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_a1d58542dfb027ba": {
       "id": "item_a1d58542dfb027ba",
@@ -767,8 +767,8 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_dad526d4430fecfb": {
       "id": "item_dad526d4430fecfb",
@@ -782,8 +782,8 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_c7c067fa65542bef": {
       "id": "item_c7c067fa65542bef",
@@ -797,8 +797,8 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_4842aed452967939": {
       "id": "item_4842aed452967939",
@@ -812,8 +812,8 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_b16096077464b6d4": {
       "id": "item_b16096077464b6d4",
@@ -827,8 +827,8 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_cc686d73aa7a6f6f": {
       "id": "item_cc686d73aa7a6f6f",
@@ -863,8 +863,8 @@
         "security-automation"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_0fdb723269ccb53e": {
       "id": "item_0fdb723269ccb53e",
@@ -878,8 +878,8 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_4fc153efb370dee2": {
       "id": "item_4fc153efb370dee2",
@@ -897,8 +897,8 @@
         "plugin"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_7542ef555b0df1a7": {
       "id": "item_7542ef555b0df1a7",
@@ -912,8 +912,8 @@
       "stars": 1,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_50cc0395f5577882": {
       "id": "item_50cc0395f5577882",
@@ -948,8 +948,8 @@
         "security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_1c65ce023e00e6f3": {
       "id": "item_1c65ce023e00e6f3",
@@ -980,8 +980,8 @@
         "security-testing"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_bcd5963a8b9a17bf": {
       "id": "item_bcd5963a8b9a17bf",
@@ -1002,8 +1002,8 @@
         "ollama"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_ad0e6d0dd00cf070": {
       "id": "item_ad0e6d0dd00cf070",
@@ -1024,8 +1024,8 @@
         "security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_fb154803636b2d18": {
       "id": "item_fb154803636b2d18",
@@ -1039,8 +1039,8 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_a4f2930e70550ba3": {
       "id": "item_a4f2930e70550ba3",
@@ -1065,8 +1065,8 @@
         "threat-modeling"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_0bebaa729dc53860": {
       "id": "item_0bebaa729dc53860",
@@ -1080,8 +1080,8 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_7a0d6d925e8f4cfb": {
       "id": "item_7a0d6d925e8f4cfb",
@@ -1095,8 +1095,8 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_98e05a377edab252": {
       "id": "item_98e05a377edab252",
@@ -1110,8 +1110,8 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
     },
     "item_d519aadd839dea2b": {
       "id": "item_d519aadd839dea2b",
@@ -1125,7 +1125,128 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-18T07:09:14.936020+00:00",
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "observed_again"
+    },
+    "item_a84a65b3b198b166": {
+      "id": "item_a84a65b3b198b166",
+      "kind": "repo",
+      "url": "https://github.com/keerthanan24aiml/prompt-injection-detector",
+      "title": "keerthanan24aiml/Prompt-Injection-detector",
+      "source": "GitHub",
+      "summary": "",
+      "published_at": "2026-11-18T04:46:51Z",
+      "updated_at": "2026-11-18T07:14:30Z",
+      "stars": 0,
+      "topics": [],
+      "first_seen": "2026-11-18T07:15:52.722956+00:00",
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "newly_discovered"
+    },
+    "item_9a836ff5517fc882": {
+      "id": "item_9a836ff5517fc882",
+      "kind": "repo",
+      "url": "https://github.com/saagpatel/mcpaudit",
+      "title": "saagpatel/MCPAudit",
+      "source": "GitHub",
+      "summary": "Audit all locally configured MCP servers for permission risks, prompt injection threats, and schema drift",
+      "published_at": "2026-03-29T14:18:58Z",
+      "updated_at": "2026-11-18T07:15:32Z",
+      "stars": 4,
+      "topics": [
+        "ai-safety",
+        "audit",
+        "cli",
+        "developer-tools",
+        "mcp",
+        "mcp-client",
+        "mcp-server",
+        "model-context-protocol",
+        "pypi",
+        "python",
+        "security"
+      ],
+      "first_seen": "2026-11-18T07:15:52.722956+00:00",
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "newly_discovered"
+    },
+    "item_788c43df1ede2063": {
+      "id": "item_788c43df1ede2063",
+      "kind": "repo",
+      "url": "https://github.com/nox-hq/nox",
+      "title": "Nox-HQ/nox",
+      "source": "GitHub",
+      "summary": "Open-source security scanner with first-class AI app security (prompt injection, embedding leakage, agent over-privilege, MCP hardening). Polyglot AIBOM, SARIF, SBOM. Cosign-signed plugin marketplace. Offline-first, agent-native via MCP.",
+      "published_at": "2026-02-08T21:10:43Z",
+      "updated_at": "2026-11-18T07:12:44Z",
+      "stars": 11,
+      "topics": [
+        "ai-security",
+        "cli",
+        "cosign",
+        "devsecops",
+        "golang",
+        "llm-security",
+        "mcp",
+        "plugin-marketplace",
+        "sarif",
+        "sbom",
+        "scanner",
+        "security",
+        "sigstore",
+        "static-analysis",
+        "supply-chain-security"
+      ],
+      "first_seen": "2026-11-18T07:15:52.722956+00:00",
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "newly_discovered"
+    },
+    "item_9bd6a3a721035322": {
+      "id": "item_9bd6a3a721035322",
+      "kind": "repo",
+      "url": "https://github.com/daniilpetryk/taintwall",
+      "title": "daniilpetryk/taintwall",
+      "source": "GitHub",
+      "summary": "Prompt-injection defense for AI agents with crypto wallets. The planner never sees untrusted data; every value carries provenance labels; policies run before every tool call; transactions are simulated on an anvil fork before an isolated signer signs. CaMeL-style, built for web3.",
+      "published_at": "2026-11-17T14:54:08Z",
+      "updated_at": "2026-11-18T07:11:01Z",
+      "stars": 0,
+      "topics": [
+        "agent-security",
+        "ai-agents",
+        "anvil",
+        "camel",
+        "crypto-wallet",
+        "defi",
+        "ethereum",
+        "foundry",
+        "golang",
+        "information-flow-control",
+        "llm-security",
+        "mcp",
+        "prompt-injection",
+        "python",
+        "taint-tracking",
+        "transaction-simulation",
+        "web3"
+      ],
+      "first_seen": "2026-11-18T07:15:52.722956+00:00",
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
+      "change": "newly_discovered"
+    },
+    "item_1dc5c79a61356722": {
+      "id": "item_1dc5c79a61356722",
+      "kind": "repo",
+      "url": "https://github.com/jacintha0511/ai-security-daily",
+      "title": "Jacintha0511/ai-security-daily",
+      "source": "GitHub",
+      "summary": "Public AI/Agent security daily digest · rule-filtered, source-linked, private research excluded",
+      "published_at": "2026-11-18T07:14:45Z",
+      "updated_at": "2026-11-18T07:15:37Z",
+      "stars": 0,
+      "topics": [],
+      "first_seen": "2026-11-18T07:15:52.722956+00:00",
+      "last_seen": "2026-11-18T07:15:52.722956+00:00",
       "change": "newly_discovered"
     }
   },
@@ -1134,11 +1255,19 @@
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
         "count": 1052
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
+        "count": 1052
       }
     ],
     "item_9374c9e62286b22f": [
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
+        "count": 186
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
         "count": 186
       }
     ],
@@ -1146,11 +1275,19 @@
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
         "count": 257
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
+        "count": 257
       }
     ],
     "item_e588b9bb1af43b91": [
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
+        "count": 421
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
         "count": 421
       }
     ],
@@ -1158,11 +1295,19 @@
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
         "count": 333
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
+        "count": 333
       }
     ],
     "item_42ab56732dbeea40": [
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
+        "count": 231
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
         "count": 231
       }
     ],
@@ -1170,11 +1315,19 @@
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
         "count": 104
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
+        "count": 104
       }
     ],
     "item_1a595fff3abc2d70": [
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
+        "count": 80
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
         "count": 80
       }
     ],
@@ -1182,11 +1335,19 @@
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
         "count": 0
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
+        "count": 0
       }
     ],
     "item_73f8a758997de712": [
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
+        "count": 1
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
         "count": 1
       }
     ],
@@ -1194,11 +1355,19 @@
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
         "count": 0
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
+        "count": 0
       }
     ],
     "item_3f82af3f4624596a": [
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
+        "count": 0
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
         "count": 0
       }
     ],
@@ -1206,11 +1375,19 @@
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
         "count": 0
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
+        "count": 0
       }
     ],
     "item_80e5a7ea7ca32106": [
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
+        "count": 0
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
         "count": 0
       }
     ],
@@ -1218,11 +1395,19 @@
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
         "count": 26682
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
+        "count": 26683
       }
     ],
     "item_49e364e463bd4a1d": [
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
+        "count": 1110
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
         "count": 1110
       }
     ],
@@ -1230,11 +1415,19 @@
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
         "count": 0
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
+        "count": 0
       }
     ],
     "item_784453a7959b4f54": [
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
+        "count": 0
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
         "count": 0
       }
     ],
@@ -1242,11 +1435,19 @@
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
         "count": 0
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
+        "count": 0
       }
     ],
     "item_a1d58542dfb027ba": [
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
+        "count": 0
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
         "count": 0
       }
     ],
@@ -1254,11 +1455,19 @@
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
         "count": 0
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
+        "count": 0
       }
     ],
     "item_c7c067fa65542bef": [
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
+        "count": 0
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
         "count": 0
       }
     ],
@@ -1266,11 +1475,19 @@
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
         "count": 0
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
+        "count": 0
       }
     ],
     "item_b16096077464b6d4": [
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
+        "count": 0
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
         "count": 0
       }
     ],
@@ -1278,11 +1495,19 @@
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
         "count": 152
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
+        "count": 152
       }
     ],
     "item_0fdb723269ccb53e": [
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
+        "count": 0
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
         "count": 0
       }
     ],
@@ -1290,11 +1515,19 @@
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
         "count": 121
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
+        "count": 121
       }
     ],
     "item_7542ef555b0df1a7": [
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
+        "count": 1
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
         "count": 1
       }
     ],
@@ -1302,11 +1535,19 @@
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
         "count": 204
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
+        "count": 204
       }
     ],
     "item_1c65ce023e00e6f3": [
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
+        "count": 26
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
         "count": 26
       }
     ],
@@ -1314,11 +1555,19 @@
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
         "count": 0
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
+        "count": 0
       }
     ],
     "item_ad0e6d0dd00cf070": [
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
+        "count": 4
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
         "count": 4
       }
     ],
@@ -1326,11 +1575,19 @@
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
         "count": 0
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
+        "count": 0
       }
     ],
     "item_a4f2930e70550ba3": [
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
+        "count": 0
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
         "count": 0
       }
     ],
@@ -1338,11 +1595,19 @@
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
         "count": 0
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
+        "count": 0
       }
     ],
     "item_7a0d6d925e8f4cfb": [
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
+        "count": 0
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
         "count": 0
       }
     ],
@@ -1350,17 +1615,55 @@
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
         "count": 0
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
+        "count": 0
       }
     ],
     "item_d519aadd839dea2b": [
       {
         "at": "2026-11-18T07:09:14.936020+00:00",
         "count": 0
+      },
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
+        "count": 0
+      }
+    ],
+    "item_a84a65b3b198b166": [
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
+        "count": 0
+      }
+    ],
+    "item_9a836ff5517fc882": [
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
+        "count": 4
+      }
+    ],
+    "item_788c43df1ede2063": [
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
+        "count": 11
+      }
+    ],
+    "item_9bd6a3a721035322": [
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
+        "count": 0
+      }
+    ],
+    "item_1dc5c79a61356722": [
+      {
+        "at": "2026-11-18T07:15:52.722956+00:00",
+        "count": 0
       }
     ]
   },
   "cursors": {
-    "arxiv": "2026-11-18T07:09:14.936020+00:00"
+    "arxiv": "2026-11-18T07:15:52.722956+00:00"
   },
   "runs": [
     {
@@ -1425,12 +1728,75 @@
       ],
       "candidate_count": 68,
       "run_url": null
+    },
+    {
+      "date": "2026-11-18",
+      "generated_at": "2026-11-18T07:15:52.722956+00:00",
+      "status": "partial",
+      "sources": [
+        {
+          "name": "arXiv",
+          "status": "ok",
+          "count": 30,
+          "detail": "包含新论文与版本更新；预印本不等于正式发表"
+        },
+        {
+          "name": "GitHub 发现：\"prompt-injection\"",
+          "status": "ok",
+          "count": 10,
+          "detail": "候选发现，不是全站升星榜"
+        },
+        {
+          "name": "GitHub 发现：\"agent security\"",
+          "status": "ok",
+          "count": 10,
+          "detail": "候选发现，不是全站升星榜"
+        },
+        {
+          "name": "GitHub 发现：\"memory poisoning\"",
+          "status": "ok",
+          "count": 10,
+          "detail": "候选发现，不是全站升星榜"
+        },
+        {
+          "name": "GitHub 快照",
+          "status": "ok",
+          "count": 43,
+          "detail": "本轮记录 43 个项目；跟踪池有限，失败或限流=0"
+        },
+        {
+          "name": "量子位",
+          "status": "not_connected",
+          "count": 0,
+          "detail": "待接入可用 RSS，不代表今天没有报道"
+        },
+        {
+          "name": "机器之心",
+          "status": "not_connected",
+          "count": 0,
+          "detail": "待接入可用 RSS，不代表今天没有报道"
+        },
+        {
+          "name": "为机器立心",
+          "status": "not_connected",
+          "count": 0,
+          "detail": "待接入可用 RSS，不代表今天没有报道"
+        },
+        {
+          "name": "刘小垒Leo",
+          "status": "not_connected",
+          "count": 0,
+          "detail": "待接入可用 RSS，不代表今天没有报道"
+        }
+      ],
+      "candidate_count": 73,
+      "run_url": "https://github.com/Jacintha0511/ai-security-daily/actions/runs/44257487591"
     }
   ],
-  "last_success": "2026-11-18T07:09:14.936020+00:00",
+  "last_success": "2026-11-18T07:15:52.722956+00:00",
   "latest_attempt": {
     "date": "2026-11-18",
-    "generated_at": "2026-11-18T07:09:14.936020+00:00",
+    "generated_at": "2026-11-18T07:15:52.722956+00:00",
     "status": "partial",
     "sources": [
       {
@@ -1460,8 +1826,8 @@
       {
         "name": "GitHub 快照",
         "status": "ok",
-        "count": 38,
-        "detail": "本轮记录 38 个项目；跟踪池有限，失败或限流=0"
+        "count": 43,
+        "detail": "本轮记录 43 个项目；跟踪池有限，失败或限流=0"
       },
       {
         "name": "量子位",
@@ -1488,7 +1854,7 @@
         "detail": "待接入可用 RSS，不代表今天没有报道"
       }
     ],
-    "candidate_count": 68,
-    "run_url": null
+    "candidate_count": 73,
+    "run_url": "https://github.com/Jacintha0511/ai-security-daily/actions/runs/44257487591"
   }
 }
