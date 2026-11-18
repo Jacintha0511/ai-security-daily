@@ -212,7 +212,7 @@ def collect(config, state, web, now):
     for query in config["github_queries"]:
         try:
             response = web.get("https://api.github.com/search/repositories", headers=headers,
-                               params={"q": query, "sort": "updated", "per_page": 10}).json()
+                               params={"q": query + " is:public", "sort": "updated", "per_page": 10}).json()
             discovered.update({r["full_name"].lower(): r for r in response["items"]})
             statuses.append({"name": "GitHub 发现：" + query.split(" in:")[0], "status": "partial" if response.get("incomplete_results") else "ok", "count": len(response["items"]), "detail": "候选发现，不是全站升星榜"})
         except (FetchFailure, KeyError, ValueError):
@@ -224,6 +224,9 @@ def collect(config, state, web, now):
     for name in names:
         try:
             repo = discovered.get(name.lower()) or web.get("https://api.github.com/repos/" + name, headers=headers).json()
+            if repo.get("private") is not False or repo.get("visibility", "public") != "public":
+                errors += 1
+                continue
             if repo.get("archived"):
                 continue
             raw = {"kind": "repo", "title": repo["full_name"], "url": repo["html_url"], "source": "GitHub",

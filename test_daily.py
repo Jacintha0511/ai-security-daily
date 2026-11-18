@@ -140,6 +140,25 @@ class PublicDigestTests(unittest.TestCase):
         self.assertEqual(daily.make_report(self.config, state, statuses, ids, NOW)["status"], "failed")
         self.assertTrue(any(s["status"] == "not_connected" for s in statuses))
 
+    def test_authenticated_private_repositories_never_published(self):
+        class Response:
+            def __init__(self, payload): self.payload = payload
+            def json(self): return self.payload
+        class PrivateWeb:
+            queries = []
+            def get(self, url, **kwargs):
+                if 'arxiv.org' in url:
+                    raise daily.FetchFailure('unavailable')
+                if url.endswith('/search/repositories'):
+                    self.queries.append(kwargs['params']['q'])
+                    return Response({'items': []})
+                return Response({'private': True, 'visibility': 'private', 'full_name': 'private/research', 'html_url': 'https://github.com/private/research', 'stargazers_count': 0})
+        web = PrivateWeb(); state = daily.empty_state()
+        statuses, ids = daily.collect(self.config, state, web, NOW)
+        self.assertEqual(state['items'], {})
+        self.assertEqual(ids, [])
+        self.assertTrue(all('is:public' in q for q in web.queries))
+
     def test_build_excludes_state_and_non_public_files(self):
         self.data.mkdir(); (self.data / "reports").mkdir()
         daily.atomic_json(self.data / "manifest.json", {"archive":[], "latest":None})
