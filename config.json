@@ -1,0 +1,26 @@
+{
+  "owner": "Jacintha0511",
+  "repository": "ai-security-daily",
+  "timezone": "Asia/Shanghai",
+  "lookback_days": 7,
+  "max_repos": 65,
+  "arxiv_pages": 3,
+  "arxiv_page_size": 50,
+  "arxiv_query": "(cat:cs.CR OR cat:cs.AI OR cat:cs.CL OR cat:cs.LG) AND (all:\"prompt injection\" OR all:\"agent security\" OR all:\"memory poisoning\" OR all:\"AI safety\" OR all:\"LLM security\")",
+  "github_queries": [
+    "\"prompt-injection\" in:name,description archived:false",
+    "\"agent security\" in:name,description archived:false",
+    "\"memory poisoning\" in:name,description archived:false"
+  ],
+  "keywords": ["prompt injection", "prompt-injection", "agent security", "agent safety", "memory poisoning", "memory-poisoning", "rag poisoning", "llm security", "llm safety", "jailbreak", "ai safety", "提示注入", "记忆投毒", "智能体安全", "大模型安全"],
+  "focus": ["memory poisoning", "provenance", "authorization", "lineage", "记忆投毒", "来源追踪", "权限"],
+  "seed_repos": ["ethz-spylab/agentdojo", "uiuc-kang-lab/InjecAgent", "AI-secure/AgentPoison", "google-research/camel-prompt-injection", "agiresearch/ASB", "ryoungj/ToolEmu", "facebookresearch/SecAlign", "sizhe-chen/StruQ"],
+  "feeds": [
+    {"name": "量子位", "url": null},
+    {"name": "机器之心", "url": null},
+    {"name": "为机器立心", "url": null},
+    {"name": "刘小垒Leo", "url": null}
+  ],
+  "limits": {"paper": 3, "repo": 5, "news": 3}
+}
+

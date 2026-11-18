@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-18T07:09:25.636653+00:00",
+  "timezone": "Asia/Shanghai",
+  "latest": {
+    "date": "2026-11-18",
+    "status": "partial",
+    "generated_at": "2026-11-18T07:09:14.936020+00:00",
+    "count": 8,
+    "path": "data/reports/2026-11-18.json"
+  },
+  "archive": [
+    {
+      "date": "2026-11-18",
+      "status": "partial",
+      "generated_at": "2026-11-18T07:09:14.936020+00:00",
+      "count": 8,
+      "path": "data/reports/2026-11-18.json"
+    }
+  ],
+  "weekly": [
+    {
+      "date": "2026-11-18",
+      "path": "data/weekly/2026-11-18.json"
+    }
+  ],
+  "latest_attempt": {
+    "date": "2026-11-18",
+    "generated_at": "2026-11-18T07:09:14.936020+00:00",
+    "status": "partial",
+    "sources": [
+      {
+        "name": "arXiv",
+        "status": "ok",
+        "count": 30,
+        "detail": "包含新论文与版本更新；预印本不等于正式发表"
+      },
+      {
+        "name": "GitHub 发现：\"prompt-injection\"",
+        "status": "ok",
+        "count": 10,
+        "detail": "候选发现，不是全站升星榜"
+      },
+      {
+        "name": "GitHub 发现：\"agent security\"",
+        "status": "ok",
+        "count": 10,
+        "detail": "候选发现，不是全站升星榜"
+      },
+      {
+        "name": "GitHub 发现：\"memory poisoning\"",
+        "status": "ok",
+        "count": 10,
+        "detail": "候选发现，不是全站升星榜"
+      },
+      {
+        "name": "GitHub 快照",
+        "status": "ok",
+        "count": 38,
+        "detail": "本轮记录 38 个项目；跟踪池有限，失败或限流=0"
+      },
+      {
+        "name": "量子位",
+        "status": "not_connected",
+        "count": 0,
+        "detail": "待接入可用 RSS，不代表今天没有报道"
+      },
+      {
+        "name": "机器之心",
+        "status": "not_connected",
+        "count": 0,
+        "detail": "待接入可用 RSS，不代表今天没有报道"
+      },
+      {
+        "name": "为机器立心",
+        "status": "not_connected",
+        "count": 0,
+        "detail": "待接入可用 RSS，不代表今天没有报道"
+      },
+      {
+        "name": "刘小垒Leo",
+        "status": "not_connected",
+        "count": 0,
+        "detail": "待接入可用 RSS，不代表今天没有报道"
+      }
+    ],
+    "candidate_count": 68,
+    "run_url": null
+  },
+  "schedule": "每日 08:15 生成，10:15 检查补跑；周日 09:15 周报（北京时间，可能排队延迟）",
+  "privacy": "公开动态站；私人 idea、阅读笔记和实验数据仅保留本地",
+  "model": "未调用模型 · 规则预筛"
+}

@@ -1,0 +1,48 @@
+# AI 安全研究观察站
+
+公开的 AI／Agent 安全动态日报，重点关注记忆投毒、来源追踪、行动权限与提示注入。
+
+网站地址（启用 Pages 后）：https://jacintha0511.github.io/ai-security-daily/
+
+## 做什么
+
+- 每日从 arXiv、GitHub 和已配置的 RSS 收集公开动态，规则预筛最多 3 篇论文、5 个项目、3 篇报道。
+- 页面提供当天产出状态、来源覆盖、历史日报、公开周报、类别与关键词筛选。
+- 星数保留 45 天快照，比较真实时间窗口的净变化；首日不推算历史。
+- 本版不调用大模型，不生成或发布科研 idea，不读取私人 SQLite、Excel、笔记、实验或 API 密钥。
+
+规则预筛不等于学术质量判断，摘要不等于全文核验，预印本不等于正式发表。没有可用 RSS 的公众号明确显示“待接入”。
+
+## 自动运行
+
+GitHub Actions 使用标准 Ubuntu runner：北京时间每天 08:15 生成日报、10:15 检查补跑；周日 09:15 生成周报。调度可能排队或延迟，不保证分钟级准时。公开仓库长期无活动可能被 GitHub 停用定时工作流，请关注实际运行记录。
+
+工作流在同一并发组串行执行，将公开状态和快照提交到 `data/`，再部署静态站点。历史不依赖 Actions 缓存。全部来源失败时保留之前有效报告并更新失败状态；后续健康检查使该次 Actions 显示失败。
+
+首页按北京时间判断“今天是否产出”。如果工作流在安装依赖等早期阶段失败、无法发布状态，旧站点也会显示报告日期已过期并提供 Actions 入口。
+
+## 本地使用
+
+Python 3.12+：
+
+```bash
+python -m pip install -r requirements.txt
+python -m unittest -v
+python daily.py daily
+python daily.py weekly
+python daily.py build
+python -m http.server 8787 --directory dist
+```
+
+`daily --force` 显式重新采集；否则同日已有可用结果且只有待接入订阅时不会重复请求。GitHub Actions 自动提供当前仓库的短期 `GITHUB_TOKEN`；本地可选配置只读 GitHub token 来提高限流额度，不要提交 token。
+
+## Pages 首次启用
+
+仓库 Settings → Pages → Source 选择 **GitHub Actions**。在 Actions 中手动运行 **Public daily and Pages**，选择 `all` 和 `force=true`。部署成功后访问网站，检查报告实际日期和运行链接。手动运行成功不代表已经验证下一次定时触发。
+
+## 发布边界
+
+`data/state.json` 只含公开字段，用于持久化条目、star 快照和采集状态；不部署到 Pages。部署产物由明确的资产与报告列表构建，不复制整个工作区。网页通过 `textContent` 渲染外部文本，只允许 http/https 来源链接。
+
+配置和历史文件也在公开仓库中，不应填入私人 RSS 地址、访问凭据、未发表 idea 或私人研究材料。不要把本地研究工程的 `.research` 或 `.env` 同步到此仓库。
+
