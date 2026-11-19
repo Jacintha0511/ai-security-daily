@@ -62,7 +62,7 @@
       if(!items.length)empty(list,all.length?'没有匹配当前搜索的条目。':kind==='news'?'本期没有可推荐报道。公众号由本机订阅服务同步，接入及最近采集状态见右侧；采集缺失不代表没有更新。':'本次没有可推荐条目，请结合来源状态判断。');
       if(!section.hidden)total+=items.length;
     }
-    $('no-results').hidden=total>0||!state.query;renderSources();renderGrowth();if($('analysis-updated'))$('analysis-updated').textContent=state.analyses.updated_at?'解析更新于 '+timeLabel(state.analyses.updated_at)+' · Codex 账号额度':'本机 Codex 每天 02:00 解析，03:45 补跑';if($('news-updated'))$('news-updated').textContent=state.report?.news_updated_at?'公众号采集于 '+timeLabel(state.report.news_updated_at):'公众号尚未完成本机同步';
+    $('no-results').hidden=total>0||!state.query;renderSources();renderGrowth();if($('analysis-updated'))$('analysis-updated').textContent=state.analyses.updated_at?'解析更新于 '+timeLabel(state.analyses.updated_at)+' · Codex 账号额度':'本机 Codex 每天 02:00 解析，03:45 补跑';if($('news-updated'))$('news-updated').textContent=state.report?.news_updated_at?'公众号同步尝试于 '+timeLabel(state.report.news_updated_at):'公众号尚未完成本机同步';
   }
   async function selectDate(date) {
     const record=(state.view==='weekly'?state.manifest.weekly:state.manifest.archive).find(r=>r.date===date);if(!record)return;

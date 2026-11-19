@@ -69,6 +69,7 @@ def prepare(date, refresh=False):
     if not report:
         return {'status': 'waiting_for_daily', 'date': date, 'jobs': []}
     jobs, index = [], get_index()
+    changed = False
     with httpx.Client(timeout=35, follow_redirects=True, headers={'User-Agent': 'AI-Security-Daily-Reader/2.0'}) as web:
         for kind, count in [('paper', 3), ('repo', 1), ('news', 2)]:
             for item in report['items'][kind][:count]:
@@ -151,11 +152,13 @@ def prepare(date, refresh=False):
                 done = entry and entry['status'] in {'ready', 'partial'} and not refresh
                 jobs.append({'id': item['id'], 'kind': kind, 'packet': str(folder / 'packet.json'), 'cached': bool(done), 'sources': len(packet['sources'])})
                 if not entry:
+                    changed = True
                     index['items'][key] = {'item_id': item['id'], 'kind': kind, 'title': item['title'], 'version': packet['source_version'],
                         'fingerprint': packet['fingerprint'], 'requested_version': packet['requested_version'], 'report_date': date,
                         'status': 'pending' if packet['sources'] else 'failed', 'updated_at': daily.stamp(), 'path': None,
                         'message': '等待本机 Codex 全文解析' if packet['sources'] else '全文材料暂不可读，等待补跑'}
-        index['updated_at'] = daily.stamp(); daily.atomic_json(ANALYSES / 'index.json', index)
+        if changed:
+            index['updated_at'] = daily.stamp(); daily.atomic_json(ANALYSES / 'index.json', index)
     return {'status': 'prepared', 'date': date, 'jobs': jobs}
 
 
@@ -247,7 +250,11 @@ def sync_news():
     for source in known:
         cfg = configured.get(source['name'])
         status = {'name':source['name'],'status':'not_connected','count':0,'detail':'本地订阅服务尚待扫码与账号验证'}
-        if cfg and cfg.get('url'):
+        cooldown = read(LOCAL/'wechat-cooldown.json', {})
+        cooling = bool(cooldown.get('until')) and datetime.fromisoformat(cooldown['until']) > now
+        if cfg and cooling:
+            status.update(status='failed',detail='账号已授权；微信文章接口返回频率限制，本次暂停采集，等待低频补跑')
+        elif cfg and cfg.get('url'):
             try:
                 # Deliberately private local transport: never export this URL or response headers.
                 response = httpx.get(cfg['url'],timeout=30); response.raise_for_status()
@@ -264,7 +271,10 @@ def sync_news():
                     body = e.get('content', [{}])[0].get('value') or e.get('summary','')
                     content[item['id']] = html_text(body) or BeautifulSoup(body,'html.parser').get_text(' ',strip=True)
                     status['count'] += 1
-                status.update(status='ok',detail='本机 RSS 已同步；仅筛选最近 24 小时文章')
+                if feed.entries:
+                    status.update(status='ok',detail='本机 RSS 已同步；仅筛选最近 24 小时文章')
+                else:
+                    status.update(status='partial',detail='订阅已配置，文章列表仍未取回；尚不能判断当日更新')
             except (httpx.HTTPError, ValueError, KeyError, AttributeError):
                 status.update(status='failed',detail='本地订阅不可用；检查服务与扫码授权')
         sources.append(status)
