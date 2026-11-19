@@ -2,6 +2,8 @@ name: Public daily and Pages
 
 on:
   schedule:
+    - cron: '15 17 * * *' # 01:15 Asia/Shanghai next day
+    - cron: '45 17 * * *' # 01:45 early catch-up
     - cron: '15 0 * * *'  # 08:15 Asia/Shanghai
     - cron: '15 2 * * *'  # 10:15 catch-up
     - cron: '15 1 * * 0'  # Sunday 09:15 weekly
@@ -18,7 +20,7 @@ on:
         default: true
   push:
     branches: [main]
-    paths: ['daily.py', 'test_daily.py', 'config.json', 'requirements.txt', 'site/**', '.github/workflows/daily.yml']
+    paths: ['daily.py', 'enrich.py', 'test_*.py', 'config.json', 'requirements.txt', 'site/**', '.github/workflows/daily.yml']
 
 permissions:
   contents: read
@@ -57,12 +59,13 @@ jobs:
           if [ "$SCHEDULE" = "15 1 * * 0" ]; then mode="weekly"; fi
           if [ "$EVENT_NAME" = "push" ]; then mode="all"; fi
           if [ "$mode" != "weekly" ]; then
-            if [ "$FORCE" = "true" ] || [ "$EVENT_NAME" = "push" ]; then
+            if [ "$FORCE" = "true" ]; then
               python daily.py daily --force
             else
               python daily.py daily
             fi
           fi
+          python enrich.py import-news
           if [ "$mode" = "all" ] || [ "$mode" = "weekly" ]; then python daily.py weekly; fi
       - name: Save durable public history
         shell: bash

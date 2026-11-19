@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-11-19T00:36:56.287015+00:00",
+  "items": [],
+  "sources": [
+    {
+      "name": "量子位",
+      "status": "not_connected",
+      "count": 0,
+      "detail": "本地订阅服务尚待扫码与账号验证"
+    },
+    {
+      "name": "机器之心",
+      "status": "not_connected",
+      "count": 0,
+      "detail": "本地订阅服务尚待扫码与账号验证"
+    },
+    {
+      "name": "为机器立心",
+      "status": "not_connected",
+      "count": 0,
+      "detail": "本地订阅服务尚待扫码与账号验证"
+    },
+    {
+      "name": "刘小垒Leo",
+      "status": "not_connected",
+      "count": 0,
+      "detail": "本地订阅服务尚待扫码与账号验证"
+    }
+  ]
+}

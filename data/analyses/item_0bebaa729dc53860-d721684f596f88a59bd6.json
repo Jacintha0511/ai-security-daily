@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "item_id": "item_0bebaa729dc53860",
+  "kind": "repo",
+  "title": "ShahmeerHyat/cpmg-memory-poisoning",
+  "url": "https://github.com/shahmeerhyat/cpmg-memory-poisoning",
+  "fingerprint": "d721684f596f88a59bd6",
+  "version": "721f514c437425de31a6a9850b81d1fb48e52c71",
+  "status": "partial",
+  "model": "Codex 当前会话（运行接口未提供精确模型版本）",
+  "generated_at": "2026-11-19T00:49:38.830512+00:00",
+  "verdict": "值得读代码与版本记录；适合作为离线研究原型，不宜直接当生产防御。",
+  "overview": "CPMG 最有价值的是把记忆中的恶意内容、触发条件和行动权限拆开，并公开记录哪些结论不成立。先读 Honest scope，再判断是否值得花一天复现，比先训练大模型更有帮助。",
+  "sections": [
+    {
+      "title": "项目定位",
+      "stance": "代码事实＋分析判断",
+      "paragraphs": [
+        "CPMG 是 FAST-NUCES Islamabad 的 Agentic AI 课程项目，README 列出 Shahmeer Ali、Mohammad Soban、Ali Rauf。它把记忆投毒识别与确定性行动权限策略放在同一仓库，与你的研究问题直接相关。",
+        "本次固定 commit 为 721f514c437425de31a6a9850b81d1fb48e52c71。推荐理由是它提供了可直接阅读的数据构建、两个预测目标、消融与版本修订记录；不是因为 star 多，也不能把课程报告自动当作同行评审论文。"
+      ],
+      "refs": [
+        {
+          "source": "s2",
+          "locator": "README.md L1–17、L104–117"
+        }
+      ]
+    },
+    {
+      "title": "能力与边界",
+      "stance": "代码事实＋分析判断",
+      "paragraphs": [
+        "DeBERTa-v3-base cross-encoder 同时读 memory、source interaction、当前 query/action、三条相邻检索记忆与 provenance tokens。输出两个独立 sigmoid 分数：是否包含投毒内容、当前查询是否激活其触发条件。",
+        "另一个 authority policy 不依赖风险分数，按来源权限和固定关键词代理判断 payment、send/share、change settings、delete 等类别。它是离线代理，不是已经接入真实 Agent 的完整权限执行系统。"
+      ],
+      "refs": [
+        {
+          "source": "s5",
+          "locator": "cpmg/model.py L17–23、L39–56"
+        }
+      ],
+      "bullets": [
+        "poison 与 active 是两个目标，不能把含触发词和实际投毒等同。",
+        "学习分数与硬权限拒绝分别解释、分别测量。"
+      ]
+    },
+    {
+      "title": "架构与执行流程",
+      "stance": "代码事实＋分析判断",
+      "paragraphs": [
+        "features.py 定义六种输入变体，分别移除 provenance、query、neighbors 等片段。每段按预算截断，优先保留 memory 的最小预算；输入拼接和截断本身可能改变被检测的信息。",
+        "模型只计算风险，policy 使用独立的来源 authority 与 action_text 决策；研究中应分别检查分类指标和权限代理指标，不用一个总分掩盖两条流程。"
+      ],
+      "refs": [
+        {
+          "source": "s9",
+          "locator": "cpmg/features.py L18–27、L58–77"
+        }
+      ],
+      "diagram": [
+        "数据记录：memory/source/query/neighbors/provenance",
+        "按输入变体和段预算编码",
+        "DeBERTa 两个输出 → poison 与 active 分数",
+        "独立 authority policy：来源权限＋动作代理类别",
+        "eval 汇总分类、消融、跨模板／改写及策略代理指标"
+      ]
+    },
+    {
+      "title": "安全机制",
+      "stance": "代码事实＋分析判断",
+      "paragraphs": [
+        "policy.py 明确规定 external 或 unknown 来源不能授权受保护动作，且完全忽略分类器风险分数。这是正确地分离“看起来可疑”和“是否有权限”的一个小型示例。",
+        "但 protected_category 从记忆／action 文本的关键词推测动作，未观测真实工具调用；未命中关键词会返回 None，decide 随后可能 allow。若移植进真实 Agent，应基于实际工具及参数建权限表，不能把当前 allow 当成安全认证。",
+        "另外，来源 provenance 必须由系统记录。若让不可信记忆自己声明 internal 或 user，这条策略的信任根就丢失了；这点是对代码适用条件的分析，并非本次发现了实际可利用漏洞。"
+      ],
+      "refs": [
+        {
+          "source": "s6",
+          "locator": "cpmg/policy.py L1–9、L13–36"
+        }
+      ]
+    },
+    {
+      "title": "关键代码导读",
+      "stance": "代码事实＋分析判断",
+      "paragraphs": [
+        "推荐阅读顺序：先 README 的 Honest scope 与 Versions，再读 features.py 的输入变体和 encode，接着读 model.py 的两个 sigmoid，最后读 policy.py 与 eval.py。",
+        "train.py 用验证集表现选模型；eval.py 在验证集选阈值，再固定应用到测试集。改阈值或数据版本会改变结果，应在复现材料中一起固定。"
+      ],
+      "refs": [
+        {
+          "source": "s3",
+          "locator": "eval.py L6–9；另见各源文件"
+        }
+      ],
+      "table": {
+        "headers": [
+          "文件",
+          "先看什么"
+        ],
+        "rows": [
+          [
+            "README.md",
+            "v1 已知无效切片与 v2 适用结果"
+          ],
+          [
+            "cpmg/features.py",
+            "VARIANTS、分段截断、provenance swap"
+          ],
+          [
+            "cpmg/model.py",
+            "两输出 logits 与独立 sigmoid"
+          ],
+          [
+            "cpmg/policy.py",
+            "来源权限拒绝与关键词动作代理"
+          ],
+          [
+            "eval.py",
+            "验证集阈值、分组指标、策略代理统计"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "相关工作比较",
+      "stance": "代码事实＋分析判断",
+      "paragraphs": [
+        "README 说明数据来自公开来源，L2/L3 案例主要由 AgentPoison 记录变换生成；训练触发词为合成，测试触发词采用真实 AgentPoison 的五个触发。ASB 清洁计划和改写攻击也有生成组件，不能把全部数据称为自然真实行为。",
+        "仓库把 content-only、无 provenance、TF-IDF、关键词及复制规则等放进对照。TF-IDF 基线还提醒：如果简单词袋已近乎完美，可能是该切片太容易，而不是复杂模型已经解决实际威胁。"
+      ],
+      "refs": [
+        {
+          "source": "s2",
+          "locator": "README.md L11–17、L104–117"
+        }
+      ]
+    },
+    {
+      "title": "上手与资源",
+      "stance": "代码事实＋分析判断",
+      "paragraphs": [
+        "作者报告在 RTX 5060 Laptop 8GB、15GB RAM、Ubuntu 上运行，主设置 seed=42，并提供部分模型 checkpoint。这给本机 8GB 显存提供了尝试依据，但不保证你的 3070 Ti、驱动和 Windows 环境直接兼容。",
+        "不要照搬作者为 Blackwell 写的 CUDA／torch 环境。先固定此 commit，核对已提交的数据与预测文件，只重算既有指标；再试小批量推理，最后才考虑训练。调用改写模型、下载 checkpoint、训练和论文编译都不是本次已经执行的操作。"
+      ],
+      "refs": [
+        {
+          "source": "s2",
+          "locator": "README.md L37–42、L88–101"
+        }
+      ]
+    },
+    {
+      "title": "成熟度与研究用途",
+      "stance": "代码事实＋分析判断",
+      "paragraphs": [
+        "最值得肯定的是主动保留失败和负结果：README 明确说 v1 的部分 L3 与 all-levels 数字无效；v2 数据 provenance 在每个 source 内恒定，无法证明 provenance 的增益，模型实际上忽略了这些 token。这些披露必须跟着任何引用一起出现。",
+        "README 还列出未完成的端到端 Agent 攻击成功率、LongMemEval 效用及若干外部对照。建议定位为“离线分类＋权限代理的研究原型”，适合学数据切分、触发与内容解耦、反事实 provenance 检验；暂不当作成熟运行时防御或已经复现的 baseline。",
+        "本次只做静态代码阅读，未核查全部数据许可证与依赖安全，也没有复算结果或确认持续维护承诺。"
+      ],
+      "refs": [
+        {
+          "source": "s2",
+          "locator": "README.md L104–117"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "尚未运行测试或指标复算；仓库自述的结果未独立验证。",
+    "未完成逐条许可证与完整数据来源审计；不能据此建议直接生产部署。"
+  ],
+  "checks": [
+    "已读取缓存中的第一手正文或代码材料；本页由当前 Codex 会话生成，未调用外部模型 API。",
+    "未运行论文实验、未训练模型、未执行被分析仓库的代码；结果数字是作者报告，未独立复现。",
+    "正文提取包含表格与图注；未对每幅原始图像逐一进行视觉核查，因此标为部分解析。"
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://github.com/shahmeerhyat/cpmg-memory-poisoning/tree/721f514c437425de31a6a9850b81d1fb48e52c71",
+      "label": "固定 commit 文件目录：721f514c437425de31a6a9850b81d1fb48e52c71",
+      "sha256": "b972febbf31dbeca85d0c6d4e53b74c563553ee3506550396661ca63883b0b60"
+    },
+    {
+      "id": "s2",
+      "url": "https://github.com/shahmeerhyat/cpmg-memory-poisoning/blob/721f514c437425de31a6a9850b81d1fb48e52c71/README.md",
+      "label": "README.md",
+      "sha256": "6ccacf8c8c3f66e967256f09b58e9c2e20364f5adcaaf8fe627e1b59a08bee9c"
+    },
+    {
+      "id": "s3",
+      "url": "https://github.com/shahmeerhyat/cpmg-memory-poisoning/blob/721f514c437425de31a6a9850b81d1fb48e52c71/eval.py",
+      "label": "eval.py",
+      "sha256": "ad65e3a7c4abe39164c0c7854a6a3fa2778943c68792faf496366994afe5a5bb"
+    },
+    {
+      "id": "s4",
+      "url": "https://github.com/shahmeerhyat/cpmg-memory-poisoning/blob/721f514c437425de31a6a9850b81d1fb48e52c71/train.py",
+      "label": "train.py",
+      "sha256": "f4941371515de60ef85eef28b81d1fb89e78311b662ae57fa03e21ab5349e659"
+    },
+    {
+      "id": "s5",
+      "url": "https://github.com/shahmeerhyat/cpmg-memory-poisoning/blob/721f514c437425de31a6a9850b81d1fb48e52c71/cpmg/model.py",
+      "label": "cpmg/model.py",
+      "sha256": "eb409b24491df7665022ea36f299c67bc8aba3dda6c14025dad5e936fd784fb3"
+    },
+    {
+      "id": "s6",
+      "url": "https://github.com/shahmeerhyat/cpmg-memory-poisoning/blob/721f514c437425de31a6a9850b81d1fb48e52c71/cpmg/policy.py",
+      "label": "cpmg/policy.py",
+      "sha256": "c4074d818e2d11a1e97f62857937c1095ecdeb0d83fd95637bed68aa656169fe"
+    },
+    {
+      "id": "s7",
+      "url": "https://github.com/shahmeerhyat/cpmg-memory-poisoning/blob/721f514c437425de31a6a9850b81d1fb48e52c71/score_split.py",
+      "label": "score_split.py",
+      "sha256": "1fa2633d57f58b197fabd8be0a95010f4ccaed8253a652b7ea982f3f34d44add"
+    },
+    {
+      "id": "s8",
+      "url": "https://github.com/shahmeerhyat/cpmg-memory-poisoning/blob/721f514c437425de31a6a9850b81d1fb48e52c71/cpmg/__init__.py",
+      "label": "cpmg/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "s9",
+      "url": "https://github.com/shahmeerhyat/cpmg-memory-poisoning/blob/721f514c437425de31a6a9850b81d1fb48e52c71/cpmg/features.py",
+      "label": "cpmg/features.py",
+      "sha256": "61c5c60db94067fc6a1fe8778562956d6a4d10dcd80ea2ce1c11c5097ef679bc"
+    },
+    {
+      "id": "s10",
+      "url": "https://github.com/shahmeerhyat/cpmg-memory-poisoning/blob/721f514c437425de31a6a9850b81d1fb48e52c71/baselines/tfidf.py",
+      "label": "baselines/tfidf.py",
+      "sha256": "a18458d52846284d94d59003283cbb1ad70037d80f36713905b7482c52b20df5"
+    }
+  ]
+}

@@ -1,15 +1,22 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-18T07:25:56.227388+00:00",
+  "updated_at": "2026-11-19T00:36:56.287015+00:00",
   "timezone": "Asia/Shanghai",
   "latest": {
-    "date": "2026-11-18",
+    "date": "2026-11-19",
     "status": "partial",
-    "generated_at": "2026-11-18T07:25:50.528448+00:00",
+    "generated_at": "2026-11-19T00:36:35.819128+00:00",
     "count": 8,
-    "path": "data/reports/2026-11-18.json"
+    "path": "data/reports/2026-11-19.json"
   },
   "archive": [
+    {
+      "date": "2026-11-19",
+      "status": "partial",
+      "generated_at": "2026-11-19T00:36:35.819128+00:00",
+      "count": 8,
+      "path": "data/reports/2026-11-19.json"
+    },
     {
       "date": "2026-11-18",
       "status": "partial",
@@ -20,19 +27,23 @@
   ],
   "weekly": [
     {
+      "date": "2026-11-19",
+      "path": "data/weekly/2026-11-19.json"
+    },
+    {
       "date": "2026-11-18",
       "path": "data/weekly/2026-11-18.json"
     }
   ],
   "latest_attempt": {
-    "date": "2026-11-18",
-    "generated_at": "2026-11-18T07:25:50.528448+00:00",
+    "date": "2026-11-19",
+    "generated_at": "2026-11-19T00:36:35.819128+00:00",
     "status": "partial",
     "sources": [
       {
         "name": "arXiv",
         "status": "ok",
-        "count": 30,
+        "count": 25,
         "detail": "包含新论文与版本更新；预印本不等于正式发表"
       },
       {
@@ -55,9 +66,9 @@
       },
       {
         "name": "GitHub 快照",
-        "status": "ok",
-        "count": 46,
-        "detail": "本轮记录 46 个项目；跟踪池有限，失败或限流=0"
+        "status": "partial",
+        "count": 64,
+        "detail": "本轮记录 64 个项目；跟踪池有限，失败或限流=1"
       },
       {
         "name": "量子位",
@@ -84,10 +95,10 @@
         "detail": "待接入可用 RSS，不代表今天没有报道"
       }
     ],
-    "candidate_count": 76,
-    "run_url": "https://github.com/Jacintha0511/ai-security-daily/actions/runs/44258785489"
+    "candidate_count": 89,
+    "run_url": null
   },
-  "schedule": "每日 08:15 生成，10:15 检查补跑；周日 09:15 周报（北京时间，可能排队延迟）",
+  "schedule": "云端 01:15 采集、01:45/08:15/10:15 检查；本机 Codex 02:00 解析、03:45 补跑；周日 09:15 周报（北京时间）",
   "privacy": "公开动态站；私人 idea、阅读笔记和实验数据仅保留本地",
   "model": "未调用模型 · 规则预筛"
 }

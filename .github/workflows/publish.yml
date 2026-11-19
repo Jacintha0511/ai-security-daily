@@ -1,0 +1,53 @@
+name: Publish reading analyses
+on:
+  push:
+    branches: [main]
+    paths: ['data/analyses/**', 'data/news-inbox.json', '.github/workflows/publish.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: public-daily-and-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - run: python -m unittest -v
+      - run: python enrich.py validate
+      - run: python enrich.py import-news
+      - name: Save updated public news
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/reports data/manifest.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: merge local public news'
+            git push origin HEAD:main
+          fi
+      - run: python daily.py build
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment

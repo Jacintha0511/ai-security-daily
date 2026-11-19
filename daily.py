@@ -303,7 +303,7 @@ def manifest(data_dir, state, now):
     weekly = [{"date": p.stem, "path": "data/weekly/" + p.name} for p in sorted((data_dir / "weekly").glob("*.json"), reverse=True)]
     value = {"schema_version": 1, "updated_at": stamp(now), "timezone": "Asia/Shanghai", "latest": archive[0] if archive else None,
              "archive": archive, "weekly": weekly, "latest_attempt": state["latest_attempt"],
-             "schedule": "每日 08:15 生成，10:15 检查补跑；周日 09:15 周报（北京时间，可能排队延迟）",
+             "schedule": "云端 01:15 采集、01:45/08:15/10:15 检查；本机 Codex 02:00 解析、03:45 补跑；周日 09:15 周报（北京时间）",
              "privacy": "公开动态站；私人 idea、阅读笔记和实验数据仅保留本地", "model": "未调用模型 · 规则预筛"}
     atomic_json(data_dir / "manifest.json", value)
 
@@ -364,7 +364,9 @@ def run_weekly(data_dir, now=None):
 def build(data_dir, destination):
     # Only explicit website assets and public report JSON are ever deployed.
     destination.mkdir(parents=True, exist_ok=True)
-    for name in ("index.html", "styles.css", "app.js"):
+    for name in ("index.html", "styles.css", "app.js", "analysis.html", "analysis.js", "analysis.css"):
+        if not (ROOT / 'site' / name).exists():
+            continue
         shutil.copy2(ROOT / "site" / name, destination / name)
     target = destination / "data"
     target.mkdir(exist_ok=True)
@@ -373,6 +375,13 @@ def build(data_dir, destination):
         (target / folder).mkdir(exist_ok=True)
         for path in (data_dir / folder).glob("*.json"):
             shutil.copy2(path, target / folder / path.name)
+    from enrich import validate_public
+    validate_public(data_dir)
+    analysis_dir = data_dir / 'analyses'
+    if analysis_dir.exists():
+        (target / 'analyses').mkdir(exist_ok=True)
+        for path in analysis_dir.glob('*.json'):
+            shutil.copy2(path, target / 'analyses' / path.name)
     (destination / ".nojekyll").write_text("", encoding="utf-8")
 
 

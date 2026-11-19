@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-19T00:49:38.843837+00:00",
+  "items": {
+    "item_163311fe87f0a7ae:75cded2e42309d0907e0": {
+      "item_id": "item_163311fe87f0a7ae",
+      "kind": "paper",
+      "title": "SPILLWAY: Separating Target Admission from Sanitization to Defend Tool-Using Agents against Prompt Injection",
+      "version": "v2",
+      "fingerprint": "75cded2e42309d0907e0",
+      "requested_version": "v2",
+      "report_date": "2026-11-19",
+      "status": "pending",
+      "updated_at": "2026-11-19T00:36:59.480629+00:00",
+      "path": null,
+      "message": "等待本机 Codex 全文解析"
+    },
+    "item_4bdc1f7184c5400c:9226fedec59f8bcd023b": {
+      "item_id": "item_4bdc1f7184c5400c",
+      "kind": "paper",
+      "title": "How Diverse Are Layered Safeguards? Estimands and Measurement for Ensembles of LLM Jailbreak Defenses",
+      "version": "v2",
+      "fingerprint": "9226fedec59f8bcd023b",
+      "requested_version": "v2",
+      "report_date": "2026-11-19",
+      "status": "pending",
+      "updated_at": "2026-11-19T00:37:00.489945+00:00",
+      "path": null,
+      "message": "等待本机 Codex 全文解析"
+    },
+    "item_9a52a7565a239b1e:4563ce49c707d0ef35f1": {
+      "item_id": "item_9a52a7565a239b1e",
+      "kind": "paper",
+      "title": "CapLite: Prompt-Injection Defense for Small Language Model Agents without Model-Written Security Artifacts",
+      "version": "v1",
+      "fingerprint": "4563ce49c707d0ef35f1",
+      "requested_version": "v1",
+      "report_date": "2026-11-19",
+      "status": "pending",
+      "updated_at": "2026-11-19T00:37:00.876562+00:00",
+      "path": null,
+      "message": "等待本机 Codex 全文解析"
+    },
+    "item_0bebaa729dc53860:d721684f596f88a59bd6": {
+      "item_id": "item_0bebaa729dc53860",
+      "kind": "repo",
+      "title": "ShahmeerHyat/cpmg-memory-poisoning",
+      "version": "721f514c437425de31a6a9850b81d1fb48e52c71",
+      "requested_version": "2026-11-17T07:47:15Z",
+      "fingerprint": "d721684f596f88a59bd6",
+      "status": "partial",
+      "updated_at": "2026-11-19T00:49:38.830512+00:00",
+      "path": "data/analyses/item_0bebaa729dc53860-d721684f596f88a59bd6.json",
+      "message": "值得读代码与版本记录；适合作为离线研究原型，不宜直接当生产防御。"
+    },
+    "item_163311fe87f0a7ae:807365d88ed6823a8743": {
+      "item_id": "item_163311fe87f0a7ae",
+      "kind": "paper",
+      "title": "SPILLWAY: Separating Target Admission from Sanitization to Defend Tool-Using Agents against Prompt Injection",
+      "version": "v2",
+      "requested_version": "v2",
+      "fingerprint": "807365d88ed6823a8743",
+      "status": "partial",
+      "updated_at": "2026-11-19T00:49:38.743455+00:00",
+      "path": "data/analyses/item_163311fe87f0a7ae-807365d88ed6823a8743.json",
+      "message": "建议精读方法与评分口径；尤其关注 typed identity 如何获得权限。"
+    },
+    "item_4bdc1f7184c5400c:33f67a56fdcc5aacb988": {
+      "item_id": "item_4bdc1f7184c5400c",
+      "kind": "paper",
+      "title": "How Diverse Are Layered Safeguards? Estimands and Measurement for Ensembles of LLM Jailbreak Defenses",
+      "version": "v2",
+      "requested_version": "v2",
+      "fingerprint": "33f67a56fdcc5aacb988",
+      "status": "partial",
+      "updated_at": "2026-11-19T00:49:38.771261+00:00",
+      "path": "data/analyses/item_4bdc1f7184c5400c-33f67a56fdcc5aacb988.json",
+      "message": "建议重点读第 3—5 节：先定义要测的互补性，再讨论多层是否有效。"
+    },
+    "item_9a52a7565a239b1e:a2c12a8d5a8c6e3d4c47": {
+      "item_id": "item_9a52a7565a239b1e",
+      "kind": "paper",
+      "title": "CapLite: Prompt-Injection Defense for Small Language Model Agents without Model-Written Security Artifacts",
+      "version": "v1",
+      "requested_version": "v1",
+      "fingerprint": "a2c12a8d5a8c6e3d4c47",
+      "status": "partial",
+      "updated_at": "2026-11-19T00:49:38.803289+00:00",
+      "path": "data/analyses/item_9a52a7565a239b1e-a2c12a8d5a8c6e3d4c47.json",
+      "message": "建议精读 Mediator、write commitment 和效用损失，适合作为权限边界对照。"
+    }
+  }
+}
