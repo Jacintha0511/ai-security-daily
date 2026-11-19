@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-19T00:36:56.287015+00:00",
+  "updated_at": "2026-11-19T00:57:29.421058+00:00",
   "timezone": "Asia/Shanghai",
   "latest": {
     "date": "2026-11-19",
     "status": "partial",
-    "generated_at": "2026-11-19T00:36:35.819128+00:00",
+    "generated_at": "2026-11-19T00:57:14.149881+00:00",
     "count": 8,
     "path": "data/reports/2026-11-19.json"
   },
@@ -13,7 +13,7 @@
     {
       "date": "2026-11-19",
       "status": "partial",
-      "generated_at": "2026-11-19T00:36:35.819128+00:00",
+      "generated_at": "2026-11-19T00:57:14.149881+00:00",
       "count": 8,
       "path": "data/reports/2026-11-19.json"
     },
@@ -37,7 +37,7 @@
   ],
   "latest_attempt": {
     "date": "2026-11-19",
-    "generated_at": "2026-11-19T00:36:35.819128+00:00",
+    "generated_at": "2026-11-19T00:57:14.149881+00:00",
     "status": "partial",
     "sources": [
       {
@@ -96,7 +96,7 @@
       }
     ],
     "candidate_count": 89,
-    "run_url": null
+    "run_url": "https://github.com/Jacintha0511/ai-security-daily/actions/runs/44433095012"
   },
   "schedule": "云端 01:15 采集、01:45/08:15/10:15 检查；本机 Codex 02:00 解析、03:45 补跑；周日 09:15 周报（北京时间）",
   "privacy": "公开动态站；私人 idea、阅读笔记和实验数据仅保留本地",
