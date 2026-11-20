@@ -12,7 +12,7 @@
       "updated_at": "2026-11-17T14:45:51Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_b557870db75e581b": {
@@ -26,7 +26,7 @@
       "updated_at": "2026-11-17T13:51:44Z",
       "version": "v3",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_9d4d25d5015db240": {
@@ -40,7 +40,7 @@
       "updated_at": "2026-11-17T13:27:57Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_df940688cff611f0": {
@@ -54,7 +54,7 @@
       "updated_at": "2026-11-17T11:54:56Z",
       "version": "v4",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_f53b0f77264c13cb": {
@@ -68,7 +68,7 @@
       "updated_at": "2026-11-17T05:06:25Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_c60bbdbf2963b32b": {
@@ -82,8 +82,8 @@
       "updated_at": "2026-11-18T21:35:15Z",
       "version": "v2",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
-      "change": "version_updated"
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
+      "change": "observed_again"
     },
     "item_efa7882c7adc67e6": {
       "id": "item_efa7882c7adc67e6",
@@ -96,7 +96,7 @@
       "updated_at": "2026-11-16T19:38:02Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_163311fe87f0a7ae": {
@@ -110,8 +110,8 @@
       "updated_at": "2026-11-18T21:16:03Z",
       "version": "v3",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
-      "change": "version_updated"
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
+      "change": "observed_again"
     },
     "item_0e42c4197b22c674": {
       "id": "item_0e42c4197b22c674",
@@ -124,7 +124,7 @@
       "updated_at": "2026-11-16T09:53:35Z",
       "version": "v2",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_691b6f4d2ead3894": {
@@ -138,7 +138,7 @@
       "updated_at": "2026-11-16T08:28:31Z",
       "version": "v2",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_0e955920f7cb5597": {
@@ -152,7 +152,7 @@
       "updated_at": "2026-11-15T17:45:49Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_dcb3be0bca9924fa": {
@@ -166,7 +166,7 @@
       "updated_at": "2026-11-15T14:44:28Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_ad0e4e5eed0e4897": {
@@ -180,7 +180,7 @@
       "updated_at": "2026-11-15T13:19:50Z",
       "version": "v2",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_6d465af8f7fbf58f": {
@@ -194,7 +194,7 @@
       "updated_at": "2026-11-15T06:26:28Z",
       "version": "v2",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_aca00b7085695c53": {
@@ -208,7 +208,7 @@
       "updated_at": "2026-11-14T18:00:31Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_ed16f4865901e10b": {
@@ -222,7 +222,7 @@
       "updated_at": "2026-11-14T16:58:43Z",
       "version": "v2",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_6694701ea853498c": {
@@ -236,7 +236,7 @@
       "updated_at": "2026-11-14T15:40:08Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_be54431a1d044292": {
@@ -250,7 +250,7 @@
       "updated_at": "2026-11-14T14:50:16Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_4bdc1f7184c5400c": {
@@ -264,7 +264,7 @@
       "updated_at": "2026-11-14T13:42:52Z",
       "version": "v2",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_39a0abf15a0b4416": {
@@ -278,7 +278,7 @@
       "updated_at": "2026-11-14T02:01:39Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_cabea08ba2bd77ea": {
@@ -292,7 +292,7 @@
       "updated_at": "2026-11-13T20:31:23Z",
       "version": "v1",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_cb0531f2910fb790": {
@@ -430,7 +430,7 @@
       "summary": "A Dynamic Environment to Evaluate Attacks and Defenses for LLM Agents.",
       "published_at": "2024-02-29T10:47:28Z",
       "updated_at": "2026-06-02T10:01:31Z",
-      "stars": 1060,
+      "stars": 1061,
       "topics": [
         "benchmark",
         "large-language-models",
@@ -438,7 +438,7 @@
         "security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_9374c9e62286b22f": {
@@ -453,7 +453,7 @@
       "stars": 186,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_02f9d4061de2f443": {
@@ -472,7 +472,7 @@
         "retrieval-augmented-generation"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_e588b9bb1af43b91": {
@@ -487,7 +487,7 @@
       "stars": 425,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_7a9bce0886175358": {
@@ -502,7 +502,7 @@
       "stars": 332,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_42ab56732dbeea40": {
@@ -524,7 +524,7 @@
         "prompt-engineering"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_0b6954e8696ab98b": {
@@ -539,7 +539,7 @@
       "stars": 105,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_1a595fff3abc2d70": {
@@ -554,7 +554,7 @@
       "stars": 81,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_530f47628f194052": {
@@ -629,7 +629,7 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-19T23:33:17.566091+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_80e5a7ea7ca32106": {
@@ -644,7 +644,7 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-19T23:33:17.566091+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_3c5a84c629b82348": {
@@ -656,7 +656,7 @@
       "summary": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.",
       "published_at": "2026-03-21T00:28:43Z",
       "updated_at": "2026-11-19T14:51:51Z",
-      "stars": 26950,
+      "stars": 27005,
       "topics": [
         "agent-security",
         "agent-skills",
@@ -671,7 +671,7 @@
         "supply-chain-security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-19T23:33:17.566091+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_49e364e463bd4a1d": {
@@ -682,8 +682,8 @@
       "source": "GitHub",
       "summary": "Open-source antivirus and firewall for AI agents: block risky tools, secret access, prompt injection, malicious packages, MCP servers, plugins, and skills at runtime.",
       "published_at": "2026-03-28T19:02:15Z",
-      "updated_at": "2026-11-19T23:32:13Z",
-      "stars": 1114,
+      "updated_at": "2026-11-20T09:53:34Z",
+      "stars": 1115,
       "topics": [
         "agent-security",
         "ai-agent-security",
@@ -707,7 +707,7 @@
         "vulnify"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-19T23:33:17.566091+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_2a267ee5d6aa8424": {
@@ -722,7 +722,7 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-19T23:33:17.566091+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_784453a7959b4f54": {
@@ -737,7 +737,7 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-19T23:33:17.566091+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_c6dc9492df516294": {
@@ -752,7 +752,7 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-19T23:33:17.566091+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_a1d58542dfb027ba": {
@@ -767,7 +767,7 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-19T23:33:17.566091+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_dad526d4430fecfb": {
@@ -782,7 +782,7 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-19T23:33:17.566091+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_c7c067fa65542bef": {
@@ -827,7 +827,7 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-19T23:33:17.566091+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_cc686d73aa7a6f6f": {
@@ -863,7 +863,7 @@
         "security-automation"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-19T23:33:17.566091+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_0fdb723269ccb53e": {
@@ -878,7 +878,7 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-19T23:33:17.566091+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_4fc153efb370dee2": {
@@ -948,7 +948,7 @@
         "security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_1c65ce023e00e6f3": {
@@ -980,7 +980,7 @@
         "security-testing"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_bcd5963a8b9a17bf": {
@@ -1002,7 +1002,7 @@
         "ollama"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_ad0e6d0dd00cf070": {
@@ -1024,7 +1024,7 @@
         "security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_fb154803636b2d18": {
@@ -1091,11 +1091,11 @@
       "source": "GitHub",
       "summary": "Deweaponized fuzzing corpus and defender study for indirect prompt injection in LLM agents (F5 skill supply chain → F2 memory poisoning → F3 tool misuse). Mock-only, for controlled academic research.",
       "published_at": "2026-10-10T08:56:05Z",
-      "updated_at": "2026-11-16T16:07:16Z",
+      "updated_at": "2026-11-20T09:30:21Z",
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-19T23:33:17.566091+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_98e05a377edab252": {
@@ -1110,7 +1110,7 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-19T23:33:17.566091+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_d519aadd839dea2b": {
@@ -1167,7 +1167,7 @@
         "security"
       ],
       "first_seen": "2026-11-18T07:15:52.722956+00:00",
-      "last_seen": "2026-11-19T23:33:17.566091+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_788c43df1ede2063": {
@@ -1178,7 +1178,7 @@
       "source": "GitHub",
       "summary": "Open-source security scanner with first-class AI app security (prompt injection, embedding leakage, agent over-privilege, MCP hardening). Polyglot AIBOM, SARIF, SBOM. Cosign-signed plugin marketplace. Offline-first, agent-native via MCP.",
       "published_at": "2026-02-08T21:10:43Z",
-      "updated_at": "2026-11-19T09:42:52Z",
+      "updated_at": "2026-11-20T08:05:47Z",
       "stars": 11,
       "topics": [
         "ai-security",
@@ -1198,7 +1198,7 @@
         "supply-chain-security"
       ],
       "first_seen": "2026-11-18T07:15:52.722956+00:00",
-      "last_seen": "2026-11-19T23:33:17.566091+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_9bd6a3a721035322": {
@@ -1242,11 +1242,11 @@
       "source": "GitHub",
       "summary": "Public AI/Agent security daily digest · rule-filtered, source-linked, private research excluded",
       "published_at": "2026-11-18T07:14:45Z",
-      "updated_at": "2026-11-19T23:33:34Z",
+      "updated_at": "2026-11-20T07:05:42Z",
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:15:52.722956+00:00",
-      "last_seen": "2026-11-19T23:47:29.656866+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_24752662bfe1f0b1": {
@@ -1321,11 +1321,11 @@
       "source": "GitHub",
       "summary": "Self-updating bilingual brief: securing enterprise AI agents with Microsoft Sentinel, continuously reconciled against Microsoft Learn",
       "published_at": "2026-08-18T20:50:15Z",
-      "updated_at": "2026-11-19T06:18:24Z",
+      "updated_at": "2026-11-20T06:17:52Z",
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:25:50.528448+00:00",
-      "last_seen": "2026-11-19T23:33:17.566091+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_40d29f8f68920b1d": {
@@ -1632,11 +1632,11 @@
       "source": "GitHub",
       "summary": "Daily Tracking of LLM Agent Security Papers on arXiv",
       "published_at": "2026-07-02T10:29:32Z",
-      "updated_at": "2026-11-19T15:04:58Z",
+      "updated_at": "2026-11-20T00:12:02Z",
       "stars": 17,
       "topics": [],
       "first_seen": "2026-11-19T00:36:35.819128+00:00",
-      "last_seen": "2026-11-19T23:33:17.566091+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_dce811171a04c553": {
@@ -1651,7 +1651,7 @@
       "stars": 2,
       "topics": [],
       "first_seen": "2026-11-19T00:36:35.819128+00:00",
-      "last_seen": "2026-11-19T23:33:17.566091+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_9b0cb37658fc0b49": {
@@ -1696,7 +1696,7 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-19T00:36:35.819128+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_96528ffff7aaa048": {
@@ -1720,7 +1720,7 @@
         "security"
       ],
       "first_seen": "2026-11-19T00:36:35.819128+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_dd96078f69a98275": {
@@ -1735,7 +1735,7 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-19T00:36:35.819128+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_b17928caf1b7edfa": {
@@ -1816,7 +1816,7 @@
       "stars": 1,
       "topics": [],
       "first_seen": "2026-11-19T00:57:14.149881+00:00",
-      "last_seen": "2026-11-19T23:33:17.566091+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_24fd585a3e38fdf9": {
@@ -1857,11 +1857,11 @@
       "source": "GitHub",
       "summary": "Automatically maintained upstream development radar for Android, Linux, networking, AI agents, security and developer tooling.",
       "published_at": "2026-09-28T17:56:53Z",
-      "updated_at": "2026-11-20T03:14:50Z",
+      "updated_at": "2026-11-20T07:47:08Z",
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-19T01:24:17.442103+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_6ef8d8194ead901e": {
@@ -1875,7 +1875,7 @@
       "updated_at": "2026-11-18T12:56:06Z",
       "version": "v1",
       "first_seen": "2026-11-19T07:16:38.919086+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_c30b88015ccacd40": {
@@ -1889,7 +1889,7 @@
       "updated_at": "2026-11-18T12:20:58Z",
       "version": "v1",
       "first_seen": "2026-11-19T07:16:38.919086+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_689c60aa3c123555": {
@@ -1903,7 +1903,7 @@
       "updated_at": "2026-11-18T11:08:07Z",
       "version": "v1",
       "first_seen": "2026-11-19T07:16:38.919086+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_24a8697f034da041": {
@@ -1917,7 +1917,7 @@
       "updated_at": "2026-11-18T10:26:09Z",
       "version": "v1",
       "first_seen": "2026-11-19T07:16:38.919086+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_87b12edbcb32b43f": {
@@ -1931,7 +1931,7 @@
       "updated_at": "2026-11-18T08:55:08Z",
       "version": "v2",
       "first_seen": "2026-11-19T07:16:38.919086+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_def03886e0234e14": {
@@ -1945,7 +1945,7 @@
       "updated_at": "2026-11-17T22:13:13Z",
       "version": "v3",
       "first_seen": "2026-11-19T07:16:38.919086+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_0bf5a5c3dab50a22": {
@@ -1959,7 +1959,7 @@
       "updated_at": "2026-11-17T10:36:04Z",
       "version": "v1",
       "first_seen": "2026-11-19T07:16:38.919086+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_ee183ccb84232013": {
@@ -1970,7 +1970,7 @@
       "source": "GitHub",
       "summary": "A public immune lab for AI agents. Every hour, twenty agent bodies run real tasks while a prompt-injection strain tries to make them pay an attacker or leak a secret. Every hour is anchored on chain and recomputable with venin verify.",
       "published_at": "2026-11-18T05:02:52Z",
-      "updated_at": "2026-11-19T14:46:03Z",
+      "updated_at": "2026-11-20T02:29:54Z",
       "stars": 0,
       "topics": [
         "ai-agents",
@@ -1983,7 +1983,7 @@
         "webassembly"
       ],
       "first_seen": "2026-11-19T07:16:38.919086+00:00",
-      "last_seen": "2026-11-19T23:33:17.566091+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_e3c6594edcd5ee83": {
@@ -2013,7 +2013,7 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-19T07:16:38.919086+00:00",
-      "last_seen": "2026-11-19T23:33:17.566091+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_4a6c759d7eacb791": {
@@ -2028,7 +2028,7 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-19T07:16:38.919086+00:00",
-      "last_seen": "2026-11-19T23:33:17.566091+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_8a09719d91e165ca": {
@@ -2039,11 +2039,11 @@
       "source": "GitHub",
       "summary": "The 90s antivirus, resurrected for AI coding agents: scans repos, MCP servers, hooks and steering files for prompt injection and tool poisoning. Built with Kiro for Kiroween 2026.",
       "published_at": "2026-11-15T07:17:43Z",
-      "updated_at": "2026-11-19T21:38:59Z",
+      "updated_at": "2026-11-20T05:37:42Z",
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-19T07:16:38.919086+00:00",
-      "last_seen": "2026-11-19T23:33:17.566091+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_79c2bf50850f4b49": {
@@ -2058,7 +2058,7 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-19T07:16:38.919086+00:00",
-      "last_seen": "2026-11-19T23:33:17.566091+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_bc2d622e1b926be2": {
@@ -2086,7 +2086,7 @@
         "red-teaming"
       ],
       "first_seen": "2026-11-19T07:16:38.919086+00:00",
-      "last_seen": "2026-11-19T23:33:17.566091+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_20b7310a6725370e": {
@@ -2462,11 +2462,11 @@
       "source": "GitHub",
       "summary": "Synthetic autonomous issue-triage and prompt-injection evidence lab",
       "published_at": "2026-11-18T16:53:51Z",
-      "updated_at": "2026-11-19T17:40:12Z",
+      "updated_at": "2026-11-20T08:14:34Z",
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-19T10:15:50.580517+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_ba53b0340ed936ca": {
@@ -2546,12 +2546,12 @@
       "source": "GitHub",
       "summary": "One-command install and Compose stack for DatRail's RailMon and RailDash: watch an AI agent, lock its Agent Security Profile, see drift",
       "published_at": "2026-09-01T03:29:46Z",
-      "updated_at": "2026-11-19T08:01:07Z",
+      "updated_at": "2026-11-20T01:52:52Z",
       "stars": 2,
       "topics": [],
       "first_seen": "2026-11-19T10:15:50.580517+00:00",
-      "last_seen": "2026-11-19T10:15:50.580517+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
+      "change": "observed_again"
     },
     "item_d60dea30243d18f8": {
       "id": "item_d60dea30243d18f8",
@@ -2900,7 +2900,7 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-19T23:33:17.566091+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "observed_again"
     },
     "item_8c58f4f784915568": {
@@ -3007,8 +3007,8 @@
       "updated_at": "2026-11-19T18:54:19Z",
       "version": "v1",
       "first_seen": "2026-11-20T07:05:24.514098+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
+      "change": "observed_again"
     },
     "item_f0b97374573f620a": {
       "id": "item_f0b97374573f620a",
@@ -3021,8 +3021,8 @@
       "updated_at": "2026-11-19T18:25:28Z",
       "version": "v4",
       "first_seen": "2026-11-20T07:05:24.514098+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
+      "change": "observed_again"
     },
     "item_d8936dff35f46b41": {
       "id": "item_d8936dff35f46b41",
@@ -3035,8 +3035,8 @@
       "updated_at": "2026-11-19T18:23:35Z",
       "version": "v1",
       "first_seen": "2026-11-20T07:05:24.514098+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
+      "change": "observed_again"
     },
     "item_2c561faf7ee91231": {
       "id": "item_2c561faf7ee91231",
@@ -3049,8 +3049,8 @@
       "updated_at": "2026-11-19T17:52:15Z",
       "version": "v2",
       "first_seen": "2026-11-20T07:05:24.514098+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
+      "change": "observed_again"
     },
     "item_def1763af42e57a4": {
       "id": "item_def1763af42e57a4",
@@ -3063,8 +3063,8 @@
       "updated_at": "2026-11-19T12:43:31Z",
       "version": "v1",
       "first_seen": "2026-11-20T07:05:24.514098+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
+      "change": "observed_again"
     },
     "item_fd53583d5124b54d": {
       "id": "item_fd53583d5124b54d",
@@ -3077,8 +3077,8 @@
       "updated_at": "2026-11-19T10:49:23Z",
       "version": "v1",
       "first_seen": "2026-11-20T07:05:24.514098+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
+      "change": "observed_again"
     },
     "item_aed749900fb4fe08": {
       "id": "item_aed749900fb4fe08",
@@ -3091,8 +3091,8 @@
       "updated_at": "2026-11-19T08:02:31Z",
       "version": "v3",
       "first_seen": "2026-11-20T07:05:24.514098+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
+      "change": "observed_again"
     },
     "item_f4bd09a22bd74d35": {
       "id": "item_f4bd09a22bd74d35",
@@ -3105,8 +3105,8 @@
       "updated_at": "2026-11-18T19:35:33Z",
       "version": "v2",
       "first_seen": "2026-11-20T07:05:24.514098+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
+      "change": "observed_again"
     },
     "item_4fa64d5568ad3145": {
       "id": "item_4fa64d5568ad3145",
@@ -3348,12 +3348,12 @@
       "source": "GitHub",
       "summary": "An open-source, agentic security review platform that uses MCP, repository-grounded RAG, and specialized agents to detect dependency, CI/CD, and release risks before pull requests are merged.",
       "published_at": "2026-07-23T21:53:10Z",
-      "updated_at": "2026-11-20T06:55:44Z",
+      "updated_at": "2026-11-20T07:05:46Z",
       "stars": 7,
       "topics": [],
       "first_seen": "2026-11-20T07:05:24.514098+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
+      "change": "observed_again"
     },
     "item_22f91e4d19b574a5": {
       "id": "item_22f91e4d19b574a5",
@@ -3412,8 +3412,8 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-20T07:05:24.514098+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
-      "change": "newly_discovered"
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
+      "change": "observed_again"
     },
     "item_6127466e94940928": {
       "id": "item_6127466e94940928",
@@ -3427,7 +3427,258 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-20T07:05:24.514098+00:00",
-      "last_seen": "2026-11-20T07:05:24.514098+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
+      "change": "observed_again"
+    },
+    "item_a72dcbd1341978b4": {
+      "id": "item_a72dcbd1341978b4",
+      "kind": "repo",
+      "url": "https://github.com/najaatech/najaa_org_llm_prompt_injection_lab",
+      "title": "najaatech/najaa_org_llm_prompt_injection_lab",
+      "source": "GitHub",
+      "summary": "",
+      "published_at": "2026-11-09T15:55:26Z",
+      "updated_at": "2026-11-20T09:58:04Z",
+      "stars": 0,
+      "topics": [],
+      "first_seen": "2026-11-20T09:58:22.316935+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
+      "change": "newly_discovered"
+    },
+    "item_4acab46e4bdbc4a5": {
+      "id": "item_4acab46e4bdbc4a5",
+      "kind": "repo",
+      "url": "https://github.com/erodner/pif",
+      "title": "erodner/pif",
+      "source": "GitHub",
+      "summary": "Prompt Injection Finder",
+      "published_at": "2026-11-20T09:39:06Z",
+      "updated_at": "2026-11-20T09:54:09Z",
+      "stars": 0,
+      "topics": [],
+      "first_seen": "2026-11-20T09:58:22.316935+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
+      "change": "newly_discovered"
+    },
+    "item_46cbc664c98c7991": {
+      "id": "item_46cbc664c98c7991",
+      "kind": "repo",
+      "url": "https://github.com/qiuliang-liangqiu/pi-deepseek-v1",
+      "title": "qiuliang-liangqiu/pi-deepseek-v1",
+      "source": "GitHub",
+      "summary": "pi-agent workbench 是一个跑在 pi 上的 CTF / 靶场智能体。它的特点不是\"提示词写得好\"，而是把纪律做成机器能执行的东西：14 分 钟无新原语触发停滞闸门、20 req/s 令牌桶、triage 30 分钟强制浅指纹、完成判据只认 is_completed/flag_total、所有 tool_result 过 prompt-injection 扫描。",
+      "published_at": "2026-11-20T06:59:34Z",
+      "updated_at": "2026-11-20T09:38:17Z",
+      "stars": 0,
+      "topics": [],
+      "first_seen": "2026-11-20T09:58:22.316935+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
+      "change": "newly_discovered"
+    },
+    "item_7d2aa1dc3645ebae": {
+      "id": "item_7d2aa1dc3645ebae",
+      "kind": "repo",
+      "url": "https://github.com/debugdyanmo/skillaudit",
+      "title": "DebugDyanmo/skillaudit",
+      "source": "GitHub",
+      "summary": "npm audit for AI agent skills: detect prompt injection, hidden instructions and data exfiltration.",
+      "published_at": "2026-11-19T13:11:52Z",
+      "updated_at": "2026-11-20T09:30:52Z",
+      "stars": 1,
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "claude",
+        "cli",
+        "mcp",
+        "prompt-injection",
+        "python",
+        "security"
+      ],
+      "first_seen": "2026-11-20T09:58:22.316935+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
+      "change": "newly_discovered"
+    },
+    "item_eab6764796cc7aeb": {
+      "id": "item_eab6764796cc7aeb",
+      "kind": "repo",
+      "url": "https://github.com/chiefsagorxyz/cloud-ai-jailbreak",
+      "title": "ChiefSagorXYZ/CLOUD-AI-JAILBREAK",
+      "source": "GitHub",
+      "summary": "An experimental Claude Project instruction template for exploring AI behavior, response consistency, and prompt-injection research through controlled testing.",
+      "published_at": "2026-11-20T09:27:37Z",
+      "updated_at": "2026-11-20T09:29:57Z",
+      "stars": 0,
+      "topics": [],
+      "first_seen": "2026-11-20T09:58:22.316935+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
+      "change": "newly_discovered"
+    },
+    "item_a8b9495d6a4a0d5c": {
+      "id": "item_a8b9495d6a4a0d5c",
+      "kind": "repo",
+      "url": "https://github.com/anees-z-01/narrative-persuasion-game",
+      "title": "anees-z-01/narrative-persuasion-game",
+      "source": "GitHub",
+      "summary": "Browser conversation game with a React front end and FastAPI backend, designed around prompt-injection resistant judging",
+      "published_at": "2026-11-20T09:25:41Z",
+      "updated_at": "2026-11-20T09:25:49Z",
+      "stars": 0,
+      "topics": [
+        "docker",
+        "fastapi",
+        "game",
+        "llm",
+        "prompt-engineering",
+        "python",
+        "react"
+      ],
+      "first_seen": "2026-11-20T09:58:22.316935+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
+      "change": "newly_discovered"
+    },
+    "item_d0efdc80d7d6f23f": {
+      "id": "item_d0efdc80d7d6f23f",
+      "kind": "repo",
+      "url": "https://github.com/arupa08/agentic-data_analyst",
+      "title": "Arupa08/Agentic-DATA_ANALYST",
+      "source": "GitHub",
+      "summary": "LangGraph agent that answers business questions in plain English over a deliberately messy SQLite e-commerce database. Planner → Executor → Critic → Synthesizer with a replan loop, guarded read-only SQL, sandboxed Python and prompt-injection defenses, measured by a frozen eval set with a held-out split. Runs free on a local Ollama model.",
+      "published_at": "2026-04-15T22:03:42Z",
+      "updated_at": "2026-11-20T09:22:20Z",
+      "stars": 0,
+      "topics": [],
+      "first_seen": "2026-11-20T09:58:22.316935+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
+      "change": "newly_discovered"
+    },
+    "item_d669722d4f7c7328": {
+      "id": "item_d669722d4f7c7328",
+      "kind": "repo",
+      "url": "https://github.com/lowkeylifeeee/phantichmadoc",
+      "title": "LowKeyLifeeee/PhanTichMaDoc",
+      "source": "GitHub",
+      "summary": "Xây dựng lớp bảo vệ agent phân tích mã độc trước prompt injection nhúng trong mẫu, có đo lường và tinh chỉnh bằng QLoRA",
+      "published_at": "2026-11-20T09:21:16Z",
+      "updated_at": "2026-11-20T09:21:18Z",
+      "stars": 0,
+      "topics": [],
+      "first_seen": "2026-11-20T09:58:22.316935+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
+      "change": "newly_discovered"
+    },
+    "item_6866325e40413e7a": {
+      "id": "item_6866325e40413e7a",
+      "kind": "repo",
+      "url": "https://github.com/zaidnilawfer/chainguard",
+      "title": "zaidnilawfer/chainguard",
+      "source": "GitHub",
+      "summary": "Smart Contract-Based Defence Framework Against Prompt Injection Attacks on Blockchain AI Agents",
+      "published_at": "2026-11-20T05:20:59Z",
+      "updated_at": "2026-11-20T09:21:04Z",
+      "stars": 0,
+      "topics": [],
+      "first_seen": "2026-11-20T09:58:22.316935+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
+      "change": "newly_discovered"
+    },
+    "item_a1fae67d8ec0c523": {
+      "id": "item_a1fae67d8ec0c523",
+      "kind": "repo",
+      "url": "https://github.com/drk-ram/agentic-security-ietf-corpus",
+      "title": "drk-ram/agentic-security-ietf-corpus",
+      "source": "GitHub",
+      "summary": "IETF Internet-Drafts (trace verification, WIMSE context isolation, post-quantum delegation, compensation leases), 100-scenario OWASP ASI01-ASI10 benchmark (DOI 10.57967/hf/11352), and XERJ reference verifiers",
+      "published_at": "2026-11-01T15:17:17Z",
+      "updated_at": "2026-11-20T09:57:25Z",
+      "stars": 0,
+      "topics": [],
+      "first_seen": "2026-11-20T09:58:22.316935+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
+      "change": "newly_discovered"
+    },
+    "item_b7cb7da6349ef23b": {
+      "id": "item_b7cb7da6349ef23b",
+      "kind": "repo",
+      "url": "https://github.com/suniljaiswar657-dotcom/agentfenceai",
+      "title": "suniljaiswar657-dotcom/agentfenceai",
+      "source": "GitHub",
+      "summary": "AI Agent Security, Governance and Control Platform",
+      "published_at": "2026-11-20T07:59:06Z",
+      "updated_at": "2026-11-20T08:38:19Z",
+      "stars": 0,
+      "topics": [],
+      "first_seen": "2026-11-20T09:58:22.316935+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
+      "change": "newly_discovered"
+    },
+    "item_198578b9d93a1d3e": {
+      "id": "item_198578b9d93a1d3e",
+      "kind": "repo",
+      "url": "https://github.com/openjiuwen-ai/agent-security",
+      "title": "openJiuwen-ai/agent-security",
+      "source": "GitHub",
+      "summary": "",
+      "published_at": "2026-10-27T02:03:07Z",
+      "updated_at": "2026-11-20T08:05:17Z",
+      "stars": 8,
+      "topics": [],
+      "first_seen": "2026-11-20T09:58:22.316935+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
+      "change": "newly_discovered"
+    },
+    "item_18f842ec8c0f96a3": {
+      "id": "item_18f842ec8c0f96a3",
+      "kind": "repo",
+      "url": "https://github.com/terrell0780/elitze-agentic-security",
+      "title": "terrell0780/elitze-agentic-security",
+      "source": "GitHub",
+      "summary": "",
+      "published_at": "2026-08-31T18:30:19Z",
+      "updated_at": "2026-11-20T08:02:04Z",
+      "stars": 1,
+      "topics": [],
+      "first_seen": "2026-11-20T09:58:22.316935+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
+      "change": "newly_discovered"
+    },
+    "item_704bb2c92ce09aa5": {
+      "id": "item_704bb2c92ce09aa5",
+      "kind": "repo",
+      "url": "https://github.com/ksh1k/triage-agents",
+      "title": "ksh1k/triage-agents",
+      "source": "GitHub",
+      "summary": "Multi-agent security-alert triage with Google ADK and Gemini: hierarchical delegation, ReAct tool use, and a self-reflection critic loop",
+      "published_at": "2026-11-20T04:48:55Z",
+      "updated_at": "2026-11-20T07:42:46Z",
+      "stars": 0,
+      "topics": [
+        "cybersecurity",
+        "fastapi",
+        "gemini",
+        "google-adk",
+        "llm-agents",
+        "mitre-attack",
+        "multi-agent-systems",
+        "security-automation"
+      ],
+      "first_seen": "2026-11-20T09:58:22.316935+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
+      "change": "newly_discovered"
+    },
+    "item_5ce163b00e8df33d": {
+      "id": "item_5ce163b00e8df33d",
+      "kind": "repo",
+      "url": "https://github.com/terrell0780/elitze-landing",
+      "title": "terrell0780/elitze-landing",
+      "source": "GitHub",
+      "summary": "Elitze Agentic Security — product landing page (control loop, integrations, production truth)",
+      "published_at": "2026-11-02T21:35:19Z",
+      "updated_at": "2026-11-20T07:37:03Z",
+      "stars": 0,
+      "topics": [],
+      "first_seen": "2026-11-20T09:58:22.316935+00:00",
+      "last_seen": "2026-11-20T09:58:22.316935+00:00",
       "change": "newly_discovered"
     }
   },
@@ -3476,6 +3727,10 @@
       {
         "at": "2026-11-20T07:05:24.514098+00:00",
         "count": 1060
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 1061
       }
     ],
     "item_9374c9e62286b22f": [
@@ -3521,6 +3776,10 @@
       },
       {
         "at": "2026-11-20T07:05:24.514098+00:00",
+        "count": 186
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
         "count": 186
       }
     ],
@@ -3568,6 +3827,10 @@
       {
         "at": "2026-11-20T07:05:24.514098+00:00",
         "count": 257
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 257
       }
     ],
     "item_e588b9bb1af43b91": [
@@ -3613,6 +3876,10 @@
       },
       {
         "at": "2026-11-20T07:05:24.514098+00:00",
+        "count": 425
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
         "count": 425
       }
     ],
@@ -3660,6 +3927,10 @@
       {
         "at": "2026-11-20T07:05:24.514098+00:00",
         "count": 332
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 332
       }
     ],
     "item_42ab56732dbeea40": [
@@ -3705,6 +3976,10 @@
       },
       {
         "at": "2026-11-20T07:05:24.514098+00:00",
+        "count": 231
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
         "count": 231
       }
     ],
@@ -3752,6 +4027,10 @@
       {
         "at": "2026-11-20T07:05:24.514098+00:00",
         "count": 105
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 105
       }
     ],
     "item_1a595fff3abc2d70": [
@@ -3797,6 +4076,10 @@
       },
       {
         "at": "2026-11-20T07:05:24.514098+00:00",
+        "count": 81
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
         "count": 81
       }
     ],
@@ -3984,6 +4267,10 @@
       {
         "at": "2026-11-19T23:33:17.566091+00:00",
         "count": 0
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 0
       }
     ],
     "item_80e5a7ea7ca32106": [
@@ -4017,6 +4304,10 @@
       },
       {
         "at": "2026-11-19T23:33:17.566091+00:00",
+        "count": 0
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
         "count": 0
       }
     ],
@@ -4052,6 +4343,10 @@
       {
         "at": "2026-11-19T23:33:17.566091+00:00",
         "count": 26950
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 27005
       }
     ],
     "item_49e364e463bd4a1d": [
@@ -4086,6 +4381,10 @@
       {
         "at": "2026-11-19T23:33:17.566091+00:00",
         "count": 1114
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 1115
       }
     ],
     "item_2a267ee5d6aa8424": [
@@ -4119,6 +4418,10 @@
       },
       {
         "at": "2026-11-19T23:33:17.566091+00:00",
+        "count": 0
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
         "count": 0
       }
     ],
@@ -4154,6 +4457,10 @@
       {
         "at": "2026-11-19T23:33:17.566091+00:00",
         "count": 0
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 0
       }
     ],
     "item_c6dc9492df516294": [
@@ -4187,6 +4494,10 @@
       },
       {
         "at": "2026-11-19T23:33:17.566091+00:00",
+        "count": 0
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
         "count": 0
       }
     ],
@@ -4222,6 +4533,10 @@
       {
         "at": "2026-11-19T23:33:17.566091+00:00",
         "count": 0
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 0
       }
     ],
     "item_dad526d4430fecfb": [
@@ -4255,6 +4570,10 @@
       },
       {
         "at": "2026-11-19T23:33:17.566091+00:00",
+        "count": 0
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
         "count": 0
       }
     ],
@@ -4370,6 +4689,10 @@
       {
         "at": "2026-11-19T23:33:17.566091+00:00",
         "count": 0
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 0
       }
     ],
     "item_cc686d73aa7a6f6f": [
@@ -4404,6 +4727,10 @@
       {
         "at": "2026-11-19T23:33:17.566091+00:00",
         "count": 152
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 152
       }
     ],
     "item_0fdb723269ccb53e": [
@@ -4437,6 +4764,10 @@
       },
       {
         "at": "2026-11-19T23:33:17.566091+00:00",
+        "count": 0
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
         "count": 0
       }
     ],
@@ -4560,6 +4891,10 @@
       {
         "at": "2026-11-20T07:05:24.514098+00:00",
         "count": 207
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 207
       }
     ],
     "item_1c65ce023e00e6f3": [
@@ -4605,6 +4940,10 @@
       },
       {
         "at": "2026-11-20T07:05:24.514098+00:00",
+        "count": 27
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
         "count": 27
       }
     ],
@@ -4652,6 +4991,10 @@
       {
         "at": "2026-11-20T07:05:24.514098+00:00",
         "count": 0
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 0
       }
     ],
     "item_ad0e6d0dd00cf070": [
@@ -4697,6 +5040,10 @@
       },
       {
         "at": "2026-11-20T07:05:24.514098+00:00",
+        "count": 4
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
         "count": 4
       }
     ],
@@ -4854,6 +5201,10 @@
       {
         "at": "2026-11-19T23:33:17.566091+00:00",
         "count": 0
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 0
       }
     ],
     "item_98e05a377edab252": [
@@ -4887,6 +5238,10 @@
       },
       {
         "at": "2026-11-19T23:33:17.566091+00:00",
+        "count": 0
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
         "count": 0
       }
     ],
@@ -4978,6 +5333,10 @@
       {
         "at": "2026-11-19T23:33:17.566091+00:00",
         "count": 4
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 4
       }
     ],
     "item_788c43df1ede2063": [
@@ -5003,6 +5362,10 @@
       },
       {
         "at": "2026-11-19T23:33:17.566091+00:00",
+        "count": 11
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
         "count": 11
       }
     ],
@@ -5055,6 +5418,10 @@
       },
       {
         "at": "2026-11-19T23:47:29.656866+00:00",
+        "count": 0
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
         "count": 0
       }
     ],
@@ -5125,6 +5492,10 @@
       },
       {
         "at": "2026-11-19T23:33:17.566091+00:00",
+        "count": 0
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
         "count": 0
       }
     ],
@@ -5422,6 +5793,10 @@
       {
         "at": "2026-11-19T23:33:17.566091+00:00",
         "count": 17
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 17
       }
     ],
     "item_dce811171a04c553": [
@@ -5439,6 +5814,10 @@
       },
       {
         "at": "2026-11-19T23:33:17.566091+00:00",
+        "count": 2
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
         "count": 2
       }
     ],
@@ -5518,6 +5897,10 @@
       {
         "at": "2026-11-20T07:05:24.514098+00:00",
         "count": 0
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 0
       }
     ],
     "item_96528ffff7aaa048": [
@@ -5552,6 +5935,10 @@
       {
         "at": "2026-11-20T07:05:24.514098+00:00",
         "count": 1
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 1
       }
     ],
     "item_dd96078f69a98275": [
@@ -5585,6 +5972,10 @@
       },
       {
         "at": "2026-11-20T07:05:24.514098+00:00",
+        "count": 0
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
         "count": 0
       }
     ],
@@ -5654,6 +6045,10 @@
       {
         "at": "2026-11-19T23:33:17.566091+00:00",
         "count": 1
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 1
       }
     ],
     "item_24fd585a3e38fdf9": [
@@ -5696,6 +6091,10 @@
       {
         "at": "2026-11-20T07:05:24.514098+00:00",
         "count": 0
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 0
       }
     ],
     "item_ee183ccb84232013": [
@@ -5705,6 +6104,10 @@
       },
       {
         "at": "2026-11-19T23:33:17.566091+00:00",
+        "count": 0
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
         "count": 0
       }
     ],
@@ -5730,6 +6133,10 @@
       {
         "at": "2026-11-19T23:33:17.566091+00:00",
         "count": 0
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 0
       }
     ],
     "item_4a6c759d7eacb791": [
@@ -5739,6 +6146,10 @@
       },
       {
         "at": "2026-11-19T23:33:17.566091+00:00",
+        "count": 0
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
         "count": 0
       }
     ],
@@ -5750,6 +6161,10 @@
       {
         "at": "2026-11-19T23:33:17.566091+00:00",
         "count": 0
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 0
       }
     ],
     "item_79c2bf50850f4b49": [
@@ -5760,6 +6175,10 @@
       {
         "at": "2026-11-19T23:33:17.566091+00:00",
         "count": 0
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 0
       }
     ],
     "item_bc2d622e1b926be2": [
@@ -5769,6 +6188,10 @@
       },
       {
         "at": "2026-11-19T23:33:17.566091+00:00",
+        "count": 0
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
         "count": 0
       }
     ],
@@ -5948,6 +6371,10 @@
       {
         "at": "2026-11-20T07:05:24.514098+00:00",
         "count": 0
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 0
       }
     ],
     "item_ba53b0340ed936ca": [
@@ -5979,6 +6406,10 @@
     "item_d877f8b3025c6bb6": [
       {
         "at": "2026-11-19T10:15:50.580517+00:00",
+        "count": 2
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
         "count": 2
       }
     ],
@@ -6158,6 +6589,10 @@
       {
         "at": "2026-11-20T07:05:24.514098+00:00",
         "count": 0
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 0
       }
     ],
     "item_8c58f4f784915568": [
@@ -6260,6 +6695,10 @@
       {
         "at": "2026-11-20T07:05:24.514098+00:00",
         "count": 7
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 7
       }
     ],
     "item_22f91e4d19b574a5": [
@@ -6284,17 +6723,115 @@
       {
         "at": "2026-11-20T07:05:24.514098+00:00",
         "count": 0
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 0
       }
     ],
     "item_6127466e94940928": [
       {
         "at": "2026-11-20T07:05:24.514098+00:00",
         "count": 0
+      },
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 0
+      }
+    ],
+    "item_a72dcbd1341978b4": [
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 0
+      }
+    ],
+    "item_4acab46e4bdbc4a5": [
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 0
+      }
+    ],
+    "item_46cbc664c98c7991": [
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 0
+      }
+    ],
+    "item_7d2aa1dc3645ebae": [
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 1
+      }
+    ],
+    "item_eab6764796cc7aeb": [
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 0
+      }
+    ],
+    "item_a8b9495d6a4a0d5c": [
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 0
+      }
+    ],
+    "item_d0efdc80d7d6f23f": [
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 0
+      }
+    ],
+    "item_d669722d4f7c7328": [
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 0
+      }
+    ],
+    "item_6866325e40413e7a": [
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 0
+      }
+    ],
+    "item_a1fae67d8ec0c523": [
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 0
+      }
+    ],
+    "item_b7cb7da6349ef23b": [
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 0
+      }
+    ],
+    "item_198578b9d93a1d3e": [
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 8
+      }
+    ],
+    "item_18f842ec8c0f96a3": [
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 1
+      }
+    ],
+    "item_704bb2c92ce09aa5": [
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 0
+      }
+    ],
+    "item_5ce163b00e8df33d": [
+      {
+        "at": "2026-11-20T09:58:22.316935+00:00",
+        "count": 0
       }
     ]
   },
   "cursors": {
-    "arxiv": "2026-11-20T07:05:24.514098+00:00"
+    "arxiv": "2026-11-20T09:58:22.316935+00:00"
   },
   "runs": [
     {
@@ -6989,12 +7526,75 @@
       ],
       "candidate_count": 100,
       "run_url": "https://github.com/Jacintha0511/ai-security-daily/actions/runs/44692366371"
+    },
+    {
+      "date": "2026-11-20",
+      "generated_at": "2026-11-20T09:58:22.316935+00:00",
+      "status": "partial",
+      "sources": [
+        {
+          "name": "arXiv",
+          "status": "ok",
+          "count": 36,
+          "detail": "包含新论文与版本更新；预印本不等于正式发表"
+        },
+        {
+          "name": "GitHub 发现：\"prompt-injection\"",
+          "status": "ok",
+          "count": 10,
+          "detail": "候选发现，不是全站升星榜"
+        },
+        {
+          "name": "GitHub 发现：\"agent security\"",
+          "status": "ok",
+          "count": 10,
+          "detail": "候选发现，不是全站升星榜"
+        },
+        {
+          "name": "GitHub 发现：\"memory poisoning\"",
+          "status": "ok",
+          "count": 10,
+          "detail": "候选发现，不是全站升星榜"
+        },
+        {
+          "name": "GitHub 快照",
+          "status": "partial",
+          "count": 64,
+          "detail": "本轮记录 64 个项目；跟踪池有限，失败或限流=1"
+        },
+        {
+          "name": "量子位",
+          "status": "not_connected",
+          "count": 0,
+          "detail": "待接入可用 RSS，不代表今天没有报道"
+        },
+        {
+          "name": "机器之心",
+          "status": "not_connected",
+          "count": 0,
+          "detail": "待接入可用 RSS，不代表今天没有报道"
+        },
+        {
+          "name": "为机器立心",
+          "status": "not_connected",
+          "count": 0,
+          "detail": "待接入可用 RSS，不代表今天没有报道"
+        },
+        {
+          "name": "刘小垒Leo",
+          "status": "not_connected",
+          "count": 0,
+          "detail": "待接入可用 RSS，不代表今天没有报道"
+        }
+      ],
+      "candidate_count": 100,
+      "run_url": "https://github.com/Jacintha0511/ai-security-daily/actions/runs/44715177180"
     }
   ],
-  "last_success": "2026-11-20T07:05:24.514098+00:00",
+  "last_success": "2026-11-20T09:58:22.316935+00:00",
   "latest_attempt": {
     "date": "2026-11-20",
-    "generated_at": "2026-11-20T07:05:24.514098+00:00",
+    "generated_at": "2026-11-20T09:58:22.316935+00:00",
     "status": "partial",
     "sources": [
       {
@@ -7053,6 +7653,6 @@
       }
     ],
     "candidate_count": 100,
-    "run_url": "https://github.com/Jacintha0511/ai-security-daily/actions/runs/44692366371"
+    "run_url": "https://github.com/Jacintha0511/ai-security-daily/actions/runs/44715177180"
   }
 }
