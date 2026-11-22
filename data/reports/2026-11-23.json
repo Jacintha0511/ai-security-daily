@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "date": "2026-11-23",
-  "generated_at": "2026-11-22T22:26:37.619232+00:00",
+  "generated_at": "2026-11-22T22:46:16.876928+00:00",
   "status": "partial",
   "selection_basis": "规则预筛",
   "sources": [
@@ -73,7 +73,7 @@
         "updated_at": "2026-11-18T21:16:03Z",
         "version": "v3",
         "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-22T22:26:37.619232+00:00",
+        "last_seen": "2026-11-22T22:46:16.876928+00:00",
         "change": "observed_again",
         "score": 7,
         "reason": "研究主题匹配：prompt injection、provenance",
@@ -91,7 +91,7 @@
         "updated_at": "2026-11-18T08:55:08Z",
         "version": "v2",
         "first_seen": "2026-11-19T07:16:38.919086+00:00",
-        "last_seen": "2026-11-22T22:26:37.619232+00:00",
+        "last_seen": "2026-11-22T22:46:16.876928+00:00",
         "change": "observed_again",
         "score": 7,
         "reason": "研究主题匹配：memory poisoning",
@@ -109,7 +109,7 @@
         "updated_at": "2026-11-17T10:36:04Z",
         "version": "v1",
         "first_seen": "2026-11-19T07:16:38.919086+00:00",
-        "last_seen": "2026-11-22T22:26:37.619232+00:00",
+        "last_seen": "2026-11-22T22:46:16.876928+00:00",
         "change": "observed_again",
         "score": 3,
         "reason": "研究主题匹配：prompt injection",
@@ -130,7 +130,7 @@
         "stars": 1,
         "topics": [],
         "first_seen": "2026-11-20T07:05:24.514098+00:00",
-        "last_seen": "2026-11-22T22:26:37.619232+00:00",
+        "last_seen": "2026-11-22T22:46:16.876928+00:00",
         "change": "observed_again",
         "score": 14,
         "reason": "研究主题匹配：prompt injection、memory poisoning、provenance",
@@ -170,10 +170,46 @@
           "security"
         ],
         "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-22T22:26:37.619232+00:00",
+        "last_seen": "2026-11-22T22:46:16.876928+00:00",
         "change": "observed_again",
         "score": 13,
         "reason": "研究主题匹配：prompt-injection、memory poisoning、memory-poisoning",
+        "priority": "快速浏览",
+        "selection_basis": "规则预筛；不是模型精排或学术质量评分"
+      },
+      {
+        "id": "item_1c65ce023e00e6f3",
+        "kind": "repo",
+        "url": "https://github.com/invarislabs/invaris-agentsec",
+        "title": "invarislabs/invaris-agentsec",
+        "source": "GitHub",
+        "summary": "Adversarial security testing for AI agents — prompt injection, tool misuse, memory poisoning, and MCP scanning, with CI-ready regression testing and reports.",
+        "published_at": "2026-09-20T09:49:21Z",
+        "updated_at": "2026-11-22T22:34:08Z",
+        "stars": 28,
+        "topics": [
+          "adversarial-testing",
+          "agent-security",
+          "ai-agents",
+          "ai-security",
+          "devsecops",
+          "github-actions",
+          "langchain",
+          "llm-security",
+          "mcp",
+          "model-context-protocol",
+          "owasp",
+          "prompt-injection",
+          "pytest",
+          "python",
+          "red-teaming",
+          "security-testing"
+        ],
+        "first_seen": "2026-11-18T07:09:14.936020+00:00",
+        "last_seen": "2026-11-22T22:46:16.876928+00:00",
+        "change": "observed_again",
+        "score": 13,
+        "reason": "研究主题匹配：prompt injection、prompt-injection、memory poisoning",
         "priority": "快速浏览",
         "selection_basis": "规则预筛；不是模型精排或学术质量评分"
       },
@@ -204,7 +240,7 @@
           "zero-dependency"
         ],
         "first_seen": "2026-11-20T23:03:54.584308+00:00",
-        "last_seen": "2026-11-22T22:26:37.619232+00:00",
+        "last_seen": "2026-11-22T22:46:16.876928+00:00",
         "change": "observed_again",
         "score": 13,
         "reason": "研究主题匹配：prompt injection、prompt-injection、memory poisoning",
@@ -223,42 +259,10 @@
         "stars": 0,
         "topics": [],
         "first_seen": "2026-11-20T07:05:24.514098+00:00",
-        "last_seen": "2026-11-22T22:26:37.619232+00:00",
+        "last_seen": "2026-11-22T22:46:16.876928+00:00",
         "change": "observed_again",
         "score": 13,
         "reason": "研究主题匹配：prompt injection、agent security、memory poisoning",
-        "priority": "快速浏览",
-        "selection_basis": "规则预筛；不是模型精排或学术质量评分"
-      },
-      {
-        "id": "item_24752662bfe1f0b1",
-        "kind": "repo",
-        "url": "https://github.com/wuyoscar/aisafetyhot",
-        "title": "wuyoscar/AISafetyHot",
-        "source": "GitHub",
-        "summary": "AI Safety HOT: daily AI safety news, papers and incidents in one place — jailbreaks, prompt injection, alignment, evals, governance. Website, daily digest, RSS and MCP.",
-        "published_at": "2026-10-01T11:33:59Z",
-        "updated_at": "2026-11-22T22:06:37Z",
-        "stars": 2074,
-        "topics": [
-          "ai-alignment",
-          "ai-governance",
-          "ai-safety",
-          "arxiv-papers",
-          "daily-papers",
-          "jailbreak",
-          "llm-security",
-          "mcp-server",
-          "news-aggregator",
-          "prompt-injection",
-          "red-teaming",
-          "rss"
-        ],
-        "first_seen": "2026-11-18T07:25:50.528448+00:00",
-        "last_seen": "2026-11-22T22:26:37.619232+00:00",
-        "change": "observed_again",
-        "score": 12,
-        "reason": "研究主题匹配：prompt injection、prompt-injection、jailbreak、ai safety",
         "priority": "快速浏览",
         "selection_basis": "规则预筛；不是模型精排或学术质量评分"
       }
@@ -328,11 +332,11 @@
         "security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-22T22:26:37.619232+00:00",
+      "last_seen": "2026-11-22T22:46:16.876928+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 1,
-        "days": 1.0,
+        "days": 1.02,
         "status": "complete"
       },
       "week_growth": {
@@ -373,11 +377,11 @@
         "security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-22T22:26:37.619232+00:00",
+      "last_seen": "2026-11-22T22:46:16.876928+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 1,
-        "days": 1.0,
+        "days": 1.02,
         "status": "complete"
       },
       "week_growth": {
@@ -397,11 +401,11 @@
       "stars": 425,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-22T22:26:37.619232+00:00",
+      "last_seen": "2026-11-22T22:46:16.876928+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.0,
+        "days": 1.02,
         "status": "complete"
       },
       "week_growth": {
@@ -421,11 +425,11 @@
       "stars": 332,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-22T22:26:37.619232+00:00",
+      "last_seen": "2026-11-22T22:46:16.876928+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.0,
+        "days": 1.02,
         "status": "complete"
       },
       "week_growth": {
@@ -449,11 +453,11 @@
         "retrieval-augmented-generation"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-22T22:26:37.619232+00:00",
+      "last_seen": "2026-11-22T22:46:16.876928+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.0,
+        "days": 1.02,
         "status": "complete"
       },
       "week_growth": {
@@ -480,11 +484,11 @@
         "prompt-engineering"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-22T22:26:37.619232+00:00",
+      "last_seen": "2026-11-22T22:46:16.876928+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.0,
+        "days": 1.02,
         "status": "complete"
       },
       "week_growth": {
@@ -504,11 +508,11 @@
       "stars": 189,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-22T22:26:37.619232+00:00",
+      "last_seen": "2026-11-22T22:46:16.876928+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.0,
+        "days": 1.02,
         "status": "complete"
       },
       "week_growth": {
@@ -528,11 +532,11 @@
       "stars": 106,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-22T22:26:37.619232+00:00",
+      "last_seen": "2026-11-22T22:46:16.876928+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.0,
+        "days": 1.02,
         "status": "complete"
       },
       "week_growth": {
@@ -552,11 +556,11 @@
       "stars": 82,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-22T22:26:37.619232+00:00",
+      "last_seen": "2026-11-22T22:46:16.876928+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.0,
+        "days": 1.02,
         "status": "complete"
       },
       "week_growth": {
@@ -576,11 +580,11 @@
       "stars": 1,
       "topics": [],
       "first_seen": "2026-11-20T07:05:24.514098+00:00",
-      "last_seen": "2026-11-22T22:26:37.619232+00:00",
+      "last_seen": "2026-11-22T22:46:16.876928+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.0,
+        "days": 1.02,
         "status": "complete"
       },
       "week_growth": {
@@ -600,11 +604,11 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-22T22:26:37.619232+00:00",
+      "last_seen": "2026-11-22T22:46:16.876928+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.0,
+        "days": 1.02,
         "status": "complete"
       },
       "week_growth": {
@@ -648,11 +652,11 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-19T23:33:17.566091+00:00",
-      "last_seen": "2026-11-22T22:26:37.619232+00:00",
+      "last_seen": "2026-11-22T22:46:16.876928+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.0,
+        "days": 1.02,
         "status": "complete"
       },
       "week_growth": {
@@ -672,11 +676,11 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-20T07:05:24.514098+00:00",
-      "last_seen": "2026-11-22T22:26:37.619232+00:00",
+      "last_seen": "2026-11-22T22:46:16.876928+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.0,
+        "days": 1.02,
         "status": "complete"
       },
       "week_growth": {
@@ -696,11 +700,11 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-20T23:03:54.584308+00:00",
-      "last_seen": "2026-11-22T22:26:37.619232+00:00",
+      "last_seen": "2026-11-22T22:46:16.876928+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.0,
+        "days": 1.02,
         "status": "complete"
       },
       "week_growth": {
@@ -720,11 +724,11 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-20T23:03:54.584308+00:00",
-      "last_seen": "2026-11-22T22:26:37.619232+00:00",
+      "last_seen": "2026-11-22T22:46:16.876928+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.0,
+        "days": 1.02,
         "status": "complete"
       },
       "week_growth": {
@@ -759,11 +763,11 @@
         "zero-dependency"
       ],
       "first_seen": "2026-11-20T23:03:54.584308+00:00",
-      "last_seen": "2026-11-22T22:26:37.619232+00:00",
+      "last_seen": "2026-11-22T22:46:16.876928+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.0,
+        "days": 1.02,
         "status": "complete"
       },
       "week_growth": {
@@ -772,35 +776,31 @@
       }
     },
     {
-      "id": "item_841b6dc64fec41d8",
+      "id": "item_a61a6cfb4b2275c4",
       "kind": "repo",
-      "url": "https://github.com/agent-threat-rule/agent-threat-rules",
-      "title": "Agent-Threat-Rule/agent-threat-rules",
+      "url": "https://github.com/malaikamalik23/keel",
+      "title": "malaikamalik23/Keel",
       "source": "GitHub",
-      "summary": "Open detection-rule standard for AI agent security threats — like Sigma, but for AI agents. Executable, testable rules for prompt injection, tool poisoning, context exfiltration and MCP attacks. Merged into open-source projects at Microsoft, Cisco, Gen Digital, MISP and FINOS. MIT-licensed.",
-      "published_at": "2026-03-09T07:48:38Z",
-      "updated_at": "2026-11-21T14:38:08Z",
-      "stars": 442,
+      "summary": "a self-hosted personal AI agent that remembers your commitments, plans realistic days, tracks what actually gets done, and follows up via check-ins and reminders. Chat from CLI, web dashboard or Telegram. Permissions, approvals and audit logs are enforced in code, with prompt-injection defenses. Python, FastAPI, React.",
+      "published_at": "2026-11-06T22:49:53Z",
+      "updated_at": "2026-11-22T22:29:31Z",
+      "stars": 0,
       "topics": [
-        "agent-security",
-        "agent-threat-rules",
-        "ai-security",
-        "garak",
-        "llm-security",
-        "mcp-security",
-        "owasp",
-        "owasp-agentic",
+        "ai-agent",
+        "fastapi",
+        "llm",
+        "personal-assistant",
         "prompt-injection",
-        "sigma-rules",
-        "threat-detection"
+        "react",
+        "self-hosted"
       ],
-      "first_seen": "2026-11-20T23:03:54.584308+00:00",
-      "last_seen": "2026-11-22T09:42:31.054439+00:00",
+      "first_seen": "2026-11-21T22:10:14.602948+00:00",
+      "last_seen": "2026-11-22T22:46:16.876928+00:00",
       "change": "observed_again",
       "day_growth": {
-        "delta": 3,
-        "days": 1.43,
-        "status": "irregular_window"
+        "delta": 0,
+        "days": 1.02,
+        "status": "complete"
       },
       "week_growth": {
         "delta": null,
@@ -808,43 +808,34 @@
       }
     },
     {
-      "id": "item_2d7d1a0d76714fa3",
+      "id": "item_3c5a84c629b82348",
       "kind": "repo",
-      "url": "https://github.com/pipelab-org/pipelock",
-      "title": "pipelab-org/pipelock",
+      "url": "https://github.com/nvidia/skillspector",
+      "title": "NVIDIA/SkillSpector",
       "source": "GitHub",
-      "summary": "Open-source AI agent firewall for MCP security and agent egress. Scans mediated HTTP, MCP, A2A, and WebSocket traffic for exfiltration, SSRF, and prompt injection, and emits mediator-signed action receipts: verifiable audit evidence from outside the agent.",
-      "published_at": "2026-02-08T00:40:18Z",
-      "updated_at": "2026-11-22T09:09:15Z",
-      "stars": 1014,
+      "summary": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.",
+      "published_at": "2026-03-21T00:28:43Z",
+      "updated_at": "2026-11-22T18:53:50Z",
+      "stars": 27299,
       "topics": [
         "agent-security",
-        "ai-agent-security",
-        "ai-agents",
-        "ai-firewall",
+        "agent-skills",
+        "agentic-ai",
         "ai-security",
-        "dlp",
-        "egress-proxy",
-        "github-action",
-        "golang",
-        "integrity-monitoring",
-        "llm-firewall",
-        "llm-security",
+        "claude-code",
         "mcp",
-        "mcp-security",
         "prompt-injection",
-        "security",
-        "security-scanning",
+        "security-scanner",
         "security-tools",
-        "ssrf",
-        "ssrf-protection"
+        "security-workflow",
+        "supply-chain-security"
       ],
-      "first_seen": "2026-11-19T00:57:14.149881+00:00",
-      "last_seen": "2026-11-22T09:42:31.054439+00:00",
+      "first_seen": "2026-11-18T07:09:14.936020+00:00",
+      "last_seen": "2026-11-22T22:46:16.876928+00:00",
       "change": "observed_again",
       "day_growth": {
-        "delta": 1,
-        "days": 1.11,
+        "delta": 195,
+        "days": 1.54,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -855,12 +846,12 @@
   ],
   "candidate_count": 89,
   "published_count": 8,
-  "run_url": "https://github.com/Jacintha0511/ai-security-daily/actions/runs/45077731927",
+  "run_url": "https://github.com/Jacintha0511/ai-security-daily/actions/runs/45079537598",
   "notes": [
     "仅公开论文、项目、报道；不包含私人 idea 或实验。",
     "首次发现时间不等于发表时间；摘要与规则匹配不代表精读。",
     "star 为快照净变化，取消 star 可产生负值。"
   ],
   "news_updated_at": "2026-11-22T14:20:43.696951+00:00",
-  "updated_at": "2026-11-22T22:26:48.022885+00:00"
+  "updated_at": "2026-11-22T22:46:28.248672+00:00"
 }
