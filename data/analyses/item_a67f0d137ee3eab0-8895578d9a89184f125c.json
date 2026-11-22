@@ -1,0 +1,248 @@
+{
+  "schema_version": 1,
+  "item_id": "item_a67f0d137ee3eab0",
+  "kind": "repo",
+  "title": "abhinandanpandey-in/zero-trust-rag-firewall",
+  "url": "https://github.com/abhinandanpandey-in/zero-trust-rag-firewall",
+  "fingerprint": "8895578d9a89184f125c",
+  "version": "acc34e3c0e33cd349b7afa222af1b4528831a215",
+  "status": "partial",
+  "model": "Codex 当前会话（运行接口未提供精确模型版本）",
+  "generated_at": "2026-11-22T14:26:58.063478+00:00",
+  "verdict": "适合读作 CPU 安全机制小样例；API 身份、权限来源和真实投毒评测尚不够生产使用。",
+  "overview": "这个小型 RAG 原型在入库前用规则清理文本，在检索后检查 HMAC、租户和保密级别。关键区别是：签名可检测签名后的改动，却不能证明最初的文档内容可信；代码中客户端还自行提供 tenant 和 clearance。",
+  "sections": [
+    {
+      "title": "项目定位",
+      "stance": "原文／代码事实与分析推断（逐段区分）",
+      "paragraphs": [
+        "固定读取 commit acc34e3c0e33cd349b7afa222af1b4528831a215。定位是 FAISS 入库／检索前的确定性防火墙，与你的记忆投毒、来源和权限方向相近。今日快照只有 1 star；推荐第一名来自主题规则匹配，不能解读为全站升星第一或安全质量第一。",
+        "README 宣称结构清理、HMAC 来源和 ABAC；代码实际是 FastAPI＋内存 FAISS＋本地元数据字典。目录未见完整 Agent 循环或生成模型，因此此处并没有证明下游 LLM 已不受提示注入。"
+      ],
+      "refs": [
+        {
+          "source": "s2",
+          "locator": "README 第 9–15 行"
+        }
+      ]
+    },
+    {
+      "title": "能力与边界",
+      "stance": "原文／代码事实与分析推断（逐段区分）",
+      "paragraphs": [
+        "能读到的机制：规范化 Unicode、去隐藏字符和 HTML 注释、用五条英文正则拦截部分指令；入库后签名文档元数据，查询时核验签名、租户和 clearance。",
+        "重要限制：HMAC 证明服务曾签过这组值，不验证 source_uri 真由某机构拥有，也不判断通过规则的文本是否恶意。入库者提交的内容若绕过固定规则，会被正常签名。高熵检测出现在 README 描述里，本次 sanitizer 未见熵估计代码。"
+      ],
+      "refs": [
+        {
+          "source": "s6",
+          "locator": "第 19–24、36–61、108–127 行"
+        },
+        {
+          "source": "s7",
+          "locator": "第 19–66 行"
+        }
+      ]
+    },
+    {
+      "title": "架构与执行流程",
+      "stance": "原文／代码事实与分析推断（逐段区分）",
+      "paragraphs": [
+        "main.py 初始化时创建防火墙并加载三条示例数据；两个核心端点分别接收入库和查询请求。嵌入器没有预训练模型：用单词、二元词和字符三元组做 256 维哈希特征，再以 FAISS L2 检索。",
+        "查询先 over-fetch，随后逐条核验元数据 HMAC、租户和 clearance，凑满 top_k 后返回。候选池只过取有限数量，若大量结果被过滤，返回不足 top_k 不代表没有其他合法文档。",
+        "示例攻击链：直接改 metadata_store 中已签名文本，旧 HMAC 应不再匹配，被丢弃；这是静态代码推导，未运行验证。若恶意文档通过正常入库获得签名，走的是另一条信任路径，不能靠这次验签自动识别。"
+      ],
+      "refs": [
+        {
+          "source": "s6",
+          "locator": "第 12–61、79–156 行"
+        },
+        {
+          "source": "s3",
+          "locator": "第 8–23 行"
+        },
+        {
+          "source": "s4",
+          "locator": "第 5–40 行"
+        }
+      ],
+      "diagram": [
+        "入库请求 → 结构清理／正则隔离",
+        "清理文本 → 256 维哈希向量 → FAISS",
+        "元数据与文本 → 服务端 HMAC → 内存字典",
+        "查询 → 有限候选 → HMAC／tenant／clearance 过滤",
+        "返回文本块与阻断事件；没有生成模型或真实 Agent 行动"
+      ]
+    },
+    {
+      "title": "安全机制",
+      "stance": "原文／代码事实与分析推断（逐段区分）",
+      "paragraphs": [
+        "正向机制：密钥用 os.urandom(32) 生成，验签使用 compare_digest；签名绑定 vector_id、租户、来源、级别和文本。它是服务内共享密钥完整性校验，不是可由外部独立验证的发布者签名。",
+        "最关键的权限缺口：QueryRequest 直接包含 tenant_id 和 clearance；main.py 端点未见认证依赖或从可信身份系统派生权限。仅靠客户端自报信息做 ABAC，不能建立真正租户隔离。服务默认绑回环地址，适合本地演示，不能据此直接对外开放。",
+        "服务还暴露演示篡改与 audit 端点。元数据校验保护的是签名载荷，并未把 FAISS 向量数值本身签入；更改相似度排序与更改文本是不同风险。以上是代码审阅发现，未做利用或探测。"
+      ],
+      "refs": [
+        {
+          "source": "s6",
+          "locator": "第 19–34、90–127 行"
+        },
+        {
+          "source": "s5",
+          "locator": "第 10–28 行"
+        },
+        {
+          "source": "s3",
+          "locator": "第 17–40 行"
+        }
+      ]
+    },
+    {
+      "title": "关键代码导读",
+      "stance": "原文／代码事实与分析推断（逐段区分）",
+      "paragraphs": [
+        "app/main.py 第 17–36 行：入库、查询、simulate-tamper、audit 端点，是检查鉴权边界的入口。app/models.py 第 10–28 行：入库和查询的租户／级别来自请求字段。",
+        "app/rag_firewall.py 第 22–34 行：签名与验签；第 103–127 行：孤立向量、完整性、租户与级别过滤；第 19–20 行：密钥仅在当前进程内生成。",
+        "app/sanitizer.py 第 19–24 行是五条签名，第 27–66 行是清理和隔离。发现 Unicode tag 本身只置标志和删除，并不必然隔离，最终仍取决于规则／空文本。app/embedder.py 第 17 行只提取英文数字下划线，纯中文查询可能没有有效词特征，需另行测量。"
+      ],
+      "refs": [
+        {
+          "source": "s3",
+          "locator": "main.py 第 17–36 行"
+        },
+        {
+          "source": "s5",
+          "locator": "第 10–28 行"
+        },
+        {
+          "source": "s6",
+          "locator": "第 19–34、103–127 行"
+        },
+        {
+          "source": "s7",
+          "locator": "第 19–66 行"
+        },
+        {
+          "source": "s4",
+          "locator": "第 15–19 行"
+        }
+      ]
+    },
+    {
+      "title": "相关工作比较",
+      "stance": "原文／代码事实与分析推断（逐段区分）",
+      "paragraphs": [
+        "README 只描述设计，没有提供和 AgentPoison、AgentDojo 或论文防御的同设置对照。不能把项目同名机制当成已证明的新研究贡献。",
+        "与本期论文的机制对照（分析推断）：这里的 HMAC 关注签名后完整性；ElephantAgent 另要求状态仍是最新批准；SPILLWAY 控制行动目的地；本项目止于检索过滤。这几层保护对象不同，不能互相替代。此处不是作者跑过的比较实验。"
+      ],
+      "refs": [
+        {
+          "source": "s2",
+          "locator": "第 9–15 行；目录列出的实现范围"
+        }
+      ]
+    },
+    {
+      "title": "上手与资源",
+      "stance": "原文／代码事实与分析推断（逐段区分）",
+      "paragraphs": [
+        "依赖只有 FastAPI、uvicorn、pydantic、faiss-cpu、NumPy 和 pytest；没有模型下载和外部 LLM API 依赖。静态估计适合 CPU 机制演示，8GB GPU 并非必要；本次没有安装依赖、启动项目或运行其测试。",
+        "元数据、向量、审计及 HMAC key 均为进程内状态，未见持久化／迁移机制；重启不能直接继承完整历史。固定目录未见 LICENSE，不能据此推断获得任意复用授权。Windows 的 FAISS wheel 可用性与具体环境兼容尚未验证。"
+      ],
+      "refs": [
+        {
+          "source": "s8",
+          "locator": "requirements 第 1–6 行"
+        },
+        {
+          "source": "s6",
+          "locator": "第 12–20 行"
+        },
+        {
+          "source": "s1",
+          "locator": "完整文件目录"
+        }
+      ]
+    },
+    {
+      "title": "成熟度与研究用途",
+      "stance": "原文／代码事实与分析推断（逐段区分）",
+      "paragraphs": [
+        "测试文件有三项：入库隔离、租户／级别过滤、改文本后的验签拒绝。它们直接调用类并自设可信请求，没有覆盖 Web 身份伪装、多语言／语义改写、自适应注入、误拦率、真实检索效用或生成模型是否受骗。写了测试不等于本次已跑通。",
+        "研究用途是帮助理解“文本清理、内容完整性、来源真实性、身份认证、权限与状态新鲜度”为什么要分别测。建议快速看关键文件和限制；目前不足以当作可靠生产防御或直接引用其防御率。"
+      ],
+      "refs": [
+        {
+          "source": "s9",
+          "locator": "第 11–52 行"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "仅静态阅读固定 commit；未执行仓库代码或三项测试，也未访问项目任何运行端点。",
+    "未提供端到端攻击成功率、误拦、延迟或公开基准结果；不能编造效果。",
+    "认证缺口和检索边界来自静态审阅，具体可利用性与部署风险需独立验证。"
+  ],
+  "checks": [
+    "阅读文件树、README、main、embedder、models、rag_firewall、sanitizer、requirements 和 tests。",
+    "核对 HMAC 的签名对象、请求权限来源、内存生命周期及实际正则规则。",
+    "所有仓库内容仅缓存文本；无模型 API、第三方代码执行或私人资料上传。"
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://github.com/abhinandanpandey-in/zero-trust-rag-firewall/tree/acc34e3c0e33cd349b7afa222af1b4528831a215",
+      "label": "固定 commit 文件目录：acc34e3c0e33cd349b7afa222af1b4528831a215",
+      "sha256": "df455c4be710c8622b44de5e678d3e6fc4a0f54544b35b27d4b1ce23f0e157a1"
+    },
+    {
+      "id": "s2",
+      "url": "https://github.com/abhinandanpandey-in/zero-trust-rag-firewall/blob/acc34e3c0e33cd349b7afa222af1b4528831a215/README.md",
+      "label": "README.md",
+      "sha256": "bc304362af6321d21a0623f9ddb41f165aa0dd3251b24a37b8fc7e286c4564dd"
+    },
+    {
+      "id": "s3",
+      "url": "https://github.com/abhinandanpandey-in/zero-trust-rag-firewall/blob/acc34e3c0e33cd349b7afa222af1b4528831a215/app/main.py",
+      "label": "app/main.py",
+      "sha256": "c074d808c4234cfebe576318121d8c1f3f80a33877790fd1c520ea4200686d4c"
+    },
+    {
+      "id": "s4",
+      "url": "https://github.com/abhinandanpandey-in/zero-trust-rag-firewall/blob/acc34e3c0e33cd349b7afa222af1b4528831a215/app/embedder.py",
+      "label": "app/embedder.py",
+      "sha256": "abe7afa0d94b0aad287f365467d7f70ecd7f57945d3452ddbefd09ea000dfda8"
+    },
+    {
+      "id": "s5",
+      "url": "https://github.com/abhinandanpandey-in/zero-trust-rag-firewall/blob/acc34e3c0e33cd349b7afa222af1b4528831a215/app/models.py",
+      "label": "app/models.py",
+      "sha256": "07ab2615b8f057dfe134f3aba2f035c03f967c0e77d42e785c3523d12fe086d6"
+    },
+    {
+      "id": "s6",
+      "url": "https://github.com/abhinandanpandey-in/zero-trust-rag-firewall/blob/acc34e3c0e33cd349b7afa222af1b4528831a215/app/rag_firewall.py",
+      "label": "app/rag_firewall.py",
+      "sha256": "0d62a60de0bef1863304cf0b65f6474a399a1deebbab3c51ea2795b79b418fed"
+    },
+    {
+      "id": "s7",
+      "url": "https://github.com/abhinandanpandey-in/zero-trust-rag-firewall/blob/acc34e3c0e33cd349b7afa222af1b4528831a215/app/sanitizer.py",
+      "label": "app/sanitizer.py",
+      "sha256": "c5360cd7232e00107293ccd61ebd43ad45a4248cdc832bd234ba9a1947d2d240"
+    },
+    {
+      "id": "s8",
+      "url": "https://github.com/abhinandanpandey-in/zero-trust-rag-firewall/blob/acc34e3c0e33cd349b7afa222af1b4528831a215/requirements.txt",
+      "label": "requirements.txt",
+      "sha256": "374b12ab3a86a1230d89c8e0d38e36fe65dc613cda0f1f0bb45daabcb14bda47"
+    },
+    {
+      "id": "s9",
+      "url": "https://github.com/abhinandanpandey-in/zero-trust-rag-firewall/blob/acc34e3c0e33cd349b7afa222af1b4528831a215/tests/test_rag_firewall.py",
+      "label": "tests/test_rag_firewall.py",
+      "sha256": "667c9c8eb93ee8c978c467df679431b4d59518731dc718e9937a4057797b69b1"
+    }
+  ]
+}

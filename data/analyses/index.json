@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-19T00:49:38.843837+00:00",
+  "updated_at": "2026-11-22T14:26:58.075890+00:00",
   "items": {
     "item_163311fe87f0a7ae:75cded2e42309d0907e0": {
       "item_id": "item_163311fe87f0a7ae",
@@ -88,6 +88,54 @@
       "updated_at": "2026-11-19T00:49:38.803289+00:00",
       "path": "data/analyses/item_9a52a7565a239b1e-a2c12a8d5a8c6e3d4c47.json",
       "message": "建议精读 Mediator、write commitment 和效用损失，适合作为权限边界对照。"
+    },
+    "item_163311fe87f0a7ae:de02710616d6fe1e46e7": {
+      "item_id": "item_163311fe87f0a7ae",
+      "kind": "paper",
+      "title": "SPILLWAY: Separating Target Admission from Sanitization to Defend Tool-Using Agents against Prompt Injection",
+      "version": "v3",
+      "requested_version": "v3",
+      "fingerprint": "de02710616d6fe1e46e7",
+      "status": "partial",
+      "updated_at": "2026-11-22T14:26:57.341868+00:00",
+      "path": "data/analyses/item_163311fe87f0a7ae-de02710616d6fe1e46e7.json",
+      "message": "精读 v3 的授权边界和独立测试；标准模板的零攻击成功不能替代自适应评估。"
+    },
+    "item_87b12edbcb32b43f:3859a0826f49e8c0d303": {
+      "item_id": "item_87b12edbcb32b43f",
+      "kind": "paper",
+      "title": "ElephantAgent: Contextual State Continuity in Agentic Systems",
+      "version": "v2",
+      "requested_version": "v2",
+      "fingerprint": "3859a0826f49e8c0d303",
+      "status": "partial",
+      "updated_at": "2026-11-22T14:26:58.012349+00:00",
+      "path": "data/analyses/item_87b12edbcb32b43f-3859a0826f49e8c0d303.json",
+      "message": "优先精读：它区分“来源真实”和“状态最新”，但带内投毒仍依赖事后审计恢复。"
+    },
+    "item_0bf5a5c3dab50a22:aa58e6761e7e642bcf8b": {
+      "item_id": "item_0bf5a5c3dab50a22",
+      "kind": "paper",
+      "title": "Securing and Auditing Long-Horizon LLM Agents: State-Transfer Auditing and Controls in the Agent Harness",
+      "version": "v1",
+      "requested_version": "v1",
+      "fingerprint": "aa58e6761e7e642bcf8b",
+      "status": "partial",
+      "updated_at": "2026-11-22T14:26:57.365657+00:00",
+      "path": "data/analyses/item_0bf5a5c3dab50a22-aa58e6761e7e642bcf8b.json",
+      "message": "值得读作研究设计清单：先记录状态怎样转移，再追责失败；高检测率来自受控故障轨迹。"
+    },
+    "item_a67f0d137ee3eab0:8895578d9a89184f125c": {
+      "item_id": "item_a67f0d137ee3eab0",
+      "kind": "repo",
+      "title": "abhinandanpandey-in/zero-trust-rag-firewall",
+      "version": "acc34e3c0e33cd349b7afa222af1b4528831a215",
+      "requested_version": "2026-11-20T06:17:31Z",
+      "fingerprint": "8895578d9a89184f125c",
+      "status": "partial",
+      "updated_at": "2026-11-22T14:26:58.063478+00:00",
+      "path": "data/analyses/item_a67f0d137ee3eab0-8895578d9a89184f125c.json",
+      "message": "适合读作 CPU 安全机制小样例；API 身份、权限来源和真实投毒评测尚不够生产使用。"
     }
   }
 }
