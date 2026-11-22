@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "date": "2026-11-22",
-  "generated_at": "2026-11-21T22:22:08.062267+00:00",
+  "generated_at": "2026-11-22T06:38:37.345794+00:00",
   "status": "partial",
   "selection_basis": "规则预筛",
   "sources": [
     {
       "name": "arXiv",
       "status": "ok",
-      "count": 29,
+      "count": 28,
       "detail": "包含新论文与版本更新；预印本不等于正式发表"
     },
     {
@@ -73,7 +73,7 @@
         "updated_at": "2026-11-18T21:16:03Z",
         "version": "v3",
         "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-21T22:22:08.062267+00:00",
+        "last_seen": "2026-11-22T06:38:37.345794+00:00",
         "change": "observed_again",
         "score": 7,
         "reason": "研究主题匹配：prompt injection、provenance",
@@ -91,7 +91,7 @@
         "updated_at": "2026-11-18T08:55:08Z",
         "version": "v2",
         "first_seen": "2026-11-19T07:16:38.919086+00:00",
-        "last_seen": "2026-11-21T22:22:08.062267+00:00",
+        "last_seen": "2026-11-22T06:38:37.345794+00:00",
         "change": "observed_again",
         "score": 7,
         "reason": "研究主题匹配：memory poisoning",
@@ -109,7 +109,7 @@
         "updated_at": "2026-11-17T10:36:04Z",
         "version": "v1",
         "first_seen": "2026-11-19T07:16:38.919086+00:00",
-        "last_seen": "2026-11-21T22:22:08.062267+00:00",
+        "last_seen": "2026-11-22T06:38:37.345794+00:00",
         "change": "observed_again",
         "score": 3,
         "reason": "研究主题匹配：prompt injection",
@@ -130,29 +130,10 @@
         "stars": 1,
         "topics": [],
         "first_seen": "2026-11-20T07:05:24.514098+00:00",
-        "last_seen": "2026-11-21T22:22:08.062267+00:00",
+        "last_seen": "2026-11-22T06:38:37.345794+00:00",
         "change": "observed_again",
         "score": 14,
         "reason": "研究主题匹配：prompt injection、memory poisoning、provenance",
-        "priority": "快速浏览",
-        "selection_basis": "规则预筛；不是模型精排或学术质量评分"
-      },
-      {
-        "id": "item_0bebaa729dc53860",
-        "kind": "repo",
-        "url": "https://github.com/shahmeerhyat/cpmg-memory-poisoning",
-        "title": "ShahmeerHyat/cpmg-memory-poisoning",
-        "source": "GitHub",
-        "summary": "CPMG: Contextual Provenance Memory Guard - detecting persistent memory poisoning in LLM agents (Agentic AI course project, FAST-NUCES)",
-        "published_at": "2026-11-07T16:27:38Z",
-        "updated_at": "2026-11-17T07:47:15Z",
-        "stars": 0,
-        "topics": [],
-        "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-21T22:22:08.062267+00:00",
-        "change": "observed_again",
-        "score": 14,
-        "reason": "研究主题匹配：memory poisoning、memory-poisoning、provenance",
         "priority": "快速浏览",
         "selection_basis": "规则预筛；不是模型精排或学术质量评分"
       },
@@ -164,7 +145,7 @@
         "source": "GitHub",
         "summary": "Runtime defense against memory poisoning in AI agents (OWASP ASI06). Drop-in for LangChain, OpenAI Agents, AutoGen, CrewAI and mem0.",
         "published_at": "2026-02-16T21:59:18Z",
-        "updated_at": "2026-11-21T12:31:13Z",
+        "updated_at": "2026-11-22T01:05:14Z",
         "stars": 209,
         "topics": [
           "agent-memory",
@@ -189,7 +170,7 @@
           "security"
         ],
         "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-21T22:22:08.062267+00:00",
+        "last_seen": "2026-11-22T06:38:37.345794+00:00",
         "change": "observed_again",
         "score": 13,
         "reason": "研究主题匹配：prompt-injection、memory poisoning、memory-poisoning",
@@ -223,7 +204,7 @@
           "zero-dependency"
         ],
         "first_seen": "2026-11-20T23:03:54.584308+00:00",
-        "last_seen": "2026-11-21T22:22:08.062267+00:00",
+        "last_seen": "2026-11-22T06:38:37.345794+00:00",
         "change": "observed_again",
         "score": 13,
         "reason": "研究主题匹配：prompt injection、prompt-injection、memory poisoning",
@@ -242,10 +223,29 @@
         "stars": 0,
         "topics": [],
         "first_seen": "2026-11-20T07:05:24.514098+00:00",
-        "last_seen": "2026-11-21T22:22:08.062267+00:00",
+        "last_seen": "2026-11-22T06:38:37.345794+00:00",
         "change": "observed_again",
         "score": 13,
         "reason": "研究主题匹配：prompt injection、agent security、memory poisoning",
+        "priority": "快速浏览",
+        "selection_basis": "规则预筛；不是模型精排或学术质量评分"
+      },
+      {
+        "id": "item_e588b9bb1af43b91",
+        "kind": "repo",
+        "url": "https://github.com/google-research/camel-prompt-injection",
+        "title": "google-research/camel-prompt-injection",
+        "source": "GitHub",
+        "summary": "Code for the paper \"Defeating Prompt Injections by Design\"",
+        "published_at": "2025-05-13T13:29:24Z",
+        "updated_at": "2025-06-20T13:59:30Z",
+        "stars": 425,
+        "topics": [],
+        "first_seen": "2026-11-18T07:09:14.936020+00:00",
+        "last_seen": "2026-11-22T06:38:37.345794+00:00",
+        "change": "observed_again",
+        "score": 11,
+        "reason": "研究主题匹配：prompt injection、prompt-injection",
         "priority": "快速浏览",
         "selection_basis": "规则预筛；不是模型精排或学术质量评分"
       }
@@ -290,51 +290,6 @@
       }
     },
     {
-      "id": "item_565278f68ba0078a",
-      "kind": "repo",
-      "url": "https://github.com/1276486/zero-x-bypass-jailbreak",
-      "title": "1276486/ZERO-X-Bypass-Jailbreak",
-      "source": "GitHub",
-      "summary": "ZERO-X破甲 · AI 客户端破甲工具：Codex / Claude / Cursor / OpenCode / WorkBuddy / DeepSeek / 豆包 一键注入指令集。覆盖免杀 · EDR 绕过 · Shellcode · 加载器 · Webshell · 远控 · C2 · 反调试 · 反虚拟机 · 反沙箱 · 提权 · 内网渗透 · 横向移动 · 渗透测试 · 逆向工程 · 破解 · 卡密校验 · 样本分析 · 提示词注入 Prompt Injection · AI 越狱 AI Jailbreak · CVE · PoC · RCE · SSRF。Windows 桌面（Electron + React）",
-      "published_at": "2026-11-18T01:44:21Z",
-      "updated_at": "2026-11-21T13:38:45Z",
-      "stars": 45,
-      "topics": [
-        "ai-jailbreak",
-        "ai-security",
-        "antivirus-evasion",
-        "c2",
-        "claude",
-        "codex",
-        "cve",
-        "edr-bypass",
-        "internal-pentest",
-        "llm-security",
-        "penetration-testing",
-        "poc",
-        "privilege-escalation",
-        "prompt-injection",
-        "rce",
-        "red-team",
-        "reverse-engineering",
-        "shellcode",
-        "ssrf",
-        "webshell"
-      ],
-      "first_seen": "2026-11-19T07:16:38.919086+00:00",
-      "last_seen": "2026-11-21T22:22:08.062267+00:00",
-      "change": "observed_again",
-      "day_growth": {
-        "delta": 13,
-        "days": 1.94,
-        "status": "irregular_window"
-      },
-      "week_growth": {
-        "delta": null,
-        "status": "insufficient_history"
-      }
-    },
-    {
       "id": "item_7d2aa1dc3645ebae",
       "kind": "repo",
       "url": "https://github.com/debugdyanmo/skillaudit",
@@ -360,6 +315,51 @@
       "day_growth": {
         "delta": 11,
         "days": 1.51,
+        "status": "irregular_window"
+      },
+      "week_growth": {
+        "delta": null,
+        "status": "insufficient_history"
+      }
+    },
+    {
+      "id": "item_565278f68ba0078a",
+      "kind": "repo",
+      "url": "https://github.com/1276486/zero-x-bypass-jailbreak",
+      "title": "1276486/ZERO-X-Bypass-Jailbreak",
+      "source": "GitHub",
+      "summary": "ZERO-X破甲 · AI 客户端破甲工具：Codex / Claude / Cursor / OpenCode / WorkBuddy / DeepSeek / 豆包 一键注入指令集。覆盖免杀 · EDR 绕过 · Shellcode · 加载器 · Webshell · 远控 · C2 · 反调试 · 反虚拟机 · 反沙箱 · 提权 · 内网渗透 · 横向移动 · 渗透测试 · 逆向工程 · 破解 · 卡密校验 · 样本分析 · 提示词注入 Prompt Injection · AI 越狱 AI Jailbreak · CVE · PoC · RCE · SSRF。Windows 桌面（Electron + React）",
+      "published_at": "2026-11-18T01:44:21Z",
+      "updated_at": "2026-11-22T06:33:20Z",
+      "stars": 46,
+      "topics": [
+        "ai-jailbreak",
+        "ai-security",
+        "antivirus-evasion",
+        "c2",
+        "claude",
+        "codex",
+        "cve",
+        "edr-bypass",
+        "internal-pentest",
+        "llm-security",
+        "penetration-testing",
+        "poc",
+        "privilege-escalation",
+        "prompt-injection",
+        "rce",
+        "red-team",
+        "reverse-engineering",
+        "shellcode",
+        "ssrf",
+        "webshell"
+      ],
+      "first_seen": "2026-11-19T07:16:38.919086+00:00",
+      "last_seen": "2026-11-22T06:38:37.345794+00:00",
+      "change": "observed_again",
+      "day_growth": {
+        "delta": 6,
+        "days": 1.32,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -420,7 +420,7 @@
       "source": "GitHub",
       "summary": "Open-source antivirus and firewall for AI agents: block risky tools, secret access, prompt injection, malicious packages, MCP servers, plugins, and skills at runtime.",
       "published_at": "2026-03-28T19:02:15Z",
-      "updated_at": "2026-11-21T22:21:31Z",
+      "updated_at": "2026-11-22T06:36:54Z",
       "stars": 1118,
       "topics": [
         "agent-security",
@@ -445,11 +445,11 @@
         "vulnify"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-21T22:22:08.062267+00:00",
+      "last_seen": "2026-11-22T06:38:37.345794+00:00",
       "change": "observed_again",
       "day_growth": {
-        "delta": 3,
-        "days": 1.52,
+        "delta": 2,
+        "days": 1.3,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -474,80 +474,11 @@
         "security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-21T22:22:08.062267+00:00",
-      "change": "observed_again",
-      "day_growth": {
-        "delta": 3,
-        "days": 1.52,
-        "status": "irregular_window"
-      },
-      "week_growth": {
-        "delta": null,
-        "status": "insufficient_history"
-      }
-    },
-    {
-      "id": "item_9374c9e62286b22f",
-      "kind": "repo",
-      "url": "https://github.com/uiuc-kang-lab/injecagent",
-      "title": "uiuc-kang-lab/InjecAgent",
-      "source": "GitHub",
-      "summary": "",
-      "published_at": "2024-02-20T04:00:06Z",
-      "updated_at": "2024-07-02T05:39:24Z",
-      "stars": 189,
-      "topics": [],
-      "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-21T22:22:08.062267+00:00",
-      "change": "observed_again",
-      "day_growth": {
-        "delta": 3,
-        "days": 1.52,
-        "status": "irregular_window"
-      },
-      "week_growth": {
-        "delta": null,
-        "status": "insufficient_history"
-      }
-    },
-    {
-      "id": "item_50cc0395f5577882",
-      "kind": "repo",
-      "url": "https://github.com/owasp/www-project-agent-memory-guard",
-      "title": "OWASP/www-project-agent-memory-guard",
-      "source": "GitHub",
-      "summary": "Runtime defense against memory poisoning in AI agents (OWASP ASI06). Drop-in for LangChain, OpenAI Agents, AutoGen, CrewAI and mem0.",
-      "published_at": "2026-02-16T21:59:18Z",
-      "updated_at": "2026-11-21T12:31:13Z",
-      "stars": 209,
-      "topics": [
-        "agent-memory",
-        "agentic-ai",
-        "ai-agents",
-        "ai-safety",
-        "ai-security",
-        "autogen",
-        "crewai",
-        "langchain",
-        "llm-agents",
-        "llm-security",
-        "mcp",
-        "mcp-server",
-        "mem0",
-        "memory-poisoning",
-        "openai-agents",
-        "owasp",
-        "prompt-injection",
-        "python",
-        "rag-security",
-        "security"
-      ],
-      "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-21T22:22:08.062267+00:00",
+      "last_seen": "2026-11-22T06:38:37.345794+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 2,
-        "days": 1.52,
+        "days": 1.3,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -591,8 +522,32 @@
       "last_seen": "2026-11-21T22:22:08.062267+00:00",
       "change": "observed_again",
       "day_growth": {
-        "delta": 1,
-        "days": 1.94,
+        "delta": 2,
+        "days": 0.97,
+        "status": "irregular_window"
+      },
+      "week_growth": {
+        "delta": null,
+        "status": "insufficient_history"
+      }
+    },
+    {
+      "id": "item_9374c9e62286b22f",
+      "kind": "repo",
+      "url": "https://github.com/uiuc-kang-lab/injecagent",
+      "title": "uiuc-kang-lab/InjecAgent",
+      "source": "GitHub",
+      "summary": "",
+      "published_at": "2024-02-20T04:00:06Z",
+      "updated_at": "2024-07-02T05:39:24Z",
+      "stars": 189,
+      "topics": [],
+      "first_seen": "2026-11-18T07:09:14.936020+00:00",
+      "last_seen": "2026-11-22T06:38:37.345794+00:00",
+      "change": "observed_again",
+      "day_growth": {
+        "delta": 2,
+        "days": 1.3,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -619,11 +574,11 @@
         "prompt-engineering"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-21T22:22:08.062267+00:00",
+      "last_seen": "2026-11-22T06:38:37.345794+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 1,
-        "days": 1.52,
+        "days": 1.3,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -632,22 +587,43 @@
       }
     },
     {
-      "id": "item_0b6954e8696ab98b",
+      "id": "item_50cc0395f5577882",
       "kind": "repo",
-      "url": "https://github.com/facebookresearch/secalign",
-      "title": "facebookresearch/SecAlign",
+      "url": "https://github.com/owasp/www-project-agent-memory-guard",
+      "title": "OWASP/www-project-agent-memory-guard",
       "source": "GitHub",
-      "summary": "Repo for the research paper \"SecAlign: Defending Against Prompt Injection with Preference Optimization\"",
-      "published_at": "2024-10-04T18:01:41Z",
-      "updated_at": "2026-07-02T11:30:51Z",
-      "stars": 106,
-      "topics": [],
+      "summary": "Runtime defense against memory poisoning in AI agents (OWASP ASI06). Drop-in for LangChain, OpenAI Agents, AutoGen, CrewAI and mem0.",
+      "published_at": "2026-02-16T21:59:18Z",
+      "updated_at": "2026-11-22T01:05:14Z",
+      "stars": 209,
+      "topics": [
+        "agent-memory",
+        "agentic-ai",
+        "ai-agents",
+        "ai-safety",
+        "ai-security",
+        "autogen",
+        "crewai",
+        "langchain",
+        "llm-agents",
+        "llm-security",
+        "mcp",
+        "mcp-server",
+        "mem0",
+        "memory-poisoning",
+        "openai-agents",
+        "owasp",
+        "prompt-injection",
+        "python",
+        "rag-security",
+        "security"
+      ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-21T22:22:08.062267+00:00",
+      "last_seen": "2026-11-22T06:38:37.345794+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 1,
-        "days": 1.52,
+        "days": 1.3,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -667,11 +643,11 @@
       "stars": 82,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-21T22:22:08.062267+00:00",
+      "last_seen": "2026-11-22T06:38:37.345794+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 1,
-        "days": 1.52,
+        "days": 1.3,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -761,28 +737,22 @@
       }
     },
     {
-      "id": "item_075bce0aebb95369",
+      "id": "item_d60dea30243d18f8",
       "kind": "repo",
-      "url": "https://github.com/pisberg/llm-fw",
-      "title": "PIsberg/llm-fw",
+      "url": "https://github.com/5aumit/trust-issues",
+      "title": "5aumit/trust-issues",
       "source": "GitHub",
-      "summary": "A local prompt injection firewall that intercepts traffic between your tools and every major LLM API before it leaves your machine. Malicious prompts are blocked and logged; clean ones are forwarded transparently.",
-      "published_at": "2026-05-30T15:50:13Z",
-      "updated_at": "2026-11-21T09:08:40Z",
-      "stars": 9,
-      "topics": [
-        "ai",
-        "firewall",
-        "node-js",
-        "prompt-injection",
-        "typescript"
-      ],
+      "summary": "A class project for TAI4SE at NC State studying security defenses for coding agents against repository-based prompt injection and other adversarial attacks, evaluated using benchmarks.",
+      "published_at": "2026-09-23T22:31:31Z",
+      "updated_at": "2026-11-22T02:46:39Z",
+      "stars": 1,
+      "topics": [],
       "first_seen": "2026-11-19T23:33:17.566091+00:00",
-      "last_seen": "2026-11-21T09:43:04.717324+00:00",
+      "last_seen": "2026-11-22T06:38:37.345794+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 1,
-        "days": 1.41,
+        "days": 1.3,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -839,30 +809,6 @@
       }
     },
     {
-      "id": "item_a67f0d137ee3eab0",
-      "kind": "repo",
-      "url": "https://github.com/abhinandanpandey-in/zero-trust-rag-firewall",
-      "title": "abhinandanpandey-in/zero-trust-rag-firewall",
-      "source": "GitHub",
-      "summary": "Deterministic RAG ingestion and retrieval firewall. Defends vector databases (FAISS) against indirect prompt injection, semantic memory poisoning, and unauthorized tenant cross-talk via cryptographic document provenance and structural sanitization",
-      "published_at": "2026-11-20T06:12:03Z",
-      "updated_at": "2026-11-20T06:17:31Z",
-      "stars": 1,
-      "topics": [],
-      "first_seen": "2026-11-20T07:05:24.514098+00:00",
-      "last_seen": "2026-11-21T22:22:08.062267+00:00",
-      "change": "observed_again",
-      "day_growth": {
-        "delta": 1,
-        "days": 1.52,
-        "status": "irregular_window"
-      },
-      "week_growth": {
-        "delta": null,
-        "status": "insufficient_history"
-      }
-    },
-    {
       "id": "item_46cbc664c98c7991",
       "kind": "repo",
       "url": "https://github.com/qiuliang-liangqiu/pi-deepseek-v1",
@@ -874,11 +820,11 @@
       "stars": 1,
       "topics": [],
       "first_seen": "2026-11-20T09:58:22.316935+00:00",
-      "last_seen": "2026-11-21T22:22:08.062267+00:00",
+      "last_seen": "2026-11-22T06:38:37.345794+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 1,
-        "days": 1.52,
+        "days": 1.86,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -913,8 +859,57 @@
       "last_seen": "2026-11-20T23:20:22.875625+00:00",
       "change": "observed_again",
       "day_growth": {
+        "delta": 0,
+        "days": 0.0,
+        "status": "irregular_window"
+      },
+      "week_growth": {
         "delta": null,
         "status": "insufficient_history"
+      }
+    },
+    {
+      "id": "item_e588b9bb1af43b91",
+      "kind": "repo",
+      "url": "https://github.com/google-research/camel-prompt-injection",
+      "title": "google-research/camel-prompt-injection",
+      "source": "GitHub",
+      "summary": "Code for the paper \"Defeating Prompt Injections by Design\"",
+      "published_at": "2025-05-13T13:29:24Z",
+      "updated_at": "2025-06-20T13:59:30Z",
+      "stars": 425,
+      "topics": [],
+      "first_seen": "2026-11-18T07:09:14.936020+00:00",
+      "last_seen": "2026-11-22T06:38:37.345794+00:00",
+      "change": "observed_again",
+      "day_growth": {
+        "delta": 0,
+        "days": 1.3,
+        "status": "irregular_window"
+      },
+      "week_growth": {
+        "delta": null,
+        "status": "insufficient_history"
+      }
+    },
+    {
+      "id": "item_7a9bce0886175358",
+      "kind": "repo",
+      "url": "https://github.com/agiresearch/asb",
+      "title": "agiresearch/ASB",
+      "source": "GitHub",
+      "summary": "Agent Security Bench (ASB)",
+      "published_at": "2024-10-03T03:21:26Z",
+      "updated_at": "2026-09-30T06:52:20Z",
+      "stars": 332,
+      "topics": [],
+      "first_seen": "2026-11-18T07:09:14.936020+00:00",
+      "last_seen": "2026-11-22T06:38:37.345794+00:00",
+      "change": "observed_again",
+      "day_growth": {
+        "delta": 0,
+        "days": 1.3,
+        "status": "irregular_window"
       },
       "week_growth": {
         "delta": null,
@@ -922,14 +917,14 @@
       }
     }
   ],
-  "candidate_count": 93,
+  "candidate_count": 92,
   "published_count": 8,
-  "run_url": "https://github.com/Jacintha0511/ai-security-daily/actions/runs/44956375168",
+  "run_url": "https://github.com/Jacintha0511/ai-security-daily/actions/runs/44994626373",
   "notes": [
     "仅公开论文、项目、报道；不包含私人 idea 或实验。",
     "首次发现时间不等于发表时间；摘要与规则匹配不代表精读。",
     "star 为快照净变化，取消 star 可产生负值。"
   ],
   "news_updated_at": "2026-11-19T01:22:54.229438+00:00",
-  "updated_at": "2026-11-21T22:22:17.352896+00:00"
+  "updated_at": "2026-11-22T06:38:47.264534+00:00"
 }
