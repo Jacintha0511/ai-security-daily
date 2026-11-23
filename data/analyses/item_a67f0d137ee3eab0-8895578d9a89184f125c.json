@@ -244,5 +244,12 @@
       "label": "tests/test_rag_firewall.py",
       "sha256": "667c9c8eb93ee8c978c467df679431b4d59518731dc718e9937a4057797b69b1"
     }
-  ]
+  ],
+  "recommendation": {
+    "headline": "RAG 签名和租户过滤，还有哪些权限缺口",
+    "why_read": "用小型原型理解内容完整性与可信身份的区别。",
+    "read_next": "入库签名、查询身份与 clearance 来源、三项测试的覆盖范围",
+    "update_summary": "",
+    "substantive_update": false
+  }
 }

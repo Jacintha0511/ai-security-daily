@@ -255,5 +255,12 @@
       "label": "arXiv 作者、发表状态与作者提供的链接",
       "sha256": "f9805fcd5759f8a948a412956440686520b150cba70e524f5d34dc92f85fc4cb"
     }
-  ]
+  ],
+  "recommendation": {
+    "headline": "先固定写操作计划，再读取不可信内容",
+    "why_read": "从机制和效用代价两面理解执行权限边界。",
+    "read_next": "Mediator、write commitment 与主要结果表",
+    "update_summary": "",
+    "substantive_update": false
+  }
 }

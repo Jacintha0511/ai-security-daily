@@ -152,7 +152,9 @@ def select_repositories(config, state, ids, now):
         if not result:
             continue
         seed = item['url'].split('github.com/')[-1].lower() in seeds
-        exception = seed and policy.get('allow_seed_exceptions', True)
+        official = item['url'].split('github.com/')[-1].lower() in {n.lower() for n in config.get('verified_paper_repos', {})}
+        for paper_url in config.get('verified_paper_repos', {}).values(): safe_url(paper_url)
+        exception = official or seed and policy.get('allow_seed_exceptions', True)
         if item.get('stars', 0) < min_stars and not exception:
             continue
         updated = item.get('updated_at')
@@ -168,7 +170,7 @@ def select_repositories(config, state, ids, now):
         focused = any(k.lower().replace('-', ' ') in content for k in config['focus'])
         delta = day.get('delta') if day.get('status') == 'complete' else None
         fresh = idle is not None and idle <= 30
-        basis = '登记研究基准' if exception else f'达到 {min_stars} star 粗筛门槛'
+        basis = '已核实论文官方代码' if official else '登记研究基准' if seed and exception else f'达到 {min_stars} star 粗筛门槛'
         result.update(day_growth=day, week_growth=week,
                       reason=result['reason'] + f'；{item.get("stars", 0)} star；{basis}；' + (f'已观测约 24h 净增 {delta:+d}' if delta is not None else '约 24h 增长历史不足'),
                       selection_basis='先过 star／登记基准门槛；优先主线相关、近期提交或有效增长，再比较登记基准和 star。仅元数据筛选，代码与实验效果待核实')
@@ -371,6 +373,10 @@ def run_daily(config, data_dir, *, force=False, web=None, now=None):
         if own_web:
             web.client.close()
     report = make_report(config, state, statuses, ids, now)
+    if report["status"] != "failed":
+        from reading import candidates
+        report["items"] = candidates(config, state, ids, data_dir, now)
+        report["published_count"] = sum(map(len, report["items"].values()))
     attempt = {k: report[k] for k in ("date", "generated_at", "status", "sources", "candidate_count", "run_url")}
     state["latest_attempt"] = attempt
     state["runs"] = (state["runs"] + [attempt])[-90:]
@@ -407,7 +413,7 @@ def run_weekly(data_dir, now=None):
 def build(data_dir, destination):
     # Only explicit website assets and public report JSON are ever deployed.
     destination.mkdir(parents=True, exist_ok=True)
-    for name in ("index.html", "styles.css", "app.js", "analysis.html", "analysis.js", "analysis.css"):
+    for name in ("index.html", "styles.css", "app.js", "analysis.html", "analysis.js", "analysis.css", "reading.js"):
         if not (ROOT / 'site' / name).exists():
             continue
         shutil.copy2(ROOT / "site" / name, destination / name)
@@ -420,6 +426,10 @@ def build(data_dir, destination):
             shutil.copy2(path, target / folder / path.name)
     from enrich import validate_public
     validate_public(data_dir)
+    from reading import sync, validate_catalog
+    catalog = json.loads((data_dir / "library.json").read_text(encoding="utf-8")) if (data_dir / "library.json").exists() else sync(data_dir, persist=False)
+    validate_catalog(catalog)
+    atomic_json(target / "library.json", catalog)
     analysis_dir = data_dir / 'analyses'
     if analysis_dir.exists():
         (target / 'analyses').mkdir(exist_ok=True)

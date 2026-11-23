@@ -252,5 +252,12 @@
       "label": "arXiv 作者、发表状态与作者提供的链接",
       "sha256": "be857ed455fa3d382281bb093e15b183ef6a75b0f901b1e2784912dd6185383a"
     }
-  ]
+  ],
+  "recommendation": {
+    "headline": "发邮件或转账前，先检查目的地是否有授权依据",
+    "why_read": "直接对应行动权限研究，重点看确定性检查怎样约束模型恢复。",
+    "read_next": "第 III 节；表 II、III、IV 和附录 A",
+    "update_summary": "",
+    "substantive_update": false
+  }
 }

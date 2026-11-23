@@ -224,5 +224,12 @@
       "label": "arXiv 作者、发表状态与作者提供的链接",
       "sha256": "1170ad330488997e496dc7a8eab5f8914d013315eecf14d33f3f569dd58a223f"
     }
-  ]
+  ],
+  "recommendation": {
+    "headline": "压缩、写记忆和回滚时，哪些审计信息不能丢",
+    "why_read": "适合用来检查你自己的 Agent 是否记录了跨步骤的权限和来源。",
+    "read_next": "表 II 的字段；表 IV、V 的开销与归因结果",
+    "update_summary": "",
+    "substantive_update": false
+  }
 }

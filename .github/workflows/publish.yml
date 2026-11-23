@@ -2,7 +2,7 @@ name: Publish reading analyses
 on:
   push:
     branches: [main]
-    paths: ['data/analyses/**', 'data/news-inbox.json', '.github/workflows/publish.yml']
+    paths: ['data/analyses/**', 'data/library.json', 'data/news-inbox.json', '.github/workflows/publish.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -27,11 +27,12 @@ jobs:
       - run: node --test test_site.cjs
       - run: python enrich.py validate
       - run: python enrich.py import-news
+      - run: python reading.py sync
       - name: Save updated public news
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/reports data/manifest.json
+          git add data/reports data/manifest.json data/library.json
           if ! git diff --cached --quiet; then
             git commit -m 'data: merge local public news'
             git push origin HEAD:main

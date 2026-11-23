@@ -289,5 +289,12 @@
       "label": "pyproject.toml",
       "sha256": "9f8911933d00adfde6c80fa18f19c3ef387d2a061fa78b04e1ab5c88a69dae47"
     }
-  ]
+  ],
+  "recommendation": {
+    "headline": "记忆防护库的默认配置，究竟会拦住什么",
+    "why_read": "适合作为记忆防御基线的代码阅读候选，先核对默认与强化配置。",
+    "read_next": "guard.py 的读写与异常处理；Policy.strict 与跨重置评测",
+    "update_summary": "",
+    "substantive_update": false
+  }
 }

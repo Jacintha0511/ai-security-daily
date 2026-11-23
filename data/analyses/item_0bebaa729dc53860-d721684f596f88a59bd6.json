@@ -236,5 +236,12 @@
       "label": "baselines/tfidf.py",
       "sha256": "a18458d52846284d94d59003283cbb1ad70037d80f36713905b7482c52b20df5"
     }
-  ]
+  ],
+  "recommendation": {
+    "headline": "记忆投毒原型：模型分类与权限规则各管什么",
+    "why_read": "可读实现与版本记录，先分清离线分类和真实 Agent 防护。",
+    "read_next": "model.py、policy.py；README 的修订与限制",
+    "update_summary": "",
+    "substantive_update": false
+  }
 }

@@ -249,5 +249,12 @@
       "label": "arXiv 作者、发表状态与作者提供的链接",
       "sha256": "a507bfc8f5342a57460277deafa784f1601099bdee8aa140d3babaf620a0d973"
     }
-  ]
+  ],
+  "recommendation": {
+    "headline": "发邮件或转账前，先检查目的地是否有授权依据",
+    "why_read": "直接对应行动权限研究，重点看确定性检查怎样约束模型恢复。",
+    "read_next": "第 III 节；表 II、III、IV 和附录 A",
+    "update_summary": "v3 更新了效用与攻击成功数字，并补充独立攻击测试的非零结果。",
+    "substantive_update": true
+  }
 }

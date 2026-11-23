@@ -250,5 +250,12 @@
       "label": "arXiv 作者、发表状态与作者提供的链接",
       "sha256": "98fc19a1ba2ef93b81daf60a0217fdc80ea4336d0ffdf99ceda02fe8859b7a06"
     }
-  ]
+  ],
+  "recommendation": {
+    "headline": "多层防御一起失败，怎样测量真正的互补性",
+    "why_read": "先明确测量对象，再判断叠加防御是否真正有效。",
+    "read_next": "第 3—5 节；共同失败与系统级实验",
+    "update_summary": "",
+    "substantive_update": false
+  }
 }

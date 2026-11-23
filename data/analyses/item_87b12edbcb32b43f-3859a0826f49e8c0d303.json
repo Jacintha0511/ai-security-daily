@@ -227,5 +227,12 @@
       "label": "arXiv 作者、发表状态与作者提供的链接",
       "sha256": "0bbad259e7c840d807845dbedde91716ff11866b54c43500d1ed1825a312ef9d"
     }
-  ]
+  ],
+  "recommendation": {
+    "headline": "记忆签名有效，也可能是已经撤销的旧授权",
+    "why_read": "理解来源真实、状态最新与行动授权之间的区别。",
+    "read_next": "威胁模型、CG／SCM 流程；表 I 和恢复实验",
+    "update_summary": "",
+    "substantive_update": false
+  }
 }

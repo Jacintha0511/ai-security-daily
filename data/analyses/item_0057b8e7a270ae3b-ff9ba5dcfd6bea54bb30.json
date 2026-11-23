@@ -227,5 +227,12 @@
       "label": "arXiv 作者、发表状态与作者提供的链接",
       "sha256": "19c2baf83740bc7500921b8e140aee5ee6402e1871b35f928879c58dd7f45353"
     }
-  ]
+  ],
+  "recommendation": {
+    "headline": "工具说明也能让 Agent 填错参数",
+    "why_read": "观察为什么模型和复核器可能一起信任被污染的功能说明。",
+    "read_next": "图 3；表 V、X、XI，尤其是正常效用代价",
+    "update_summary": "",
+    "substantive_update": false
+  }
 }

@@ -20,7 +20,7 @@ on:
         default: true
   push:
     branches: [main]
-    paths: ['daily.py', 'enrich.py', 'test_*.py', 'test_site.cjs', 'config.json', 'requirements.txt', 'site/**', '.github/workflows/daily.yml']
+    paths: ['daily.py', 'enrich.py', 'reading.py', 'test_*.py', 'test_site.cjs', 'config.json', 'requirements.txt', 'site/**', '.github/workflows/daily.yml']
 
 permissions:
   contents: read
@@ -70,6 +70,7 @@ jobs:
           fi
           python enrich.py import-news
           if [ "$mode" = "all" ] || [ "$mode" = "weekly" ]; then python daily.py weekly; fi
+      - run: python reading.py sync
       - name: Save durable public history
         shell: bash
         run: |

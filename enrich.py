@@ -164,7 +164,7 @@ def prepare(date, refresh=False):
 
 def accept(packet_path, draft_path):
     packet, draft = read(packet_path), read(draft_path)
-    allowed = {'schema_version','item_id','fingerprint','status','model','verdict','overview','sections','limitations','checks'}
+    allowed = {'schema_version','item_id','fingerprint','status','model','verdict','overview','sections','limitations','checks','recommendation'}
     if set(draft) - allowed or draft.get('item_id') != packet['item']['id'] or draft.get('fingerprint') != packet['fingerprint']:
         raise ValueError('draft identity or public allowlist mismatch')
     if draft.get('status') not in {'ready', 'partial'} or not packet['sources']:
@@ -193,6 +193,9 @@ def accept(packet_path, draft_path):
              'verdict': plain(draft['verdict']), 'overview': plain(draft['overview']), 'sections': clean_sections,
              'limitations': [plain(x) for x in draft.get('limitations',[])], 'checks': [plain(x) for x in draft.get('checks',[])],
              'sources': [{k:s[k] for k in ('id','url','label','sha256')} for s in sources.values()]}
+    if 'recommendation' in draft:
+        from reading import clean_note
+        value['recommendation'] = clean_note(draft['recommendation'])
     name = value['item_id'] + '-' + value['fingerprint'] + '.json'
     daily.atomic_json(ANALYSES / name, value)
     index = get_index(); key = value['item_id'] + ':' + value['fingerprint']
@@ -287,7 +290,7 @@ def sync_news():
 def validate_public(data_dir):
     index = read(data_dir/'analyses'/'index.json', {'items':{}})
     entry_fields={'item_id','kind','title','version','requested_version','fingerprint','report_date','status','updated_at','path','message'}
-    analysis_fields={'schema_version','item_id','kind','title','url','fingerprint','version','status','model','generated_at','verdict','overview','sections','limitations','checks','sources'}
+    analysis_fields={'schema_version','item_id','kind','title','url','fingerprint','version','status','model','generated_at','verdict','overview','sections','limitations','checks','sources','recommendation'}
     if set(index)-{'schema_version','updated_at','items'}: raise ValueError('non-public index fields')
     def walk(v):
         if isinstance(v,str): plain(v)
@@ -307,6 +310,9 @@ def validate_public(data_dir):
             if not value or set(value)-analysis_fields or value['item_id']!=entry['item_id'] or value['fingerprint']!=entry['fingerprint']:
                 raise ValueError('invalid analysis identity or fields')
             walk(value)
+            if 'recommendation' in value:
+                from reading import clean_note
+                clean_note(value['recommendation'])
             daily.safe_url(value['url'])
             for src in value['sources']: daily.safe_url(src['url'])
     return {'status':'validated','entries':len(index['items'])}
