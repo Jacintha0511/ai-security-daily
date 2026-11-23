@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-23T09:30:56.882528+00:00",
+  "updated_at": "2026-11-23T10:42:52.330440+00:00",
   "timezone": "Asia/Shanghai",
   "latest": {
     "date": "2026-11-23",
     "status": "partial",
-    "generated_at": "2026-11-23T07:27:33.037837+00:00",
-    "count": 8,
+    "generated_at": "2026-11-23T10:41:51.964489+00:00",
+    "count": 1,
     "path": "data/reports/2026-11-23.json"
   },
   "archive": [
     {
       "date": "2026-11-23",
       "status": "partial",
-      "generated_at": "2026-11-23T07:27:33.037837+00:00",
-      "count": 8,
+      "generated_at": "2026-11-23T10:41:51.964489+00:00",
+      "count": 1,
       "path": "data/reports/2026-11-23.json"
     },
     {
@@ -73,32 +73,50 @@
   ],
   "latest_attempt": {
     "date": "2026-11-23",
-    "generated_at": "2026-11-23T07:27:33.037837+00:00",
+    "generated_at": "2026-11-23T10:41:51.964489+00:00",
     "status": "partial",
     "sources": [
       {
         "name": "arXiv",
-        "status": "ok",
-        "count": 32,
-        "detail": "包含新论文与版本更新；预印本不等于正式发表"
+        "status": "failed",
+        "count": 0,
+        "detail": "HTTP 连接失败"
       },
       {
-        "name": "GitHub 发现：\"prompt-injection\"",
+        "name": "GitHub 发现：\"prompt-injection\"（成熟候选）",
         "status": "ok",
         "count": 10,
-        "detail": "候选发现，不是全站升星榜"
+        "detail": "候选发现，不是全站升星榜；最终推荐另过门槛"
       },
       {
-        "name": "GitHub 发现：\"agent security\"",
+        "name": "GitHub 发现：\"agent security\"（成熟候选）",
         "status": "ok",
         "count": 10,
-        "detail": "候选发现，不是全站升星榜"
+        "detail": "候选发现，不是全站升星榜；最终推荐另过门槛"
       },
       {
-        "name": "GitHub 发现：\"memory poisoning\"",
+        "name": "GitHub 发现：\"memory poisoning\"（成熟候选）",
+        "status": "ok",
+        "count": 1,
+        "detail": "候选发现，不是全站升星榜；最终推荐另过门槛"
+      },
+      {
+        "name": "GitHub 发现：\"prompt-injection\"（新项目观察）",
         "status": "ok",
         "count": 10,
-        "detail": "候选发现，不是全站升星榜"
+        "detail": "候选发现，不是全站升星榜；最终推荐另过门槛"
+      },
+      {
+        "name": "GitHub 发现：\"agent security\"（新项目观察）",
+        "status": "ok",
+        "count": 10,
+        "detail": "候选发现，不是全站升星榜；最终推荐另过门槛"
+      },
+      {
+        "name": "GitHub 发现：\"memory poisoning\"（新项目观察）",
+        "status": "ok",
+        "count": 10,
+        "detail": "候选发现，不是全站升星榜；最终推荐另过门槛"
       },
       {
         "name": "GitHub 快照",
@@ -131,8 +149,8 @@
         "detail": "待接入可用 RSS，不代表今天没有报道"
       }
     ],
-    "candidate_count": 95,
-    "run_url": "https://github.com/Jacintha0511/ai-security-daily/actions/runs/45131217297"
+    "candidate_count": 63,
+    "run_url": "https://github.com/Jacintha0511/ai-security-daily/actions/runs/45158432077"
   },
   "schedule": "云端 01:15 采集、01:45/08:15/10:15 检查；本机 Codex 02:00 解析、03:45 补跑；周日 09:15 周报（北京时间）",
   "privacy": "公开动态站；私人 idea、阅读笔记和实验数据仅保留本地",

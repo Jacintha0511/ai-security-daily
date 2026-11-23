@@ -1,33 +1,51 @@
 {
   "schema_version": 1,
   "date": "2026-11-23",
-  "generated_at": "2026-11-23T07:27:33.037837+00:00",
+  "generated_at": "2026-11-23T10:41:51.964489+00:00",
   "status": "partial",
-  "selection_basis": "论文按主题预筛；项目经 star／登记基准门槛、主线相关性及有效增长重筛；代码质量另行核实",
+  "selection_basis": "规则预筛",
   "sources": [
     {
       "name": "arXiv",
-      "status": "ok",
-      "count": 32,
-      "detail": "包含新论文与版本更新；预印本不等于正式发表"
+      "status": "failed",
+      "count": 0,
+      "detail": "HTTP 连接失败"
     },
     {
-      "name": "GitHub 发现：\"prompt-injection\"",
+      "name": "GitHub 发现：\"prompt-injection\"（成熟候选）",
       "status": "ok",
       "count": 10,
-      "detail": "候选发现，不是全站升星榜"
+      "detail": "候选发现，不是全站升星榜；最终推荐另过门槛"
     },
     {
-      "name": "GitHub 发现：\"agent security\"",
+      "name": "GitHub 发现：\"agent security\"（成熟候选）",
       "status": "ok",
       "count": 10,
-      "detail": "候选发现，不是全站升星榜"
+      "detail": "候选发现，不是全站升星榜；最终推荐另过门槛"
     },
     {
-      "name": "GitHub 发现：\"memory poisoning\"",
+      "name": "GitHub 发现：\"memory poisoning\"（成熟候选）",
+      "status": "ok",
+      "count": 1,
+      "detail": "候选发现，不是全站升星榜；最终推荐另过门槛"
+    },
+    {
+      "name": "GitHub 发现：\"prompt-injection\"（新项目观察）",
       "status": "ok",
       "count": 10,
-      "detail": "候选发现，不是全站升星榜"
+      "detail": "候选发现，不是全站升星榜；最终推荐另过门槛"
+    },
+    {
+      "name": "GitHub 发现：\"agent security\"（新项目观察）",
+      "status": "ok",
+      "count": 10,
+      "detail": "候选发现，不是全站升星榜；最终推荐另过门槛"
+    },
+    {
+      "name": "GitHub 发现：\"memory poisoning\"（新项目观察）",
+      "status": "ok",
+      "count": 10,
+      "detail": "候选发现，不是全站升星榜；最终推荐另过门槛"
     },
     {
       "name": "GitHub 快照",
@@ -61,112 +79,8 @@
     }
   ],
   "items": {
-    "paper": [
-      {
-        "id": "item_163311fe87f0a7ae",
-        "kind": "paper",
-        "url": "https://arxiv.org/abs/2611.07222",
-        "title": "SPILLWAY: Separating Target Admission from Sanitization to Defend Tool-Using Agents against Prompt Injection",
-        "source": "arXiv",
-        "summary": "Tool-using agents act on email, files, and payments, so an instruction hidden in a web page or a shared document can make an agent send data or money to an attacker. Many runtime defenses put a language model on the decision that lets an action through, so the decision depends on a model that may read the attacker's text and adds model calls to every step. Provenance defenses keep the model off the final check but need a model to plan or route ea",
-        "published_at": "2026-11-04T23:18:10Z",
-        "updated_at": "2026-11-18T21:16:03Z",
-        "version": "v3",
-        "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-23T07:27:33.037837+00:00",
-        "change": "observed_again",
-        "score": 7,
-        "reason": "研究主题匹配：prompt injection、provenance",
-        "priority": "建议精读",
-        "selection_basis": "规则预筛；不是模型精排或学术质量评分"
-      },
-      {
-        "id": "item_87b12edbcb32b43f",
-        "kind": "paper",
-        "url": "https://arxiv.org/abs/2607.01919",
-        "title": "ElephantAgent: Contextual State Continuity in Agentic Systems",
-        "source": "arXiv",
-        "summary": "Agentic systems enhance their capabilities by invoking external tools and maintaining persistent memory. However, recent tool and memory poisoning attacks can covertly bias agent behavior. We observe that such attacks mounted out of band share a single enabler: each succeeds only by presenting the agent with a contextual state (e.g., tool state and memory) that is not the latest faithfully evolved one. This observation suggests that a continuity ",
-        "published_at": "2026-07-02T09:18:09Z",
-        "updated_at": "2026-11-18T08:55:08Z",
-        "version": "v2",
-        "first_seen": "2026-11-19T07:16:38.919086+00:00",
-        "last_seen": "2026-11-23T07:27:33.037837+00:00",
-        "change": "observed_again",
-        "score": 7,
-        "reason": "研究主题匹配：memory poisoning",
-        "priority": "建议精读",
-        "selection_basis": "规则预筛；不是模型精排或学术质量评分"
-      },
-      {
-        "id": "item_0057b8e7a270ae3b",
-        "kind": "paper",
-        "url": "https://arxiv.org/abs/2611.27041",
-        "title": "Subverting Tool Arguments: Defense-Evading Metadata Poisoning in LLM Agents",
-        "source": "arXiv",
-        "summary": "Conventional indirect prompt injection (IPI) attacks hijack an LLM agent's workflow through malicious instructions embedded in retrieved external content. The growing adoption of the Model Context Protocol (MCP) exposes another attack surface: tool descriptions supplied by third-party MCP servers. Attackers can manipulate this metadata to induce malicious argument generation during tool calls. The challenge is to ensure that the modified descript",
-        "published_at": "2026-11-20T03:13:56Z",
-        "updated_at": "2026-11-20T03:13:56Z",
-        "version": "v1",
-        "first_seen": "2026-11-23T07:27:33.037837+00:00",
-        "last_seen": "2026-11-23T07:27:33.037837+00:00",
-        "change": "newly_discovered",
-        "score": 3,
-        "reason": "研究主题匹配：prompt injection",
-        "priority": "快速浏览",
-        "selection_basis": "规则预筛；不是模型精排或学术质量评分"
-      }
-    ],
+    "paper": [],
     "repo": [
-      {
-        "id": "item_50cc0395f5577882",
-        "kind": "repo",
-        "url": "https://github.com/owasp/www-project-agent-memory-guard",
-        "title": "OWASP/www-project-agent-memory-guard",
-        "source": "GitHub",
-        "summary": "Runtime defense against memory poisoning in AI agents (OWASP ASI06). Drop-in for LangChain, OpenAI Agents, AutoGen, CrewAI and mem0.",
-        "published_at": "2026-02-16T21:59:18Z",
-        "updated_at": "2026-11-23T01:05:27Z",
-        "stars": 210,
-        "topics": [
-          "agent-memory",
-          "agentic-ai",
-          "ai-agents",
-          "ai-safety",
-          "ai-security",
-          "autogen",
-          "crewai",
-          "langchain",
-          "llm-agents",
-          "llm-security",
-          "mcp",
-          "mcp-server",
-          "mem0",
-          "memory-poisoning",
-          "openai-agents",
-          "owasp",
-          "prompt-injection",
-          "python",
-          "rag-security",
-          "security"
-        ],
-        "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-23T07:27:33.037837+00:00",
-        "change": "observed_again",
-        "score": 16,
-        "reason": "研究主题匹配：prompt injection、memory poisoning、llm security、ai safety；210 star；达到 100 star 粗筛门槛；已观测约 24h 净增 +1",
-        "priority": "快速浏览",
-        "selection_basis": "先过 star／登记基准门槛；优先主线相关、近期提交或有效增长，再比较登记基准和 star。仅元数据筛选，代码与实验效果待核实",
-        "day_growth": {
-          "delta": 1,
-          "days": 1.03,
-          "status": "complete"
-        },
-        "week_growth": {
-          "delta": null,
-          "status": "insufficient_history"
-        }
-      },
       {
         "id": "item_40c3d33d7970b4f5",
         "kind": "repo",
@@ -184,117 +98,16 @@
           "security"
         ],
         "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-23T07:27:33.037837+00:00",
+        "last_seen": "2026-11-23T10:41:51.964489+00:00",
         "change": "observed_again",
         "score": 8,
-        "reason": "研究主题匹配：prompt injection；1069 star；登记研究基准；已观测约 24h 净增 +5",
+        "reason": "研究主题匹配：prompt injection；1069 star；登记研究基准；已观测约 24h 净增 +4",
         "priority": "快速浏览",
         "selection_basis": "先过 star／登记基准门槛；优先主线相关、近期提交或有效增长，再比较登记基准和 star。仅元数据筛选，代码与实验效果待核实",
         "day_growth": {
-          "delta": 5,
-          "days": 1.03,
+          "delta": 4,
+          "days": 1.04,
           "status": "complete"
-        },
-        "week_growth": {
-          "delta": null,
-          "status": "insufficient_history"
-        }
-      },
-      {
-        "id": "item_7a9bce0886175358",
-        "kind": "repo",
-        "url": "https://github.com/agiresearch/asb",
-        "title": "agiresearch/ASB",
-        "source": "GitHub",
-        "summary": "Agent Security Bench (ASB)",
-        "published_at": "2024-10-03T03:21:26Z",
-        "updated_at": "2026-09-30T06:52:20Z",
-        "stars": 333,
-        "topics": [],
-        "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-23T07:27:33.037837+00:00",
-        "change": "observed_again",
-        "score": 8,
-        "reason": "研究主题匹配：agent security；333 star；登记研究基准；已观测约 24h 净增 +1",
-        "priority": "快速浏览",
-        "selection_basis": "先过 star／登记基准门槛；优先主线相关、近期提交或有效增长，再比较登记基准和 star。仅元数据筛选，代码与实验效果待核实",
-        "day_growth": {
-          "delta": 1,
-          "days": 1.03,
-          "status": "complete"
-        },
-        "week_growth": {
-          "delta": null,
-          "status": "insufficient_history"
-        }
-      },
-      {
-        "id": "item_02f9d4061de2f443",
-        "kind": "repo",
-        "url": "https://github.com/ai-secure/agentpoison",
-        "title": "AI-secure/AgentPoison",
-        "source": "GitHub",
-        "summary": "[NeurIPS 2024] Official implementation for \"AgentPoison: Red-teaming LLM Agents via Memory or Knowledge Base Backdoor Poisoning\"",
-        "published_at": "2024-03-22T10:39:10Z",
-        "updated_at": "2026-10-23T09:01:30Z",
-        "stars": 258,
-        "topics": [
-          "llm-agent",
-          "red-team",
-          "retrieval-augmented-generation"
-        ],
-        "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-23T07:27:33.037837+00:00",
-        "change": "observed_again",
-        "score": 5,
-        "reason": "已登记的安全研究基准／防御项目；258 star；登记研究基准；已观测约 24h 净增 +1",
-        "priority": "快速浏览",
-        "selection_basis": "先过 star／登记基准门槛；优先主线相关、近期提交或有效增长，再比较登记基准和 star。仅元数据筛选，代码与实验效果待核实",
-        "day_growth": {
-          "delta": 1,
-          "days": 1.03,
-          "status": "complete"
-        },
-        "week_growth": {
-          "delta": null,
-          "status": "insufficient_history"
-        }
-      },
-      {
-        "id": "item_24752662bfe1f0b1",
-        "kind": "repo",
-        "url": "https://github.com/wuyoscar/aisafetyhot",
-        "title": "wuyoscar/AISafetyHot",
-        "source": "GitHub",
-        "summary": "AI Safety HOT: daily AI safety news, papers and incidents in one place — jailbreaks, prompt injection, alignment, evals, governance. Website, daily digest, RSS and MCP.",
-        "published_at": "2026-10-01T11:33:59Z",
-        "updated_at": "2026-11-23T07:06:45Z",
-        "stars": 2077,
-        "topics": [
-          "ai-alignment",
-          "ai-governance",
-          "ai-safety",
-          "arxiv-papers",
-          "daily-papers",
-          "jailbreak",
-          "llm-security",
-          "mcp-server",
-          "news-aggregator",
-          "prompt-injection",
-          "red-teaming",
-          "rss"
-        ],
-        "first_seen": "2026-11-18T07:25:50.528448+00:00",
-        "last_seen": "2026-11-23T07:27:33.037837+00:00",
-        "change": "observed_again",
-        "score": 12,
-        "reason": "研究主题匹配：prompt injection、llm security、jailbreak、ai safety；2077 star；达到 100 star 粗筛门槛；约 24h 增长历史不足",
-        "priority": "快速浏览",
-        "selection_basis": "先过 star／登记基准门槛；优先主线相关、近期提交或有效增长，再比较登记基准和 star。仅元数据筛选，代码与实验效果待核实",
-        "day_growth": {
-          "delta": -4,
-          "days": 1.91,
-          "status": "irregular_window"
         },
         "week_growth": {
           "delta": null,
@@ -305,6 +118,43 @@
     "news": []
   },
   "repo_growth": [
+    {
+      "id": "item_24752662bfe1f0b1",
+      "kind": "repo",
+      "url": "https://github.com/wuyoscar/aisafetyhot",
+      "title": "wuyoscar/AISafetyHot",
+      "source": "GitHub",
+      "summary": "AI Safety HOT: daily AI safety news, papers and incidents in one place — jailbreaks, prompt injection, alignment, evals, governance. Website, daily digest, RSS and MCP.",
+      "published_at": "2026-10-01T11:33:59Z",
+      "updated_at": "2026-11-23T10:38:18Z",
+      "stars": 2081,
+      "topics": [
+        "ai-alignment",
+        "ai-governance",
+        "ai-safety",
+        "arxiv-papers",
+        "daily-papers",
+        "jailbreak",
+        "llm-security",
+        "mcp-server",
+        "news-aggregator",
+        "prompt-injection",
+        "red-teaming",
+        "rss"
+      ],
+      "first_seen": "2026-11-18T07:25:50.528448+00:00",
+      "last_seen": "2026-11-23T10:41:51.964489+00:00",
+      "change": "observed_again",
+      "day_growth": {
+        "delta": 4,
+        "days": 1.04,
+        "status": "complete"
+      },
+      "week_growth": {
+        "delta": null,
+        "status": "insufficient_history"
+      }
+    },
     {
       "id": "item_40c3d33d7970b4f5",
       "kind": "repo",
@@ -322,11 +172,11 @@
         "security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
+      "last_seen": "2026-11-23T10:41:51.964489+00:00",
       "change": "observed_again",
       "day_growth": {
-        "delta": 5,
-        "days": 1.03,
+        "delta": 4,
+        "days": 1.04,
         "status": "complete"
       },
       "week_growth": {
@@ -335,50 +185,88 @@
       }
     },
     {
-      "id": "item_7a9bce0886175358",
+      "id": "item_2d7d1a0d76714fa3",
       "kind": "repo",
-      "url": "https://github.com/agiresearch/asb",
-      "title": "agiresearch/ASB",
+      "url": "https://github.com/pipelab-org/pipelock",
+      "title": "pipelab-org/pipelock",
       "source": "GitHub",
-      "summary": "Agent Security Bench (ASB)",
-      "published_at": "2024-10-03T03:21:26Z",
-      "updated_at": "2026-09-30T06:52:20Z",
-      "stars": 333,
-      "topics": [],
-      "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
-      "change": "observed_again",
-      "day_growth": {
-        "delta": 1,
-        "days": 1.03,
-        "status": "complete"
-      },
-      "week_growth": {
-        "delta": null,
-        "status": "insufficient_history"
-      }
-    },
-    {
-      "id": "item_02f9d4061de2f443",
-      "kind": "repo",
-      "url": "https://github.com/ai-secure/agentpoison",
-      "title": "AI-secure/AgentPoison",
-      "source": "GitHub",
-      "summary": "[NeurIPS 2024] Official implementation for \"AgentPoison: Red-teaming LLM Agents via Memory or Knowledge Base Backdoor Poisoning\"",
-      "published_at": "2024-03-22T10:39:10Z",
-      "updated_at": "2026-10-23T09:01:30Z",
-      "stars": 258,
+      "summary": "Open-source AI agent firewall for MCP security and agent egress. Scans mediated HTTP, MCP, A2A, and WebSocket traffic for exfiltration, SSRF, and prompt injection, and emits mediator-signed action receipts: verifiable audit evidence from outside the agent.",
+      "published_at": "2026-02-08T00:40:18Z",
+      "updated_at": "2026-11-23T04:25:21Z",
+      "stars": 1017,
       "topics": [
-        "llm-agent",
-        "red-team",
-        "retrieval-augmented-generation"
+        "agent-security",
+        "ai-agent-security",
+        "ai-agents",
+        "ai-firewall",
+        "ai-security",
+        "dlp",
+        "egress-proxy",
+        "github-action",
+        "golang",
+        "integrity-monitoring",
+        "llm-firewall",
+        "llm-security",
+        "mcp",
+        "mcp-security",
+        "prompt-injection",
+        "security",
+        "security-scanning",
+        "security-tools",
+        "ssrf",
+        "ssrf-protection"
+      ],
+      "first_seen": "2026-11-19T00:57:14.149881+00:00",
+      "last_seen": "2026-11-23T10:41:51.964489+00:00",
+      "change": "observed_again",
+      "day_growth": {
+        "delta": 3,
+        "days": 1.04,
+        "status": "complete"
+      },
+      "week_growth": {
+        "delta": null,
+        "status": "insufficient_history"
+      }
+    },
+    {
+      "id": "item_49e364e463bd4a1d",
+      "kind": "repo",
+      "url": "https://github.com/hashgraph-online/hol-guard",
+      "title": "hashgraph-online/hol-guard",
+      "source": "GitHub",
+      "summary": "Open-source antivirus and firewall for AI agents: block risky tools, secret access, prompt injection, malicious packages, MCP servers, plugins, and skills at runtime.",
+      "published_at": "2026-03-28T19:02:15Z",
+      "updated_at": "2026-11-23T10:36:39Z",
+      "stars": 1121,
+      "topics": [
+        "agent-security",
+        "ai-agent-security",
+        "ai-agents",
+        "ai-antivirus",
+        "ai-security",
+        "claude-code",
+        "cursor",
+        "devsecops",
+        "gemini-cli",
+        "mcp",
+        "mcp-security",
+        "openclaw",
+        "opencode",
+        "prompt-injection",
+        "runtime-security",
+        "secrets-detection",
+        "security",
+        "security-scanner",
+        "supply-chain-security",
+        "vulnify"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
+      "last_seen": "2026-11-23T10:41:51.964489+00:00",
       "change": "observed_again",
       "day_growth": {
-        "delta": 1,
-        "days": 1.03,
+        "delta": 2,
+        "days": 1.04,
         "status": "complete"
       },
       "week_growth": {
@@ -395,7 +283,7 @@
       "summary": "Runtime defense against memory poisoning in AI agents (OWASP ASI06). Drop-in for LangChain, OpenAI Agents, AutoGen, CrewAI and mem0.",
       "published_at": "2026-02-16T21:59:18Z",
       "updated_at": "2026-11-23T01:05:27Z",
-      "stars": 210,
+      "stars": 211,
       "topics": [
         "agent-memory",
         "agentic-ai",
@@ -419,11 +307,99 @@
         "security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
+      "last_seen": "2026-11-23T10:41:51.964489+00:00",
+      "change": "observed_again",
+      "day_growth": {
+        "delta": 2,
+        "days": 1.04,
+        "status": "complete"
+      },
+      "week_growth": {
+        "delta": null,
+        "status": "insufficient_history"
+      }
+    },
+    {
+      "id": "item_7a9bce0886175358",
+      "kind": "repo",
+      "url": "https://github.com/agiresearch/asb",
+      "title": "agiresearch/ASB",
+      "source": "GitHub",
+      "summary": "Agent Security Bench (ASB)",
+      "published_at": "2024-10-03T03:21:26Z",
+      "updated_at": "2026-09-30T06:52:20Z",
+      "stars": 333,
+      "topics": [],
+      "first_seen": "2026-11-18T07:09:14.936020+00:00",
+      "last_seen": "2026-11-23T10:41:51.964489+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 1,
-        "days": 1.03,
+        "days": 1.04,
+        "status": "complete"
+      },
+      "week_growth": {
+        "delta": null,
+        "status": "insufficient_history"
+      }
+    },
+    {
+      "id": "item_02f9d4061de2f443",
+      "kind": "repo",
+      "url": "https://github.com/ai-secure/agentpoison",
+      "title": "AI-secure/AgentPoison",
+      "source": "GitHub",
+      "summary": "[NeurIPS 2024] Official implementation for \"AgentPoison: Red-teaming LLM Agents via Memory or Knowledge Base Backdoor Poisoning\"",
+      "published_at": "2024-03-22T10:39:10Z",
+      "updated_at": "2026-10-23T09:01:30Z",
+      "stars": 258,
+      "topics": [
+        "llm-agent",
+        "red-team",
+        "retrieval-augmented-generation"
+      ],
+      "first_seen": "2026-11-18T07:09:14.936020+00:00",
+      "last_seen": "2026-11-23T10:41:51.964489+00:00",
+      "change": "observed_again",
+      "day_growth": {
+        "delta": 1,
+        "days": 1.04,
+        "status": "complete"
+      },
+      "week_growth": {
+        "delta": null,
+        "status": "insufficient_history"
+      }
+    },
+    {
+      "id": "item_841b6dc64fec41d8",
+      "kind": "repo",
+      "url": "https://github.com/agent-threat-rule/agent-threat-rules",
+      "title": "Agent-Threat-Rule/agent-threat-rules",
+      "source": "GitHub",
+      "summary": "Open detection-rule standard for AI agent security threats — like Sigma, but for AI agents. Executable, testable rules for prompt injection, tool poisoning, context exfiltration and MCP attacks. Merged into open-source projects at Microsoft, Cisco, Gen Digital, MISP and FINOS. MIT-licensed.",
+      "published_at": "2026-03-09T07:48:38Z",
+      "updated_at": "2026-11-23T04:52:55Z",
+      "stars": 442,
+      "topics": [
+        "agent-security",
+        "agent-threat-rules",
+        "ai-security",
+        "garak",
+        "llm-security",
+        "mcp-security",
+        "owasp",
+        "owasp-agentic",
+        "prompt-injection",
+        "sigma-rules",
+        "threat-detection"
+      ],
+      "first_seen": "2026-11-20T23:03:54.584308+00:00",
+      "last_seen": "2026-11-23T10:41:51.964489+00:00",
+      "change": "observed_again",
+      "day_growth": {
+        "delta": 0,
+        "days": 1.04,
         "status": "complete"
       },
       "week_growth": {
@@ -443,11 +419,11 @@
       "stars": 425,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
+      "last_seen": "2026-11-23T10:41:51.964489+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.03,
+        "days": 1.04,
         "status": "complete"
       },
       "week_growth": {
@@ -474,11 +450,11 @@
         "prompt-engineering"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
+      "last_seen": "2026-11-23T10:41:51.964489+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.03,
+        "days": 1.04,
         "status": "complete"
       },
       "week_growth": {
@@ -498,11 +474,11 @@
       "stars": 189,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
+      "last_seen": "2026-11-23T10:41:51.964489+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.03,
+        "days": 1.04,
         "status": "complete"
       },
       "week_growth": {
@@ -522,11 +498,11 @@
       "stars": 106,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
+      "last_seen": "2026-11-23T10:41:51.964489+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.03,
+        "days": 1.04,
         "status": "complete"
       },
       "week_growth": {
@@ -546,35 +522,11 @@
       "stars": 82,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
+      "last_seen": "2026-11-23T10:41:51.964489+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.03,
-        "status": "complete"
-      },
-      "week_growth": {
-        "delta": null,
-        "status": "insufficient_history"
-      }
-    },
-    {
-      "id": "item_d5a173b5ba965421",
-      "kind": "repo",
-      "url": "https://github.com/ny1024/agentsafety-papers",
-      "title": "NY1024/AgentSafety-Papers",
-      "source": "GitHub",
-      "summary": "Daily Tracking of LLM Agent Security Papers on arXiv",
-      "published_at": "2026-07-02T10:29:32Z",
-      "updated_at": "2026-11-23T06:00:23Z",
-      "stars": 17,
-      "topics": [],
-      "first_seen": "2026-11-19T00:36:35.819128+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
-      "change": "observed_again",
-      "day_growth": {
-        "delta": 0,
-        "days": 1.03,
+        "days": 1.04,
         "status": "complete"
       },
       "week_growth": {
@@ -594,11 +546,11 @@
       "stars": 1,
       "topics": [],
       "first_seen": "2026-11-20T07:05:24.514098+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
+      "last_seen": "2026-11-23T10:41:51.964489+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.03,
+        "days": 1.04,
         "status": "complete"
       },
       "week_growth": {
@@ -618,11 +570,35 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
+      "last_seen": "2026-11-23T10:41:51.964489+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.03,
+        "days": 1.04,
+        "status": "complete"
+      },
+      "week_growth": {
+        "delta": null,
+        "status": "insufficient_history"
+      }
+    },
+    {
+      "id": "item_e3c6594edcd5ee83",
+      "kind": "repo",
+      "url": "https://github.com/rajan083/voicedesk",
+      "title": "rajan083/VoiceDesk",
+      "source": "GitHub",
+      "summary": "AI phone receptionist built from scratch: answers a business's calls from its own manual (per-tenant RAG), books appointments and alerts the owner. Hosted realtime speech models, tenant-isolated knowledge bases, prompt-injection tests. Python.",
+      "published_at": "2026-11-17T04:34:55Z",
+      "updated_at": "2026-11-23T10:26:13Z",
+      "stars": 0,
+      "topics": [],
+      "first_seen": "2026-11-19T07:16:38.919086+00:00",
+      "last_seen": "2026-11-23T10:41:51.964489+00:00",
+      "change": "observed_again",
+      "day_growth": {
+        "delta": 0,
+        "days": 1.04,
         "status": "complete"
       },
       "week_growth": {
@@ -642,11 +618,11 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-19T23:33:17.566091+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
+      "last_seen": "2026-11-23T10:41:51.964489+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.03,
+        "days": 1.04,
         "status": "complete"
       },
       "week_growth": {
@@ -666,11 +642,11 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-20T07:05:24.514098+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
+      "last_seen": "2026-11-23T10:41:51.964489+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.03,
+        "days": 1.04,
         "status": "complete"
       },
       "week_growth": {
@@ -690,11 +666,11 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-20T23:03:54.584308+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
+      "last_seen": "2026-11-23T10:41:51.964489+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.03,
+        "days": 1.04,
         "status": "complete"
       },
       "week_growth": {
@@ -714,147 +690,12 @@
       "stars": 0,
       "topics": [],
       "first_seen": "2026-11-20T23:03:54.584308+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
+      "last_seen": "2026-11-23T10:41:51.964489+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.03,
+        "days": 1.04,
         "status": "complete"
-      },
-      "week_growth": {
-        "delta": null,
-        "status": "insufficient_history"
-      }
-    },
-    {
-      "id": "item_08bad28f3d3de036",
-      "kind": "repo",
-      "url": "https://github.com/elmatadorz/genesis-security",
-      "title": "ElmatadorZ/Genesis-security",
-      "source": "GitHub",
-      "summary": "Defensive runtime for AI agents & multi-agent systems. Blocks prompt injection, data exfiltration, agent impersonation, memory poisoning and audit tampering. Trust tiers, tool gating, HMAC-signed agent messages, tamper-evident audit log. Claude Skill = brain, Python = body. Stdlib only, red-teamed.",
-      "published_at": "2026-11-20T08:08:44Z",
-      "updated_at": "2026-11-20T08:32:47Z",
-      "stars": 0,
-      "topics": [
-        "agent-orchestration",
-        "agent-skill",
-        "agent-skills",
-        "agentic-workflow",
-        "claude-skills",
-        "llm-security",
-        "mcp",
-        "multi-agent",
-        "prompt-injection",
-        "red-teaming",
-        "security",
-        "security-automation",
-        "security-scanner",
-        "zero-dependency"
-      ],
-      "first_seen": "2026-11-20T23:03:54.584308+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
-      "change": "observed_again",
-      "day_growth": {
-        "delta": 0,
-        "days": 1.03,
-        "status": "complete"
-      },
-      "week_growth": {
-        "delta": null,
-        "status": "insufficient_history"
-      }
-    },
-    {
-      "id": "item_4bdddc901c9adbb8",
-      "kind": "repo",
-      "url": "https://github.com/adilmohd04/guardrail",
-      "title": "Adilmohd04/GuardRail",
-      "source": "GitHub",
-      "summary": "Offline, deterministic guardrails gateway for GenAI apps: detects prompt injection, RAG injection and PII, returns allow/transform/block with a 0-100 risk score. FastAPI + Streamlit + CLI, runs with Docker.",
-      "published_at": "2026-11-18T16:37:42Z",
-      "updated_at": "2026-11-23T07:20:20Z",
-      "stars": 0,
-      "topics": [],
-      "first_seen": "2026-11-22T06:38:37.345794+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
-      "change": "observed_again",
-      "day_growth": {
-        "delta": 0,
-        "days": 1.03,
-        "status": "complete"
-      },
-      "week_growth": {
-        "delta": null,
-        "status": "insufficient_history"
-      }
-    },
-    {
-      "id": "item_3c5a84c629b82348",
-      "kind": "repo",
-      "url": "https://github.com/nvidia/skillspector",
-      "title": "NVIDIA/SkillSpector",
-      "source": "GitHub",
-      "summary": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.",
-      "published_at": "2026-03-21T00:28:43Z",
-      "updated_at": "2026-11-22T18:53:50Z",
-      "stars": 27299,
-      "topics": [
-        "agent-security",
-        "agent-skills",
-        "agentic-ai",
-        "ai-security",
-        "claude-code",
-        "mcp",
-        "prompt-injection",
-        "security-scanner",
-        "security-tools",
-        "security-workflow",
-        "supply-chain-security"
-      ],
-      "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-22T22:46:16.876928+00:00",
-      "change": "observed_again",
-      "day_growth": {
-        "delta": 195,
-        "days": 1.54,
-        "status": "irregular_window"
-      },
-      "week_growth": {
-        "delta": null,
-        "status": "insufficient_history"
-      }
-    },
-    {
-      "id": "item_841b6dc64fec41d8",
-      "kind": "repo",
-      "url": "https://github.com/agent-threat-rule/agent-threat-rules",
-      "title": "Agent-Threat-Rule/agent-threat-rules",
-      "source": "GitHub",
-      "summary": "Open detection-rule standard for AI agent security threats — like Sigma, but for AI agents. Executable, testable rules for prompt injection, tool poisoning, context exfiltration and MCP attacks. Merged into open-source projects at Microsoft, Cisco, Gen Digital, MISP and FINOS. MIT-licensed.",
-      "published_at": "2026-03-09T07:48:38Z",
-      "updated_at": "2026-11-21T14:38:08Z",
-      "stars": 442,
-      "topics": [
-        "agent-security",
-        "agent-threat-rules",
-        "ai-security",
-        "garak",
-        "llm-security",
-        "mcp-security",
-        "owasp",
-        "owasp-agentic",
-        "prompt-injection",
-        "sigma-rules",
-        "threat-detection"
-      ],
-      "first_seen": "2026-11-20T23:03:54.584308+00:00",
-      "last_seen": "2026-11-22T09:42:31.054439+00:00",
-      "change": "observed_again",
-      "day_growth": {
-        "delta": 3,
-        "days": 1.43,
-        "status": "irregular_window"
       },
       "week_growth": {
         "delta": null,
@@ -862,15 +703,14 @@
       }
     }
   ],
-  "candidate_count": 95,
-  "published_count": 8,
-  "run_url": "https://github.com/Jacintha0511/ai-security-daily/actions/runs/45131217297",
+  "candidate_count": 63,
+  "published_count": 1,
+  "run_url": "https://github.com/Jacintha0511/ai-security-daily/actions/runs/45158432077",
   "notes": [
     "仅公开论文、项目、报道；不包含私人 idea 或实验。",
     "首次发现时间不等于发表时间；摘要与规则匹配不代表精读。",
     "star 为快照净变化，取消 star 可产生负值。"
   ],
   "news_updated_at": "2026-11-23T08:34:28.889710+00:00",
-  "updated_at": "2026-11-23T09:30:56.740713+00:00",
-  "selection_updated_at": "2026-11-23T08:33:42.926913+00:00"
+  "updated_at": "2026-11-23T10:42:52.330440+00:00"
 }
