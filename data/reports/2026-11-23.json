@@ -3,7 +3,7 @@
   "date": "2026-11-23",
   "generated_at": "2026-11-23T07:27:33.037837+00:00",
   "status": "partial",
-  "selection_basis": "规则预筛",
+  "selection_basis": "论文按主题预筛；项目经 star／登记基准门槛、主线相关性及有效增长重筛；代码质量另行核实",
   "sources": [
     {
       "name": "arXiv",
@@ -39,25 +39,25 @@
       "name": "量子位",
       "status": "failed",
       "count": 0,
-      "detail": "本机 WeRSS 已启动，但公众号登录状态已失效；未请求文章更新，需重新扫码授权"
+      "detail": "本机订阅服务已启动；公众号会话已于 11 月 23 日 09:10 到期，上次接口返回 200003，需重新扫码授权"
     },
     {
       "name": "机器之心",
       "status": "failed",
       "count": 0,
-      "detail": "本机 WeRSS 已启动，但公众号登录状态已失效；未请求文章更新，需重新扫码授权"
+      "detail": "本机订阅服务已启动；公众号会话已于 11 月 23 日 09:10 到期，上次接口返回 200003，需重新扫码授权"
     },
     {
       "name": "为机器立心",
       "status": "failed",
       "count": 0,
-      "detail": "本机 WeRSS 已启动，但公众号登录状态已失效；未请求文章更新，需重新扫码授权"
+      "detail": "本机订阅服务已启动；公众号会话已于 11 月 23 日 09:10 到期，上次接口返回 200003，需重新扫码授权"
     },
     {
       "name": "刘小垒Leo",
       "status": "failed",
       "count": 0,
-      "detail": "本机 WeRSS 已启动，但公众号登录状态已失效；未请求文章更新，需重新扫码授权"
+      "detail": "本机订阅服务已启动；公众号会话已于 11 月 23 日 09:10 到期，上次接口返回 200003，需重新扫码授权"
     }
   ],
   "items": {
@@ -119,25 +119,6 @@
     ],
     "repo": [
       {
-        "id": "item_a67f0d137ee3eab0",
-        "kind": "repo",
-        "url": "https://github.com/abhinandanpandey-in/zero-trust-rag-firewall",
-        "title": "abhinandanpandey-in/zero-trust-rag-firewall",
-        "source": "GitHub",
-        "summary": "Deterministic RAG ingestion and retrieval firewall. Defends vector databases (FAISS) against indirect prompt injection, semantic memory poisoning, and unauthorized tenant cross-talk via cryptographic document provenance and structural sanitization",
-        "published_at": "2026-11-20T06:12:03Z",
-        "updated_at": "2026-11-20T06:17:31Z",
-        "stars": 1,
-        "topics": [],
-        "first_seen": "2026-11-20T07:05:24.514098+00:00",
-        "last_seen": "2026-11-23T07:27:33.037837+00:00",
-        "change": "observed_again",
-        "score": 14,
-        "reason": "研究主题匹配：prompt injection、memory poisoning、provenance",
-        "priority": "快速浏览",
-        "selection_basis": "规则预筛；不是模型精排或学术质量评分"
-      },
-      {
         "id": "item_50cc0395f5577882",
         "kind": "repo",
         "url": "https://github.com/owasp/www-project-agent-memory-guard",
@@ -172,108 +153,153 @@
         "first_seen": "2026-11-18T07:09:14.936020+00:00",
         "last_seen": "2026-11-23T07:27:33.037837+00:00",
         "change": "observed_again",
-        "score": 13,
-        "reason": "研究主题匹配：prompt-injection、memory poisoning、memory-poisoning",
+        "score": 16,
+        "reason": "研究主题匹配：prompt injection、memory poisoning、llm security、ai safety；210 star；达到 100 star 粗筛门槛；已观测约 24h 净增 +1",
         "priority": "快速浏览",
-        "selection_basis": "规则预筛；不是模型精排或学术质量评分"
+        "selection_basis": "先过 star／登记基准门槛；优先主线相关、近期提交或有效增长，再比较登记基准和 star。仅元数据筛选，代码与实验效果待核实",
+        "day_growth": {
+          "delta": 1,
+          "days": 1.03,
+          "status": "complete"
+        },
+        "week_growth": {
+          "delta": null,
+          "status": "insufficient_history"
+        }
       },
       {
-        "id": "item_1c65ce023e00e6f3",
+        "id": "item_40c3d33d7970b4f5",
         "kind": "repo",
-        "url": "https://github.com/invarislabs/invaris-agentsec",
-        "title": "invarislabs/invaris-agentsec",
+        "url": "https://github.com/ethz-spylab/agentdojo",
+        "title": "ethz-spylab/agentdojo",
         "source": "GitHub",
-        "summary": "Adversarial security testing for AI agents — prompt injection, tool misuse, memory poisoning, and MCP scanning, with CI-ready regression testing and reports.",
-        "published_at": "2026-09-20T09:49:21Z",
-        "updated_at": "2026-11-22T22:34:08Z",
-        "stars": 28,
+        "summary": "A Dynamic Environment to Evaluate Attacks and Defenses for LLM Agents.",
+        "published_at": "2024-02-29T10:47:28Z",
+        "updated_at": "2026-06-02T10:01:31Z",
+        "stars": 1069,
         "topics": [
-          "adversarial-testing",
-          "agent-security",
-          "ai-agents",
-          "ai-security",
-          "devsecops",
-          "github-actions",
-          "langchain",
-          "llm-security",
-          "mcp",
-          "model-context-protocol",
-          "owasp",
+          "benchmark",
+          "large-language-models",
           "prompt-injection",
-          "pytest",
-          "python",
-          "red-teaming",
-          "security-testing"
+          "security"
         ],
         "first_seen": "2026-11-18T07:09:14.936020+00:00",
         "last_seen": "2026-11-23T07:27:33.037837+00:00",
         "change": "observed_again",
-        "score": 13,
-        "reason": "研究主题匹配：prompt injection、prompt-injection、memory poisoning",
+        "score": 8,
+        "reason": "研究主题匹配：prompt injection；1069 star；登记研究基准；已观测约 24h 净增 +5",
         "priority": "快速浏览",
-        "selection_basis": "规则预筛；不是模型精排或学术质量评分"
+        "selection_basis": "先过 star／登记基准门槛；优先主线相关、近期提交或有效增长，再比较登记基准和 star。仅元数据筛选，代码与实验效果待核实",
+        "day_growth": {
+          "delta": 5,
+          "days": 1.03,
+          "status": "complete"
+        },
+        "week_growth": {
+          "delta": null,
+          "status": "insufficient_history"
+        }
       },
       {
-        "id": "item_96528ffff7aaa048",
+        "id": "item_7a9bce0886175358",
         "kind": "repo",
-        "url": "https://github.com/gbayerv26/memwall",
-        "title": "gbayerv26/memwall",
+        "url": "https://github.com/agiresearch/asb",
+        "title": "agiresearch/ASB",
         "source": "GitHub",
-        "summary": "Antivirus for AI agent memory - scanner + MCP firewall for memory poisoning (OWASP ASI06)",
-        "published_at": "2026-07-14T15:49:24Z",
-        "updated_at": "2026-11-18T15:22:58Z",
-        "stars": 1,
-        "topics": [
-          "ai-agents",
-          "claude",
-          "llm-security",
-          "mcp",
-          "memory-poisoning",
-          "model-context-protocol",
-          "prompt-injection",
-          "security"
-        ],
-        "first_seen": "2026-11-19T00:36:35.819128+00:00",
+        "summary": "Agent Security Bench (ASB)",
+        "published_at": "2024-10-03T03:21:26Z",
+        "updated_at": "2026-09-30T06:52:20Z",
+        "stars": 333,
+        "topics": [],
+        "first_seen": "2026-11-18T07:09:14.936020+00:00",
         "last_seen": "2026-11-23T07:27:33.037837+00:00",
         "change": "observed_again",
-        "score": 13,
-        "reason": "研究主题匹配：prompt-injection、memory poisoning、memory-poisoning",
+        "score": 8,
+        "reason": "研究主题匹配：agent security；333 star；登记研究基准；已观测约 24h 净增 +1",
         "priority": "快速浏览",
-        "selection_basis": "规则预筛；不是模型精排或学术质量评分"
+        "selection_basis": "先过 star／登记基准门槛；优先主线相关、近期提交或有效增长，再比较登记基准和 star。仅元数据筛选，代码与实验效果待核实",
+        "day_growth": {
+          "delta": 1,
+          "days": 1.03,
+          "status": "complete"
+        },
+        "week_growth": {
+          "delta": null,
+          "status": "insufficient_history"
+        }
       },
       {
-        "id": "item_08bad28f3d3de036",
+        "id": "item_02f9d4061de2f443",
         "kind": "repo",
-        "url": "https://github.com/elmatadorz/genesis-security",
-        "title": "ElmatadorZ/Genesis-security",
+        "url": "https://github.com/ai-secure/agentpoison",
+        "title": "AI-secure/AgentPoison",
         "source": "GitHub",
-        "summary": "Defensive runtime for AI agents & multi-agent systems. Blocks prompt injection, data exfiltration, agent impersonation, memory poisoning and audit tampering. Trust tiers, tool gating, HMAC-signed agent messages, tamper-evident audit log. Claude Skill = brain, Python = body. Stdlib only, red-teamed.",
-        "published_at": "2026-11-20T08:08:44Z",
-        "updated_at": "2026-11-20T08:32:47Z",
-        "stars": 0,
+        "summary": "[NeurIPS 2024] Official implementation for \"AgentPoison: Red-teaming LLM Agents via Memory or Knowledge Base Backdoor Poisoning\"",
+        "published_at": "2024-03-22T10:39:10Z",
+        "updated_at": "2026-10-23T09:01:30Z",
+        "stars": 258,
         "topics": [
-          "agent-orchestration",
-          "agent-skill",
-          "agent-skills",
-          "agentic-workflow",
-          "claude-skills",
+          "llm-agent",
+          "red-team",
+          "retrieval-augmented-generation"
+        ],
+        "first_seen": "2026-11-18T07:09:14.936020+00:00",
+        "last_seen": "2026-11-23T07:27:33.037837+00:00",
+        "change": "observed_again",
+        "score": 5,
+        "reason": "已登记的安全研究基准／防御项目；258 star；登记研究基准；已观测约 24h 净增 +1",
+        "priority": "快速浏览",
+        "selection_basis": "先过 star／登记基准门槛；优先主线相关、近期提交或有效增长，再比较登记基准和 star。仅元数据筛选，代码与实验效果待核实",
+        "day_growth": {
+          "delta": 1,
+          "days": 1.03,
+          "status": "complete"
+        },
+        "week_growth": {
+          "delta": null,
+          "status": "insufficient_history"
+        }
+      },
+      {
+        "id": "item_24752662bfe1f0b1",
+        "kind": "repo",
+        "url": "https://github.com/wuyoscar/aisafetyhot",
+        "title": "wuyoscar/AISafetyHot",
+        "source": "GitHub",
+        "summary": "AI Safety HOT: daily AI safety news, papers and incidents in one place — jailbreaks, prompt injection, alignment, evals, governance. Website, daily digest, RSS and MCP.",
+        "published_at": "2026-10-01T11:33:59Z",
+        "updated_at": "2026-11-23T07:06:45Z",
+        "stars": 2077,
+        "topics": [
+          "ai-alignment",
+          "ai-governance",
+          "ai-safety",
+          "arxiv-papers",
+          "daily-papers",
+          "jailbreak",
           "llm-security",
-          "mcp",
-          "multi-agent",
+          "mcp-server",
+          "news-aggregator",
           "prompt-injection",
           "red-teaming",
-          "security",
-          "security-automation",
-          "security-scanner",
-          "zero-dependency"
+          "rss"
         ],
-        "first_seen": "2026-11-20T23:03:54.584308+00:00",
+        "first_seen": "2026-11-18T07:25:50.528448+00:00",
         "last_seen": "2026-11-23T07:27:33.037837+00:00",
         "change": "observed_again",
-        "score": 13,
-        "reason": "研究主题匹配：prompt injection、prompt-injection、memory poisoning",
+        "score": 12,
+        "reason": "研究主题匹配：prompt injection、llm security、jailbreak、ai safety；2077 star；达到 100 star 粗筛门槛；约 24h 增长历史不足",
         "priority": "快速浏览",
-        "selection_basis": "规则预筛；不是模型精排或学术质量评分"
+        "selection_basis": "先过 star／登记基准门槛；优先主线相关、近期提交或有效增长，再比较登记基准和 star。仅元数据筛选，代码与实验效果待核实",
+        "day_growth": {
+          "delta": -4,
+          "days": 1.91,
+          "status": "irregular_window"
+        },
+        "week_growth": {
+          "delta": null,
+          "status": "insufficient_history"
+        }
       }
     ],
     "news": []
@@ -844,6 +870,7 @@
     "首次发现时间不等于发表时间；摘要与规则匹配不代表精读。",
     "star 为快照净变化，取消 star 可产生负值。"
   ],
-  "news_updated_at": "2026-11-22T14:20:43.696951+00:00",
-  "updated_at": "2026-11-23T07:27:44.196257+00:00"
+  "news_updated_at": "2026-11-23T08:34:28.889710+00:00",
+  "updated_at": "2026-11-23T08:34:33.708844+00:00",
+  "selection_updated_at": "2026-11-23T08:33:42.926913+00:00"
 }

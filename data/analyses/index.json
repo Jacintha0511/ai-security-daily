@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-22T14:26:58.075890+00:00",
+  "updated_at": "2026-11-23T08:40:44.556762+00:00",
   "items": {
     "item_163311fe87f0a7ae:75cded2e42309d0907e0": {
       "item_id": "item_163311fe87f0a7ae",
@@ -97,9 +97,9 @@
       "requested_version": "v3",
       "fingerprint": "de02710616d6fe1e46e7",
       "status": "partial",
-      "updated_at": "2026-11-22T14:26:57.341868+00:00",
+      "updated_at": "2026-11-22T14:57:09.127271+00:00",
       "path": "data/analyses/item_163311fe87f0a7ae-de02710616d6fe1e46e7.json",
-      "message": "精读 v3 的授权边界和独立测试；标准模板的零攻击成功不能替代自适应评估。"
+      "message": "建议精读：它在工具真正执行前检查“发给谁”，但还没有解决所有提示注入。"
     },
     "item_87b12edbcb32b43f:3859a0826f49e8c0d303": {
       "item_id": "item_87b12edbcb32b43f",
@@ -136,6 +136,30 @@
       "updated_at": "2026-11-22T14:26:58.063478+00:00",
       "path": "data/analyses/item_a67f0d137ee3eab0-8895578d9a89184f125c.json",
       "message": "适合读作 CPU 安全机制小样例；API 身份、权限来源和真实投毒评测尚不够生产使用。"
+    },
+    "item_0057b8e7a270ae3b:ff9ba5dcfd6bea54bb30": {
+      "item_id": "item_0057b8e7a270ae3b",
+      "kind": "paper",
+      "title": "Subverting Tool Arguments: Defense-Evading Metadata Poisoning in LLM Agents",
+      "version": "v1",
+      "requested_version": "v1",
+      "fingerprint": "ff9ba5dcfd6bea54bb30",
+      "status": "partial",
+      "updated_at": "2026-11-23T08:40:44.496248+00:00",
+      "path": "data/analyses/item_0057b8e7a270ae3b-ff9ba5dcfd6bea54bb30.json",
+      "message": "建议精读方法与防御评测：攻击不必藏在网页里，工具自己的说明也能带偏参数。"
+    },
+    "item_50cc0395f5577882:22555c0e95a97791811a": {
+      "item_id": "item_50cc0395f5577882",
+      "kind": "repo",
+      "title": "OWASP/www-project-agent-memory-guard",
+      "version": "50761eb20c90c67e341023866aa433c9ffe79245",
+      "requested_version": "2026-11-23T01:05:27Z",
+      "fingerprint": "22555c0e95a97791811a",
+      "status": "partial",
+      "updated_at": "2026-11-23T08:40:44.541940+00:00",
+      "path": "data/analyses/item_50cc0395f5577882-22555c0e95a97791811a.json",
+      "message": "值得读代码，但先看默认配置：strict 不等于把全部记忆攻击防护都打开。"
     }
   }
 }

@@ -3,7 +3,7 @@
   "date": "2026-11-22",
   "generated_at": "2026-11-22T09:42:31.054439+00:00",
   "status": "partial",
-  "selection_basis": "规则预筛",
+  "selection_basis": "论文按主题预筛；项目经 star／登记基准门槛、主线相关性及有效增长重筛；代码质量另行核实",
   "sources": [
     {
       "name": "arXiv",
@@ -119,25 +119,6 @@
     ],
     "repo": [
       {
-        "id": "item_a67f0d137ee3eab0",
-        "kind": "repo",
-        "url": "https://github.com/abhinandanpandey-in/zero-trust-rag-firewall",
-        "title": "abhinandanpandey-in/zero-trust-rag-firewall",
-        "source": "GitHub",
-        "summary": "Deterministic RAG ingestion and retrieval firewall. Defends vector databases (FAISS) against indirect prompt injection, semantic memory poisoning, and unauthorized tenant cross-talk via cryptographic document provenance and structural sanitization",
-        "published_at": "2026-11-20T06:12:03Z",
-        "updated_at": "2026-11-20T06:17:31Z",
-        "stars": 1,
-        "topics": [],
-        "first_seen": "2026-11-20T07:05:24.514098+00:00",
-        "last_seen": "2026-11-22T09:42:31.054439+00:00",
-        "change": "observed_again",
-        "score": 14,
-        "reason": "研究主题匹配：prompt injection、memory poisoning、provenance",
-        "priority": "快速浏览",
-        "selection_basis": "规则预筛；不是模型精排或学术质量评分"
-      },
-      {
         "id": "item_50cc0395f5577882",
         "kind": "repo",
         "url": "https://github.com/owasp/www-project-agent-memory-guard",
@@ -172,95 +153,164 @@
         "first_seen": "2026-11-18T07:09:14.936020+00:00",
         "last_seen": "2026-11-22T09:42:31.054439+00:00",
         "change": "observed_again",
-        "score": 13,
-        "reason": "研究主题匹配：prompt-injection、memory poisoning、memory-poisoning",
+        "score": 16,
+        "reason": "研究主题匹配：prompt injection、memory poisoning、llm security、ai safety；209 star；达到 100 star 粗筛门槛；已观测约 24h 净增 +0",
         "priority": "快速浏览",
-        "selection_basis": "规则预筛；不是模型精排或学术质量评分"
+        "selection_basis": "先过 star／登记基准门槛；优先主线相关、近期提交或有效增长，再比较登记基准和 star。仅元数据筛选，代码与实验效果待核实",
+        "day_growth": {
+          "delta": 0,
+          "days": 1.11,
+          "status": "complete"
+        },
+        "week_growth": {
+          "delta": null,
+          "status": "insufficient_history"
+        }
       },
       {
-        "id": "item_08bad28f3d3de036",
+        "id": "item_40c3d33d7970b4f5",
         "kind": "repo",
-        "url": "https://github.com/elmatadorz/genesis-security",
-        "title": "ElmatadorZ/Genesis-security",
+        "url": "https://github.com/ethz-spylab/agentdojo",
+        "title": "ethz-spylab/agentdojo",
         "source": "GitHub",
-        "summary": "Defensive runtime for AI agents & multi-agent systems. Blocks prompt injection, data exfiltration, agent impersonation, memory poisoning and audit tampering. Trust tiers, tool gating, HMAC-signed agent messages, tamper-evident audit log. Claude Skill = brain, Python = body. Stdlib only, red-teamed.",
-        "published_at": "2026-11-20T08:08:44Z",
-        "updated_at": "2026-11-20T08:32:47Z",
-        "stars": 0,
+        "summary": "A Dynamic Environment to Evaluate Attacks and Defenses for LLM Agents.",
+        "published_at": "2024-02-29T10:47:28Z",
+        "updated_at": "2026-06-02T10:01:31Z",
+        "stars": 1065,
         "topics": [
-          "agent-orchestration",
-          "agent-skill",
-          "agent-skills",
-          "agentic-workflow",
-          "claude-skills",
-          "llm-security",
+          "benchmark",
+          "large-language-models",
+          "prompt-injection",
+          "security"
+        ],
+        "first_seen": "2026-11-18T07:09:14.936020+00:00",
+        "last_seen": "2026-11-22T09:42:31.054439+00:00",
+        "change": "observed_again",
+        "score": 8,
+        "reason": "研究主题匹配：prompt injection；1065 star；登记研究基准；已观测约 24h 净增 +4",
+        "priority": "快速浏览",
+        "selection_basis": "先过 star／登记基准门槛；优先主线相关、近期提交或有效增长，再比较登记基准和 star。仅元数据筛选，代码与实验效果待核实",
+        "day_growth": {
+          "delta": 4,
+          "days": 1.11,
+          "status": "complete"
+        },
+        "week_growth": {
+          "delta": null,
+          "status": "insufficient_history"
+        }
+      },
+      {
+        "id": "item_49e364e463bd4a1d",
+        "kind": "repo",
+        "url": "https://github.com/hashgraph-online/hol-guard",
+        "title": "hashgraph-online/hol-guard",
+        "source": "GitHub",
+        "summary": "Open-source antivirus and firewall for AI agents: block risky tools, secret access, prompt injection, malicious packages, MCP servers, plugins, and skills at runtime.",
+        "published_at": "2026-03-28T19:02:15Z",
+        "updated_at": "2026-11-22T09:19:27Z",
+        "stars": 1119,
+        "topics": [
+          "agent-security",
+          "ai-agent-security",
+          "ai-agents",
+          "ai-antivirus",
+          "ai-security",
+          "claude-code",
+          "cursor",
+          "devsecops",
+          "gemini-cli",
           "mcp",
-          "multi-agent",
+          "mcp-security",
+          "openclaw",
+          "opencode",
           "prompt-injection",
-          "red-teaming",
+          "runtime-security",
+          "secrets-detection",
           "security",
-          "security-automation",
           "security-scanner",
-          "zero-dependency"
+          "supply-chain-security",
+          "vulnify"
         ],
-        "first_seen": "2026-11-20T23:03:54.584308+00:00",
+        "first_seen": "2026-11-18T07:09:14.936020+00:00",
         "last_seen": "2026-11-22T09:42:31.054439+00:00",
         "change": "observed_again",
-        "score": 13,
-        "reason": "研究主题匹配：prompt injection、prompt-injection、memory poisoning",
+        "score": 6,
+        "reason": "研究主题匹配：prompt injection、agent security；1119 star；达到 100 star 粗筛门槛；已观测约 24h 净增 +3",
         "priority": "快速浏览",
-        "selection_basis": "规则预筛；不是模型精排或学术质量评分"
+        "selection_basis": "先过 star／登记基准门槛；优先主线相关、近期提交或有效增长，再比较登记基准和 star。仅元数据筛选，代码与实验效果待核实",
+        "day_growth": {
+          "delta": 3,
+          "days": 1.11,
+          "status": "complete"
+        },
+        "week_growth": {
+          "delta": null,
+          "status": "insufficient_history"
+        }
       },
       {
-        "id": "item_6127466e94940928",
+        "id": "item_9374c9e62286b22f",
         "kind": "repo",
-        "url": "https://github.com/yuvrajarora06/memoryleak",
-        "title": "YuvrajArora06/MemoryLeak",
+        "url": "https://github.com/uiuc-kang-lab/injecagent",
+        "title": "uiuc-kang-lab/InjecAgent",
         "source": "GitHub",
-        "summary": "An open-source AI agent security testing framework for detecting data leakage, memory poisoning, prompt injection, and unauthorized payment actions.",
-        "published_at": "2026-11-03T18:45:23Z",
-        "updated_at": "2026-11-21T18:58:12Z",
-        "stars": 0,
+        "summary": "",
+        "published_at": "2024-02-20T04:00:06Z",
+        "updated_at": "2024-07-02T05:39:24Z",
+        "stars": 189,
         "topics": [],
-        "first_seen": "2026-11-20T07:05:24.514098+00:00",
+        "first_seen": "2026-11-18T07:09:14.936020+00:00",
         "last_seen": "2026-11-22T09:42:31.054439+00:00",
         "change": "observed_again",
-        "score": 13,
-        "reason": "研究主题匹配：prompt injection、agent security、memory poisoning",
+        "score": 5,
+        "reason": "已登记的安全研究基准／防御项目；189 star；登记研究基准；已观测约 24h 净增 +2",
         "priority": "快速浏览",
-        "selection_basis": "规则预筛；不是模型精排或学术质量评分"
+        "selection_basis": "先过 star／登记基准门槛；优先主线相关、近期提交或有效增长，再比较登记基准和 star。仅元数据筛选，代码与实验效果待核实",
+        "day_growth": {
+          "delta": 2,
+          "days": 1.11,
+          "status": "complete"
+        },
+        "week_growth": {
+          "delta": null,
+          "status": "insufficient_history"
+        }
       },
       {
-        "id": "item_24752662bfe1f0b1",
+        "id": "item_42ab56732dbeea40",
         "kind": "repo",
-        "url": "https://github.com/wuyoscar/aisafetyhot",
-        "title": "wuyoscar/AISafetyHot",
+        "url": "https://github.com/ryoungj/toolemu",
+        "title": "ryoungj/ToolEmu",
         "source": "GitHub",
-        "summary": "AI Safety HOT: daily AI safety news, papers and incidents in one place — jailbreaks, prompt injection, alignment, evals, governance. Website, daily digest, RSS and MCP.",
-        "published_at": "2026-10-01T11:33:59Z",
-        "updated_at": "2026-11-22T09:05:33Z",
-        "stars": 2077,
+        "summary": "[ICLR'24 Spotlight] A language model (LM)-based emulation framework for identifying the risks of LM agents with tool use",
+        "published_at": "2023-09-26T00:33:03Z",
+        "updated_at": "2024-03-22T00:36:52Z",
+        "stars": 232,
         "topics": [
-          "ai-alignment",
-          "ai-governance",
+          "agent",
           "ai-safety",
-          "arxiv-papers",
-          "daily-papers",
-          "jailbreak",
-          "llm-security",
-          "mcp-server",
-          "news-aggregator",
-          "prompt-injection",
-          "red-teaming",
-          "rss"
+          "language-agent",
+          "language-model",
+          "large-language-models",
+          "prompt-engineering"
         ],
-        "first_seen": "2026-11-18T07:25:50.528448+00:00",
+        "first_seen": "2026-11-18T07:09:14.936020+00:00",
         "last_seen": "2026-11-22T09:42:31.054439+00:00",
         "change": "observed_again",
-        "score": 12,
-        "reason": "研究主题匹配：prompt injection、prompt-injection、jailbreak、ai safety",
+        "score": 8,
+        "reason": "研究主题匹配：ai safety；232 star；登记研究基准；已观测约 24h 净增 +1",
         "priority": "快速浏览",
-        "selection_basis": "规则预筛；不是模型精排或学术质量评分"
+        "selection_basis": "先过 star／登记基准门槛；优先主线相关、近期提交或有效增长，再比较登记基准和 star。仅元数据筛选，代码与实验效果待核实",
+        "day_growth": {
+          "delta": 1,
+          "days": 1.11,
+          "status": "complete"
+        },
+        "week_growth": {
+          "delta": null,
+          "status": "insufficient_history"
+        }
       }
     ],
     "news": []
@@ -844,5 +894,6 @@
     "star 为快照净变化，取消 star 可产生负值。"
   ],
   "news_updated_at": "2026-11-22T14:20:43.696951+00:00",
-  "updated_at": "2026-11-22T14:28:52.965721+00:00"
+  "updated_at": "2026-11-22T14:28:52.965721+00:00",
+  "selection_updated_at": "2026-11-22T14:57:09.155080+00:00"
 }

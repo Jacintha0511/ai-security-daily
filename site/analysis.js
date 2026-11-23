@@ -8,6 +8,7 @@ function list(root,values){const ul=el('ul');(values||[]).forEach(v=>ul.append(e
 function panel(id,title,values){if(!values?.length)return;$(id).append(el('h2','',title));list($(id),values);}
 async function start(){
 const p=new URLSearchParams(location.search),id=p.get('id'),version=p.get('v');
+const back=p.get('back');if(back){const target=new URL(back,location.href);if(target.origin===location.origin&&target.pathname.replace(/index\.html$/,'')===location.pathname.replace(/analysis\.html$/,'')){const a=document.querySelector('.back-link')||document.querySelector('header a');if(a)a.href=target.href;}}
 if(!/^item_[a-f0-9]{16}$/.test(id||'')||(version&&!/^[a-f0-9]{20}$/.test(version)))throw Error('无效的解析地址');
 const idx=await json('data/analyses/index.json');
 const entries=Object.values(idx.items||{}).filter(e=>e.item_id===id&&(!version||e.fingerprint===version)).sort((a,b)=>b.updated_at.localeCompare(a.updated_at));

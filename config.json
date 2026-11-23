@@ -12,15 +12,72 @@
     "\"agent security\" in:name,description archived:false",
     "\"memory poisoning\" in:name,description archived:false"
   ],
-  "keywords": ["prompt injection", "prompt-injection", "agent security", "agent safety", "memory poisoning", "memory-poisoning", "rag poisoning", "llm security", "llm safety", "jailbreak", "ai safety", "提示注入", "记忆投毒", "智能体安全", "大模型安全"],
-  "focus": ["memory poisoning", "provenance", "authorization", "lineage", "记忆投毒", "来源追踪", "权限"],
-  "seed_repos": ["ethz-spylab/agentdojo", "uiuc-kang-lab/InjecAgent", "AI-secure/AgentPoison", "google-research/camel-prompt-injection", "agiresearch/ASB", "ryoungj/ToolEmu", "facebookresearch/SecAlign", "sizhe-chen/StruQ"],
-  "feeds": [
-    {"name": "量子位", "url": null},
-    {"name": "机器之心", "url": null},
-    {"name": "为机器立心", "url": null},
-    {"name": "刘小垒Leo", "url": null}
+  "keywords": [
+    "prompt injection",
+    "prompt-injection",
+    "agent security",
+    "agent safety",
+    "memory poisoning",
+    "memory-poisoning",
+    "rag poisoning",
+    "llm security",
+    "llm safety",
+    "jailbreak",
+    "ai safety",
+    "提示注入",
+    "记忆投毒",
+    "智能体安全",
+    "大模型安全"
   ],
-  "limits": {"paper": 3, "repo": 5, "news": 3}
+  "focus": [
+    "memory poisoning",
+    "provenance",
+    "authorization",
+    "lineage",
+    "记忆投毒",
+    "来源追踪",
+    "权限"
+  ],
+  "seed_repos": [
+    "ethz-spylab/agentdojo",
+    "uiuc-kang-lab/InjecAgent",
+    "AI-secure/AgentPoison",
+    "google-research/camel-prompt-injection",
+    "agiresearch/ASB",
+    "ryoungj/ToolEmu",
+    "facebookresearch/SecAlign",
+    "sizhe-chen/StruQ"
+  ],
+  "feeds": [
+    {
+      "name": "量子位",
+      "url": null
+    },
+    {
+      "name": "机器之心",
+      "url": null
+    },
+    {
+      "name": "为机器立心",
+      "url": null
+    },
+    {
+      "name": "刘小垒Leo",
+      "url": null
+    }
+  ],
+  "limits": {
+    "paper": 3,
+    "repo": 5,
+    "news": 3
+  },
+  "repo_policy": {
+    "min_stars": 100,
+    "allow_seed_exceptions": true,
+    "max_idle_days": 180
+  },
+  "github_search_sorts": [
+    "stars",
+    "updated"
+  ]
 }
-

@@ -125,9 +125,10 @@ def growth(snapshots, days, now):
 
 
 def rank(item, config):
-    content = (item["title"] + " " + item["summary"] + " " + " ".join(item.get("topics", []))).lower()
-    hits = [k for k in config["keywords"] if k.lower() in content]
-    focus = [k for k in config["focus"] if k.lower() in content]
+    normalize = lambda value: value.lower().replace("-", " ").replace("_", " ")
+    content = normalize(item["title"] + " " + item["summary"] + " " + " ".join(item.get("topics", [])))
+    hits = list(dict.fromkeys(normalize(k) for k in config["keywords"] if normalize(k) in content))
+    focus = list(dict.fromkeys(normalize(k) for k in config["focus"] if normalize(k) in content))
     seed = item["kind"] == "repo" and item["url"].split("github.com/")[-1].lower() in {s.lower() for s in config["seed_repos"]}
     if not hits and not seed:
         return None
@@ -135,6 +136,44 @@ def rank(item, config):
     return {**item, "score": score, "reason": "研究主题匹配：" + "、".join(dict.fromkeys(hits + focus)) if hits or focus else "已登记的安全研究基准／防御项目",
             "priority": "建议精读" if item["kind"] == "paper" and focus else "快速浏览",
             "selection_basis": "规则预筛；不是模型精排或学术质量评分"}
+
+
+def select_repositories(config, state, ids, now):
+    """Conservative metadata screening, not a claim of verified code quality."""
+    policy = config.get('repo_policy', {})
+    min_stars = policy.get('min_stars', 100)
+    seeds = {s.lower() for s in config['seed_repos']}
+    choices = []
+    for key in ids:
+        item = state['items'][key]
+        if item['kind'] != 'repo':
+            continue
+        result = rank(item, config)
+        if not result:
+            continue
+        seed = item['url'].split('github.com/')[-1].lower() in seeds
+        exception = seed and policy.get('allow_seed_exceptions', True)
+        if item.get('stars', 0) < min_stars and not exception:
+            continue
+        updated = item.get('updated_at')
+        try:
+            idle = (now - datetime.fromisoformat(updated.replace('Z', '+00:00'))).days if updated else None
+        except ValueError:
+            idle = None
+        if not exception and (idle is None or idle > policy.get('max_idle_days', 180)):
+            continue
+        day = growth(state['stars'].get(key, []), 1, now)
+        week = growth(state['stars'].get(key, []), 7, now)
+        content = (item['title'] + ' ' + item.get('summary', '') + ' '.join(item.get('topics', []))).lower().replace('-', ' ').replace('_', ' ')
+        focused = any(k.lower().replace('-', ' ') in content for k in config['focus'])
+        delta = day.get('delta') if day.get('status') == 'complete' else None
+        fresh = idle is not None and idle <= 30
+        basis = '登记研究基准' if exception else f'达到 {min_stars} star 粗筛门槛'
+        result.update(day_growth=day, week_growth=week,
+                      reason=result['reason'] + f'；{item.get("stars", 0)} star；{basis}；' + (f'已观测约 24h 净增 {delta:+d}' if delta is not None else '约 24h 增长历史不足'),
+                      selection_basis='先过 star／登记基准门槛；优先主线相关、近期提交或有效增长，再比较登记基准和 star。仅元数据筛选，代码与实验效果待核实')
+        choices.append(((focused, fresh or (delta is not None and delta > 0), max(delta or 0, 0), seed, item.get('stars', 0), key), result))
+    return [v for _, v in sorted(choices, key=lambda pair: pair[0], reverse=True)][:config['limits']['repo']]
 
 
 class FetchFailure(RuntimeError):
@@ -209,15 +248,18 @@ def collect(config, state, web, now):
     if os.environ.get("GITHUB_TOKEN"):
         headers["Authorization"] = "Bearer " + os.environ["GITHUB_TOKEN"]
     discovered, errors = {}, 0
-    for query in config["github_queries"]:
-        try:
-            response = web.get("https://api.github.com/search/repositories", headers=headers,
-                               params={"q": query + " is:public", "sort": "updated", "per_page": 10}).json()
-            discovered.update({r["full_name"].lower(): r for r in response["items"]})
-            statuses.append({"name": "GitHub 发现：" + query.split(" in:")[0], "status": "partial" if response.get("incomplete_results") else "ok", "count": len(response["items"]), "detail": "候选发现，不是全站升星榜"})
-        except (FetchFailure, KeyError, ValueError):
-            errors += 1
-            statuses.append({"name": "GitHub 发现：" + query.split(" in:")[0], "status": "failed", "count": 0, "detail": "搜索不可用或被限流"})
+    for sort in config.get('github_search_sorts', ['stars', 'updated']):
+        for query in config['github_queries']:
+            extra = f" stars:>={config.get('repo_policy', {}).get('min_stars', 100)} pushed:>={(now-timedelta(days=180)).date().isoformat()}" if sort == 'stars' else ''
+            label = '成熟候选' if sort == 'stars' else '新项目观察'
+            try:
+                response = web.get('https://api.github.com/search/repositories', headers=headers,
+                                   params={'q': query + ' is:public' + extra, 'sort': sort, 'order': 'desc', 'per_page': 10}).json()
+                discovered.update({r['full_name'].lower(): r for r in response['items']})
+                statuses.append({'name': 'GitHub 发现：' + query.split(' in:')[0] + '（' + label + '）', 'status': 'partial' if response.get('incomplete_results') else 'ok', 'count': len(response['items']), 'detail': '候选发现，不是全站升星榜；最终推荐另过门槛'})
+            except (FetchFailure, KeyError, ValueError):
+                errors += 1
+                statuses.append({'name': 'GitHub 发现：' + query.split(' in:')[0] + '（' + label + '）', 'status': 'failed', 'count': 0, 'detail': '搜索不可用或被限流'})
     tracked = sorted((i for i in state["items"].values() if i["kind"] == "repo"), key=lambda i: i.get("last_seen", ""))
     names = list(dict.fromkeys(name.lower() for name in config["seed_repos"] + list(discovered) + [i["url"].split("github.com/")[-1] for i in tracked]))[:config["max_repos"]]
     count = 0
@@ -267,6 +309,7 @@ def make_report(config, state, statuses, ids, now):
     ranked = [r for i in ids if (r := rank(state["items"][i], config))]
     ranked.sort(key=lambda i: (-i["score"], -i.get("stars", 0), i["id"]))
     selections = {kind: [i for i in ranked if i["kind"] == kind][:limit] for kind, limit in config["limits"].items()}
+    selections["repo"] = select_repositories(config, state, ids, now)
     repos = []
     for item in state["items"].values():
         if item["kind"] != "repo" or not rank(item, config):

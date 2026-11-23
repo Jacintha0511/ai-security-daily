@@ -78,6 +78,30 @@ class PublicDigestTests(unittest.TestCase):
         record = daily.public_item(item(kind="repo", title="Memory allocation utility", url="https://github.com/test/allocator", summary="Memory allocator", stars=10000))
         self.assertIsNone(daily.rank(record, self.config))
 
+    def test_low_star_keyword_stuffing_is_not_a_recommendation(self):
+        state = daily.empty_state()
+        key = daily.merge_item(state, item(kind='repo', title='Prompt injection memory poisoning provenance', url='https://github.com/test/new-demo', stars=0, updated_at=daily.stamp(NOW)), NOW)
+        self.assertEqual(daily.select_repositories(self.config, state, [key], NOW), [])
+        self.assertIn(key, state['items'])
+
+    def test_registered_baseline_can_pass_the_star_gate(self):
+        state = daily.empty_state()
+        key = daily.merge_item(state, item(kind='repo', title='AgentDojo', summary='Agent security benchmark', url='https://github.com/ethz-spylab/agentdojo', stars=0), NOW)
+        chosen = daily.select_repositories(self.config, state, [key], NOW)
+        self.assertEqual([x['id'] for x in chosen], [key])
+        self.assertIn('登记研究基准', chosen[0]['reason'])
+
+    def test_mature_relevant_repo_passes_but_idle_generic_repo_does_not(self):
+        state = daily.empty_state()
+        good = daily.merge_item(state, item(kind='repo', title='Prompt injection firewall', url='https://github.com/test/mature', stars=200, updated_at=daily.stamp(NOW)), NOW)
+        old = daily.merge_item(state, item(kind='repo', title='Prompt injection archived research', url='https://github.com/test/idle', stars=5000, updated_at=daily.stamp(NOW-timedelta(days=365))), NOW)
+        self.assertEqual([x['id'] for x in daily.select_repositories(self.config, state, [good, old], NOW)], [good])
+
+    def test_synonym_spellings_do_not_double_the_relevance_score(self):
+        record = daily.public_item(item(title='Prompt-injection research', summary='prompt injection'))
+        config = {**self.config, 'keywords':['prompt injection','prompt-injection'], 'focus':[]}
+        self.assertEqual(daily.rank(record, config)['score'], 3)
+
     def test_partial_and_not_connected_visible(self):
         state = daily.empty_state()
         key = daily.merge_item(state, item(), NOW)

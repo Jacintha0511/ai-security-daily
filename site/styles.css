@@ -7,3 +7,5 @@
 
 
 .analysis-link{display:inline-block;font-size:12px;font-weight:600;color:#315e61;padding:7px 10px;border:1px solid #b6c7bf;border-radius:2px;margin:6px 0}.item-bottom{flex-wrap:wrap;gap:10px}.news-row>.analysis-link{margin-left:16px}
+
+.archive-help{font-size:14px;line-height:1.8;color:var(--muted)}.archive-row{cursor:pointer}.archive-row.selected{border-color:var(--blue);background:#edf3f7;box-shadow:inset 3px 0 var(--blue)}.archive-row strong{font-size:14px}.archive-row span{font-size:13px}.report-context{scroll-margin-top:24px;margin:0 0 26px;padding:18px 20px;border:1px solid var(--line);border-left:3px solid var(--blue);background:white;border-radius:4px}.report-context h2{font-size:18px;margin:0 0 5px}.report-context p,.report-context a{font-size:14px;margin:0;color:var(--muted)}.report-context a{color:var(--blue);display:inline-block;margin-top:8px}.report-context[aria-busy=true]{opacity:.65}

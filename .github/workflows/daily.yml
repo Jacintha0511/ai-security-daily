@@ -20,7 +20,7 @@ on:
         default: true
   push:
     branches: [main]
-    paths: ['daily.py', 'enrich.py', 'test_*.py', 'config.json', 'requirements.txt', 'site/**', '.github/workflows/daily.yml']
+    paths: ['daily.py', 'enrich.py', 'test_*.py', 'test_site.cjs', 'config.json', 'requirements.txt', 'site/**', '.github/workflows/daily.yml']
 
 permissions:
   contents: read
@@ -46,6 +46,7 @@ jobs:
       - run: python -m pip install -r requirements.txt
       - name: Test public boundaries and report behavior
         run: python -m unittest -v
+      - run: node --test test_site.cjs
       - name: Collect public sources
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -59,7 +60,9 @@ jobs:
           if [ "$SCHEDULE" = "15 1 * * 0" ]; then mode="weekly"; fi
           if [ "$EVENT_NAME" = "push" ]; then mode="all"; fi
           if [ "$mode" != "weekly" ]; then
-            if [ "$FORCE" = "true" ]; then
+            if [ "$EVENT_NAME" = "push" ] && python -c "import json; from pathlib import Path; from datetime import datetime; import daily; p=Path('data/reports')/(datetime.now(daily.TZ).date().isoformat()+'.json'); raise SystemExit(0 if p.exists() and json.loads(p.read_text())['status']!='failed' else 1)"; then
+              echo "Keeping this edition while publishing website changes"
+            elif [ "$FORCE" = "true" ]; then
               python daily.py daily --force
             else
               python daily.py daily

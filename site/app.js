@@ -2,7 +2,7 @@
 (() => {
   'use strict';
   const $ = id => document.getElementById(id);
-  const state = {manifest:null, report:null, kind:'all', view:'daily', query:'',analyses:{items:{}}};
+  const state = {manifest:null, report:null, kind:'all', view:'daily', query:'',selectedDate:null,loadId:0,analyses:{items:{}}};
   const dateInBeijing = date => new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(date);
   const today = () => dateInBeijing(new Date());
   const timeLabel = value => value ? new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date(value)) : '未知';
@@ -13,6 +13,7 @@
   function statusLabel(status) {return ({ok:'已采集',partial:'部分完成',failed:'采集失败',not_connected:'待接入',complete:'已生成'})[status]||status;}
   function displayHealth() {
     const manifest=state.manifest, latest=manifest.latest, attempt=manifest.latest_attempt;
+    if(state.view!=='daily' && state.report){const report=state.report;const panel=document.querySelector('.health-panel');panel.classList.remove('good','bad');$('health-title').textContent=`正在查看 ${report.date} 的${state.view==='weekly'?'周报':'历史日报'}`;$('health-detail').textContent=`这是当期保存的内容，生成于 ${timeLabel(report.generated_at)}；来源状态和项目星数也对应当期。`;$('health-tag').textContent=statusLabel(report.status||'complete');return;}
     const panel=document.querySelector('.health-panel');panel.classList.remove('good','bad');
     let title,detail,tag;
     if(!latest || latest.date!==today()) {title='今天尚未产出日报';detail=latest ? `最近一期为 ${latest.date}。${attempt?.status==='failed'?'最近一次采集失败，请查看运行记录。':'请结合运行记录查看调度或补跑情况。'}` : '尚无可用日报，等待首次云端采集。';tag='等待更新';}
@@ -30,6 +31,7 @@
     const labels={paper:'查看论文解析',repo:'查看项目分析',news:'查看研究点评'};
     const a=el('a','analysis-link',labels[item.kind]+(ready?(entry.status==='partial'?' · 部分解析':' →'):' · 待解析'));
     a.href='analysis.html?id='+encodeURIComponent(item.id)+(entry?'&v='+encodeURIComponent(entry.fingerprint):'');
+    if(state.selectedDate){const back=new URL(location.href);back.searchParams.set('view',state.view);back.searchParams.set('date',state.selectedDate);a.href+='&back='+encodeURIComponent(back.pathname+back.search);}
     return a;
   }
   function paperCard(item,index) {
@@ -46,7 +48,7 @@
   }
   function newsRow(item,index) {const row=el('article','news-row');const h=el('h3');h.append(link(item.title,item.url));row.append(el('span','source-label',item.source),h,el('p','summary',item.summary),el('p','item-date',item.reason));row.append(link('阅读原文 ↗',item.url,'read-link'));if(index<2)row.append(analysisButton(item));return row;}
   function renderSources() {
-    const list=$('source-list');list.replaceChildren();const attempt=state.manifest?.latest_attempt; const sources=attempt?.status==='failed'&&state.view==='daily'?attempt.sources:(state.report?.sources||attempt?.sources||[]);
+    const list=$('source-list');list.replaceChildren();const attempt=state.manifest?.latest_attempt; const sources=attempt?.status==='failed'&&state.view==='daily'?attempt.sources:(state.report?.sources||(state.view==='daily'?attempt?.sources:[])||[]);
     $('source-count').textContent=`${sources.filter(s=>s.status==='ok').length}/${sources.length} 已接通`;
     sources.forEach(source=>{const row=el('div','source-row');row.dataset.status=source.status;row.append(el('span','status-dot'),el('span','',source.name),el('span','',statusLabel(source.status)));row.title=source.detail||'';list.append(row);});
     if(!sources.length)empty(list,'尚无来源运行记录。');
@@ -58,31 +60,74 @@
     let total=0;
     for(const kind of ['paper','repo','news']) {const all=state.report?.items?.[kind]||[],items=all.filter(matches),list=$(kind+'-list');list.replaceChildren();$(kind+'-count').textContent=all.length;$(kind+'-total').textContent=items.length;
       const section=document.querySelector(`[data-section="${kind}"]`);section.hidden=state.kind!=='all'&&state.kind!==kind;
-      items.forEach((item,index)=>list.append(kind==='paper'?paperCard(item,index):kind==='repo'?repoRow(item,index):newsRow(item,index)));
+      items.forEach((item,index)=>list.append(kind==='paper'?paperCard(item,index):kind==='repo'?repoRow(item,all.indexOf(item)):newsRow(item,all.indexOf(item))));
       if(!items.length)empty(list,all.length?'没有匹配当前搜索的条目。':kind==='news'?'本期没有可推荐报道。公众号由本机订阅服务同步，接入及最近采集状态见右侧；采集缺失不代表没有更新。':'本次没有可推荐条目，请结合来源状态判断。');
       if(!section.hidden)total+=items.length;
     }
     $('no-results').hidden=total>0||!state.query;renderSources();renderGrowth();if($('analysis-updated'))$('analysis-updated').textContent=state.analyses.updated_at?'解析更新于 '+timeLabel(state.analyses.updated_at)+' · Codex 账号额度':'本机 Codex 每天 02:00 解析，03:45 补跑';if($('news-updated'))$('news-updated').textContent=state.report?.news_updated_at?'公众号同步尝试于 '+timeLabel(state.report.news_updated_at):'公众号尚未完成本机同步';
   }
-  async function selectDate(date) {
-    const record=(state.view==='weekly'?state.manifest.weekly:state.manifest.archive).find(r=>r.date===date);if(!record)return;
-    try {state.report=await getJSON(record.path);$('date-select').value=date;$('heading-detail').textContent=state.view==='weekly'?`${state.report.start} — ${date} · ${state.report.days_with_reports} 天有公开日报`:`${date} · 公开来源 · 规则预筛 · 保留证据边界`;render();}
-    catch {$('health-title').textContent='该期报告暂时无法读取';$('health-detail').textContent='请稍后刷新，或在 GitHub Actions 查看部署记录。';}
+  function resetFilters() {
+    state.kind='all';state.query='';$('search').value='';
+    document.querySelectorAll('[data-kind]').forEach(b=>b.classList.toggle('selected',b.dataset.kind==='all'));
   }
-  function setView(view) {
-    state.view=view;document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===view));
-    $('page-title').textContent=({daily:'今日研究动态',archive:'历史研究日报',weekly:'每周动态回顾'})[view];$('edition').textContent=view==='weekly'?'WEEKLY REVIEW':view==='archive'?'DAILY ARCHIVE':'DAILY BRIEFING';
-    const archive=view==='weekly'?state.manifest.weekly:state.manifest.archive;$('date-select').replaceChildren();
-    archive.forEach(record=>{const option=el('option','',record.date);option.value=record.date;$('date-select').append(option);});
-    if(!archive.length){$('date-select').append(el('option','','暂无记录'));state.report=null;render();$('heading-detail').textContent='尚无该类型报告，等待云端生成。';}
-    else selectDate(archive[0].date);
+  function setLocation(view,date,replace=false) {
+    const url=new URL(location.href);url.searchParams.set('view',view);url.searchParams.set('date',date);
+    if(url.href!==location.href)history[replace?'replaceState':'pushState']({view,date},'',url);
+  }
+  function markDate(date) {
+    document.querySelectorAll('[data-report-date]').forEach(a=>{const active=a.dataset.reportDate===date;a.classList.toggle('selected',active);if(active)a.setAttribute('aria-current','date');else a.removeAttribute('aria-current');});
+    const dateValue=new Date(date+'T12:00:00+08:00');
+    $('calendar-date').textContent=new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',month:'long',day:'numeric'}).format(dateValue);
+    $('calendar-day').textContent=new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',weekday:'long'}).format(dateValue)+' · 所选报告日期';
+  }
+  async function selectDate(date,{updateURL=true,replace=false,scroll=false}={}) {
+    const view=state.view,record=(view==='weekly'?state.manifest.weekly:state.manifest.archive).find(r=>r.date===date);
+    if(!record)return;
+    const loadId=++state.loadId;resetFilters();state.report=null;state.selectedDate=date;
+    $('date-select').value=date;markDate(date);render();
+    $('report-context').setAttribute('aria-busy','true');$('report-title').textContent=`正在读取 ${date} 的报告…`;
+    $('report-note').textContent='';$('report-file').hidden=true;
+    try {
+      const report=await getJSON(record.path);if(loadId!==state.loadId||state.view!==view)return;
+      state.report=report;render();displayHealth();
+      $('heading-detail').textContent=view==='weekly'?`${report.start} — ${date} · ${report.days_with_reports} 天有日报`:`当前显示 ${date} 的论文、项目与报道`;
+      $('report-title').textContent=`${date} · ${view==='weekly'?'每周回顾':'研究日报'}`;
+      const counts=Object.entries({paper:'论文',repo:'项目',news:'报道'}).map(([k,label])=>`${label} ${report.items?.[k]?.length||0}`);
+      $('report-note').textContent=counts.join(' · ')+(view==='archive'?' · 以下内容与来源状态均来自所选日期。':'')+(report.selection_updated_at?' · 项目于 '+timeLabel(report.selection_updated_at)+' 按本期快照重新筛选。':'');
+      $('report-file').href=record.path;$('report-file').hidden=false;
+      if(updateURL)setLocation(view,date,replace);
+      if(scroll){$('report-context').scrollIntoView({block:'start',behavior:'smooth'});$('report-context').focus({preventScroll:true});}
+    } catch {
+      if(loadId!==state.loadId)return;
+      state.report=null;render();$('report-title').textContent=`${date} 的报告暂时无法读取`;
+      $('report-note').textContent='请重选日期或稍后刷新。不会以其他日期的内容替代。';
+      $('health-title').textContent=`${date} 的报告读取失败`;$('health-detail').textContent='请检查网络后重试。';$('health-tag').textContent='读取失败';
+    } finally {if(loadId===state.loadId)$('report-context').setAttribute('aria-busy','false');}
+  }
+  async function setView(view,date=null,options={}) {
+    state.view=['daily','archive','weekly'].includes(view)?view:'daily';view=state.view;
+    document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===view));
+    $('page-title').textContent=({daily:'今日研究动态',archive:'历史研究日报',weekly:'每周动态回顾'})[view];
+    $('edition').textContent=view==='weekly'?'WEEKLY REVIEW':view==='archive'?'DAILY ARCHIVE':'DAILY BRIEFING';
+    const archive=view==='weekly'?state.manifest.weekly:state.manifest.archive;
+    $('date-select').replaceChildren();archive.forEach(record=>{const option=el('option','',record.date);option.value=record.date;$('date-select').append(option);});
     $('archive-panel').hidden=view!=='archive';const list=$('archive-list');list.replaceChildren();
-    if(view==='archive')archive.forEach(record=>{const button=el('button','archive-row');button.append(el('strong','',record.date),el('span','',`${record.count} 条推荐 · ${statusLabel(record.status)}  →`));button.addEventListener('click',()=>selectDate(record.date));list.append(button);});
+    if(view==='archive')archive.forEach(record=>{
+      const a=el('a','archive-row');a.dataset.reportDate=record.date;
+      const url=new URL(location.href);url.searchParams.set('view','archive');url.searchParams.set('date',record.date);a.href=url.pathname+url.search;
+      a.append(el('strong','',record.date),el('span','',`${record.count} 条推荐 · ${statusLabel(record.status)} · 查看当期内容`));
+      a.addEventListener('click',event=>{if(event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;event.preventDefault();selectDate(record.date,{scroll:true});});list.append(a);
+    });
+    if(!archive.length){++state.loadId;resetFilters();state.report=null;state.selectedDate=null;render();$('report-title').textContent='暂无报告';$('report-note').textContent='等待首次生成。';$('report-file').hidden=true;return;}
+    const wanted=date||archive[0].date;
+    if(!archive.some(r=>r.date===wanted)){++state.loadId;resetFilters();state.report=null;render();$('report-title').textContent=`没有找到 ${wanted} 的报告`;$('report-note').textContent='请从日期列表中选择已生成的报告。';$('report-file').hidden=true;return;}
+    await selectDate(wanted,options);
   }
   document.querySelectorAll('[data-kind]').forEach(button=>button.addEventListener('click',()=>{state.kind=button.dataset.kind;document.querySelectorAll('[data-kind]').forEach(b=>b.classList.toggle('selected',b===button));render();}));
   document.querySelectorAll('[data-view]').forEach(button=>button.addEventListener('click',()=>{if(state.manifest)setView(button.dataset.view);}));
-  $('search').addEventListener('input',event=>{state.query=event.target.value.trim().toLocaleLowerCase();render();});$('date-select').addEventListener('change',event=>selectDate(event.target.value));
+  $('search').addEventListener('input',event=>{state.query=event.target.value.trim().toLocaleLowerCase();render();});$('date-select').addEventListener('change',event=>setView(state.view==='daily'?'archive':state.view,event.target.value));
+  window.addEventListener('popstate',()=>{if(state.manifest){const p=new URLSearchParams(location.search);setView(p.get('view')||'daily',p.get('date'),{updateURL:false});}});
   const now=new Date();$('calendar-date').textContent=new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',month:'long',day:'numeric'}).format(now);$('calendar-day').textContent=new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',weekday:'long'}).format(now)+' · 北京时间';
-  Promise.all([getJSON('./data/manifest.json'),getJSON('./data/analyses/index.json').catch(()=>({items:{}}))]).then(([manifest,analyses])=>{state.analyses=analyses;return manifest;}).then(manifest=>{state.manifest=manifest;displayHealth();setView('daily');}).catch(()=>{$('health-title').textContent='公开日报数据暂时不可用';$('health-detail').textContent='请检查网络或查看 GitHub Actions。此时不能判断今天是否成功产出。';$('health-tag').textContent='待核实';document.querySelector('.health-panel').classList.add('bad');});
+  Promise.all([getJSON('./data/manifest.json'),getJSON('./data/analyses/index.json').catch(()=>({items:{}}))]).then(([manifest,analyses])=>{state.analyses=analyses;return manifest;}).then(manifest=>{state.manifest=manifest;displayHealth();const p=new URLSearchParams(location.search);setView(p.get('view')||(p.get('date')?'archive':'daily'),p.get('date'),{replace:true});}).catch(()=>{$('health-title').textContent='公开日报数据暂时不可用';$('health-detail').textContent='请检查网络或查看 GitHub Actions。此时不能判断今天是否成功产出。';$('health-tag').textContent='待核实';document.querySelector('.health-panel').classList.add('bad');});
 })();
 
