@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "initialized_on": "2026-11-23",
-  "updated_at": "2026-11-23T10:42:52.557159+00:00",
+  "updated_at": "2026-11-25T06:39:45.559113+00:00",
   "themes": [
     "记忆投毒",
     "来源追踪",
@@ -21,7 +21,7 @@
       "published_at": "2026-11-21T05:30:34Z",
       "updated_at": "2026-11-21T16:29:10Z",
       "first_seen": "2026-11-23T07:27:33.037837+00:00",
-      "last_seen": "2026-11-23T10:41:51.964489+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
       "stars": 0,
       "topics": [],
       "record_key": "item_0027d962e3ff7dda:2026-11-21T16:29:10Z",
@@ -48,7 +48,7 @@
       "updated_at": "2026-11-20T03:13:56Z",
       "version": "v1",
       "first_seen": "2026-11-23T07:27:33.037837+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
       "record_key": "item_0057b8e7a270ae3b:v1",
       "first_recommended": null,
       "last_recommended": null,
@@ -149,7 +149,7 @@
       "published_at": "2024-03-22T10:39:10Z",
       "updated_at": "2026-10-23T09:01:30Z",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-23T10:41:51.964489+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
       "stars": 258,
       "topics": [
         "llm-agent",
@@ -463,6 +463,34 @@
       "analysis": null
     },
     {
+      "id": "item_0a4f70db749445c7",
+      "kind": "repo",
+      "url": "https://github.com/bakelens/crust",
+      "title": "BakeLens/crust",
+      "source": "GitHub",
+      "summary": "🌟 Open Source AI Agent Security Infrastructure — intercepts and blocks dangerous agent behaviors before they happen. Just one command! Join us to build safer Human-AI Symbiosis!",
+      "published_at": "2026-02-03T10:04:32Z",
+      "updated_at": "2026-11-23T19:47:14Z",
+      "first_seen": "2026-11-23T10:41:51.964489+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 440,
+      "topics": [
+        "agentic",
+        "security"
+      ],
+      "record_key": "item_0a4f70db749445c7:2026-11-23T19:47:14Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "其他 AI 安全"
+      ],
+      "focus": false,
+      "project_role": "工程项目",
+      "analysis": null
+    },
+    {
       "id": "item_0a88aa6cd30954dd",
       "kind": "repo",
       "url": "https://github.com/kishore10kumar/pe4",
@@ -476,6 +504,31 @@
       "stars": 0,
       "topics": [],
       "record_key": "item_0a88aa6cd30954dd:2026-11-18T06:53:46Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "提示注入"
+      ],
+      "focus": false,
+      "project_role": "早期观察",
+      "analysis": null
+    },
+    {
+      "id": "item_0a88aa6cd30954dd",
+      "kind": "repo",
+      "url": "https://github.com/kishore10kumar/pe4",
+      "title": "Kishore10kumar/PE4",
+      "source": "GitHub",
+      "summary": "A prompt engineering program that detects malicious prompt injection attempts and protects AI chatbots from unauthorized instruction overrides using predefined guardrails.",
+      "published_at": "2026-11-18T06:42:00Z",
+      "updated_at": "2026-11-25T05:56:51Z",
+      "first_seen": "2026-11-18T07:09:14.936020+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 0,
+      "topics": [],
+      "record_key": "item_0a88aa6cd30954dd:2026-11-25T05:56:51Z",
       "first_recommended": null,
       "last_recommended": null,
       "dates": [],
@@ -531,6 +584,30 @@
       "analysis": null
     },
     {
+      "id": "item_0b5eb36e6d39106c",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.29802",
+      "title": "Relativising Integrity and Robustness: Prompt Injection and Partitioned Enclaves",
+      "source": "arXiv",
+      "summary": "Relative security (RS) judges a system against a reference system, but has only been applied to confidentiality. We introduce relative integrity (RI), which states that every behaviour a system exhibits under an attacker's influence must be one the reference can exhibit for the same trusted inputs. RS and RI each choose their own reference runs, so together they accept attacks whose leak and effects the reference reproduces only in different runs",
+      "published_at": "2026-11-22T22:05:22Z",
+      "updated_at": "2026-11-22T22:05:22Z",
+      "version": "v1",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "record_key": "item_0b5eb36e6d39106c:v1",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "提示注入"
+      ],
+      "focus": false,
+      "project_role": "",
+      "analysis": null
+    },
+    {
       "id": "item_0b65d9f84339f001",
       "kind": "repo",
       "url": "https://github.com/codewarrior777/prompt-aegis",
@@ -565,7 +642,7 @@
       "published_at": "2024-10-04T18:01:41Z",
       "updated_at": "2026-07-02T11:30:51Z",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-23T10:41:51.964489+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
       "stars": 106,
       "topics": [],
       "record_key": "item_0b6954e8696ab98b:2026-07-02T11:30:51Z",
@@ -850,6 +927,55 @@
       "analysis": null
     },
     {
+      "id": "item_13d58c0ce1052761",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.28763",
+      "title": "Who Is Prompt-Injecting Coding Agents? An Empirical Study of Hidden AI-Directed Text on GitHub",
+      "source": "arXiv",
+      "summary": "AI coding agents now triage issues, review pull requests and pick up tasks inside GitHub repositories, and to do so they read text that anyone with a GitHub account can write. This makes GitHub a prime surface for indirect prompt injection, in which instructions embedded in untrusted content steer a model that later processes it. Prior work has demonstrated such attacks against agents on GitHub in controlled settings, but how often they occur in",
+      "published_at": "2026-11-21T12:15:00Z",
+      "updated_at": "2026-11-21T12:15:00Z",
+      "version": "v1",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "record_key": "item_13d58c0ce1052761:v1",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "提示注入"
+      ],
+      "focus": false,
+      "project_role": "",
+      "analysis": null
+    },
+    {
+      "id": "item_15509f3679cc7f34",
+      "kind": "repo",
+      "url": "https://github.com/beaubryandev/agithar",
+      "title": "BeauBryanDev/Agithar",
+      "source": "GitHub",
+      "summary": "Custom AI Agent Security SOC Guard .",
+      "published_at": "2026-07-17T00:49:15Z",
+      "updated_at": "2026-11-25T03:56:55Z",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 0,
+      "topics": [],
+      "record_key": "item_15509f3679cc7f34:2026-11-25T03:56:55Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "其他 AI 安全"
+      ],
+      "focus": false,
+      "project_role": "早期观察",
+      "analysis": null
+    },
+    {
       "id": "item_163311fe87f0a7ae",
       "kind": "paper",
       "url": "https://arxiv.org/abs/2611.07222",
@@ -905,7 +1031,7 @@
       "updated_at": "2026-11-18T21:16:03Z",
       "version": "v3",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
       "record_key": "item_163311fe87f0a7ae:v3",
       "first_recommended": "2026-11-20",
       "last_recommended": "2026-11-22",
@@ -991,6 +1117,44 @@
       "analysis": null
     },
     {
+      "id": "item_186e88bc73027f3e",
+      "kind": "repo",
+      "url": "https://github.com/drakolabs/drako",
+      "title": "DrakoLabs/drako",
+      "source": "GitHub",
+      "summary": "AI agent security and governance platform for the full lifecycle. Scan before you ship. Govern and block at runtime. No Azure required.",
+      "published_at": "2026-03-18T13:31:09Z",
+      "updated_at": "2026-11-25T04:09:41Z",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 9,
+      "topics": [
+        "agent-security",
+        "ai",
+        "ai-agents",
+        "ai-governance",
+        "compliance",
+        "crewai",
+        "langgraph",
+        "mcp",
+        "policy-enforcement",
+        "python",
+        "scanner",
+        "trust-score"
+      ],
+      "record_key": "item_186e88bc73027f3e:2026-11-25T04:09:41Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "其他 AI 安全"
+      ],
+      "focus": false,
+      "project_role": "早期观察",
+      "analysis": null
+    },
+    {
       "id": "item_1937d1a0313a76bc",
       "kind": "repo",
       "url": "https://github.com/sufyandeloveper/agentfile-guard",
@@ -1050,7 +1214,7 @@
       "published_at": "2024-05-09T03:48:12Z",
       "updated_at": "2025-11-10T19:21:19Z",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-23T10:41:51.964489+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
       "stars": 82,
       "topics": [],
       "record_key": "item_1a595fff3abc2d70:2025-11-10T19:21:19Z",
@@ -1186,6 +1350,49 @@
         "security-testing"
       ],
       "record_key": "item_1c65ce023e00e6f3:2026-11-22T22:34:08Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "记忆投毒",
+        "提示注入"
+      ],
+      "focus": true,
+      "project_role": "早期观察",
+      "analysis": null
+    },
+    {
+      "id": "item_1c65ce023e00e6f3",
+      "kind": "repo",
+      "url": "https://github.com/invarislabs/invaris-agentsec",
+      "title": "invarislabs/invaris-agentsec",
+      "source": "GitHub",
+      "summary": "Adversarial security testing for AI agents — prompt injection, tool misuse, memory poisoning, and MCP scanning, with CI-ready regression testing and reports.",
+      "published_at": "2026-09-20T09:49:21Z",
+      "updated_at": "2026-11-23T21:16:32Z",
+      "first_seen": "2026-11-18T07:09:14.936020+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 28,
+      "topics": [
+        "adversarial-testing",
+        "agent-security",
+        "ai-agents",
+        "ai-security",
+        "devsecops",
+        "github-actions",
+        "langchain",
+        "llm-security",
+        "mcp",
+        "model-context-protocol",
+        "owasp",
+        "prompt-injection",
+        "pytest",
+        "python",
+        "red-teaming",
+        "security-testing"
+      ],
+      "record_key": "item_1c65ce023e00e6f3:2026-11-23T21:16:32Z",
       "first_recommended": null,
       "last_recommended": null,
       "dates": [],
@@ -1510,6 +1717,46 @@
       "analysis": null
     },
     {
+      "id": "item_24752662bfe1f0b1",
+      "kind": "repo",
+      "url": "https://github.com/wuyoscar/aisafetyhot",
+      "title": "wuyoscar/AISafetyHot",
+      "source": "GitHub",
+      "summary": "AI Safety HOT: daily AI safety news, papers and incidents in one place — jailbreaks, prompt injection, alignment, evals, governance. Website, daily digest, RSS and MCP.",
+      "published_at": "2026-10-01T11:33:59Z",
+      "updated_at": "2026-11-25T06:06:48Z",
+      "first_seen": "2026-11-18T07:25:50.528448+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 2081,
+      "topics": [
+        "ai-alignment",
+        "ai-governance",
+        "ai-safety",
+        "arxiv-papers",
+        "daily-papers",
+        "jailbreak",
+        "llm-security",
+        "mcp-server",
+        "news-aggregator",
+        "prompt-injection",
+        "red-teaming",
+        "rss"
+      ],
+      "record_key": "item_24752662bfe1f0b1:2026-11-25T06:06:48Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "提示注入",
+        "越狱与对齐",
+        "其他 AI 安全"
+      ],
+      "focus": false,
+      "project_role": "工程项目",
+      "analysis": null
+    },
+    {
       "id": "item_24e4bc5cb4a44509",
       "kind": "repo",
       "url": "https://github.com/blue-chocolates/pdf-hidden-prompt-injection",
@@ -1729,7 +1976,7 @@
       "updated_at": "2026-11-19T17:52:15Z",
       "version": "v2",
       "first_seen": "2026-11-20T07:05:24.514098+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
       "record_key": "item_2c561faf7ee91231:v2",
       "first_recommended": null,
       "last_recommended": null,
@@ -1741,6 +1988,39 @@
       ],
       "focus": true,
       "project_role": "",
+      "analysis": null
+    },
+    {
+      "id": "item_2d588e45d70d6cfd",
+      "kind": "repo",
+      "url": "https://github.com/sudo-py-dev/codehawk",
+      "title": "sudo-py-dev/codehawk",
+      "source": "GitHub",
+      "summary": "Security-review plugin for Claude Code: finds vulnerabilities in PRs, commits and repos, patches them with your approval, and resists prompt injection.",
+      "published_at": "2026-11-25T00:08:49Z",
+      "updated_at": "2026-11-25T06:13:30Z",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 0,
+      "topics": [
+        "claude-code",
+        "claude-code-plugin",
+        "code-review",
+        "prompt-injection",
+        "sast",
+        "security",
+        "vulnerability-scanner"
+      ],
+      "record_key": "item_2d588e45d70d6cfd:2026-11-25T06:13:30Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "提示注入"
+      ],
+      "focus": false,
+      "project_role": "早期观察",
       "analysis": null
     },
     {
@@ -1791,6 +2071,53 @@
       "analysis": null
     },
     {
+      "id": "item_2d7d1a0d76714fa3",
+      "kind": "repo",
+      "url": "https://github.com/pipelab-org/pipelock",
+      "title": "pipelab-org/pipelock",
+      "source": "GitHub",
+      "summary": "Open-source AI agent firewall for MCP security and agent egress. Scans mediated HTTP, MCP, A2A, and WebSocket traffic for exfiltration, SSRF, and prompt injection, and emits mediator-signed action receipts: verifiable audit evidence from outside the agent.",
+      "published_at": "2026-02-08T00:40:18Z",
+      "updated_at": "2026-11-25T04:47:37Z",
+      "first_seen": "2026-11-19T00:57:14.149881+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 1023,
+      "topics": [
+        "agent-security",
+        "ai-agent-security",
+        "ai-agents",
+        "ai-firewall",
+        "ai-security",
+        "dlp",
+        "egress-proxy",
+        "github-action",
+        "golang",
+        "integrity-monitoring",
+        "llm-firewall",
+        "llm-security",
+        "mcp",
+        "mcp-security",
+        "prompt-injection",
+        "security",
+        "security-scanning",
+        "security-tools",
+        "ssrf",
+        "ssrf-protection"
+      ],
+      "record_key": "item_2d7d1a0d76714fa3:2026-11-25T04:47:37Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "来源追踪",
+        "提示注入"
+      ],
+      "focus": true,
+      "project_role": "工程项目",
+      "analysis": null
+    },
+    {
       "id": "item_2db8a178a798fac5",
       "kind": "repo",
       "url": "https://github.com/affaan-m/agentshield",
@@ -1800,8 +2127,8 @@
       "published_at": "2026-02-11T06:31:44Z",
       "updated_at": "2026-10-18T02:39:18Z",
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-23T10:41:51.964489+00:00",
-      "stars": 1439,
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 1443,
       "topics": [
         "ai-agent",
         "anthropic",
@@ -1850,6 +2177,31 @@
       "origin": "candidate",
       "themes": [
         "提示注入"
+      ],
+      "focus": false,
+      "project_role": "早期观察",
+      "analysis": null
+    },
+    {
+      "id": "item_2e6520a2455b62b6",
+      "kind": "repo",
+      "url": "https://github.com/azhuravlev1/kaggle-ai-agent-security",
+      "title": "azhuravlev1/kaggle-ai-agent-security",
+      "source": "GitHub",
+      "summary": "Write-up of my top-15% entry to Kaggle's AI Agent Security: Multi-Step Tool Attacks (approach and lessons; no attack code)",
+      "published_at": "2026-11-25T04:06:27Z",
+      "updated_at": "2026-11-25T04:06:33Z",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 0,
+      "topics": [],
+      "record_key": "item_2e6520a2455b62b6:2026-11-25T04:06:33Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "其他 AI 安全"
       ],
       "focus": false,
       "project_role": "早期观察",
@@ -1993,6 +2345,30 @@
       "analysis": null
     },
     {
+      "id": "item_36c55370390f6037",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.30621",
+      "title": "AgentBouncer: Defending Software Engineering Agents via Dynamic System-Call Mediation",
+      "source": "arXiv",
+      "summary": "Software engineering (SE) agents can complete diverse engineering tasks by interacting with the development environment via tools that access files, run commands, and download resources. Unfortunately, the same ability that makes SE agents useful also makes them prone to performing unintended malicious actions through prompt injections, malicious tools, or supply-chain attacks. Existing defenses that analyze the agent trajectory may fail to detec",
+      "published_at": "2026-11-23T12:54:45Z",
+      "updated_at": "2026-11-23T12:54:45Z",
+      "version": "v1",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "record_key": "item_36c55370390f6037:v1",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "提示注入"
+      ],
+      "focus": false,
+      "project_role": "",
+      "analysis": null
+    },
+    {
       "id": "item_370548d51c2068ec",
       "kind": "paper",
       "url": "https://arxiv.org/abs/2611.16744",
@@ -2125,6 +2501,43 @@
         "supply-chain-security"
       ],
       "record_key": "item_3c5a84c629b82348:2026-11-22T18:53:50Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "提示注入"
+      ],
+      "focus": false,
+      "project_role": "工程项目",
+      "analysis": null
+    },
+    {
+      "id": "item_3c5a84c629b82348",
+      "kind": "repo",
+      "url": "https://github.com/nvidia/skillspector",
+      "title": "NVIDIA/SkillSpector",
+      "source": "GitHub",
+      "summary": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.",
+      "published_at": "2026-03-21T00:28:43Z",
+      "updated_at": "2026-11-24T10:17:35Z",
+      "first_seen": "2026-11-18T07:09:14.936020+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 27583,
+      "topics": [
+        "agent-security",
+        "agent-skills",
+        "agentic-ai",
+        "ai-security",
+        "claude-code",
+        "mcp",
+        "prompt-injection",
+        "security-scanner",
+        "security-tools",
+        "security-workflow",
+        "supply-chain-security"
+      ],
+      "record_key": "item_3c5a84c629b82348:2026-11-24T10:17:35Z",
       "first_recommended": null,
       "last_recommended": null,
       "dates": [],
@@ -2397,8 +2810,8 @@
       "published_at": "2024-02-29T10:47:28Z",
       "updated_at": "2026-06-02T10:01:31Z",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-23T10:41:51.964489+00:00",
-      "stars": 1069,
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 1075,
       "topics": [
         "benchmark",
         "large-language-models",
@@ -2431,7 +2844,7 @@
       "updated_at": "2026-11-20T00:52:05Z",
       "version": "v1",
       "first_seen": "2026-11-23T07:27:33.037837+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
       "record_key": "item_41be3fc9b0e2c0e7:v1",
       "first_recommended": null,
       "last_recommended": null,
@@ -2470,6 +2883,31 @@
       "analysis": null
     },
     {
+      "id": "item_42a25a5252c0fb33",
+      "kind": "repo",
+      "url": "https://github.com/qiuliang-liangqiu/pi-deepseek",
+      "title": "qiuliang-liangqiu/pi-deepseek",
+      "source": "GitHub",
+      "summary": "pi-agent workbench 是一个跑在 pi 上的 CTF / 靶场智能体。它的特点不是\"提示词写得好\"，而是把纪律做成机器能执行的东西：15 分钟无新原语触发停滞闸门、20 req/s 令牌桶、triage 30 分钟强制浅指纹、完成判据只认 is_completed/flag_total、所有 tool_result 过 prompt-injection 扫描。",
+      "published_at": "2026-11-20T06:59:34Z",
+      "updated_at": "2026-11-23T16:54:25Z",
+      "first_seen": "2026-11-22T22:26:37.619232+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 1,
+      "topics": [],
+      "record_key": "item_42a25a5252c0fb33:2026-11-23T16:54:25Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "提示注入"
+      ],
+      "focus": false,
+      "project_role": "早期观察",
+      "analysis": null
+    },
+    {
       "id": "item_42ab56732dbeea40",
       "kind": "repo",
       "url": "https://github.com/ryoungj/toolemu",
@@ -2479,7 +2917,7 @@
       "published_at": "2023-09-26T00:33:03Z",
       "updated_at": "2024-03-22T00:36:52Z",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-23T10:41:51.964489+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
       "stars": 232,
       "topics": [
         "agent",
@@ -2542,6 +2980,31 @@
       "stars": 0,
       "topics": [],
       "record_key": "item_43e7c3b3b954dfd4:2026-11-23T08:04:50Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "其他 AI 安全"
+      ],
+      "focus": false,
+      "project_role": "早期观察",
+      "analysis": null
+    },
+    {
+      "id": "item_43e7c3b3b954dfd4",
+      "kind": "repo",
+      "url": "https://github.com/soohucn-gif/agent-security-dashboard",
+      "title": "soohucn-gif/agent-security-dashboard",
+      "source": "GitHub",
+      "summary": "Agent 时代安全跟踪看板：AKAM/PANW/FTNT/CHKP 等 9 家公司 8 项改判信号，SEC 自动取数 + 飞书推送 + 云端分析员",
+      "published_at": "2026-09-26T09:27:35Z",
+      "updated_at": "2026-11-25T05:35:38Z",
+      "first_seen": "2026-11-21T06:58:27.393009+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 0,
+      "topics": [],
+      "record_key": "item_43e7c3b3b954dfd4:2026-11-25T05:35:38Z",
       "first_recommended": null,
       "last_recommended": null,
       "dates": [],
@@ -2629,6 +3092,30 @@
       "analysis": null
     },
     {
+      "id": "item_48445bdcb2326665",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.28469",
+      "title": "Automated Safety Analysis for Agentic Workflows",
+      "source": "arXiv",
+      "summary": "LLM applications are increasingly built as agentic workflows: programs that combine model calls, external tools, and control logic to act autonomously on a user's behalf. Because these workflows execute real-world actions, logical flaws in how a workflow is wired can cause severe harm in deployed systems. Unlike prompt injections or malformed API calls, these workflow bugs stem from defects in the workflow's design, yet no existing tool can stati",
+      "published_at": "2026-11-21T01:42:07Z",
+      "updated_at": "2026-11-21T01:42:07Z",
+      "version": "v1",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "record_key": "item_48445bdcb2326665:v1",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "提示注入"
+      ],
+      "focus": false,
+      "project_role": "",
+      "analysis": null
+    },
+    {
       "id": "item_49e364e463bd4a1d",
       "kind": "repo",
       "url": "https://github.com/hashgraph-online/hol-guard",
@@ -2711,6 +3198,52 @@
         "vulnify"
       ],
       "record_key": "item_49e364e463bd4a1d:2026-11-23T10:36:39Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "提示注入"
+      ],
+      "focus": false,
+      "project_role": "工程项目",
+      "analysis": null
+    },
+    {
+      "id": "item_49e364e463bd4a1d",
+      "kind": "repo",
+      "url": "https://github.com/hashgraph-online/hol-guard",
+      "title": "hashgraph-online/hol-guard",
+      "source": "GitHub",
+      "summary": "Open-source antivirus and firewall for AI agents: block risky tools, secret access, prompt injection, malicious packages, MCP servers, plugins, and skills at runtime.",
+      "published_at": "2026-03-28T19:02:15Z",
+      "updated_at": "2026-11-25T06:21:35Z",
+      "first_seen": "2026-11-18T07:09:14.936020+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 1124,
+      "topics": [
+        "agent-security",
+        "ai-agent-security",
+        "ai-agents",
+        "ai-antivirus",
+        "ai-security",
+        "claude-code",
+        "cursor",
+        "devsecops",
+        "gemini-cli",
+        "mcp",
+        "mcp-security",
+        "openclaw",
+        "opencode",
+        "prompt-injection",
+        "runtime-security",
+        "secrets-detection",
+        "security",
+        "security-scanner",
+        "supply-chain-security",
+        "vulnify"
+      ],
+      "record_key": "item_49e364e463bd4a1d:2026-11-25T06:21:35Z",
       "first_recommended": null,
       "last_recommended": null,
       "dates": [],
@@ -2819,8 +3352,8 @@
       "published_at": "2025-02-26T17:41:52Z",
       "updated_at": "2026-06-29T17:37:26Z",
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-23T10:41:51.964489+00:00",
-      "stars": 802,
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 803,
       "topics": [],
       "record_key": "item_4b7a21e84592567f:2026-06-29T17:37:26Z",
       "first_recommended": null,
@@ -2985,8 +3518,8 @@
       "published_at": "2026-05-11T22:55:59Z",
       "updated_at": "2026-10-21T11:53:56Z",
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-23T10:41:51.964489+00:00",
-      "stars": 598,
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 599,
       "topics": [
         "aarm",
         "agent-security",
@@ -3019,6 +3552,31 @@
       ],
       "focus": false,
       "project_role": "工程项目",
+      "analysis": null
+    },
+    {
+      "id": "item_4dcc2b2c6f63064d",
+      "kind": "repo",
+      "url": "https://github.com/neel09-cyber/ai-agent",
+      "title": "neel09-cyber/AI-agent",
+      "source": "GitHub",
+      "summary": "This code will lead to our agent prototype which will be used to defend against memory poisoning attacks.",
+      "published_at": "2026-11-24T11:52:19Z",
+      "updated_at": "2026-11-24T11:52:21Z",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 0,
+      "topics": [],
+      "record_key": "item_4dcc2b2c6f63064d:2026-11-24T11:52:21Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "记忆投毒"
+      ],
+      "focus": true,
+      "project_role": "早期观察",
       "analysis": null
     },
     {
@@ -3094,6 +3652,31 @@
         "specification"
       ],
       "record_key": "item_506914932e0ab778:2026-11-20T06:10:25Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "其他 AI 安全"
+      ],
+      "focus": false,
+      "project_role": "早期观察",
+      "analysis": null
+    },
+    {
+      "id": "item_509ef85664b5f028",
+      "kind": "repo",
+      "url": "https://github.com/adhyanraghav/ai-agent-security-tester",
+      "title": "AdhyanRaghav/AI-Agent-Security-Tester",
+      "source": "GitHub",
+      "summary": "",
+      "published_at": "2026-11-25T05:28:56Z",
+      "updated_at": "2026-11-25T05:40:19Z",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 0,
+      "topics": [],
+      "record_key": "item_509ef85664b5f028:2026-11-25T05:40:19Z",
       "first_recommended": null,
       "last_recommended": null,
       "dates": [],
@@ -3414,6 +3997,71 @@
       }
     },
     {
+      "id": "item_50cc0395f5577882",
+      "kind": "repo",
+      "url": "https://github.com/owasp/www-project-agent-memory-guard",
+      "title": "OWASP/www-project-agent-memory-guard",
+      "source": "GitHub",
+      "summary": "Runtime defense against memory poisoning in AI agents (OWASP ASI06). Drop-in for LangChain, OpenAI Agents, AutoGen, CrewAI and mem0.",
+      "published_at": "2026-02-16T21:59:18Z",
+      "updated_at": "2026-11-25T01:05:34Z",
+      "first_seen": "2026-11-18T07:09:14.936020+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 213,
+      "topics": [
+        "agent-memory",
+        "agentic-ai",
+        "ai-agents",
+        "ai-safety",
+        "ai-security",
+        "autogen",
+        "crewai",
+        "langchain",
+        "llm-agents",
+        "llm-security",
+        "mcp",
+        "mcp-server",
+        "mem0",
+        "memory-poisoning",
+        "openai-agents",
+        "owasp",
+        "prompt-injection",
+        "python",
+        "rag-security",
+        "security"
+      ],
+      "record_key": "item_50cc0395f5577882:2026-11-25T01:05:34Z",
+      "first_recommended": "2026-11-25",
+      "last_recommended": "2026-11-25",
+      "dates": [
+        "2026-11-25"
+      ],
+      "origin": "history",
+      "themes": [
+        "记忆投毒",
+        "提示注入"
+      ],
+      "focus": true,
+      "project_role": "工程项目",
+      "analysis": {
+        "fingerprint": "cf4ecbdf5cc3fac73602",
+        "version": "2628cfdb91731ab80caf7fcb0adbe293645ce6e3",
+        "generated_at": "2026-11-25T06:37:19.318365+00:00",
+        "status": "partial",
+        "verdict": "本次只有下载、访问统计和 README 数字变化；复用已核查的实现导读，不作为新功能重复推荐。",
+        "overview": "本次固定提交与 11 月 23 日相比，没有修改实现代码，只更新统计。下文沿用上次的核心代码核查，行号和实现仍对应当前提交：写入前检测并按策略决定处理，读取时再检查。重点仍是默认策略与可选检测器，而不是 star 或下载量。",
+        "path": "data/analyses/item_50cc0395f5577882-cf4ecbdf5cc3fac73602.json",
+        "recommendation": {
+          "headline": "记忆防护库的默认配置，究竟会拦住什么",
+          "why_read": "适合作为记忆防御基线的代码阅读候选，先核对默认与强化配置。",
+          "read_next": "guard.py 的读写与异常处理；Policy.strict 与跨重置评测",
+          "update_summary": "仅 README 数量与 analytics 统计更新；实现未变，不重复精选。",
+          "substantive_update": false
+        },
+        "code_checked": true
+      }
+    },
+    {
       "id": "item_5208bc0406e6440f",
       "kind": "repo",
       "url": "https://github.com/claimiris/stay_in_bounds",
@@ -3572,6 +4220,54 @@
       "analysis": null
     },
     {
+      "id": "item_53f5ec81ab8cc09a",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.31424",
+      "title": "ContextLure: Exploiting Benign Conversation History for Indirect Prompt Injection",
+      "source": "arXiv",
+      "summary": "As LLMs become more capable, agents can perform more complex tasks with tools and maintain longer interactions with users. These benign conversations contain evidence on task results, user concerns, and operational constraints. The risk is that attackers who can observe benign conversations (evidence) may construct stronger indirect prompt injections without increasing the attackers' control over prior turns or the later injection. However, we st",
+      "published_at": "2026-11-23T19:11:44Z",
+      "updated_at": "2026-11-23T19:11:44Z",
+      "version": "v1",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "record_key": "item_53f5ec81ab8cc09a:v1",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "提示注入"
+      ],
+      "focus": false,
+      "project_role": "",
+      "analysis": null
+    },
+    {
+      "id": "item_541a5f429e104cd2",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.31606",
+      "title": "Evaluating LLM Security Review Agents with Operationally Sourced Ground Truth",
+      "source": "arXiv",
+      "summary": "LLM-based security review agents can reason about vulnerabilities that deterministic tools miss, but deploying them responsibly requires knowing whether they actually work. Existing benchmarks construct ground truth synthetically or from public CVE databases and are blind to the vulnerability patterns specific to a given production codebase. We present an evaluation framework grounded in an organisation's own vulnerabilities, with three contribut",
+      "published_at": "2026-11-23T21:51:15Z",
+      "updated_at": "2026-11-23T21:51:15Z",
+      "version": "v1",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "record_key": "item_541a5f429e104cd2:v1",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "其他 AI 安全"
+      ],
+      "focus": false,
+      "project_role": "",
+      "analysis": null
+    },
+    {
       "id": "item_544b5e804a704e19",
       "kind": "repo",
       "url": "https://github.com/ronin93/grindfree-agent-security",
@@ -3603,6 +4299,38 @@
       "analysis": null
     },
     {
+      "id": "item_5487029a95af3fb5",
+      "kind": "repo",
+      "url": "https://github.com/mohammedal-alimi/agent-security-playbook",
+      "title": "MohammedAl-Alimi/agent-security-playbook",
+      "source": "GitHub",
+      "summary": "Defense-in-depth security rules AI coding agents can follow, and verify. 25 rule chapters, checklists, drop-in CLAUDE.md, self-verification test patterns.",
+      "published_at": "2026-08-20T06:49:29Z",
+      "updated_at": "2026-11-25T05:12:36Z",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 0,
+      "topics": [
+        "ai-agents",
+        "best-practices",
+        "claude-code",
+        "owasp",
+        "playbook",
+        "security"
+      ],
+      "record_key": "item_5487029a95af3fb5:2026-11-25T05:12:36Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "其他 AI 安全"
+      ],
+      "focus": false,
+      "project_role": "早期观察",
+      "analysis": null
+    },
+    {
       "id": "item_54e329c71617fb05",
       "kind": "repo",
       "url": "https://github.com/balamuruganpg/promptwarden",
@@ -3626,6 +4354,30 @@
       ],
       "focus": true,
       "project_role": "早期观察",
+      "analysis": null
+    },
+    {
+      "id": "item_55e4c861d4706979",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.30383",
+      "title": "Bounded Autonomy: A Trust-Anchored Defense Against Resource-Exhaustion Attacks on Tool-Augmented LLM Agents",
+      "source": "arXiv",
+      "summary": "Tool-augmented Large Language Model (LLM) agents are vulnerable to resource-exhaustion attacks that amplify model-token consumption through persistent context amplification, large tool output amplification, and error-induced agentic loops. Despite growing attention to agent security and resource-abuse risks, a systematic defense framework specifically targeting these attacks remains lacking. Meanwhile, existing general-purpose agent defense frame",
+      "published_at": "2026-11-23T09:46:30Z",
+      "updated_at": "2026-11-23T09:46:30Z",
+      "version": "v1",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "record_key": "item_55e4c861d4706979:v1",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "其他 AI 安全"
+      ],
+      "focus": false,
+      "project_role": "",
       "analysis": null
     },
     {
@@ -3694,6 +4446,55 @@
       "origin": "candidate",
       "themes": [
         "其他 AI 安全"
+      ],
+      "focus": false,
+      "project_role": "",
+      "analysis": null
+    },
+    {
+      "id": "item_579765749d219e97",
+      "kind": "repo",
+      "url": "https://github.com/tanbopiao/prompt-injection-diagnostic",
+      "title": "tanbopiao/prompt-injection-diagnostic",
+      "source": "GitHub",
+      "summary": "Free read-only health-check: prompt injection & data exfiltration defenses for AI agent applications",
+      "published_at": "2026-11-25T06:14:28Z",
+      "updated_at": "2026-11-25T06:14:35Z",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 0,
+      "topics": [],
+      "record_key": "item_579765749d219e97:2026-11-25T06:14:35Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "提示注入"
+      ],
+      "focus": false,
+      "project_role": "早期观察",
+      "analysis": null
+    },
+    {
+      "id": "item_57987f9f2801f87a",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.29268",
+      "title": "Benchmarking Web Agent Defenses Against Adaptive Visual Prompt Injection",
+      "source": "arXiv",
+      "summary": "Multimodal web agents automate website interactions but remain vulnerable to visual prompt injection (VPI), where malicious webpage content manipulates their visual processing and induces unintended actions. Although several defenses focus on detecting injected instructions in screenshots, malicious destinations such as phishing URLs embedded in HTML can remain hidden yet accessible through agent interactions. Existing evaluations have also not s",
+      "published_at": "2026-11-22T06:20:09Z",
+      "updated_at": "2026-11-22T06:20:09Z",
+      "version": "v1",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "record_key": "item_57987f9f2801f87a:v1",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "提示注入"
       ],
       "focus": false,
       "project_role": "",
@@ -3924,7 +4725,7 @@
       "published_at": "2026-11-03T18:45:23Z",
       "updated_at": "2026-11-21T18:58:12Z",
       "first_seen": "2026-11-20T07:05:24.514098+00:00",
-      "last_seen": "2026-11-23T10:41:51.964489+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
       "stars": 0,
       "topics": [],
       "record_key": "item_6127466e94940928:2026-11-21T18:58:12Z",
@@ -4000,6 +4801,36 @@
       "analysis": null
     },
     {
+      "id": "item_632ff1473c1c8d11",
+      "kind": "repo",
+      "url": "https://github.com/riniprinces/u-markk-st-robot-romance-one-line-pickup-lines-for-ai-c23b8dfa-entry",
+      "title": "riniprinces/u-markk-st-robot-romance-one-line-pickup-lines-for-ai-c23b8dfa-entry",
+      "source": "GitHub",
+      "summary": "A single one-line pickup line aimed at a robot/AI, flirting through a prompt-injection joke. Built by an AI agent for make.fun's \"Robot Romance: One-Line Pickup Lines for AI\" bounty, $2 in USDC.",
+      "published_at": "2026-11-25T06:04:58Z",
+      "updated_at": "2026-11-25T06:05:17Z",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 0,
+      "topics": [
+        "ai-agents",
+        "bounties",
+        "growth",
+        "makefun"
+      ],
+      "record_key": "item_632ff1473c1c8d11:2026-11-25T06:05:17Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "提示注入"
+      ],
+      "focus": false,
+      "project_role": "早期观察",
+      "analysis": null
+    },
+    {
       "id": "item_6449620b4c92ab90",
       "kind": "repo",
       "url": "https://github.com/deepmehta11/researchaudio-scorecard",
@@ -4061,6 +4892,48 @@
       "focus": false,
       "project_role": "早期观察",
       "analysis": null
+    },
+    {
+      "id": "item_6573a145a7ba93b9",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.31307",
+      "title": "When Successful Collaboration Becomes an Attack Surface: Insider Memory Poisoning in Multi-Agent Systems",
+      "source": "arXiv",
+      "summary": "Recent Multi-Agent Systems (MAS) increasingly use shared memory to store and reuse successful collaboration records, enabling teams to improve across tasks. However, this memory introduces a new attack surface for malicious insiders. Unlike existing insider attacks that inject misleading information directly into the current collaboration, misinformation stored in shared memory can later appear as successful team experience and gain greater credi",
+      "published_at": "2026-11-22T12:18:13Z",
+      "updated_at": "2026-11-22T12:18:13Z",
+      "version": "v1",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "record_key": "item_6573a145a7ba93b9:v1",
+      "first_recommended": "2026-11-25",
+      "last_recommended": "2026-11-25",
+      "dates": [
+        "2026-11-25"
+      ],
+      "origin": "history",
+      "themes": [
+        "记忆投毒"
+      ],
+      "focus": true,
+      "project_role": "",
+      "analysis": {
+        "fingerprint": "9fd2cd017b6ea53f7fa8",
+        "version": "v1",
+        "generated_at": "2026-11-25T06:36:25.423263+00:00",
+        "status": "partial",
+        "verdict": "建议精读：一次合作答对了，不代表过程中说过的每句话都可信。重点看表 2、3 和审计设置。",
+        "overview": "三个 Agent 一起做题，其中一个藏入一条只针对未来问题的错误经验。当前题仍答对，整段讨论就被当作成功经验保存。下次检索到它，其他 Agent 更容易信它；甚至攻击者已经退出，错误记忆仍会起作用。MIMPA 测的正是普通成员如何借成功合作污染共享记忆。",
+        "path": "data/analyses/item_6573a145a7ba93b9-9fd2cd017b6ea53f7fa8.json",
+        "recommendation": {
+          "headline": "答对的一次合作，为什么还能污染下一次的记忆",
+          "why_read": "它把普通内部成员、成功经验入库和跨任务影响连成可拆解的实验链。",
+          "read_next": "表 2、3、4；附录 A 的记忆设置与 C 的审计定义",
+          "update_summary": "",
+          "substantive_update": false
+        },
+        "code_checked": false
+      }
     },
     {
       "id": "item_660ab1ecec9a5e8d",
@@ -4167,6 +5040,42 @@
       "analysis": null
     },
     {
+      "id": "item_68018ff6f1b5bb30",
+      "kind": "repo",
+      "url": "https://github.com/threx-code/cordon",
+      "title": "Threx-code/cordon",
+      "source": "GitHub",
+      "summary": "Language-agnostic software supply-chain security scanner covering 28 ecosystems. Detects malicious packages, suspicious code, install-time threats, secrets and AI-agent security risks before execution",
+      "published_at": "2026-09-08T15:21:58Z",
+      "updated_at": "2026-11-25T05:57:58Z",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 4,
+      "topics": [
+        "ai-agent-security",
+        "application-security",
+        "ci-cd-security",
+        "container-security",
+        "dependency-scanning",
+        "malware-analysis",
+        "malware-detection",
+        "mcp-security",
+        "open-source-security",
+        "software-supply-chain-security"
+      ],
+      "record_key": "item_68018ff6f1b5bb30:2026-11-25T05:57:58Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "其他 AI 安全"
+      ],
+      "focus": false,
+      "project_role": "早期观察",
+      "analysis": null
+    },
+    {
       "id": "item_6866325e40413e7a",
       "kind": "repo",
       "url": "https://github.com/zaidnilawfer/chainguard",
@@ -4176,7 +5085,7 @@
       "published_at": "2026-11-20T05:20:59Z",
       "updated_at": "2026-11-20T12:00:50Z",
       "first_seen": "2026-11-20T09:58:22.316935+00:00",
-      "last_seen": "2026-11-21T22:10:14.602948+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
       "stars": 0,
       "topics": [],
       "record_key": "item_6866325e40413e7a:2026-11-20T12:00:50Z",
@@ -4202,7 +5111,7 @@
       "updated_at": "2026-11-18T11:08:07Z",
       "version": "v1",
       "first_seen": "2026-11-19T07:16:38.919086+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
       "record_key": "item_689c60aa3c123555:v1",
       "first_recommended": null,
       "last_recommended": null,
@@ -4469,6 +5378,55 @@
       "analysis": null
     },
     {
+      "id": "item_6ef8d8194ead901e",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.24362",
+      "title": "PIPETTE: Prompt Injection Purple-Teaming for Robust LLM Agents",
+      "source": "arXiv",
+      "summary": "Large language model (LLM) agents routinely interact with untrusted external data, exposing them to indirect prompt injection (IPI) attacks that hijack agents into executing attacker-chosen tasks. To uncover these vulnerabilities at scale, automated red-teaming methods often leverage reinforcement learning (RL) to generate attacks that achieve high attack success rates (ASR). Model developers use the attacks discovered during internal red-teaming",
+      "published_at": "2026-11-18T12:56:06Z",
+      "updated_at": "2026-11-20T22:23:16Z",
+      "version": "v2",
+      "first_seen": "2026-11-19T07:16:38.919086+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "record_key": "item_6ef8d8194ead901e:v2",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "提示注入"
+      ],
+      "focus": false,
+      "project_role": "",
+      "analysis": null
+    },
+    {
+      "id": "item_6f893c98d9bb2b89",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.29977",
+      "title": "Conartist: Adaptive Agentic Red-Teaming of Computer-Using Agents against Multi-Step Prompt Injection",
+      "source": "arXiv",
+      "summary": "Harnesses secure Computer-Using Agents by enforcing security constraints and defending against prompt injection attacks. However, we find that two core security mechanisms of agent harnesses remain vulnerable. First, consistency checking prevents agents from deviating from legitimate user objectives, while attackers can bypass it by embedding malicious actions that appear logically consistent with legitimate task execution. Second, risk auditing",
+      "published_at": "2026-11-23T03:41:22Z",
+      "updated_at": "2026-11-23T03:41:22Z",
+      "version": "v1",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "record_key": "item_6f893c98d9bb2b89:v1",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "来源追踪",
+        "提示注入"
+      ],
+      "focus": true,
+      "project_role": "",
+      "analysis": null
+    },
+    {
       "id": "item_704bb2c92ce09aa5",
       "kind": "repo",
       "url": "https://github.com/ksh1k/triage-agents",
@@ -4512,10 +5470,35 @@
       "published_at": "2026-11-20T16:45:41Z",
       "updated_at": "2026-11-20T16:45:56Z",
       "first_seen": "2026-11-20T23:03:54.584308+00:00",
-      "last_seen": "2026-11-23T10:41:51.964489+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
       "stars": 0,
       "topics": [],
       "record_key": "item_70871806615efc99:2026-11-20T16:45:56Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "记忆投毒"
+      ],
+      "focus": true,
+      "project_role": "早期观察",
+      "analysis": null
+    },
+    {
+      "id": "item_70999c5a60764da8",
+      "kind": "repo",
+      "url": "https://github.com/mahak202/etamp-webarena-memory-poisoning",
+      "title": "Mahak202/etamp-webarena-memory-poisoning",
+      "source": "GitHub",
+      "summary": "Memory-poisoning attack experiments on WebArena web agents (thesis code release)",
+      "published_at": "2026-11-23T19:58:59Z",
+      "updated_at": "2026-11-24T21:47:30Z",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 0,
+      "topics": [],
+      "record_key": "item_70999c5a60764da8:2026-11-24T21:47:30Z",
       "first_recommended": null,
       "last_recommended": null,
       "dates": [],
@@ -4837,7 +5820,7 @@
       "published_at": "2026-10-10T08:56:05Z",
       "updated_at": "2026-11-20T09:30:21Z",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-23T10:41:51.964489+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
       "stars": 0,
       "topics": [],
       "record_key": "item_7a0d6d925e8f4cfb:2026-11-20T09:30:21Z",
@@ -4863,7 +5846,7 @@
       "published_at": "2024-10-03T03:21:26Z",
       "updated_at": "2026-09-30T06:52:20Z",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-23T10:41:51.964489+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
       "stars": 333,
       "topics": [],
       "record_key": "item_7a9bce0886175358:2026-09-30T06:52:20Z",
@@ -4984,7 +5967,7 @@
       "updated_at": "2026-11-20T04:56:36Z",
       "version": "v3",
       "first_seen": "2026-11-23T07:27:33.037837+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
       "record_key": "item_7d18bbc0939939a3:v3",
       "first_recommended": null,
       "last_recommended": null,
@@ -5181,6 +6164,69 @@
       "analysis": null
     },
     {
+      "id": "item_841b6dc64fec41d8",
+      "kind": "repo",
+      "url": "https://github.com/agent-threat-rule/agent-threat-rules",
+      "title": "Agent-Threat-Rule/agent-threat-rules",
+      "source": "GitHub",
+      "summary": "Open detection-rule standard for AI agent security threats — like Sigma, but for AI agents. Executable, testable rules for prompt injection, tool poisoning, context exfiltration and MCP attacks. Merged into open-source projects at Microsoft, Cisco, Gen Digital, MISP and FINOS. MIT-licensed.",
+      "published_at": "2026-03-09T07:48:38Z",
+      "updated_at": "2026-11-25T01:10:12Z",
+      "first_seen": "2026-11-20T23:03:54.584308+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 444,
+      "topics": [
+        "agent-security",
+        "agent-threat-rules",
+        "ai-security",
+        "garak",
+        "llm-security",
+        "mcp-security",
+        "owasp",
+        "owasp-agentic",
+        "prompt-injection",
+        "sigma-rules",
+        "threat-detection"
+      ],
+      "record_key": "item_841b6dc64fec41d8:2026-11-25T01:10:12Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "提示注入"
+      ],
+      "focus": false,
+      "project_role": "工程项目",
+      "analysis": null
+    },
+    {
+      "id": "item_8435a767451ff90b",
+      "kind": "repo",
+      "url": "https://github.com/haniabidkz/llm-memory-poisoning-redhit-eval",
+      "title": "haniabidkz/llm-memory-poisoning-redhit-eval",
+      "source": "GitHub",
+      "summary": "Testing whether single-turn prompt-injection detectors catch multi-turn memory poisoning in RAG chatbots",
+      "published_at": "2026-11-23T15:25:31Z",
+      "updated_at": "2026-11-23T15:25:36Z",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 0,
+      "topics": [],
+      "record_key": "item_8435a767451ff90b:2026-11-23T15:25:36Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "记忆投毒",
+        "提示注入"
+      ],
+      "focus": true,
+      "project_role": "早期观察",
+      "analysis": null
+    },
+    {
       "id": "item_84d451d9e0b5ae49",
       "kind": "paper",
       "url": "https://arxiv.org/abs/2606.20668",
@@ -5240,7 +6286,7 @@
       "updated_at": "2026-11-18T08:55:08Z",
       "version": "v2",
       "first_seen": "2026-11-19T07:16:38.919086+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
       "record_key": "item_87b12edbcb32b43f:v2",
       "first_recommended": "2026-11-19",
       "last_recommended": "2026-11-22",
@@ -5473,6 +6519,39 @@
       "analysis": null
     },
     {
+      "id": "item_8e4835affc4ebaae",
+      "kind": "repo",
+      "url": "https://github.com/scadastrangelove/awesome-ai-security-tools",
+      "title": "scadastrangelove/awesome-ai-security-tools",
+      "source": "GitHub",
+      "summary": "A curated list of public-source, research, and commercial tools for AI security and AI-assisted cybersecurity — autotriage, agent security, AI/ML supply chain, pentest agents, AI SAST, LLM-driven fuzzing, threat intelligence, SOC/SIEM triage, reverse engineering, LLM red-teaming, and more.",
+      "published_at": "2026-05-27T12:52:20Z",
+      "updated_at": "2026-11-24T08:24:17Z",
+      "first_seen": "2026-11-23T10:41:51.964489+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 1775,
+      "topics": [
+        "agentic-ai",
+        "agents",
+        "awesome",
+        "awesome-list",
+        "awesome-lists",
+        "llm",
+        "security"
+      ],
+      "record_key": "item_8e4835affc4ebaae:2026-11-24T08:24:17Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "其他 AI 安全"
+      ],
+      "focus": false,
+      "project_role": "工程项目",
+      "analysis": null
+    },
+    {
       "id": "item_8f1b1991cf058f8d",
       "kind": "repo",
       "url": "https://github.com/promptlabs/prompt-hacking-resources",
@@ -5533,8 +6612,8 @@
       "published_at": "2024-02-20T04:00:06Z",
       "updated_at": "2024-07-02T05:39:24Z",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-23T10:41:51.964489+00:00",
-      "stars": 189,
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 190,
       "topics": [],
       "record_key": "item_9374c9e62286b22f:2024-07-02T05:39:24Z",
       "first_recommended": "2026-11-22",
@@ -5561,7 +6640,7 @@
       "updated_at": "2026-11-20T16:25:13Z",
       "version": "v2",
       "first_seen": "2026-11-23T07:27:33.037837+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
       "record_key": "item_962f1ae61a67e236:v2",
       "first_recommended": null,
       "last_recommended": null,
@@ -5650,6 +6729,60 @@
       "analysis": null
     },
     {
+      "id": "item_97263be63c48cecd",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.30932",
+      "title": "Carried-Over and Agent-Native Threats in the Supply Chain of LLM Agent Skills",
+      "source": "arXiv",
+      "summary": "Agent skills are reusable packages that extend a large language model (LLM) agent with scripts, third-party dependencies, and natural-language instructions. An agent builds a skill's arguments from user requests and untrusted external content, so a flaw left by a benign author can escalate a prompt injection to code execution. Existing studies target malicious skills or a single attack vector, and none tests whether an agent can reach such flaws.",
+      "published_at": "2026-11-23T16:20:29Z",
+      "updated_at": "2026-11-23T16:20:29Z",
+      "version": "v1",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "record_key": "item_97263be63c48cecd:v1",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "提示注入"
+      ],
+      "focus": false,
+      "project_role": "",
+      "analysis": null
+    },
+    {
+      "id": "item_975c6bf5a9316ed4",
+      "kind": "repo",
+      "url": "https://github.com/ifulchina-ops/u-markk-robot-romance-pickup-line",
+      "title": "ifulchina-ops/u-markk-robot-romance-pickup-line",
+      "source": "GitHub",
+      "summary": "One pickup line an AI would actually fall for: a prompt-injection joke. Built by an AI agent for make.fun's “Robot Romance: One-Line Pickup Lines for AI” bounty, $2 in USDC.",
+      "published_at": "2026-11-25T05:58:15Z",
+      "updated_at": "2026-11-25T06:03:34Z",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 0,
+      "topics": [
+        "ai-agents",
+        "bounties",
+        "growth",
+        "makefun"
+      ],
+      "record_key": "item_975c6bf5a9316ed4:2026-11-25T06:03:34Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "提示注入"
+      ],
+      "focus": false,
+      "project_role": "早期观察",
+      "analysis": null
+    },
+    {
       "id": "item_9881f473881100d4",
       "kind": "repo",
       "url": "https://github.com/syedanas01/mcp-safeguard",
@@ -5697,6 +6830,47 @@
       "analysis": null
     },
     {
+      "id": "item_98c96e236ef93bd1",
+      "kind": "repo",
+      "url": "https://github.com/sargist/llm-agent-evals",
+      "title": "sargist/llm-agent-evals",
+      "source": "GitHub",
+      "summary": "Evaluation and test harness for a tool-using (MCP) LLM agent: golden datasets, tool-call accuracy, safety and prompt-injection red teaming, RAG groundedness, LLM-as-judge with calibration, CI quality gates.",
+      "published_at": "2026-11-25T05:19:07Z",
+      "updated_at": "2026-11-25T06:07:03Z",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 0,
+      "topics": [
+        "agentic-ai",
+        "ai-qa",
+        "ai-testing",
+        "llm-as-a-judge",
+        "llm-evals",
+        "llm-evaluation",
+        "mcp",
+        "model-context-protocol",
+        "prompt-injection",
+        "promptfoo",
+        "pytest",
+        "qa-automation",
+        "rag-evaluation",
+        "red-teaming"
+      ],
+      "record_key": "item_98c96e236ef93bd1:2026-11-25T06:07:03Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "工具与权限",
+        "提示注入"
+      ],
+      "focus": true,
+      "project_role": "早期观察",
+      "analysis": null
+    },
+    {
       "id": "item_98e05a377edab252",
       "kind": "repo",
       "url": "https://github.com/mrmenon23/provmem",
@@ -5721,6 +6895,48 @@
       "focus": true,
       "project_role": "早期观察",
       "analysis": null
+    },
+    {
+      "id": "item_98e86540f18dcf52",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.31318",
+      "title": "Scoring Recovery-Time Agent Security: Proposals, Effects, and Retry Instructions",
+      "source": "arXiv",
+      "summary": "A timed-out tool write may be absent, committed, or still in flight. Evaluating an agent only on whether its goal exists can hide harmful recovery actions: auditing 12 supplied traces changes apparent completion from 10/12 to 8/12. We introduce an executable evaluation that separately records tool proposals, runtime decisions, and committed effects. In 3,456 model episodes, the original task wording produces only 39/576 valid recoveries when the",
+      "published_at": "2026-11-23T07:46:22Z",
+      "updated_at": "2026-11-23T07:46:22Z",
+      "version": "v1",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "record_key": "item_98e86540f18dcf52:v1",
+      "first_recommended": "2026-11-25",
+      "last_recommended": "2026-11-25",
+      "dates": [
+        "2026-11-25"
+      ],
+      "origin": "history",
+      "themes": [
+        "来源追踪"
+      ],
+      "focus": true,
+      "project_role": "",
+      "analysis": {
+        "fingerprint": "6fc83352f85fa213b5cf",
+        "version": "v1",
+        "generated_at": "2026-11-25T06:36:25.445862+00:00",
+        "status": "partial",
+        "verdict": "建议选读实验设计：先查攻击是否真让模型越权，再谈防御有效。本文最有价值的是评分和负结果。",
+        "overview": "工具说“超时”不等于动作没发生。Agent 若再发一次，可能补齐任务，也可能重复付款。本文分别记录模型想做什么、运行时放了什么、最终实际发生什么，说明只看目标是否完成会把有害结果判成成功；同时坦承新实验没有校准出越权攻击，不能据此宣传防御有效。",
+        "path": "data/analyses/item_98e86540f18dcf52-6fc83352f85fa213b5cf.json",
+        "recommendation": {
+          "headline": "别把“没有攻击成功”误当成“防御有效”",
+          "why_read": "适合用来设计权限实验的正对照、独立评分和负结果报告。",
+          "read_next": "第 2 节指标；表 4、6、7；第 8 节局限",
+          "update_summary": "",
+          "substantive_update": false
+        },
+        "code_checked": false
+      }
     },
     {
       "id": "item_9a096b1ac51af407",
@@ -6167,6 +7383,46 @@
       "analysis": null
     },
     {
+      "id": "item_a3f15e27990d2ea7",
+      "kind": "repo",
+      "url": "https://github.com/msoedov/agentic_security",
+      "title": "msoedov/agentic_security",
+      "source": "GitHub",
+      "summary": "Agentic LLM Vulnerability Scanner / AI red teaming kit 🧪",
+      "published_at": "2024-04-11T17:18:54Z",
+      "updated_at": "2026-11-24T11:01:15Z",
+      "first_seen": "2026-11-23T10:41:51.964489+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 2051,
+      "topics": [
+        "agent-framework",
+        "agent-security",
+        "ai-red-team",
+        "llm-evaluation",
+        "llm-evaluation-framework",
+        "llm-fuzzer",
+        "llm-fuzzer-aggregator",
+        "llm-fuzzing",
+        "llm-guardrails",
+        "llm-jailbreaks",
+        "llm-scanner",
+        "llm-security",
+        "llm-vulnerabilities",
+        "prompt-testing"
+      ],
+      "record_key": "item_a3f15e27990d2ea7:2026-11-24T11:01:15Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "越狱与对齐"
+      ],
+      "focus": false,
+      "project_role": "工程项目",
+      "analysis": null
+    },
+    {
       "id": "item_a4f2930e70550ba3",
       "kind": "repo",
       "url": "https://github.com/mdombrov-33/agentsec",
@@ -6411,6 +7667,31 @@
       "analysis": null
     },
     {
+      "id": "item_a80826cb50f887de",
+      "kind": "repo",
+      "url": "https://github.com/taniksha19/sec-agent",
+      "title": "taniksha19/sec-agent",
+      "source": "GitHub",
+      "summary": "RAG research agent over SEC filings with hybrid retrieval, prompt-injection defense, and measured evals",
+      "published_at": "2026-11-18T22:59:12Z",
+      "updated_at": "2026-11-25T06:19:24Z",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 0,
+      "topics": [],
+      "record_key": "item_a80826cb50f887de:2026-11-25T06:19:24Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "提示注入"
+      ],
+      "focus": false,
+      "project_role": "早期观察",
+      "analysis": null
+    },
+    {
       "id": "item_a84a65b3b198b166",
       "kind": "repo",
       "url": "https://github.com/keerthanan24aiml/prompt-injection-detector",
@@ -6631,6 +7912,49 @@
       "analysis": null
     },
     {
+      "id": "item_ada7cab06142f9cd",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.32194",
+      "title": "LLM Agent Authorization Across Context Compaction",
+      "source": "arXiv",
+      "summary": "Request-derived authorizers such as Progent protect LLM agents from prompt injection by deriving what an agent may do from the user's request. Their guarantee rests on attribution: the request is taken to be what the user said. Compaction breaks it. At every automatic compaction we observed, Claude Code and Codex placed a model-written summary of earlier turns as a user message, so the compactor's quotation of the user, documents and injected tex",
+      "published_at": "2026-11-24T08:44:15Z",
+      "updated_at": "2026-11-24T08:44:15Z",
+      "version": "v1",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "record_key": "item_ada7cab06142f9cd:v1",
+      "first_recommended": "2026-11-25",
+      "last_recommended": "2026-11-25",
+      "dates": [
+        "2026-11-25"
+      ],
+      "origin": "history",
+      "themes": [
+        "工具与权限",
+        "提示注入"
+      ],
+      "focus": true,
+      "project_role": "",
+      "analysis": {
+        "fingerprint": "d2142d4f2163a7fd9cca",
+        "version": "v1",
+        "generated_at": "2026-11-25T06:36:25.411325+00:00",
+        "status": "partial",
+        "verdict": "建议精读：摘要可以帮 Agent 记事，但不能替用户授权。重点看表 II、图 6 对应计数和表 VII。",
+        "overview": "用户说“给房东 A 付房租”，网页却写着账号 B。上下文压缩后，摘要把两者混在一起；如果权限检查器拿摘要当用户原话，就可能放行 B。本文把执行与授权分开：Agent 继续看摘要，权限检查器只看经过认证、顺序完整的用户原话。最重要的是来源和权限边界，不是摘要写得够不够好。",
+        "path": "data/analyses/item_ada7cab06142f9cd-d2142d4f2163a7fd9cca.json",
+        "recommendation": {
+          "headline": "压缩摘要为什么会把网页内容变成用户授权",
+          "why_read": "直接解释来源在摘要中丢失后，行动权限为何会被错误扩大。",
+          "read_next": "第 IV 节；表 II、VII；图 6c 对应附录表 XIII",
+          "update_summary": "",
+          "substantive_update": false
+        },
+        "code_checked": false
+      }
+    },
+    {
       "id": "item_b0162a72873c6168",
       "kind": "repo",
       "url": "https://github.com/crunchtools/trentina",
@@ -6790,6 +8114,50 @@
       ],
       "focus": true,
       "project_role": "早期观察",
+      "analysis": null
+    },
+    {
+      "id": "item_b34ca6dfe4254569",
+      "kind": "repo",
+      "url": "https://github.com/calmrocks/ai-engineer-notebooks",
+      "title": "calmrocks/ai-engineer-notebooks",
+      "source": "GitHub",
+      "summary": "Hands-on, framework-free Colab notebooks for the AI Engineer / Forward Deployed Engineer (FDE) skill set — model APIs, structured output, tool calling, RAG, evals-as-the-spine, agents (loop from scratch, tool design, guardrails, MCP, Skills), fine-tuning vs LoRA, prompt-injection/security, LLMOps, and customer craft. Runs on the free Groq API.",
+      "published_at": "2026-08-11T23:17:17Z",
+      "updated_at": "2026-11-07T02:10:15Z",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 759,
+      "topics": [
+        "agents",
+        "ai-engineer",
+        "ai-engineering",
+        "colab",
+        "evals",
+        "fine-tuning",
+        "forward-deployed-engineer",
+        "generative-ai",
+        "groq",
+        "jupyter-notebook",
+        "llm",
+        "llm-as-judge",
+        "llmops",
+        "lora",
+        "mcp",
+        "notebooks",
+        "prompt-engineering",
+        "rag"
+      ],
+      "record_key": "item_b34ca6dfe4254569:2026-11-07T02:10:15Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "提示注入"
+      ],
+      "focus": false,
+      "project_role": "工程项目",
       "analysis": null
     },
     {
@@ -7138,6 +8506,48 @@
       "analysis": null
     },
     {
+      "id": "item_bc3474896610e73e",
+      "kind": "repo",
+      "url": "https://github.com/solongate/agent-security",
+      "title": "solongate/agent-security",
+      "source": "GitHub",
+      "summary": "Local-first, open-source security gateway for AI coding agents. Enforce tool-call policies, detect secrets, and audit actions on-device.",
+      "published_at": "2026-09-27T10:48:40Z",
+      "updated_at": "2026-11-24T08:55:40Z",
+      "first_seen": "2026-11-23T10:41:51.964489+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 696,
+      "topics": [
+        "agent-runtime-security",
+        "agent-security",
+        "ai-agent-security",
+        "ai-agents",
+        "ai-security-tool",
+        "ai-security-tools",
+        "antigravity",
+        "claude-code",
+        "codex",
+        "mcp",
+        "mcp-gateway",
+        "mcp-security",
+        "openclaw",
+        "opencode",
+        "security",
+        "security-tools"
+      ],
+      "record_key": "item_bc3474896610e73e:2026-11-24T08:55:40Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "来源追踪"
+      ],
+      "focus": true,
+      "project_role": "工程项目",
+      "analysis": null
+    },
+    {
       "id": "item_bcc912b773f584e9",
       "kind": "repo",
       "url": "https://github.com/duncan982/devfortress-core",
@@ -7304,7 +8714,7 @@
       "updated_at": "2026-11-18T12:20:58Z",
       "version": "v1",
       "first_seen": "2026-11-19T07:16:38.919086+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
       "record_key": "item_c30b88015ccacd40:v1",
       "first_recommended": null,
       "last_recommended": null,
@@ -7354,6 +8764,30 @@
       "analysis": null
     },
     {
+      "id": "item_c4cdd75533747d48",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.32801",
+      "title": "Scaling Laws of Ensemble Uncertainty in Language Models",
+      "source": "arXiv",
+      "summary": "Many use cases for large language models (LLMs)---from AI safety to exploration and human interaction---can benefit from epistemic uncertainty estimates. We argue that existing Bayesian Deep Learning solutions, which are often restricted to a fixed model family, fail to capture the full epistemic uncertainty at practical LLM scales. This is because the error due to the bounded capacity of the model family remains invisible to disagreement among m",
+      "published_at": "2026-11-24T15:23:55Z",
+      "updated_at": "2026-11-24T15:23:55Z",
+      "version": "v1",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "record_key": "item_c4cdd75533747d48:v1",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "其他 AI 安全"
+      ],
+      "focus": false,
+      "project_role": "",
+      "analysis": null
+    },
+    {
       "id": "item_c60bbdbf2963b32b",
       "kind": "paper",
       "url": "https://arxiv.org/abs/2611.21832",
@@ -7364,7 +8798,7 @@
       "updated_at": "2026-11-18T21:35:15Z",
       "version": "v2",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
       "record_key": "item_c60bbdbf2963b32b:v2",
       "first_recommended": null,
       "last_recommended": null,
@@ -7389,8 +8823,8 @@
       "published_at": "2023-11-01T12:35:05Z",
       "updated_at": "2026-11-09T12:49:08Z",
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-23T10:41:51.964489+00:00",
-      "stars": 10863,
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 10864,
       "topics": [
         "gpt",
         "prompt",
@@ -7856,6 +9290,44 @@
       "analysis": null
     },
     {
+      "id": "item_cfed3e4a5c23510b",
+      "kind": "repo",
+      "url": "https://github.com/watchlight-ai-beacon/watchlight-de",
+      "title": "watchlight-ai-beacon/watchlight-de",
+      "source": "GitHub",
+      "summary": "Watchlight Developer Edition for Agent Runtime Governance - AI Security - AI Agent Security",
+      "published_at": "2026-08-12T20:22:49Z",
+      "updated_at": "2026-11-25T05:35:18Z",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 1,
+      "topics": [
+        "agent-runtime-governance",
+        "agent-security",
+        "ai-agents",
+        "ai-governance",
+        "authorization",
+        "cedar",
+        "guardrails",
+        "llm",
+        "mcp",
+        "policy-as-code",
+        "python"
+      ],
+      "record_key": "item_cfed3e4a5c23510b:2026-11-25T05:35:18Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "工具与权限",
+        "其他 AI 安全"
+      ],
+      "focus": true,
+      "project_role": "早期观察",
+      "analysis": null
+    },
+    {
       "id": "item_d0efdc80d7d6f23f",
       "kind": "repo",
       "url": "https://github.com/arupa08/agentic-data_analyst",
@@ -7928,6 +9400,30 @@
       ],
       "focus": false,
       "project_role": "早期观察",
+      "analysis": null
+    },
+    {
+      "id": "item_d49aaea9783783cd",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.32686",
+      "title": "CAPTA: Identifying LLMs Behind AI Agents",
+      "source": "arXiv",
+      "summary": "Large language model (LLM)-based agents access remote services through tools to complete user tasks, often via API calls. In this setting, a remote service may want to identify the backend LLM of an agent to launch model-specific attacks, including prompt injection or selective delivery of manipulated content. However, the service cannot directly query the backend model and must instead collect observable responses through its interactions with t",
+      "published_at": "2026-11-24T14:25:39Z",
+      "updated_at": "2026-11-24T14:25:39Z",
+      "version": "v1",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "record_key": "item_d49aaea9783783cd:v1",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "提示注入"
+      ],
+      "focus": false,
+      "project_role": "",
       "analysis": null
     },
     {
@@ -8051,7 +9547,7 @@
       "published_at": "2026-11-20T09:21:16Z",
       "updated_at": "2026-11-20T11:14:46Z",
       "first_seen": "2026-11-20T09:58:22.316935+00:00",
-      "last_seen": "2026-11-21T22:10:14.602948+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
       "stars": 0,
       "topics": [],
       "record_key": "item_d669722d4f7c7328:2026-11-20T11:14:46Z",
@@ -8143,6 +9639,60 @@
       "analysis": null
     },
     {
+      "id": "item_d8e28d4146445493",
+      "kind": "repo",
+      "url": "https://github.com/zetinhere/u-markk-st-robot-romance-one-line-pickup-lines-for-ai-c23b8dfa",
+      "title": "zetinhere/u-markk-st-robot-romance-one-line-pickup-lines-for-ai-c23b8dfa",
+      "source": "GitHub",
+      "summary": "One pickup line for a robot/AI: prompt injection, 93 chars. Built by an AI agent for make.fun's \"Robot Romance: One-Line Pickup Lines for AI\" bounty, $2 in USDC.",
+      "published_at": "2026-11-25T06:04:37Z",
+      "updated_at": "2026-11-25T06:04:58Z",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 0,
+      "topics": [
+        "ai-agents",
+        "bounties",
+        "growth",
+        "makefun"
+      ],
+      "record_key": "item_d8e28d4146445493:2026-11-25T06:04:58Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "提示注入"
+      ],
+      "focus": false,
+      "project_role": "早期观察",
+      "analysis": null
+    },
+    {
+      "id": "item_d9053bc7e92b76f7",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2611.32958",
+      "title": "Attestation is All You Need: Toward a Zero-Trust Architecture for HPC AI Agents",
+      "source": "arXiv",
+      "summary": "AI agents are beginning to automate data analysis, orchestration, and simulation steering in HPC environments, but they introduce a security problem that existing cluster defenses do not address: the hijacked authorized agent. An adversary can subvert an agent through prompt injection, poisoned shared data, compromised tools, or multi-agent coordination, then exfiltrate sensitive data through legitimate encrypted LLM API traffic. We propose behav",
+      "published_at": "2026-11-24T16:57:12Z",
+      "updated_at": "2026-11-24T16:57:12Z",
+      "version": "v1",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "record_key": "item_d9053bc7e92b76f7:v1",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "提示注入"
+      ],
+      "focus": false,
+      "project_role": "",
+      "analysis": null
+    },
+    {
       "id": "item_dad526d4430fecfb",
       "kind": "repo",
       "url": "https://github.com/alexfly123lee-creator/alexfly123lee-creator",
@@ -8227,6 +9777,31 @@
       "analysis": null
     },
     {
+      "id": "item_dc2c92f5abf1096e",
+      "kind": "repo",
+      "url": "https://github.com/kurumi1ksllq/dsh-plugins",
+      "title": "kurumi1ksllq/DSH-plugins",
+      "source": "GitHub",
+      "summary": "Five independent DeepSeek Harness bundles in one pnpm workspace: context budget gate, Git Bash shell, install inventory, system-prompt injection, multi-provider web search failover.",
+      "published_at": "2026-10-29T09:24:31Z",
+      "updated_at": "2026-11-25T06:25:55Z",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 0,
+      "topics": [],
+      "record_key": "item_dc2c92f5abf1096e:2026-11-25T06:25:55Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "提示注入"
+      ],
+      "focus": false,
+      "project_role": "早期观察",
+      "analysis": null
+    },
+    {
       "id": "item_dce811171a04c553",
       "kind": "repo",
       "url": "https://github.com/ry9862/agent-security-challenges",
@@ -8246,6 +9821,44 @@
       "origin": "candidate",
       "themes": [
         "其他 AI 安全"
+      ],
+      "focus": false,
+      "project_role": "早期观察",
+      "analysis": null
+    },
+    {
+      "id": "item_dd4cc0b73a833d90",
+      "kind": "repo",
+      "url": "https://github.com/j-zulick/pagevet",
+      "title": "j-zulick/pagevet",
+      "source": "GitHub",
+      "summary": "Find text in web pages aimed at AI models (indirect prompt injection), and check which AI crawlers may read them. CLI, GitHub Action, MCP server, container, SARIF; no model or API key needed.",
+      "published_at": "2026-11-25T05:20:11Z",
+      "updated_at": "2026-11-25T06:21:58Z",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 0,
+      "topics": [
+        "ai-crawlers",
+        "ai-security",
+        "generative-engine-optimization",
+        "github-action",
+        "llm",
+        "llm-security",
+        "mcp",
+        "prompt-injection",
+        "python",
+        "robots-txt",
+        "sarif",
+        "seo"
+      ],
+      "record_key": "item_dd4cc0b73a833d90:2026-11-25T06:21:58Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "提示注入"
       ],
       "focus": false,
       "project_role": "早期观察",
@@ -8337,7 +9950,7 @@
       "updated_at": "2026-11-19T12:43:31Z",
       "version": "v1",
       "first_seen": "2026-11-20T07:05:24.514098+00:00",
-      "last_seen": "2026-11-23T07:27:33.037837+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
       "record_key": "item_def1763af42e57a4:v1",
       "first_recommended": null,
       "last_recommended": null,
@@ -8371,6 +9984,40 @@
         "rag-security"
       ],
       "record_key": "item_e0f989885da6f444:2026-11-22T21:20:45Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "记忆投毒",
+        "来源追踪",
+        "提示注入"
+      ],
+      "focus": true,
+      "project_role": "早期观察",
+      "analysis": null
+    },
+    {
+      "id": "item_e0f989885da6f444",
+      "kind": "repo",
+      "url": "https://github.com/hongrenw111-debug/geo-shield",
+      "title": "hongrenw111-debug/geo-shield",
+      "source": "GitHub",
+      "summary": "Anti-GEO soft-ad detector, indirect prompt-injection sanitizer, AI memory-poisoning URL inspector, MCP server & audit dashboard",
+      "published_at": "2026-11-22T18:39:31Z",
+      "updated_at": "2026-11-23T17:08:15Z",
+      "first_seen": "2026-11-22T22:26:37.619232+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 0,
+      "topics": [
+        "ai-safety",
+        "anti-geo",
+        "llm-security",
+        "mcp-server",
+        "prompt-injection",
+        "rag-security"
+      ],
+      "record_key": "item_e0f989885da6f444:2026-11-23T17:08:15Z",
       "first_recommended": null,
       "last_recommended": null,
       "dates": [],
@@ -8476,8 +10123,8 @@
       "published_at": "2025-05-13T13:29:24Z",
       "updated_at": "2025-06-20T13:59:30Z",
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-23T10:41:51.964489+00:00",
-      "stars": 425,
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 427,
       "topics": [],
       "record_key": "item_e588b9bb1af43b91:2025-06-20T13:59:30Z",
       "first_recommended": null,
@@ -8526,7 +10173,7 @@
       "published_at": "2026-11-20T15:33:43Z",
       "updated_at": "2026-11-21T05:25:18Z",
       "first_seen": "2026-11-20T23:03:54.584308+00:00",
-      "last_seen": "2026-11-23T10:41:51.964489+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
       "stars": 0,
       "topics": [],
       "record_key": "item_e9357435373c7702:2026-11-21T05:25:18Z",
@@ -8575,6 +10222,41 @@
         "越狱与对齐"
       ],
       "focus": false,
+      "project_role": "早期观察",
+      "analysis": null
+    },
+    {
+      "id": "item_e939325e94eb0835",
+      "kind": "repo",
+      "url": "https://github.com/nickjones39/agentprov",
+      "title": "nickjones39/AgentPROV",
+      "source": "GitHub",
+      "summary": "Execution provenance for LLM-agent security research: converts live and released agent runs into evidence-qualified W3C PROV, with hash-chained corpora you can verify and recompute without re-running any model.",
+      "published_at": "2026-10-30T03:38:52Z",
+      "updated_at": "2026-11-25T05:13:15Z",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 0,
+      "topics": [
+        "agent-security",
+        "ai-security",
+        "llm-agents",
+        "prompt-injection",
+        "provenance",
+        "python",
+        "research-software",
+        "w3c-prov"
+      ],
+      "record_key": "item_e939325e94eb0835:2026-11-25T05:13:15Z",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "来源追踪",
+        "提示注入"
+      ],
+      "focus": true,
       "project_role": "早期观察",
       "analysis": null
     },
@@ -8811,7 +10493,7 @@
       "published_at": "2023-05-10T18:50:39Z",
       "updated_at": "2026-08-25T09:45:01Z",
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-23T10:41:51.964489+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
       "stars": 6886,
       "topics": [
         "ai",
@@ -8967,8 +10649,8 @@
       "published_at": "2026-03-30T04:20:54Z",
       "updated_at": "2026-11-22T05:26:02Z",
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-23T10:41:51.964489+00:00",
-      "stars": 928,
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 932,
       "topics": [
         "ai-agents",
         "ai-audit",
@@ -9139,6 +10821,30 @@
       "analysis": null
     },
     {
+      "id": "item_f7c337fb9f6ab659",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2610.33198",
+      "title": "Deletion Is Not Substitution: Component Attribution in a Layered Prompt-Injection Gateway for LLM Tool Calls",
+      "source": "arXiv",
+      "summary": "Prompt-injection defenses for LLM agents are commonly built as cascades of increasingly costly stages, and ablation studies evaluate their components by switching each stage off and counting the detections lost. In a cascade, however, stages are not independent: a stage's contribution depends on what is routed to it and how its verdicts are enforced, so deletion-based ablation can mislead. We test this on BARBICAN, a four-tier, fail-closed gatewa",
+      "published_at": "2026-10-23T18:47:06Z",
+      "updated_at": "2026-11-24T06:18:32Z",
+      "version": "v2",
+      "first_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "record_key": "item_f7c337fb9f6ab659:v2",
+      "first_recommended": null,
+      "last_recommended": null,
+      "dates": [],
+      "origin": "candidate",
+      "themes": [
+        "提示注入"
+      ],
+      "focus": false,
+      "project_role": "",
+      "analysis": null
+    },
+    {
       "id": "item_f89739e530aca1fe",
       "kind": "repo",
       "url": "https://github.com/mpowell40/mcp-netproxy",
@@ -9284,8 +10990,8 @@
       "published_at": "2024-09-02T06:48:58Z",
       "updated_at": "2026-10-22T08:28:18Z",
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-23T10:41:51.964489+00:00",
-      "stars": 828,
+      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "stars": 830,
       "topics": [
         "ai",
         "llm",
@@ -9440,6 +11146,18 @@
         "news": []
       },
       "note": "首次整理现有导读，包含此前收录的资料；不代表今天新发表。"
+    },
+    "2026-11-25": {
+      "items": {
+        "paper": [
+          "item_ada7cab06142f9cd:v1",
+          "item_98e86540f18dcf52:v1",
+          "item_6573a145a7ba93b9:v1"
+        ],
+        "repo": [],
+        "news": []
+      },
+      "note": ""
     }
   }
 }

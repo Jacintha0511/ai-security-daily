@@ -53,6 +53,16 @@ class ReadingTests(unittest.TestCase):
   with self.assertRaises(ValueError):reading.validate_catalog(v)
  def test_original_report_is_never_rewritten(self):
   self.add();p=self.data/'reports/2026-11-22.json';before=p.read_bytes();self.sync();self.assertEqual(p.read_bytes(),before)
+ def test_featured_version_survives_report_replacement_and_new_snapshot(self):
+  old=self.add(kind='repo');first=self.sync();new=self.add(kind='repo',updated=daily.stamp(NOW))
+  p=self.data/'reports/2026-11-22.json';report=reading.read(p);report['items']['repo']=[new];daily.atomic_json(p,report)
+  second=self.sync(1);known={r['record_key'] for r in second['items']}
+  self.assertIn(reading.key(old),known);self.assertIn(reading.key(new),known)
+  self.assertEqual(second['editions']['2026-11-23'],first['editions']['2026-11-23'])
+  self.assertEqual(second['editions']['2026-11-24']['items']['repo'],[])
+ def test_preserved_catalog_rejects_private_fields_before_merge(self):
+  self.add();self.sync();p=self.data/'library.json';value=reading.read(p);value['items'][0]['private_note']='secret';daily.atomic_json(p,value)
+  with self.assertRaises(ValueError):self.sync(1)
  def test_next_batch_skips_already_featured_version(self):
   r=self.add();self.sync();self.assertEqual(reading.candidates(self.config,self.state,[r['id']],self.data,NOW)['paper'],[])
 if __name__=='__main__':unittest.main()

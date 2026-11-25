@@ -89,7 +89,11 @@ def sync(data_dir, now=None, config=None, persist=True):
     config = config or read(daily.ROOT / 'config.json')
     for paper_url in config.get('verified_paper_repos', {}).values(): daily.safe_url(paper_url)
     previous = read(data_dir / 'library.json', {})
-    records, reports = {}, []
+    # A same-day report can change and state retains only each item's latest version.
+    # Preserve validated catalog versions so published editions keep their targets.
+    if previous: validate_catalog(previous)
+    records = {r['record_key']: dict(r) for r in previous.get('items', [])}
+    reports = []
     for path in sorted((data_dir / 'reports').glob('*.json')):
         report = read(path); reports.append(report)
         for values in report['items'].values():

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-23T08:40:44.556762+00:00",
+  "updated_at": "2026-11-25T06:37:19.332198+00:00",
   "items": {
     "item_163311fe87f0a7ae:75cded2e42309d0907e0": {
       "item_id": "item_163311fe87f0a7ae",
@@ -160,6 +160,54 @@
       "updated_at": "2026-11-23T08:40:44.541940+00:00",
       "path": "data/analyses/item_50cc0395f5577882-22555c0e95a97791811a.json",
       "message": "值得读代码，但先看默认配置：strict 不等于把全部记忆攻击防护都打开。"
+    },
+    "item_ada7cab06142f9cd:d2142d4f2163a7fd9cca": {
+      "item_id": "item_ada7cab06142f9cd",
+      "kind": "paper",
+      "title": "LLM Agent Authorization Across Context Compaction",
+      "version": "v1",
+      "requested_version": "v1",
+      "fingerprint": "d2142d4f2163a7fd9cca",
+      "status": "partial",
+      "updated_at": "2026-11-25T06:36:25.411325+00:00",
+      "path": "data/analyses/item_ada7cab06142f9cd-d2142d4f2163a7fd9cca.json",
+      "message": "建议精读：摘要可以帮 Agent 记事，但不能替用户授权。重点看表 II、图 6 对应计数和表 VII。"
+    },
+    "item_6573a145a7ba93b9:9fd2cd017b6ea53f7fa8": {
+      "item_id": "item_6573a145a7ba93b9",
+      "kind": "paper",
+      "title": "When Successful Collaboration Becomes an Attack Surface: Insider Memory Poisoning in Multi-Agent Systems",
+      "version": "v1",
+      "requested_version": "v1",
+      "fingerprint": "9fd2cd017b6ea53f7fa8",
+      "status": "partial",
+      "updated_at": "2026-11-25T06:36:25.423263+00:00",
+      "path": "data/analyses/item_6573a145a7ba93b9-9fd2cd017b6ea53f7fa8.json",
+      "message": "建议精读：一次合作答对了，不代表过程中说过的每句话都可信。重点看表 2、3 和审计设置。"
+    },
+    "item_98e86540f18dcf52:6fc83352f85fa213b5cf": {
+      "item_id": "item_98e86540f18dcf52",
+      "kind": "paper",
+      "title": "Scoring Recovery-Time Agent Security: Proposals, Effects, and Retry Instructions",
+      "version": "v1",
+      "requested_version": "v1",
+      "fingerprint": "6fc83352f85fa213b5cf",
+      "status": "partial",
+      "updated_at": "2026-11-25T06:36:25.445862+00:00",
+      "path": "data/analyses/item_98e86540f18dcf52-6fc83352f85fa213b5cf.json",
+      "message": "建议选读实验设计：先查攻击是否真让模型越权，再谈防御有效。本文最有价值的是评分和负结果。"
+    },
+    "item_50cc0395f5577882:cf4ecbdf5cc3fac73602": {
+      "item_id": "item_50cc0395f5577882",
+      "kind": "repo",
+      "title": "OWASP/www-project-agent-memory-guard",
+      "version": "2628cfdb91731ab80caf7fcb0adbe293645ce6e3",
+      "requested_version": "2026-11-25T01:05:34Z",
+      "fingerprint": "cf4ecbdf5cc3fac73602",
+      "status": "partial",
+      "updated_at": "2026-11-25T06:37:19.318365+00:00",
+      "path": "data/analyses/item_50cc0395f5577882-cf4ecbdf5cc3fac73602.json",
+      "message": "本次只有下载、访问统计和 README 数字变化；复用已核查的实现导读，不作为新功能重复推荐。"
     }
   }
 }
