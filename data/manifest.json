@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-25T06:42:50.012626+00:00",
+  "updated_at": "2026-11-25T08:23:11.422673+00:00",
   "timezone": "Asia/Shanghai",
   "latest": {
     "date": "2026-11-25",
     "status": "partial",
-    "generated_at": "2026-11-25T06:26:05.492473+00:00",
+    "generated_at": "2026-11-25T08:23:00.985476+00:00",
     "count": 4,
     "path": "data/reports/2026-11-25.json"
   },
@@ -13,7 +13,7 @@
     {
       "date": "2026-11-25",
       "status": "partial",
-      "generated_at": "2026-11-25T06:26:05.492473+00:00",
+      "generated_at": "2026-11-25T08:23:00.985476+00:00",
       "count": 4,
       "path": "data/reports/2026-11-25.json"
     },
@@ -83,15 +83,15 @@
     }
   ],
   "latest_attempt": {
-    "date": "2026-11-23",
-    "generated_at": "2026-11-23T10:41:51.964489+00:00",
+    "date": "2026-11-25",
+    "generated_at": "2026-11-25T08:23:00.985476+00:00",
     "status": "partial",
     "sources": [
       {
         "name": "arXiv",
-        "status": "failed",
-        "count": 0,
-        "detail": "HTTP 连接失败"
+        "status": "ok",
+        "count": 44,
+        "detail": "包含新论文与版本更新；预印本不等于正式发表"
       },
       {
         "name": "GitHub 发现：\"prompt-injection\"（成熟候选）",
@@ -160,8 +160,8 @@
         "detail": "待接入可用 RSS，不代表今天没有报道"
       }
     ],
-    "candidate_count": 63,
-    "run_url": "https://github.com/Jacintha0511/ai-security-daily/actions/runs/45158432077"
+    "candidate_count": 107,
+    "run_url": "https://github.com/Jacintha0511/ai-security-daily/actions/runs/45575749978"
   },
   "schedule": "云端 01:15 采集、01:45/08:15/10:15 检查；本机 Codex 02:00 解析、03:45 补跑；周日 09:15 周报（北京时间）",
   "privacy": "公开动态站；私人 idea、阅读笔记和实验数据仅保留本地",

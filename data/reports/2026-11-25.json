@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "date": "2026-11-25",
-  "generated_at": "2026-11-25T06:26:05.492473+00:00",
+  "generated_at": "2026-11-25T08:23:00.985476+00:00",
   "status": "partial",
   "selection_basis": "规则预筛",
   "sources": [
@@ -81,108 +81,100 @@
   "items": {
     "paper": [
       {
-        "id": "item_ada7cab06142f9cd",
+        "id": "item_6f893c98d9bb2b89",
         "kind": "paper",
-        "url": "https://arxiv.org/abs/2611.32194",
-        "title": "LLM Agent Authorization Across Context Compaction",
+        "url": "https://arxiv.org/abs/2611.29977",
+        "title": "Conartist: Adaptive Agentic Red-Teaming of Computer-Using Agents against Multi-Step Prompt Injection",
         "source": "arXiv",
-        "summary": "Request-derived authorizers such as Progent protect LLM agents from prompt injection by deriving what an agent may do from the user's request. Their guarantee rests on attribution: the request is taken to be what the user said. Compaction breaks it. At every automatic compaction we observed, Claude Code and Codex placed a model-written summary of earlier turns as a user message, so the compactor's quotation of the user, documents and injected tex",
-        "published_at": "2026-11-24T08:44:15Z",
-        "updated_at": "2026-11-24T08:44:15Z",
+        "summary": "Harnesses secure Computer-Using Agents by enforcing security constraints and defending against prompt injection attacks. However, we find that two core security mechanisms of agent harnesses remain vulnerable. First, consistency checking prevents agents from deviating from legitimate user objectives, while attackers can bypass it by embedding malicious actions that appear logically consistent with legitimate task execution. Second, risk auditing ",
+        "published_at": "2026-11-23T03:41:22Z",
+        "updated_at": "2026-11-23T03:41:22Z",
         "version": "v1",
-        "first_seen": "2026-11-25T06:26:05.492473+00:00",
-        "last_seen": "2026-11-25T06:26:05.492473+00:00",
-        "change": "newly_discovered",
-        "score": 7,
-        "reason": "研究主题匹配：prompt injection、authorization",
-        "priority": "建议精读",
-        "selection_basis": "规则预筛；不是模型精排或学术质量评分"
-      },
-      {
-        "id": "item_6573a145a7ba93b9",
-        "kind": "paper",
-        "url": "https://arxiv.org/abs/2611.31307",
-        "title": "When Successful Collaboration Becomes an Attack Surface: Insider Memory Poisoning in Multi-Agent Systems",
-        "source": "arXiv",
-        "summary": "Recent Multi-Agent Systems (MAS) increasingly use shared memory to store and reuse successful collaboration records, enabling teams to improve across tasks. However, this memory introduces a new attack surface for malicious insiders. Unlike existing insider attacks that inject misleading information directly into the current collaboration, misinformation stored in shared memory can later appear as successful team experience and gain greater credi",
-        "published_at": "2026-11-22T12:18:13Z",
-        "updated_at": "2026-11-22T12:18:13Z",
-        "version": "v1",
-        "first_seen": "2026-11-25T06:26:05.492473+00:00",
-        "last_seen": "2026-11-25T06:26:05.492473+00:00",
-        "change": "newly_discovered",
-        "score": 7,
-        "reason": "研究主题匹配：memory poisoning",
-        "priority": "建议精读",
-        "selection_basis": "规则预筛；不是模型精排或学术质量评分"
-      },
-      {
-        "id": "item_98e86540f18dcf52",
-        "kind": "paper",
-        "url": "https://arxiv.org/abs/2611.31318",
-        "title": "Scoring Recovery-Time Agent Security: Proposals, Effects, and Retry Instructions",
-        "source": "arXiv",
-        "summary": "A timed-out tool write may be absent, committed, or still in flight. Evaluating an agent only on whether its goal exists can hide harmful recovery actions: auditing 12 supplied traces changes apparent completion from 10/12 to 8/12. We introduce an executable evaluation that separately records tool proposals, runtime decisions, and committed effects. In 3,456 model episodes, the original task wording produces only 39/576 valid recoveries when the ",
-        "published_at": "2026-11-23T07:46:22Z",
-        "updated_at": "2026-11-23T07:46:22Z",
-        "version": "v1",
-        "first_seen": "2026-11-25T06:26:05.492473+00:00",
-        "last_seen": "2026-11-25T06:26:05.492473+00:00",
+        "first_seen": "2026-11-25T08:23:00.985476+00:00",
+        "last_seen": "2026-11-25T08:23:00.985476+00:00",
         "change": "newly_discovered",
         "score": 3,
-        "reason": "研究主题匹配：agent security",
+        "reason": "研究主题匹配：prompt injection",
+        "priority": "快速浏览",
+        "selection_basis": "规则预筛；不是模型精排或学术质量评分"
+      },
+      {
+        "id": "item_c60bbdbf2963b32b",
+        "kind": "paper",
+        "url": "https://arxiv.org/abs/2611.21832",
+        "title": "Auditors Struggle to Catch Sabotage In End-to-End Transcripts of AI Safety Research",
+        "source": "arXiv",
+        "summary": "As AI systems are increasingly used to automate AI R&D, misaligned systems could sabotage research intended to improve model safety and alignment. To stress-test defenses against such sabotage, we use a human expert as a proxy saboteur on AI safety research. We conduct a red-team/blue-team game where a human researcher runs AI safety experiments from scratch and auditors try to tell which were sabotaged and how. Given access to the full research ",
+        "published_at": "2026-11-16T19:52:38Z",
+        "updated_at": "2026-11-18T21:35:15Z",
+        "version": "v2",
+        "first_seen": "2026-11-18T07:09:14.936020+00:00",
+        "last_seen": "2026-11-25T08:23:00.985476+00:00",
+        "change": "observed_again",
+        "score": 3,
+        "reason": "研究主题匹配：ai safety",
+        "priority": "快速浏览",
+        "selection_basis": "规则预筛；不是模型精排或学术质量评分"
+      },
+      {
+        "id": "item_7d18bbc0939939a3",
+        "kind": "paper",
+        "url": "https://arxiv.org/abs/2609.10854",
+        "title": "No-Box Vulnerability Analysis: Description-only Detection of Indirect Prompt Injection Vulnerabilities in MCP Servers",
+        "source": "arXiv",
+        "summary": "When auditing remotely hosted services or commercially gated software for vulnerabilities, third-party analysts may lack both direct system access and the ability to interact with the running system. We call this a no-box setting, in which analysts have access only to functionality metadata that may describe the intended inputs, behaviors, and outputs of the system. Such descriptions constrain the possible implementations of a system, enabling an",
+        "published_at": "2026-09-09T21:43:27Z",
+        "updated_at": "2026-11-20T04:56:36Z",
+        "version": "v3",
+        "first_seen": "2026-11-23T07:27:33.037837+00:00",
+        "last_seen": "2026-11-25T08:23:00.985476+00:00",
+        "change": "observed_again",
+        "score": 3,
+        "reason": "研究主题匹配：prompt injection",
         "priority": "快速浏览",
         "selection_basis": "规则预筛；不是模型精排或学术质量评分"
       }
     ],
     "repo": [
       {
-        "id": "item_50cc0395f5577882",
+        "id": "item_3c5a84c629b82348",
         "kind": "repo",
-        "url": "https://github.com/owasp/www-project-agent-memory-guard",
-        "title": "OWASP/www-project-agent-memory-guard",
+        "url": "https://github.com/nvidia/skillspector",
+        "title": "NVIDIA/SkillSpector",
         "source": "GitHub",
-        "summary": "Runtime defense against memory poisoning in AI agents (OWASP ASI06). Drop-in for LangChain, OpenAI Agents, AutoGen, CrewAI and mem0.",
-        "published_at": "2026-02-16T21:59:18Z",
-        "updated_at": "2026-11-25T01:05:34Z",
-        "stars": 213,
+        "summary": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.",
+        "published_at": "2026-03-21T00:28:43Z",
+        "updated_at": "2026-11-24T10:17:35Z",
+        "stars": 27593,
         "topics": [
-          "agent-memory",
+          "agent-security",
+          "agent-skills",
           "agentic-ai",
-          "ai-agents",
-          "ai-safety",
           "ai-security",
-          "autogen",
-          "crewai",
-          "langchain",
-          "llm-agents",
-          "llm-security",
+          "claude-code",
           "mcp",
-          "mcp-server",
-          "mem0",
-          "memory-poisoning",
-          "openai-agents",
-          "owasp",
           "prompt-injection",
-          "python",
-          "rag-security",
-          "security"
+          "security-scanner",
+          "security-tools",
+          "security-workflow",
+          "supply-chain-security"
         ],
         "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-25T06:26:05.492473+00:00",
+        "last_seen": "2026-11-25T08:23:00.985476+00:00",
         "change": "observed_again",
-        "score": 16,
-        "reason": "研究主题匹配：prompt injection、memory poisoning、llm security、ai safety；213 star；达到 100 star 粗筛门槛；约 24h 增长历史不足",
+        "score": 6,
+        "reason": "研究主题匹配：prompt injection、agent security；27593 star；达到 100 star 粗筛门槛；约 24h 增长历史不足",
         "priority": "快速浏览",
         "selection_basis": "先过 star／登记基准门槛；优先主线相关、近期提交或有效增长，再比较登记基准和 star。仅元数据筛选，代码与实验效果待核实",
         "day_growth": {
-          "delta": 2,
-          "days": 1.82,
+          "delta": 240,
+          "days": 1.9,
           "status": "irregular_window"
         },
         "week_growth": {
-          "delta": null,
-          "status": "insufficient_history"
+          "delta": 909,
+          "days": 7.04,
+          "status": "complete"
         }
       }
     ],
@@ -198,7 +190,7 @@
       "summary": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.",
       "published_at": "2026-03-21T00:28:43Z",
       "updated_at": "2026-11-24T10:17:35Z",
-      "stars": 27583,
+      "stars": 27593,
       "topics": [
         "agent-security",
         "agent-skills",
@@ -213,11 +205,77 @@
         "supply-chain-security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T08:23:00.985476+00:00",
       "change": "observed_again",
       "day_growth": {
-        "delta": 230,
-        "days": 1.82,
+        "delta": 240,
+        "days": 1.9,
+        "status": "irregular_window"
+      },
+      "week_growth": {
+        "delta": 909,
+        "days": 7.04,
+        "status": "complete"
+      }
+    },
+    {
+      "id": "item_198578b9d93a1d3e",
+      "kind": "repo",
+      "url": "https://github.com/openjiuwen-ai/agent-security",
+      "title": "openJiuwen-ai/agent-security",
+      "source": "GitHub",
+      "summary": "agent-security is openJiuwen's defense-in-depth capability repository designed for agents. Through the coordination of multi-layered capabilities—such as action decision-making, threat perception, and sandbox isolation—it provides endogenous, full-lifecycle security protection for agents.",
+      "published_at": "2026-10-27T02:03:07Z",
+      "updated_at": "2026-11-25T03:48:02Z",
+      "stars": 26,
+      "topics": [],
+      "first_seen": "2026-11-20T09:58:22.316935+00:00",
+      "last_seen": "2026-11-25T08:23:00.985476+00:00",
+      "change": "observed_again",
+      "day_growth": {
+        "delta": 18,
+        "days": 3.43,
+        "status": "irregular_window"
+      },
+      "week_growth": {
+        "delta": null,
+        "status": "insufficient_history"
+      }
+    },
+    {
+      "id": "item_bc3474896610e73e",
+      "kind": "repo",
+      "url": "https://github.com/solongate/agent-security",
+      "title": "solongate/agent-security",
+      "source": "GitHub",
+      "summary": "Local-first, open-source security gateway for AI coding agents. Enforce tool-call policies, detect secrets, and audit actions on-device.",
+      "published_at": "2026-09-27T10:48:40Z",
+      "updated_at": "2026-11-24T08:55:40Z",
+      "stars": 697,
+      "topics": [
+        "agent-runtime-security",
+        "agent-security",
+        "ai-agent-security",
+        "ai-agents",
+        "ai-security-tool",
+        "ai-security-tools",
+        "antigravity",
+        "claude-code",
+        "codex",
+        "mcp",
+        "mcp-gateway",
+        "mcp-security",
+        "openclaw",
+        "opencode",
+        "security",
+        "security-tools"
+      ],
+      "first_seen": "2026-11-23T10:41:51.964489+00:00",
+      "last_seen": "2026-11-25T08:23:00.985476+00:00",
+      "change": "observed_again",
+      "day_growth": {
+        "delta": 7,
+        "days": 1.9,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -242,16 +300,17 @@
         "security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T08:23:00.985476+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 6,
-        "days": 1.82,
+        "days": 1.9,
         "status": "irregular_window"
       },
       "week_growth": {
-        "delta": null,
-        "status": "insufficient_history"
+        "delta": 23,
+        "days": 7.04,
+        "status": "complete"
       }
     },
     {
@@ -287,52 +346,11 @@
         "ssrf-protection"
       ],
       "first_seen": "2026-11-19T00:57:14.149881+00:00",
-      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T08:23:00.985476+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 6,
-        "days": 1.82,
-        "status": "irregular_window"
-      },
-      "week_growth": {
-        "delta": null,
-        "status": "insufficient_history"
-      }
-    },
-    {
-      "id": "item_bc3474896610e73e",
-      "kind": "repo",
-      "url": "https://github.com/solongate/agent-security",
-      "title": "solongate/agent-security",
-      "source": "GitHub",
-      "summary": "Local-first, open-source security gateway for AI coding agents. Enforce tool-call policies, detect secrets, and audit actions on-device.",
-      "published_at": "2026-09-27T10:48:40Z",
-      "updated_at": "2026-11-24T08:55:40Z",
-      "stars": 696,
-      "topics": [
-        "agent-runtime-security",
-        "agent-security",
-        "ai-agent-security",
-        "ai-agents",
-        "ai-security-tool",
-        "ai-security-tools",
-        "antigravity",
-        "claude-code",
-        "codex",
-        "mcp",
-        "mcp-gateway",
-        "mcp-security",
-        "openclaw",
-        "opencode",
-        "security",
-        "security-tools"
-      ],
-      "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-25T06:26:05.492473+00:00",
-      "change": "observed_again",
-      "day_growth": {
-        "delta": 6,
-        "days": 1.82,
+        "days": 1.9,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -360,11 +378,11 @@
         "security"
       ],
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T08:23:00.985476+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 5,
-        "days": 1.82,
+        "days": 1.9,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -392,56 +410,11 @@
         "security"
       ],
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T08:23:00.985476+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 4,
-        "days": 1.82,
-        "status": "irregular_window"
-      },
-      "week_growth": {
-        "delta": null,
-        "status": "insufficient_history"
-      }
-    },
-    {
-      "id": "item_f53305ccaf7b632e",
-      "kind": "repo",
-      "url": "https://github.com/toby-bridges/api-relay-audit",
-      "title": "toby-bridges/api-relay-audit",
-      "source": "GitHub",
-      "summary": "Local security audit for AI API relays and LLM proxies: detects prompt injection, model substitution, tool-call rewriting, SSE anomalies, error leakage, and Web3 wallet risks. Website: https://apirelayaudit.com",
-      "published_at": "2026-03-30T04:20:54Z",
-      "updated_at": "2026-11-22T05:26:02Z",
-      "stars": 932,
-      "topics": [
-        "ai-agents",
-        "ai-audit",
-        "ai-security",
-        "anthropic",
-        "api-gateway",
-        "claude",
-        "dsh-plugin",
-        "llm-audit",
-        "llm-proxy",
-        "llm-security",
-        "model-substitution",
-        "openai-api",
-        "prompt-injection",
-        "python",
-        "security-audit",
-        "security-scanner",
-        "supply-chain-security",
-        "tool-call-rewriting",
-        "web3-security",
-        "web3-wallet"
-      ],
-      "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-25T06:26:05.492473+00:00",
-      "change": "observed_again",
-      "day_growth": {
-        "delta": 4,
-        "days": 1.82,
+        "days": 1.9,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -457,7 +430,7 @@
       "source": "GitHub",
       "summary": "Open-source antivirus and firewall for AI agents: block risky tools, secret access, prompt injection, malicious packages, MCP servers, plugins, and skills at runtime.",
       "published_at": "2026-03-28T19:02:15Z",
-      "updated_at": "2026-11-25T06:21:35Z",
+      "updated_at": "2026-11-25T08:22:01Z",
       "stars": 1124,
       "topics": [
         "agent-security",
@@ -482,11 +455,57 @@
         "vulnify"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T08:23:00.985476+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 3,
-        "days": 1.82,
+        "days": 1.9,
+        "status": "irregular_window"
+      },
+      "week_growth": {
+        "delta": 14,
+        "days": 7.04,
+        "status": "complete"
+      }
+    },
+    {
+      "id": "item_f53305ccaf7b632e",
+      "kind": "repo",
+      "url": "https://github.com/toby-bridges/api-relay-audit",
+      "title": "toby-bridges/api-relay-audit",
+      "source": "GitHub",
+      "summary": "Local security audit for AI API relays and LLM proxies: detects prompt injection, model substitution, tool-call rewriting, SSE anomalies, error leakage, and Web3 wallet risks. Website: https://apirelayaudit.com",
+      "published_at": "2026-03-30T04:20:54Z",
+      "updated_at": "2026-11-22T05:26:02Z",
+      "stars": 931,
+      "topics": [
+        "ai-agents",
+        "ai-audit",
+        "ai-security",
+        "anthropic",
+        "api-gateway",
+        "claude",
+        "dsh-plugin",
+        "llm-audit",
+        "llm-proxy",
+        "llm-security",
+        "model-substitution",
+        "openai-api",
+        "prompt-injection",
+        "python",
+        "security-audit",
+        "security-scanner",
+        "supply-chain-security",
+        "tool-call-rewriting",
+        "web3-security",
+        "web3-wallet"
+      ],
+      "first_seen": "2026-11-23T10:41:51.964489+00:00",
+      "last_seen": "2026-11-25T08:23:00.985476+00:00",
+      "change": "observed_again",
+      "day_growth": {
+        "delta": 3,
+        "days": 1.9,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -521,11 +540,11 @@
         "prompt-testing"
       ],
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T08:23:00.985476+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 2,
-        "days": 1.82,
+        "days": 1.9,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -552,11 +571,11 @@
         "roadmap"
       ],
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T08:23:00.985476+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 2,
-        "days": 1.82,
+        "days": 1.9,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -572,7 +591,7 @@
       "source": "GitHub",
       "summary": "Open detection-rule standard for AI agent security threats — like Sigma, but for AI agents. Executable, testable rules for prompt injection, tool poisoning, context exfiltration and MCP attacks. Merged into open-source projects at Microsoft, Cisco, Gen Digital, MISP and FINOS. MIT-licensed.",
       "published_at": "2026-03-09T07:48:38Z",
-      "updated_at": "2026-11-25T01:10:12Z",
+      "updated_at": "2026-11-25T07:35:13Z",
       "stars": 444,
       "topics": [
         "agent-security",
@@ -588,11 +607,11 @@
         "threat-detection"
       ],
       "first_seen": "2026-11-20T23:03:54.584308+00:00",
-      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T08:23:00.985476+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 2,
-        "days": 1.82,
+        "days": 1.9,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -612,16 +631,17 @@
       "stars": 427,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T08:23:00.985476+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 2,
-        "days": 1.82,
+        "days": 1.9,
         "status": "irregular_window"
       },
       "week_growth": {
-        "delta": null,
-        "status": "insufficient_history"
+        "delta": 6,
+        "days": 7.04,
+        "status": "complete"
       }
     },
     {
@@ -657,16 +677,17 @@
         "security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T08:23:00.985476+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 2,
-        "days": 1.82,
+        "days": 1.9,
         "status": "irregular_window"
       },
       "week_growth": {
-        "delta": null,
-        "status": "insufficient_history"
+        "delta": 9,
+        "days": 7.04,
+        "status": "complete"
       }
     },
     {
@@ -685,11 +706,43 @@
         "prompt-engineering"
       ],
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T08:23:00.985476+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 1,
-        "days": 1.82,
+        "days": 1.9,
+        "status": "irregular_window"
+      },
+      "week_growth": {
+        "delta": null,
+        "status": "insufficient_history"
+      }
+    },
+    {
+      "id": "item_f32ca72f8d290915",
+      "kind": "repo",
+      "url": "https://github.com/superagent-ai/superagent",
+      "title": "superagent-ai/superagent",
+      "source": "GitHub",
+      "summary": "Superagent protects your AI applications against prompt injections, data leaks, and harmful outputs. Embed safety directly into your app and prove compliance to your customers.",
+      "published_at": "2023-05-10T18:50:39Z",
+      "updated_at": "2026-08-25T09:45:01Z",
+      "stars": 6887,
+      "topics": [
+        "ai",
+        "anthropic",
+        "guardrails",
+        "llm",
+        "openai",
+        "prompt-injection",
+        "security"
+      ],
+      "first_seen": "2026-11-23T10:41:51.964489+00:00",
+      "last_seen": "2026-11-25T08:23:00.985476+00:00",
+      "change": "observed_again",
+      "day_growth": {
+        "delta": 1,
+        "days": 1.9,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -709,11 +762,11 @@
       "stars": 803,
       "topics": [],
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T08:23:00.985476+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 1,
-        "days": 1.82,
+        "days": 1.9,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -754,11 +807,11 @@
         "threat-detection"
       ],
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T08:23:00.985476+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 1,
-        "days": 1.82,
+        "days": 1.9,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -778,48 +831,17 @@
       "stars": 190,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T08:23:00.985476+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 1,
-        "days": 1.82,
+        "days": 1.9,
         "status": "irregular_window"
       },
       "week_growth": {
-        "delta": null,
-        "status": "insufficient_history"
-      }
-    },
-    {
-      "id": "item_f32ca72f8d290915",
-      "kind": "repo",
-      "url": "https://github.com/superagent-ai/superagent",
-      "title": "superagent-ai/superagent",
-      "source": "GitHub",
-      "summary": "Superagent protects your AI applications against prompt injections, data leaks, and harmful outputs. Embed safety directly into your app and prove compliance to your customers.",
-      "published_at": "2023-05-10T18:50:39Z",
-      "updated_at": "2026-08-25T09:45:01Z",
-      "stars": 6886,
-      "topics": [
-        "ai",
-        "anthropic",
-        "guardrails",
-        "llm",
-        "openai",
-        "prompt-injection",
-        "security"
-      ],
-      "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-25T06:26:05.492473+00:00",
-      "change": "observed_again",
-      "day_growth": {
-        "delta": 0,
-        "days": 1.82,
-        "status": "irregular_window"
-      },
-      "week_growth": {
-        "delta": null,
-        "status": "insufficient_history"
+        "delta": 4,
+        "days": 7.04,
+        "status": "complete"
       }
     },
     {
@@ -830,7 +852,7 @@
       "source": "GitHub",
       "summary": "AI Safety HOT: daily AI safety news, papers and incidents in one place — jailbreaks, prompt injection, alignment, evals, governance. Website, daily digest, RSS and MCP.",
       "published_at": "2026-10-01T11:33:59Z",
-      "updated_at": "2026-11-25T06:06:48Z",
+      "updated_at": "2026-11-25T08:06:57Z",
       "stars": 2081,
       "topics": [
         "ai-alignment",
@@ -847,69 +869,28 @@
         "rss"
       ],
       "first_seen": "2026-11-18T07:25:50.528448+00:00",
-      "last_seen": "2026-11-25T06:26:05.492473+00:00",
+      "last_seen": "2026-11-25T08:23:00.985476+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.82,
+        "days": 1.9,
         "status": "irregular_window"
       },
       "week_growth": {
-        "delta": null,
-        "status": "insufficient_history"
-      }
-    },
-    {
-      "id": "item_b34ca6dfe4254569",
-      "kind": "repo",
-      "url": "https://github.com/calmrocks/ai-engineer-notebooks",
-      "title": "calmrocks/ai-engineer-notebooks",
-      "source": "GitHub",
-      "summary": "Hands-on, framework-free Colab notebooks for the AI Engineer / Forward Deployed Engineer (FDE) skill set — model APIs, structured output, tool calling, RAG, evals-as-the-spine, agents (loop from scratch, tool design, guardrails, MCP, Skills), fine-tuning vs LoRA, prompt-injection/security, LLMOps, and customer craft. Runs on the free Groq API.",
-      "published_at": "2026-08-11T23:17:17Z",
-      "updated_at": "2026-11-07T02:10:15Z",
-      "stars": 759,
-      "topics": [
-        "agents",
-        "ai-engineer",
-        "ai-engineering",
-        "colab",
-        "evals",
-        "fine-tuning",
-        "forward-deployed-engineer",
-        "generative-ai",
-        "groq",
-        "jupyter-notebook",
-        "llm",
-        "llm-as-judge",
-        "llmops",
-        "lora",
-        "mcp",
-        "notebooks",
-        "prompt-engineering",
-        "rag"
-      ],
-      "first_seen": "2026-11-25T06:26:05.492473+00:00",
-      "last_seen": "2026-11-25T06:26:05.492473+00:00",
-      "change": "newly_discovered",
-      "day_growth": {
-        "delta": null,
-        "status": "insufficient_history"
-      },
-      "week_growth": {
-        "delta": null,
-        "status": "insufficient_history"
+        "delta": -52,
+        "days": 7.04,
+        "status": "complete"
       }
     }
   ],
   "candidate_count": 107,
   "published_count": 4,
-  "run_url": null,
+  "run_url": "https://github.com/Jacintha0511/ai-security-daily/actions/runs/45575749978",
   "notes": [
     "仅公开论文、项目、报道；不包含私人 idea 或实验。",
     "首次发现时间不等于发表时间；摘要与规则匹配不代表精读。",
     "star 为快照净变化，取消 star 可产生负值。"
   ],
   "news_updated_at": "2026-11-25T06:29:37.560867+00:00",
-  "updated_at": "2026-11-25T06:42:49.813909+00:00"
+  "updated_at": "2026-11-25T08:23:11.422673+00:00"
 }
