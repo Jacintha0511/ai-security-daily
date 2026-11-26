@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "initialized_on": "2026-11-23",
-  "updated_at": "2026-11-26T01:09:22.472813+00:00",
+  "updated_at": "2026-11-26T02:24:51.793743+00:00",
   "themes": [
     "记忆投毒",
     "来源追踪",
@@ -2475,7 +2475,23 @@
       ],
       "focus": true,
       "project_role": "",
-      "analysis": null
+      "analysis": {
+        "fingerprint": "26a03ceb30c508115ec0",
+        "version": "v2",
+        "generated_at": "2026-11-26T02:24:26.063686+00:00",
+        "status": "partial",
+        "verdict": "建议精读：先问敏感参数能来自谁，再让普通代码执行检查。重点看信任假设和失败案例。",
+        "overview": "用户说“按 Alice 的邮件付款”，收款账号可能只能等读信后才知道。ROPE 不提前固定完整动作流程，而是先规定账号可以来自用户原话或经过认证的 Alice；工具执行前再检查实际账号是否出现在被允许的来源。它保住了一部分动态任务效用，但不证明内容本身正确，也不保护所有自由文本。",
+        "path": "data/analyses/item_2c561faf7ee91231-26a03ceb30c508115ec0.json",
+        "recommendation": {
+          "headline": "参数有可信出处，为什么仍不等于整次行动安全",
+          "why_read": "同时连接来源追踪、权限执行和记忆回写，适合作为防御基线的候选导读。",
+          "read_next": "第 III-C、III-D 节；第 V 节失败分析；附录表 IX、XI",
+          "update_summary": "",
+          "substantive_update": false
+        },
+        "code_checked": false
+      }
     },
     {
       "id": "item_2d588e45d70d6cfd",
@@ -5166,7 +5182,23 @@
       ],
       "focus": true,
       "project_role": "工程项目",
-      "analysis": null
+      "analysis": {
+        "fingerprint": "9f36f9b94a0a92b2a34a",
+        "version": "d37f56de451fa1881f683ee2bb98cadb1a1b652e",
+        "generated_at": "2026-11-26T02:21:01.347776+00:00",
+        "status": "partial",
+        "verdict": "本次只有下载、访问统计、README 数字与统计工作流变化；复用已核查的实现导读，不作为新功能重复推荐。",
+        "overview": "本次固定提交与 11 月 23 日相比，没有修改实现代码，只更新统计和统计工作流。下文沿用上次的核心代码核查，行号和实现仍对应当前提交：写入前检测并按策略决定处理，读取时再检查。重点仍是默认策略与可选检测器，而不是 star 或下载量。",
+        "path": "data/analyses/item_50cc0395f5577882-9f36f9b94a0a92b2a34a.json",
+        "recommendation": {
+          "headline": "记忆防护库的默认配置，究竟会拦住什么",
+          "why_read": "适合作为记忆防御基线的代码阅读候选，先核对默认与强化配置。",
+          "read_next": "guard.py 的读写与异常处理；Policy.strict 与跨重置评测",
+          "update_summary": "仅 README、analytics 与统计工作流更新；实现未变，不重复精选。",
+          "substantive_update": false
+        },
+        "code_checked": true
+      }
     },
     {
       "id": "item_5208bc0406e6440f",
@@ -6822,7 +6854,23 @@
       ],
       "focus": true,
       "project_role": "",
-      "analysis": null
+      "analysis": {
+        "fingerprint": "5b2ee0e65c2523484a29",
+        "version": "v1",
+        "generated_at": "2026-11-26T02:24:25.983252+00:00",
+        "status": "partial",
+        "verdict": "建议精读：安全审查也会执行动作，这些动作一样需要权限。先看威胁模型，再读表 IV、VI、VII。",
+        "overview": "Agent 本来拒绝危险操作，但攻击者把它包装成完成用户任务的必要步骤，再根据审查反馈调整说法。更隐蔽的问题是，Agent 为了调查可疑内容，可能先越界读文件或访问链接，最后虽然拒绝，伤害却已经发生。Conartist 是用来测试这类过程的攻击框架，不是防御方案。",
+        "path": "data/analyses/item_6f893c98d9bb2b89-5b2ee0e65c2523484a29.json",
+        "recommendation": {
+          "headline": "Agent 为了检查安全，也可能先做了越权操作",
+          "why_read": "适合检查行动权限是否覆盖审查过程，以及离线反馈是否夸大在线攻击能力。",
+          "read_next": "第 II-A、II-E 节；表 IV、VI、VII",
+          "update_summary": "",
+          "substantive_update": false
+        },
+        "code_checked": false
+      }
     },
     {
       "id": "item_704bb2c92ce09aa5",
@@ -7600,7 +7648,23 @@
       ],
       "focus": true,
       "project_role": "",
-      "analysis": null
+      "analysis": {
+        "fingerprint": "ca22ecf0123f71de5f9d",
+        "version": "v3",
+        "generated_at": "2026-11-26T02:24:26.025971+00:00",
+        "status": "partial",
+        "verdict": "建议精读评测定义：98.9% 是找回已确认风险通道的召回率，不是攻击成功率，也不是总体准确率。",
+        "overview": "一个工具写着“返回网页或评论”，即使看不到它的代码，也能怀疑外部作者的文字会进入 Agent 上下文。MCPSec 先从工具说明推测这条路径，再写出可验证的攻击假设；拿到代码和运行权限后再查。重点是把猜测、通路可达和实际利用分开，而不是让模型直接宣布漏洞成立。",
+        "path": "data/analyses/item_7d18bbc0939939a3-ca22ecf0123f71de5f9d.json",
+        "recommendation": {
+          "headline": "只看 MCP 工具说明，能找到什么，不能证明什么",
+          "why_read": "适合学习来源字段分析与从猜测到验证的证据层级，避免把模型评审当事实。",
+          "read_next": "第 V 节流程；表 VI、VIII、IX；附录 D",
+          "update_summary": "",
+          "substantive_update": false
+        },
+        "code_checked": false
+      }
     },
     {
       "id": "item_7d2aa1dc3645ebae",
@@ -13949,7 +14013,11 @@
     },
     "2026-11-26": {
       "items": {
-        "paper": [],
+        "paper": [
+          "item_6f893c98d9bb2b89:v1",
+          "item_7d18bbc0939939a3:v3",
+          "item_2c561faf7ee91231:v2"
+        ],
         "repo": [],
         "news": []
       },

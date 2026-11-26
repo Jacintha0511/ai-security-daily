@@ -1,0 +1,312 @@
+{
+  "schema_version": 1,
+  "item_id": "item_50cc0395f5577882",
+  "kind": "repo",
+  "title": "OWASP/www-project-agent-memory-guard",
+  "url": "https://github.com/owasp/www-project-agent-memory-guard",
+  "fingerprint": "9f36f9b94a0a92b2a34a",
+  "version": "d37f56de451fa1881f683ee2bb98cadb1a1b652e",
+  "status": "partial",
+  "model": "Codex 当前会话（运行接口未提供精确模型版本）",
+  "generated_at": "2026-11-26T02:21:01.347776+00:00",
+  "verdict": "本次只有下载、访问统计、README 数字与统计工作流变化；复用已核查的实现导读，不作为新功能重复推荐。",
+  "overview": "本次固定提交与 11 月 23 日相比，没有修改实现代码，只更新统计和统计工作流。下文沿用上次的核心代码核查，行号和实现仍对应当前提交：写入前检测并按策略决定处理，读取时再检查。重点仍是默认策略与可选检测器，而不是 star 或下载量。",
+  "sections": [
+    {
+      "title": "项目定位",
+      "stance": "原文讲解与分析（具体判断见正文）",
+      "paragraphs": [
+        "11 月 26 日更新核查：与上次固定提交相比，变更仅涉及 README 下载／安装数量、analytics 文件和统计工作流的标题匹配修复。未出现新的防御实现；以下代码导读复用已核查的相同内容。",
+        "固定阅读 commit 50761eb20c90c67e341023866aa433c9ffe79245，包配置版本为 0.4.0。今天快照是 210 star，约 24 小时净增 1；周增长历史不足。它进入首名是研究方向相关并通过推荐粗筛，不是全站最热项目。",
+        "作者维护信息列出 Vaishnavi Gudur 和 Anshul Rajkumar；仓库使用 Apache-2.0。方向明确是 Agent 记忆与上下文投毒。README 自述为 OWASP Lab 项目，也明确 Lab 身份不是安全认证，MITRE 列名不是认可其所有效果。"
+      ],
+      "refs": [
+        {
+          "source": "s1",
+          "locator": "固定 commit 文件目录"
+        },
+        {
+          "source": "s2",
+          "locator": "第 48–49、426–451 行"
+        },
+        {
+          "source": "s14",
+          "locator": "第 5–15 行"
+        },
+        {
+          "source": "s15",
+          "locator": "完整差异文件列表与 README patch"
+        }
+      ]
+    },
+    {
+      "title": "能力与边界",
+      "stance": "原文讲解与分析（具体判断见正文）",
+      "paragraphs": [
+        "实际接口是 MemoryGuard.write/read：写入内容经过检测器，再由策略决定 allow、redact、quarantine、block；它还提供来源标注、记忆分类、按代理配置的访问控制、快照和集成接口。",
+        "先记住两个默认值：不传 policy 时采用 permissive，默认不是发现问题就拦截；访问策略 access 默认为 None，也不会自动产生按 Agent 身份的权限隔离。示例常用 Policy.strict()，需要看清它究竟加了哪些规则。",
+        "它能检查经过自身接口的记忆读写。底层存储被直接改写、执行器如何授权外部行动、调用方能否伪造身份或来源标注，都还需要宿主系统的可信边界配合。不要把装了这个库理解为整个 Agent 已安全。"
+      ],
+      "refs": [
+        {
+          "source": "s11",
+          "locator": "第 114–162、317–442、712–787 行"
+        },
+        {
+          "source": "s12",
+          "locator": "第 68–94、177–204 行"
+        }
+      ]
+    },
+    {
+      "title": "架构与执行流程",
+      "stance": "原文讲解与分析（具体判断见正文）",
+      "paragraphs": [
+        "以工具搜索结果要写入记忆为例：可信适配器先注明来自 external_tool；如配置了 access，先核对该 Agent 是否有权写这个 key／记忆类别，再运行内容检测器。被阻断则抛异常，隔离则不写主存储；需要删敏时先处理，再提交清理后的内容。",
+        "读取不是简单原样取回：有权限规则时先检查读权限，再核验已有的完整性基线，取值后再做检测和策略判断。不能删敏的敏感内容会被扣住，而不是照常返回。",
+        "因此集成时必须处理返回动作和异常。只把检查函数调用一下、随后仍将原文写入另一个内存，就绕开了真正的防护路径。这里依据代码说明流程，本次未运行这个例子。"
+      ],
+      "refs": [
+        {
+          "source": "s11",
+          "locator": "第 712–1083、1436–1454 行"
+        }
+      ],
+      "diagram": [
+        "可信适配器注明来源与调用身份",
+        "如已配置访问策略，先检查该读写是否获准",
+        "检测注入、秘密、受保护 key 与异常内容",
+        "策略选择允许／删敏／隔离／阻断",
+        "实际提交或返回检查后的内容，并记录事件"
+      ]
+    },
+    {
+      "title": "安全机制",
+      "stance": "原文讲解与分析（具体判断见正文）",
+      "paragraphs": [
+        "strict 预设会保护 identity.*、system.*、agent.goal，匹配注入时阻断、秘密删敏、体积异常隔离；不代表所有可选检测器都已加载。默认检测器列表没有 MemoryPersistenceInjectionDetector，README 的强化配置与 strict 不能混为一谈。",
+        "持久投毒检测器本身主要匹配特定正则，且只检查 write。更关键的是：把一个检测器添加进去，还必须让策略把它的 detector 名称映射为阻断或隔离。strict 没为 memory_persistence_injection 列出规则，默认 action 仍为 allow；只加检测器未必阻断，这是静态阅读可见的配置风险。",
+        "单个检测器异常时，代码会跳过它的判定，继续其他检测器，并发出一个低严重性的运维事件。如果没有其他命中，操作可能被允许。部署时要监控 detector_error，不能把“没有阻断”误看成“所有检测均正常”。",
+        "source_class 和 receipt_uri 由调用者提供；后者在已读方法中是事件关联指针，不是自动验证外部签名。宿主必须可信地赋值，不能让不可信正文自己宣布它来自 system。"
+      ],
+      "refs": [
+        {
+          "source": "s11",
+          "locator": "第 152–162、717–742、801–855、1346–1434 行"
+        },
+        {
+          "source": "s12",
+          "locator": "第 181–204 行"
+        },
+        {
+          "source": "s13",
+          "locator": "第 11–21、53–89 行"
+        }
+      ]
+    },
+    {
+      "title": "关键代码导读",
+      "stance": "原文讲解与分析（具体判断见正文）",
+      "paragraphs": [
+        "先读 guard.py 的构造函数 114–193 行，确认默认策略和检测器；再看 write/_write_impl 的 712–961 行，找出真正落盘前的决策点；read/_read_impl 在 963–1083 行。",
+        "policy.py 的 strict 在 181–204 行。把规则名逐一对应到检测器 name，能避免“装了检测器却沿用 allow”的误配置。guard.py 的 1346–1399 行处理检测器异常，1401–1434 行合并各项策略动作。",
+        "仓库根目录 scanner/ 是另一套静态扫描入口，主要找未保护写入、硬编码秘密和策略目录等模式。它不是运行时 MemoryGuard，也不能用它的输出证明真实模型不会被投毒。"
+      ],
+      "refs": [
+        {
+          "source": "s11",
+          "locator": "第 114–193、712–1083、1346–1434 行"
+        },
+        {
+          "source": "s12",
+          "locator": "第 181–204 行"
+        },
+        {
+          "source": "s6",
+          "locator": "第 12–32 行"
+        },
+        {
+          "source": "s7",
+          "locator": "第 6–64 行"
+        }
+      ]
+    },
+    {
+      "title": "相关工作比较",
+      "stance": "原文讲解与分析（具体判断见正文）",
+      "paragraphs": [
+        "README 列出的 92.5% 召回、0% 误报和 62 微秒延迟，来自旧版 0.2.2 的 55 例单次写入测试：40 条攻击、15 条正常控制。它不是当前 commit 在真实跨会话 Agent 上的通用拦截率。",
+        "同一 README 另外列出跨重置的 AMSB：强化配置 A／93.9 分，strict 配置 D／71.4 分。分数来自项目自建评测，且版本和参数要回查原报告；本次请求基准结果 JSON 未读到，未独立复测，所以只作为文档宣称呈现。",
+        "与本期论文的机制区别：AMG 主要检查记忆生命周期及策略；SPILLWAY 在行动执行前检查目的地；ElephantAgent 校验状态仍是最新批准版本。内容检测、状态新鲜度、最终行动授权是三个问题，不能相互替代。这是阅读对照，不是本次对比实验。"
+      ],
+      "refs": [
+        {
+          "source": "s2",
+          "locator": "第 112–164、325–385 行"
+        },
+        {
+          "source": "s11",
+          "locator": "第 712–1083 行"
+        }
+      ]
+    },
+    {
+      "title": "上手与资源",
+      "stance": "原文讲解与分析（具体判断见正文）",
+      "paragraphs": [
+        "当前包要求 Python 3.9+，基础依赖只有 PyYAML。纯规则读写检查可在 CPU 上学习，8GB 显卡不是必要条件；可选 ml 扩展另依赖 transformers、torch，不能把基础安装的资源估计套到模型检测器。",
+        "学习时先选明确的 policy、受保护 key 和检测器组合，再看快照、来源标注和 access；代码演示、单次写入检测、跨重置评测要分开记录。本次没有安装此包、运行 demo、执行测试或调用其 Agent 集成 API。"
+      ],
+      "refs": [
+        {
+          "source": "s14",
+          "locator": "第 5–11、44–69 行"
+        },
+        {
+          "source": "s5",
+          "locator": "第 8–12、65–101 行"
+        },
+        {
+          "source": "s9",
+          "locator": "第 15–45 行"
+        }
+      ]
+    },
+    {
+      "title": "成熟度与研究用途",
+      "stance": "原文讲解与分析（具体判断见正文）",
+      "paragraphs": [
+        "它有真实运行时实现、多个框架接入目录、测试及基准材料，适合深入读代码；但文档中的品牌、下载量和 star 都不能代替效果验证。中英文 README 的下载量、采用说明和局限并不完全同步，本页优先以固定提交的英文说明和代码为依据。",
+        "对你的研究，最有用的阅读任务是画出“来源标注 → 检测结果 → 策略动作 → 实际存储／返回”的完整路径，检查默认配置和强化配置的差异。若要当防御基线，还需固定配置、跨会话语料、正常效用、误拦和检测器故障处理，不能只选最好看的 92.5%。"
+      ],
+      "refs": [
+        {
+          "source": "s1",
+          "locator": "源码、集成、测试与基准目录"
+        },
+        {
+          "source": "s2",
+          "locator": "第 112–164、419–433 行"
+        },
+        {
+          "source": "s3",
+          "locator": "第 26、30–36 行"
+        },
+        {
+          "source": "s11",
+          "locator": "第 1346–1434 行"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "静态导读复用上次已读的相同 guard／policy 关键节选；本次只核查提交差异，不声称做了新的全面代码审计。",
+    "没有运行第三方实验、测试或 demo；没有独立确认所有集成、许可证合规或部署安全。",
+    "基准 JSON 获取未成功；README 数字保留为项目自报，不能当作当前提交复测结果。"
+  ],
+  "checks": [
+    "通过 GitHub 两固定提交的完整差异核对实现文件未变，复用此前静态阅读的同一代码节选；本次未重新运行或全面审计。",
+    "阅读英文／中文 README、许可证、示例、scanner、关键 guard/policy 方法、持久检测器和 pyproject。",
+    "重点核对 permissive 默认、strict 规则、可选持久检测器及检测器异常时行为。",
+    "未调用外部大模型 API，未执行被分析项目的代码。"
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://github.com/owasp/www-project-agent-memory-guard/tree/d37f56de451fa1881f683ee2bb98cadb1a1b652e",
+      "label": "固定 commit 文件目录：d37f56de451fa1881f683ee2bb98cadb1a1b652e",
+      "sha256": "94fa66488054ad04d78ef48780c3e3cfdc4489e0c0e6b4c92e40e3af995ea550"
+    },
+    {
+      "id": "s2",
+      "url": "https://github.com/owasp/www-project-agent-memory-guard/blob/d37f56de451fa1881f683ee2bb98cadb1a1b652e/README.md",
+      "label": "README.md",
+      "sha256": "980d70de92019f59e57017befd82648d02c6941a9dadfa33c98ed1dc4794b572"
+    },
+    {
+      "id": "s3",
+      "url": "https://github.com/owasp/www-project-agent-memory-guard/blob/d37f56de451fa1881f683ee2bb98cadb1a1b652e/README_zh-CN.md",
+      "label": "README_zh-CN.md",
+      "sha256": "71cc5274d9b3789e6e76b5a01d49c611a5408c0b10570f4c6a8d963f76ead614"
+    },
+    {
+      "id": "s4",
+      "url": "https://github.com/owasp/www-project-agent-memory-guard/blob/d37f56de451fa1881f683ee2bb98cadb1a1b652e/LICENSE.md",
+      "label": "LICENSE.md",
+      "sha256": "270ec4d743704214d6288968b50e859c12348a6eb6d39a8aa90e4a2a2084131d"
+    },
+    {
+      "id": "s5",
+      "url": "https://github.com/owasp/www-project-agent-memory-guard/blob/d37f56de451fa1881f683ee2bb98cadb1a1b652e/demo.py",
+      "label": "demo.py",
+      "sha256": "e48f592bb13e50c0f00fb35fcb51a8432326ec88eecd4820e99c8ce572242abe"
+    },
+    {
+      "id": "s6",
+      "url": "https://github.com/owasp/www-project-agent-memory-guard/blob/d37f56de451fa1881f683ee2bb98cadb1a1b652e/scanner/scan.py",
+      "label": "scanner/scan.py",
+      "sha256": "e86bdf70e0f98a31136e783fd63352597804807ff532947edac1b352fa961514"
+    },
+    {
+      "id": "s7",
+      "url": "https://github.com/owasp/www-project-agent-memory-guard/blob/d37f56de451fa1881f683ee2bb98cadb1a1b652e/scanner/rules.py",
+      "label": "scanner/rules.py",
+      "sha256": "d94ef59676e16f906c762cc894c4d8d0a25553cf57941d98a8759f965720c341"
+    },
+    {
+      "id": "s8",
+      "url": "https://github.com/owasp/www-project-agent-memory-guard/blob/d37f56de451fa1881f683ee2bb98cadb1a1b652e/scanner/__init__.py",
+      "label": "scanner/__init__.py",
+      "sha256": "4827a2af6ce2361579544ed80ed901cd6f9c6e148e513ccfd945951935f2a2ec"
+    },
+    {
+      "id": "s9",
+      "url": "https://github.com/owasp/www-project-agent-memory-guard/blob/d37f56de451fa1881f683ee2bb98cadb1a1b652e/examples/quickstart.py",
+      "label": "examples/quickstart.py",
+      "sha256": "ed942b76e1b1422d304c927c4d58665c6fcd97085edae1f88012957cb0e2225e"
+    },
+    {
+      "id": "s10",
+      "url": "https://github.com/owasp/www-project-agent-memory-guard/blob/d37f56de451fa1881f683ee2bb98cadb1a1b652e/scripts/clone_count.py",
+      "label": "scripts/clone_count.py",
+      "sha256": "4d2c7b62921a5ad17261025131b50aad2ccb00d0099c3793d98175ce2011d38f"
+    },
+    {
+      "id": "s11",
+      "url": "https://github.com/owasp/www-project-agent-memory-guard/blob/d37f56de451fa1881f683ee2bb98cadb1a1b652e/src/agent_memory_guard/guard.py",
+      "label": "src/agent_memory_guard/guard.py（关键方法节选，行号对应原文件）",
+      "sha256": "5ce0ddbc14f1e370737328811f99ef2d619159e15ba98c4d8c4dec41c43c3145"
+    },
+    {
+      "id": "s12",
+      "url": "https://github.com/owasp/www-project-agent-memory-guard/blob/d37f56de451fa1881f683ee2bb98cadb1a1b652e/src/agent_memory_guard/policies/policy.py",
+      "label": "src/agent_memory_guard/policies/policy.py（关键方法节选，行号对应原文件）",
+      "sha256": "b82a6382b21206ea3ad93129acf5e64eaddf8b9f71956a093ca88cb5585f8fe6"
+    },
+    {
+      "id": "s13",
+      "url": "https://github.com/owasp/www-project-agent-memory-guard/blob/d37f56de451fa1881f683ee2bb98cadb1a1b652e/src/agent_memory_guard/detectors/memory_persistence_injection.py",
+      "label": "src/agent_memory_guard/detectors/memory_persistence_injection.py",
+      "sha256": "0a4ab7204d0b29034f61664eb89a7a02f72785099f89320190767c9686aebc2f"
+    },
+    {
+      "id": "s14",
+      "url": "https://github.com/owasp/www-project-agent-memory-guard/blob/d37f56de451fa1881f683ee2bb98cadb1a1b652e/pyproject.toml",
+      "label": "pyproject.toml",
+      "sha256": "9f8911933d00adfde6c80fa18f19c3ef387d2a061fa78b04e1ab5c88a69dae47"
+    },
+    {
+      "id": "s15",
+      "url": "https://github.com/OWASP/www-project-agent-memory-guard/compare/50761eb20c90c67e341023866aa433c9ffe79245...d37f56de451fa1881f683ee2bb98cadb1a1b652e",
+      "label": "与上次固定提交的差异：仅 README 统计与 analytics，无实现变更",
+      "sha256": "d7a1ad0283d8033410bc7c97dd7511b3d8984e94cac356df9d46cf7d54a7497a"
+    }
+  ],
+  "recommendation": {
+    "headline": "记忆防护库的默认配置，究竟会拦住什么",
+    "why_read": "适合作为记忆防御基线的代码阅读候选，先核对默认与强化配置。",
+    "read_next": "guard.py 的读写与异常处理；Policy.strict 与跨重置评测",
+    "update_summary": "仅 README、analytics 与统计工作流更新；实现未变，不重复精选。",
+    "substantive_update": false
+  }
+}

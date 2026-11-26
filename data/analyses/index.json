@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-25T06:37:19.332198+00:00",
+  "updated_at": "2026-11-26T02:24:26.075805+00:00",
   "items": {
     "item_163311fe87f0a7ae:75cded2e42309d0907e0": {
       "item_id": "item_163311fe87f0a7ae",
@@ -208,6 +208,54 @@
       "updated_at": "2026-11-25T06:37:19.318365+00:00",
       "path": "data/analyses/item_50cc0395f5577882-cf4ecbdf5cc3fac73602.json",
       "message": "本次只有下载、访问统计和 README 数字变化；复用已核查的实现导读，不作为新功能重复推荐。"
+    },
+    "item_50cc0395f5577882:9f36f9b94a0a92b2a34a": {
+      "item_id": "item_50cc0395f5577882",
+      "kind": "repo",
+      "title": "OWASP/www-project-agent-memory-guard",
+      "version": "d37f56de451fa1881f683ee2bb98cadb1a1b652e",
+      "requested_version": "2026-11-26T01:05:34Z",
+      "fingerprint": "9f36f9b94a0a92b2a34a",
+      "status": "partial",
+      "updated_at": "2026-11-26T02:21:01.347776+00:00",
+      "path": "data/analyses/item_50cc0395f5577882-9f36f9b94a0a92b2a34a.json",
+      "message": "本次只有下载、访问统计、README 数字与统计工作流变化；复用已核查的实现导读，不作为新功能重复推荐。"
+    },
+    "item_6f893c98d9bb2b89:5b2ee0e65c2523484a29": {
+      "item_id": "item_6f893c98d9bb2b89",
+      "kind": "paper",
+      "title": "Conartist: Adaptive Agentic Red-Teaming of Computer-Using Agents against Multi-Step Prompt Injection",
+      "version": "v1",
+      "requested_version": "v1",
+      "fingerprint": "5b2ee0e65c2523484a29",
+      "status": "partial",
+      "updated_at": "2026-11-26T02:24:25.983252+00:00",
+      "path": "data/analyses/item_6f893c98d9bb2b89-5b2ee0e65c2523484a29.json",
+      "message": "建议精读：安全审查也会执行动作，这些动作一样需要权限。先看威胁模型，再读表 IV、VI、VII。"
+    },
+    "item_7d18bbc0939939a3:ca22ecf0123f71de5f9d": {
+      "item_id": "item_7d18bbc0939939a3",
+      "kind": "paper",
+      "title": "No-Box Vulnerability Analysis: Description-only Detection of Indirect Prompt Injection Vulnerabilities in MCP Servers",
+      "version": "v3",
+      "requested_version": "v3",
+      "fingerprint": "ca22ecf0123f71de5f9d",
+      "status": "partial",
+      "updated_at": "2026-11-26T02:24:26.025971+00:00",
+      "path": "data/analyses/item_7d18bbc0939939a3-ca22ecf0123f71de5f9d.json",
+      "message": "建议精读评测定义：98.9% 是找回已确认风险通道的召回率，不是攻击成功率，也不是总体准确率。"
+    },
+    "item_2c561faf7ee91231:26a03ceb30c508115ec0": {
+      "item_id": "item_2c561faf7ee91231",
+      "kind": "paper",
+      "title": "ROPE: Routed Origin Policy Enforcement against Indirect Prompt Injection",
+      "version": "v2",
+      "requested_version": "v2",
+      "fingerprint": "26a03ceb30c508115ec0",
+      "status": "partial",
+      "updated_at": "2026-11-26T02:24:26.063686+00:00",
+      "path": "data/analyses/item_2c561faf7ee91231-26a03ceb30c508115ec0.json",
+      "message": "建议精读：先问敏感参数能来自谁，再让普通代码执行检查。重点看信任假设和失败案例。"
     }
   }
 }
