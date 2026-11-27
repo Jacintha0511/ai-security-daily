@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "date": "2026-11-27",
-  "generated_at": "2026-11-27T01:00:00.227490+00:00",
+  "generated_at": "2026-11-27T01:09:02.650594+00:00",
   "status": "partial",
   "selection_basis": "规则预筛",
   "sources": [
@@ -91,7 +91,7 @@
         "updated_at": "2026-11-25T09:21:39Z",
         "version": "v2",
         "first_seen": "2026-11-26T08:07:59.047908+00:00",
-        "last_seen": "2026-11-27T01:00:00.227490+00:00",
+        "last_seen": "2026-11-27T01:09:02.650594+00:00",
         "change": "observed_again",
         "score": 7,
         "reason": "研究主题匹配：prompt injection、authorization",
@@ -109,7 +109,7 @@
         "updated_at": "2026-11-24T20:10:12Z",
         "version": "v1",
         "first_seen": "2026-11-26T08:07:59.047908+00:00",
-        "last_seen": "2026-11-27T01:00:00.227490+00:00",
+        "last_seen": "2026-11-27T01:09:02.650594+00:00",
         "change": "observed_again",
         "score": 6,
         "reason": "研究主题匹配：prompt injection、agent security",
@@ -127,7 +127,7 @@
         "updated_at": "2026-11-25T11:16:43Z",
         "version": "v1",
         "first_seen": "2026-11-26T08:07:59.047908+00:00",
-        "last_seen": "2026-11-27T01:00:00.227490+00:00",
+        "last_seen": "2026-11-27T01:09:02.650594+00:00",
         "change": "observed_again",
         "score": 3,
         "reason": "研究主题匹配：prompt injection",
@@ -144,7 +144,7 @@
         "source": "GitHub",
         "summary": "Runtime defense against memory poisoning in AI agents (OWASP ASI06). Drop-in for LangChain, OpenAI Agents, AutoGen, CrewAI and mem0.",
         "published_at": "2026-02-16T21:59:18Z",
-        "updated_at": "2026-11-26T13:05:51Z",
+        "updated_at": "2026-11-27T01:05:47Z",
         "stars": 214,
         "topics": [
           "agent-memory",
@@ -169,7 +169,7 @@
           "security"
         ],
         "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-27T01:00:00.227490+00:00",
+        "last_seen": "2026-11-27T01:09:02.650594+00:00",
         "change": "observed_again",
         "score": 16,
         "reason": "研究主题匹配：prompt injection、memory poisoning、llm security、ai safety；214 star；达到 100 star 粗筛门槛；已观测约 24h 净增 +2",
@@ -177,12 +177,12 @@
         "selection_basis": "先过 star／登记基准门槛；优先主线相关、近期提交或有效增长，再比较登记基准和 star。仅元数据筛选，代码与实验效果待核实",
         "day_growth": {
           "delta": 2,
-          "days": 1.0,
+          "days": 1.01,
           "status": "complete"
         },
         "week_growth": {
           "delta": 8,
-          "days": 7.05,
+          "days": 7.06,
           "status": "complete"
         }
       }
@@ -214,16 +214,16 @@
         "supply-chain-security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-27T01:00:00.227490+00:00",
+      "last_seen": "2026-11-27T01:09:02.650594+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 132,
-        "days": 1.0,
+        "days": 1.01,
         "status": "complete"
       },
       "week_growth": {
         "delta": 859,
-        "days": 7.06,
+        "days": 7.07,
         "status": "complete"
       }
     },
@@ -246,11 +246,11 @@
         "roadmap"
       ],
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-27T01:00:00.227490+00:00",
+      "last_seen": "2026-11-27T01:09:02.650594+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 9,
-        "days": 1.0,
+        "days": 1.01,
         "status": "complete"
       },
       "week_growth": {
@@ -278,11 +278,11 @@
         "security"
       ],
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-27T01:00:00.227490+00:00",
+      "last_seen": "2026-11-27T01:09:02.650594+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 5,
-        "days": 1.0,
+        "days": 1.01,
         "status": "complete"
       },
       "week_growth": {
@@ -307,16 +307,16 @@
         "security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-27T01:00:00.227490+00:00",
+      "last_seen": "2026-11-27T01:09:02.650594+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 3,
-        "days": 1.0,
+        "days": 1.01,
         "status": "complete"
       },
       "week_growth": {
         "delta": 23,
-        "days": 7.05,
+        "days": 7.06,
         "status": "complete"
       }
     },
@@ -347,11 +347,11 @@
         "prompt-testing"
       ],
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-27T01:00:00.227490+00:00",
+      "last_seen": "2026-11-27T01:09:02.650594+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 2,
-        "days": 1.0,
+        "days": 1.01,
         "status": "complete"
       },
       "week_growth": {
@@ -390,11 +390,11 @@
         "rag"
       ],
       "first_seen": "2026-11-25T08:23:00.985476+00:00",
-      "last_seen": "2026-11-27T01:00:00.227490+00:00",
+      "last_seen": "2026-11-27T01:09:02.650594+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 2,
-        "days": 1.0,
+        "days": 1.01,
         "status": "complete"
       },
       "week_growth": {
@@ -410,7 +410,7 @@
       "source": "GitHub",
       "summary": "Runtime defense against memory poisoning in AI agents (OWASP ASI06). Drop-in for LangChain, OpenAI Agents, AutoGen, CrewAI and mem0.",
       "published_at": "2026-02-16T21:59:18Z",
-      "updated_at": "2026-11-26T13:05:51Z",
+      "updated_at": "2026-11-27T01:05:47Z",
       "stars": 214,
       "topics": [
         "agent-memory",
@@ -435,16 +435,16 @@
         "security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-27T01:00:00.227490+00:00",
+      "last_seen": "2026-11-27T01:09:02.650594+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 2,
-        "days": 1.0,
+        "days": 1.01,
         "status": "complete"
       },
       "week_growth": {
         "delta": 8,
-        "days": 7.05,
+        "days": 7.06,
         "status": "complete"
       }
     },
@@ -468,11 +468,11 @@
         "security"
       ],
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-27T01:00:00.227490+00:00",
+      "last_seen": "2026-11-27T01:09:02.650594+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 1,
-        "days": 1.0,
+        "days": 1.01,
         "status": "complete"
       },
       "week_growth": {
@@ -513,11 +513,11 @@
         "web3-wallet"
       ],
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-27T01:00:00.227490+00:00",
+      "last_seen": "2026-11-27T01:09:02.650594+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 1,
-        "days": 1.0,
+        "days": 1.01,
         "status": "complete"
       },
       "week_growth": {
@@ -537,11 +537,11 @@
       "stars": 804,
       "topics": [],
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-27T01:00:00.227490+00:00",
+      "last_seen": "2026-11-27T01:09:02.650594+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 1,
-        "days": 1.0,
+        "days": 1.01,
         "status": "complete"
       },
       "week_growth": {
@@ -573,11 +573,11 @@
         "threat-detection"
       ],
       "first_seen": "2026-11-20T23:03:54.584308+00:00",
-      "last_seen": "2026-11-27T01:00:00.227490+00:00",
+      "last_seen": "2026-11-27T01:09:02.650594+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 1,
-        "days": 1.0,
+        "days": 1.01,
         "status": "complete"
       },
       "week_growth": {
@@ -600,11 +600,11 @@
         "security"
       ],
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-27T01:00:00.227490+00:00",
+      "last_seen": "2026-11-27T01:09:02.650594+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 1,
-        "days": 1.0,
+        "days": 1.01,
         "status": "complete"
       },
       "week_growth": {
@@ -631,16 +631,16 @@
         "prompt-engineering"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-27T01:00:00.227490+00:00",
+      "last_seen": "2026-11-27T01:09:02.650594+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 1,
-        "days": 1.0,
+        "days": 1.01,
         "status": "complete"
       },
       "week_growth": {
         "delta": 2,
-        "days": 7.05,
+        "days": 7.06,
         "status": "complete"
       }
     },
@@ -660,11 +660,11 @@
         "prompt-engineering"
       ],
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-27T01:00:00.227490+00:00",
+      "last_seen": "2026-11-27T01:09:02.650594+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.0,
+        "days": 1.01,
         "status": "complete"
       },
       "week_growth": {
@@ -692,11 +692,11 @@
         "security"
       ],
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-27T01:00:00.227490+00:00",
+      "last_seen": "2026-11-27T01:09:02.650594+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.0,
+        "days": 1.01,
         "status": "complete"
       },
       "week_growth": {
@@ -712,7 +712,7 @@
       "source": "GitHub",
       "summary": "Open-source antivirus and firewall for AI agents: block risky tools, secret access, prompt injection, malicious packages, MCP servers, plugins, and skills at runtime.",
       "published_at": "2026-03-28T19:02:15Z",
-      "updated_at": "2026-11-27T00:44:26Z",
+      "updated_at": "2026-11-27T01:07:41Z",
       "stars": 1125,
       "topics": [
         "agent-security",
@@ -737,16 +737,16 @@
         "vulnify"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-27T01:00:00.227490+00:00",
+      "last_seen": "2026-11-27T01:09:02.650594+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.0,
+        "days": 1.01,
         "status": "complete"
       },
       "week_growth": {
         "delta": 11,
-        "days": 7.06,
+        "days": 7.07,
         "status": "complete"
       }
     },
@@ -758,7 +758,7 @@
       "source": "GitHub",
       "summary": "Open-source AI agent firewall for MCP security and agent egress. Scans mediated HTTP, MCP, A2A, and WebSocket traffic for exfiltration, SSRF, and prompt injection, and emits mediator-signed action receipts: verifiable audit evidence from outside the agent.",
       "published_at": "2026-02-08T00:40:18Z",
-      "updated_at": "2026-11-27T00:54:27Z",
+      "updated_at": "2026-11-27T01:08:05Z",
       "stars": 1024,
       "topics": [
         "agent-security",
@@ -783,16 +783,16 @@
         "ssrf-protection"
       ],
       "first_seen": "2026-11-19T00:57:14.149881+00:00",
-      "last_seen": "2026-11-27T01:00:00.227490+00:00",
+      "last_seen": "2026-11-27T01:09:02.650594+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.0,
+        "days": 1.01,
         "status": "complete"
       },
       "week_growth": {
         "delta": 17,
-        "days": 7.61,
+        "days": 7.62,
         "status": "irregular_window"
       }
     },
@@ -829,11 +829,11 @@
         "threat-detection"
       ],
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-27T01:00:00.227490+00:00",
+      "last_seen": "2026-11-27T01:09:02.650594+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.0,
+        "days": 1.01,
         "status": "complete"
       },
       "week_growth": {
@@ -853,16 +853,16 @@
       "stars": 427,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-27T01:00:00.227490+00:00",
+      "last_seen": "2026-11-27T01:09:02.650594+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.0,
+        "days": 1.01,
         "status": "complete"
       },
       "week_growth": {
         "delta": 4,
-        "days": 7.05,
+        "days": 7.06,
         "status": "complete"
       }
     },
@@ -878,28 +878,28 @@
       "stars": 333,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-27T01:00:00.227490+00:00",
+      "last_seen": "2026-11-27T01:09:02.650594+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 0,
-        "days": 1.0,
+        "days": 1.01,
         "status": "complete"
       },
       "week_growth": {
         "delta": 1,
-        "days": 7.05,
+        "days": 7.06,
         "status": "complete"
       }
     }
   ],
   "candidate_count": 97,
   "published_count": 4,
-  "run_url": "https://github.com/Jacintha0511/ai-security-daily/actions/runs/45919971605",
+  "run_url": "https://github.com/Jacintha0511/ai-security-daily/actions/runs/45920875750",
   "notes": [
     "仅公开论文、项目、报道；不包含私人 idea 或实验。",
     "首次发现时间不等于发表时间；摘要与规则匹配不代表精读。",
     "star 为快照净变化，取消 star 可产生负值。"
   ],
   "news_updated_at": "2026-11-26T02:17:32.568990+00:00",
-  "updated_at": "2026-11-27T01:00:10.672685+00:00"
+  "updated_at": "2026-11-27T01:09:09.986781+00:00"
 }
