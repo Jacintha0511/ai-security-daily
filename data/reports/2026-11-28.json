@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "date": "2026-11-28",
-  "generated_at": "2026-11-28T00:31:10.001635+00:00",
+  "generated_at": "2026-11-28T00:41:17.693050+00:00",
   "status": "partial",
   "selection_basis": "规则预筛",
   "sources": [
@@ -91,7 +91,7 @@
         "updated_at": "2026-11-25T09:21:39Z",
         "version": "v2",
         "first_seen": "2026-11-26T08:07:59.047908+00:00",
-        "last_seen": "2026-11-28T00:31:10.001635+00:00",
+        "last_seen": "2026-11-28T00:41:17.693050+00:00",
         "change": "observed_again",
         "score": 7,
         "reason": "研究主题匹配：prompt injection、authorization",
@@ -109,7 +109,7 @@
         "updated_at": "2026-11-24T20:10:12Z",
         "version": "v1",
         "first_seen": "2026-11-26T08:07:59.047908+00:00",
-        "last_seen": "2026-11-28T00:31:10.001635+00:00",
+        "last_seen": "2026-11-28T00:41:17.693050+00:00",
         "change": "observed_again",
         "score": 6,
         "reason": "研究主题匹配：prompt injection、agent security",
@@ -127,7 +127,7 @@
         "updated_at": "2026-11-25T11:16:43Z",
         "version": "v1",
         "first_seen": "2026-11-26T08:07:59.047908+00:00",
-        "last_seen": "2026-11-28T00:31:10.001635+00:00",
+        "last_seen": "2026-11-28T00:41:17.693050+00:00",
         "change": "observed_again",
         "score": 3,
         "reason": "研究主题匹配：prompt injection",
@@ -169,7 +169,7 @@
           "security"
         ],
         "first_seen": "2026-11-18T07:09:14.936020+00:00",
-        "last_seen": "2026-11-28T00:31:10.001635+00:00",
+        "last_seen": "2026-11-28T00:41:17.693050+00:00",
         "change": "observed_again",
         "score": 16,
         "reason": "研究主题匹配：prompt injection、memory poisoning、llm security、ai safety；214 star；达到 100 star 粗筛门槛；约 24h 增长历史不足",
@@ -177,12 +177,12 @@
         "selection_basis": "先过 star／登记基准门槛；优先主线相关、近期提交或有效增长，再比较登记基准和 star。仅元数据筛选，代码与实验效果待核实",
         "day_growth": {
           "delta": 1,
-          "days": 1.57,
+          "days": 1.58,
           "status": "irregular_window"
         },
         "week_growth": {
           "delta": 6,
-          "days": 7.05,
+          "days": 7.06,
           "status": "complete"
         }
       }
@@ -214,11 +214,11 @@
         "supply-chain-security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-28T00:31:10.001635+00:00",
+      "last_seen": "2026-11-28T00:41:17.693050+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 222,
-        "days": 1.57,
+        "days": 1.58,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -283,11 +283,11 @@
         "roadmap"
       ],
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-28T00:31:10.001635+00:00",
+      "last_seen": "2026-11-28T00:41:17.693050+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 6,
-        "days": 1.57,
+        "days": 1.58,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -315,11 +315,11 @@
         "security"
       ],
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-28T00:31:10.001635+00:00",
+      "last_seen": "2026-11-28T00:41:17.693050+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 5,
-        "days": 1.57,
+        "days": 1.58,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -347,11 +347,11 @@
         "security"
       ],
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-28T00:31:10.001635+00:00",
+      "last_seen": "2026-11-28T00:41:17.693050+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 4,
-        "days": 1.57,
+        "days": 1.58,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -386,11 +386,11 @@
         "prompt-testing"
       ],
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-28T00:31:10.001635+00:00",
+      "last_seen": "2026-11-28T00:41:17.693050+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 3,
-        "days": 1.57,
+        "days": 1.58,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -406,7 +406,7 @@
       "source": "GitHub",
       "summary": "Open-source antivirus and firewall for AI agents: block risky tools, secret access, prompt injection, malicious packages, MCP servers, plugins, and skills at runtime.",
       "published_at": "2026-03-28T19:02:15Z",
-      "updated_at": "2026-11-28T00:29:06Z",
+      "updated_at": "2026-11-28T00:34:49Z",
       "stars": 1128,
       "topics": [
         "agent-security",
@@ -431,16 +431,16 @@
         "vulnify"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-28T00:31:10.001635+00:00",
+      "last_seen": "2026-11-28T00:41:17.693050+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 3,
-        "days": 1.57,
+        "days": 1.58,
         "status": "irregular_window"
       },
       "week_growth": {
         "delta": 12,
-        "days": 7.05,
+        "days": 7.06,
         "status": "complete"
       }
     },
@@ -475,11 +475,11 @@
         "rag"
       ],
       "first_seen": "2026-11-25T08:23:00.985476+00:00",
-      "last_seen": "2026-11-28T00:31:10.001635+00:00",
+      "last_seen": "2026-11-28T00:41:17.693050+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 3,
-        "days": 1.57,
+        "days": 1.58,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -507,11 +507,11 @@
         "security"
       ],
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-28T00:31:10.001635+00:00",
+      "last_seen": "2026-11-28T00:41:17.693050+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 2,
-        "days": 1.57,
+        "days": 1.58,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -536,16 +536,16 @@
         "security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-28T00:31:10.001635+00:00",
+      "last_seen": "2026-11-28T00:41:17.693050+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 2,
-        "days": 1.57,
+        "days": 1.58,
         "status": "irregular_window"
       },
       "week_growth": {
         "delta": 19,
-        "days": 7.05,
+        "days": 7.06,
         "status": "complete"
       }
     },
@@ -582,11 +582,11 @@
         "ssrf-protection"
       ],
       "first_seen": "2026-11-19T00:57:14.149881+00:00",
-      "last_seen": "2026-11-28T00:31:10.001635+00:00",
+      "last_seen": "2026-11-28T00:41:17.693050+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 1,
-        "days": 1.57,
+        "days": 1.58,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -628,11 +628,11 @@
         "web3-wallet"
       ],
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-28T00:31:10.001635+00:00",
+      "last_seen": "2026-11-28T00:41:17.693050+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 1,
-        "days": 1.57,
+        "days": 1.58,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -652,11 +652,11 @@
       "stars": 804,
       "topics": [],
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-28T00:31:10.001635+00:00",
+      "last_seen": "2026-11-28T00:41:17.693050+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 1,
-        "days": 1.57,
+        "days": 1.58,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -679,11 +679,11 @@
         "security"
       ],
       "first_seen": "2026-11-23T10:41:51.964489+00:00",
-      "last_seen": "2026-11-28T00:31:10.001635+00:00",
+      "last_seen": "2026-11-28T00:41:17.693050+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 1,
-        "days": 1.57,
+        "days": 1.58,
         "status": "irregular_window"
       },
       "week_growth": {
@@ -703,16 +703,16 @@
       "stars": 428,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-28T00:31:10.001635+00:00",
+      "last_seen": "2026-11-28T00:41:17.693050+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 1,
-        "days": 1.57,
+        "days": 1.58,
         "status": "irregular_window"
       },
       "week_growth": {
         "delta": 3,
-        "days": 7.05,
+        "days": 7.06,
         "status": "complete"
       }
     },
@@ -735,16 +735,16 @@
         "prompt-engineering"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-28T00:31:10.001635+00:00",
+      "last_seen": "2026-11-28T00:41:17.693050+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 1,
-        "days": 1.57,
+        "days": 1.58,
         "status": "irregular_window"
       },
       "week_growth": {
         "delta": 2,
-        "days": 7.05,
+        "days": 7.06,
         "status": "complete"
       }
     },
@@ -781,16 +781,16 @@
         "security"
       ],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-28T00:31:10.001635+00:00",
+      "last_seen": "2026-11-28T00:41:17.693050+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 1,
-        "days": 1.57,
+        "days": 1.58,
         "status": "irregular_window"
       },
       "week_growth": {
         "delta": 6,
-        "days": 7.05,
+        "days": 7.06,
         "status": "complete"
       }
     },
@@ -806,16 +806,16 @@
       "stars": 107,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-28T00:31:10.001635+00:00",
+      "last_seen": "2026-11-28T00:41:17.693050+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 1,
-        "days": 1.57,
+        "days": 1.58,
         "status": "irregular_window"
       },
       "week_growth": {
         "delta": 1,
-        "days": 7.05,
+        "days": 7.06,
         "status": "complete"
       }
     },
@@ -831,16 +831,16 @@
       "stars": 83,
       "topics": [],
       "first_seen": "2026-11-18T07:09:14.936020+00:00",
-      "last_seen": "2026-11-28T00:31:10.001635+00:00",
+      "last_seen": "2026-11-28T00:41:17.693050+00:00",
       "change": "observed_again",
       "day_growth": {
         "delta": 1,
-        "days": 1.57,
+        "days": 1.58,
         "status": "irregular_window"
       },
       "week_growth": {
         "delta": 2,
-        "days": 7.05,
+        "days": 7.06,
         "status": "complete"
       }
     },
@@ -888,12 +888,12 @@
   ],
   "candidate_count": 89,
   "published_count": 4,
-  "run_url": "https://github.com/Jacintha0511/ai-security-daily/actions/runs/46088283854",
+  "run_url": "https://github.com/Jacintha0511/ai-security-daily/actions/runs/46089197968",
   "notes": [
     "仅公开论文、项目、报道；不包含私人 idea 或实验。",
     "首次发现时间不等于发表时间；摘要与规则匹配不代表精读。",
     "star 为快照净变化，取消 star 可产生负值。"
   ],
   "news_updated_at": "2026-11-26T02:17:32.568990+00:00",
-  "updated_at": "2026-11-28T00:31:18.153899+00:00"
+  "updated_at": "2026-11-28T00:41:24.268414+00:00"
 }
