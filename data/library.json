@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "initialized_on": "2026-11-23",
-  "updated_at": "2026-11-28T07:39:28.079457+00:00",
+  "updated_at": "2026-11-28T09:11:56.105201+00:00",
   "themes": [
     "记忆投毒",
     "来源追踪",
@@ -7723,7 +7723,23 @@
       ],
       "focus": true,
       "project_role": "工程项目",
-      "analysis": null
+      "analysis": {
+        "fingerprint": "d95d46461bb5af6acd64",
+        "version": "2caaf9043c55fe1ccd7f1af994085d5fa06bd266",
+        "generated_at": "2026-11-28T09:06:40.823122+00:00",
+        "status": "partial",
+        "verdict": "本次只有下载、访问统计、README 数字与统计工作流变化；复用已核查的实现导读，不作为新功能重复推荐。",
+        "overview": "本次固定提交与 11 月 23 日相比，没有修改实现代码，只更新统计和统计工作流。下文沿用上次的核心代码核查，行号和实现仍对应当前提交：写入前检测并按策略决定处理，读取时再检查。重点仍是默认策略与可选检测器，而不是 star 或下载量。",
+        "path": "data/analyses/item_50cc0395f5577882-d95d46461bb5af6acd64.json",
+        "recommendation": {
+          "headline": "记忆防护库的默认配置，究竟会拦住什么",
+          "why_read": "适合作为记忆防御基线的代码阅读候选，先核对默认与强化配置。",
+          "read_next": "guard.py 的读写与异常处理；Policy.strict 与跨重置评测",
+          "update_summary": "仅 README、analytics 与统计工作流更新；实现未变，不重复精选。",
+          "substantive_update": false
+        },
+        "code_checked": true
+      }
     },
     {
       "id": "item_51c1c5ccf41cd2d6",
@@ -12416,7 +12432,23 @@
       ],
       "focus": false,
       "project_role": "",
-      "analysis": null
+      "analysis": {
+        "fingerprint": "65cb295b600c0f9851c8",
+        "version": "v1",
+        "generated_at": "2026-11-28T09:10:23.385417+00:00",
+        "status": "partial",
+        "verdict": "建议优先精读：防御没有被攻破，也可能被教得太保守，之后连合法任务都不做。",
+        "overview": "一次外部注入让 Agent 未经允许把人加入私有频道。SED 正确发现这个坏行为，却可能把教训学成“加入成员都危险”。之后用户亲自要求正常邀请也被拒绝。攻击没有降低防注入能力，而是污染了防御学到的规则，让它失去可用性。",
+        "path": "data/analyses/item_955a12b2feff56ed-65cb295b600c0f9851c8.json",
+        "recommendation": {
+          "headline": "防御学会挡攻击，却把正常工作一起挡住了",
+          "why_read": "把记忆投毒的损害扩展到正常任务误拒，并给出合法边界检查的可检验思路。",
+          "read_next": "第 3.6、3.7 节；表 1、3；第 4.3 节及表 2 脚注",
+          "update_summary": "",
+          "substantive_update": false
+        },
+        "code_checked": false
+      }
     },
     {
       "id": "item_956722ba51b0d5a0",
@@ -15064,7 +15096,23 @@
       ],
       "focus": false,
       "project_role": "",
-      "analysis": null
+      "analysis": {
+        "fingerprint": "dce96c016ea86712c2a4",
+        "version": "v1",
+        "generated_at": "2026-11-28T09:10:23.436116+00:00",
+        "status": "partial",
+        "verdict": "建议作为轻量过滤基线候选阅读：先看静态与自适应攻击的差距，别把“相关”当成“可信”。",
+        "overview": "用户问建筑师姓名，检索段落却插入“改写广告”的要求。MINE 在主模型读取前，只保留最贴近问题、彼此语义较一致的片段，从而顺带丢掉偏题注入。它不训练新检测器，但同主题、与正常证据粘在一起的攻击仍可通过；长上下文自适应测试的攻击成功率升到 23.20%。",
+        "path": "data/analyses/item_b29a54fc58c5eb3c-dce96c016ea86712c2a4.json",
+        "recommendation": {
+          "headline": "筛掉偏题段落能防注入，但贴题攻击怎么办",
+          "why_read": "提供不训练主模型的轻量过滤思路，同时有明确自适应失败案例，适合做边界对照。",
+          "read_next": "第 3 节；表 4、6；附录 C、D",
+          "update_summary": "",
+          "substantive_update": false
+        },
+        "code_checked": false
+      }
     },
     {
       "id": "item_b34ca6dfe4254569",
@@ -15514,7 +15562,23 @@
       ],
       "focus": true,
       "project_role": "",
-      "analysis": null
+      "analysis": {
+        "fingerprint": "1e5df3198e308c02328c",
+        "version": "v2",
+        "generated_at": "2026-11-28T09:10:23.331219+00:00",
+        "status": "partial",
+        "verdict": "建议选读概念与安全假设：它把“原授权是否还有效”与“最多能做什么”分开，但尚无实证结果。",
+        "overview": "你允许一个 Agent 本地检查代码。后来它学到新技能、换了远程工具，或把任务交给另一个 Agent，原授权还能沿用吗？本文提出两道独立检查：变化是否落在授权允许的范围内；当前操作是否仍在用户先前定下的效果上限内。做得越来越好可以调整上限内的权限，但不能让 Agent 自己抬高上限。",
+        "path": "data/analyses/item_b902b19a49c24f3b-1e5df3198e308c02328c.json",
+        "recommendation": {
+          "headline": "Agent 换了记忆、技能或任务阶段，原授权还算数吗",
+          "why_read": "提供授权连续性与固定效果上限的概念区分，但目前不能当实证防御证据。",
+          "read_next": "第 V 节；表 I、II；第 VIII 节及附录 B",
+          "update_summary": "",
+          "substantive_update": false
+        },
+        "code_checked": false
+      }
     },
     {
       "id": "item_b91c45d9b951c1d7",
@@ -20332,7 +20396,11 @@
     },
     "2026-11-28": {
       "items": {
-        "paper": [],
+        "paper": [
+          "item_b902b19a49c24f3b:v2",
+          "item_b29a54fc58c5eb3c:v1",
+          "item_955a12b2feff56ed:v1"
+        ],
         "repo": [],
         "news": []
       },

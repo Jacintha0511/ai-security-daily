@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T02:24:26.075805+00:00",
+  "updated_at": "2026-11-28T09:10:23.451363+00:00",
   "items": {
     "item_163311fe87f0a7ae:75cded2e42309d0907e0": {
       "item_id": "item_163311fe87f0a7ae",
@@ -256,6 +256,54 @@
       "updated_at": "2026-11-26T02:24:26.063686+00:00",
       "path": "data/analyses/item_2c561faf7ee91231-26a03ceb30c508115ec0.json",
       "message": "建议精读：先问敏感参数能来自谁，再让普通代码执行检查。重点看信任假设和失败案例。"
+    },
+    "item_50cc0395f5577882:d95d46461bb5af6acd64": {
+      "item_id": "item_50cc0395f5577882",
+      "kind": "repo",
+      "title": "OWASP/www-project-agent-memory-guard",
+      "version": "2caaf9043c55fe1ccd7f1af994085d5fa06bd266",
+      "requested_version": "2026-11-28T01:05:35Z",
+      "fingerprint": "d95d46461bb5af6acd64",
+      "status": "partial",
+      "updated_at": "2026-11-28T09:06:40.823122+00:00",
+      "path": "data/analyses/item_50cc0395f5577882-d95d46461bb5af6acd64.json",
+      "message": "本次只有下载、访问统计、README 数字与统计工作流变化；复用已核查的实现导读，不作为新功能重复推荐。"
+    },
+    "item_b902b19a49c24f3b:1e5df3198e308c02328c": {
+      "item_id": "item_b902b19a49c24f3b",
+      "kind": "paper",
+      "title": "Are You Still the Agent I Authorized? Earned Authority under a Fixed Ceiling for Evolving Agents",
+      "version": "v2",
+      "requested_version": "v2",
+      "fingerprint": "1e5df3198e308c02328c",
+      "status": "partial",
+      "updated_at": "2026-11-28T09:10:23.331219+00:00",
+      "path": "data/analyses/item_b902b19a49c24f3b-1e5df3198e308c02328c.json",
+      "message": "建议选读概念与安全假设：它把“原授权是否还有效”与“最多能做什么”分开，但尚无实证结果。"
+    },
+    "item_955a12b2feff56ed:65cb295b600c0f9851c8": {
+      "item_id": "item_955a12b2feff56ed",
+      "kind": "paper",
+      "title": "Poisoning Self-Evolving Security Policies in LLM Agents",
+      "version": "v1",
+      "requested_version": "v1",
+      "fingerprint": "65cb295b600c0f9851c8",
+      "status": "partial",
+      "updated_at": "2026-11-28T09:10:23.385417+00:00",
+      "path": "data/analyses/item_955a12b2feff56ed-65cb295b600c0f9851c8.json",
+      "message": "建议优先精读：防御没有被攻破，也可能被教得太保守，之后连合法任务都不做。"
+    },
+    "item_b29a54fc58c5eb3c:dce96c016ea86712c2a4": {
+      "item_id": "item_b29a54fc58c5eb3c",
+      "kind": "paper",
+      "title": "MINE: A Training-Free Defense against Indirect Prompt Injection via Mutual Information and Embedding Variance",
+      "version": "v1",
+      "requested_version": "v1",
+      "fingerprint": "dce96c016ea86712c2a4",
+      "status": "partial",
+      "updated_at": "2026-11-28T09:10:23.436116+00:00",
+      "path": "data/analyses/item_b29a54fc58c5eb3c-dce96c016ea86712c2a4.json",
+      "message": "建议作为轻量过滤基线候选阅读：先看静态与自适应攻击的差距，别把“相关”当成“可信”。"
     }
   }
 }
